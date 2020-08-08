@@ -1,5 +1,5 @@
 ---
-layout: layout.njk
+layout: single.njk
 title: Basic usage of the new React Router v6 (beta)
 author: akmur
 type: post
@@ -130,6 +130,6 @@ export default Search;
 
 You can then use the _locationSearch_ variable to extract the single parameters
 
-So, that&#8217;s it! Hopefully this gave you a good starting point to implement React Router V6 in your app.
+So, that's it! Hopefully this gave you a good starting point to implement React Router V6 in your app.
 
 <span>Photo by <a href="https://unsplash.com/@bogdan_karlenko?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Bogdan Karlenko</a> on <a href="https://unsplash.com/s/photos/routes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>

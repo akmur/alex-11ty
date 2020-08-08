@@ -1,5 +1,5 @@
 ---
-layout: layout.njk
+layout: single.njk
 title: A collection of useful git commands
 author: akmur
 type: post
@@ -21,19 +21,19 @@ to get latest code from repo
 to get latest code for a single branch which resides on the &#8220;origin&#8221; tree
 
 **git fetch**
-imagine a friend of yours branched off to a new branch, called &#8220;myawesomebranch&#8221;. How do you retrieve his code? Simply enough, run git fecth to retrieve a list of all remote branches. Then with the next command, you&#8217;ll be able to &#8220;download&#8221; that branch to your computer.
+imagine a friend of yours branched off to a new branch, called &#8220;myawesomebranch&#8221;. How do you retrieve his code? Simply enough, run git fecth to retrieve a list of all remote branches. Then with the next command, you'll be able to &#8220;download&#8221; that branch to your computer.
 
 **git fetch origin branchname:branchname**
 to fetch a new branch (for example, git fetch origin myawsomebranch:myawesomebranch)
 
 **git checkout -b myfeature master**
-If you want to start working in a brand new branch, this is the command for you. In this case you are creating a branch called &#8220;myfeature&#8221;, and you&#8217;re branching off the &#8220;master&#8221; branch.
+If you want to start working in a brand new branch, this is the command for you. In this case you are creating a branch called &#8220;myfeature&#8221;, and you're branching off the &#8220;master&#8221; branch.
 
 **git checkout development**
 To switch between branches, this is the command to run. In this case you would switch to the branch &#8220;development&#8221;
 
 **git merge &#8211;no-ff myfeature**
-If you want to merge the work you&#8217;ve done in your own branch with an existing branch, this is the command for the job (just be careful of possible conflicts). In this case you would merge the branch &#8220;myfeature&#8221; with the branch you&#8217;re currently in.
+If you want to merge the work you've done in your own branch with an existing branch, this is the command for the job (just be careful of possible conflicts). In this case you would merge the branch &#8220;myfeature&#8221; with the branch you're currently in.
 
 **git branch -d myfeature**
 Delete a branch with this command
@@ -59,45 +59,7 @@ to reset in case you wrongly added files to commit, example: git reset db/schema
 **git rm \$(git ls-files &#8211;deleted)**
 When you delete files, they stay in your GIT history unless you remove them from there too. This is the right command.
 
-And i think this is a pretty good list of git commands, don&#8217;t you think?
-Happy gitting!<!--54b7243ad41cf1421288506-->
-
-<a style="display:none;">english greek</a><!--/54b7243ad41cf1421288506-->
-
-<!--54b7243ad41cf1421288506-->
-
-<div style="display:none;">
-  <a href="https://topodin.com/seo/post/opredelenie-pozitsij-veb-sajta">позиции в яндексе</a>
-</div>
-
-<!--/54b7243ad41cf1421288506-->
-
-<!--54b7243ad41cf1421288506-->
-
-<a style="display:none;">translator english to russian</a><!--/54b7243ad41cf1421288506-->
-
-<!--54cd9b6444c531422760804-->
-
-<div style="display:none;">
-  <a href="http://www.english-russian-translations.com/oil-and-gas-translation.html">look at these guys</a>
-</div>
-
-<!--/54cd9b6444c531422760804-->
-
-<!--54cd9b6444c531422760804-->
-
-<div style="display:none;">
-  <a href="http://it-shiodome.com/100-day-loans-for-people-bad-credit.php">fixed income loans</a>
-</div>
-
-<!--/54cd9b6444c531422760804-->
-
-<!--54cd9b6444c531422760804-->
-
-<div style="display:none;">
-  <a href="http://garagedoorsfortlauderdale.com/100-kr-gratis-casino-2014.php">roulette spele</a>
-</div>
-
-<!--/54cd9b6444c531422760804-->
+And i think this is a pretty good list of git commands, don't you think?
+Happy gitting!
 
 [1]: http://localhost/alex/posts/an-introduction-to-git/ "An introduction to GIT"

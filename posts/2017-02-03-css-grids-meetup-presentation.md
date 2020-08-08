@@ -1,5 +1,5 @@
 ---
-layout: layout.njk
+layout: single.njk
 title: CSS Grids Meetup Presentation
 author: akmur
 type: post

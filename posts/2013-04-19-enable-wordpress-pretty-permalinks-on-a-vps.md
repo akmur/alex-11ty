@@ -1,5 +1,5 @@
 ---
-layout: layout.njk
+layout: single.njk
 title: Enable WordPress pretty permalinks
 author: akmur
 type: post
@@ -15,14 +15,15 @@ tags:
 ---
 
 Scenario: You have a VPS, you have installed Apache, MySQL, PHP and WOrdpress, and you want to enable pretty permalinks.
-If you&#8217;re getting a 404 error when accessing your WordPress posts after having enabled &#8220;pretty permalinks&#8221; in the settings, then this is how to solve the issue (at least it worked for me).
+If you're getting a 404 error when accessing your WordPress posts after having enabled pretty permalinks in the settings, then this is how to solve the issue (at least it worked for me).
 
 Log in into your VPS server.
 
-<pre>ssh username@IP-ADDRESS
-</pre>
+```
+ssh username@IP-ADDRESS
+```
 
-then let&#8217;s get to the sites-enabled folder
+then let's get to the sites-enabled folder
 
 cd /etc/apache2/sites-enabled
 
@@ -30,77 +31,45 @@ Here there is a file called 000-default
 
 using something like nano (a simple text editor) open this file
 
-<pre>(sudo) nano 000-default
-</pre>
+```
+(sudo) nano 000-default
+```
 
-Use sudo if you&#8217;re not logged in as root.
+Use sudo if you're not logged in as root.
 
-Now that the file is open, you&#8217;ll see something like this:
+Now that the file is open, you'll see something like this:
 
-<pre>DocumentRoot /var/www
+```
+DocumentRoot /var/www
 
 Options FollowSymLinks
 AllowOverride None
 
-
 Options Indexes FollowSymLinks MultiViews
 AllowOverride None
 Order allow,deny
- Allow from all
+Allow from all
+```
 
-</pre>
+What we need to do is to change those two "AllowOverride None" to "AllowOverride All".
+Like so:
 
-What we need to do is to change those two &#8220;AllowOverride None&#8221; to &#8220;AllowOverride All&#8221;.
+```
+DocumentRoot /var/www
 
-Once it&#8217;s done, just restart your apache server
+Options FollowSymLinks
+AllowOverride All
 
-<pre>/etc/init.d/apache2 restart
-</pre>
+Options Indexes FollowSymLinks MultiViews
+AllowOverride All
+Order allow,deny
+Allow from all
+```
 
-And your pretty permalinks should be working now! Nice!<!--54b7243ad41cf1421288506-->
+Once it's done, just restart your apache server
 
-<div style="display:none;">
-  <a href="http://www.topodin.com/consultant.php">интернет консультант</a>
-</div>
+```
+/etc/init.d/apache2 restart
+```
 
-<!--/54b7243ad41cf1421288506-->
-
-<!--54b7243ad41cf1421288506-->
-
-<div style="display:none;">
-  <a href="https://topodin.com/seo/post/klyuchevye-slova-pri-prodvizhenii-veb-sayta-ih-smysl-i-znachenie">комплексная реклама</a>
-</div>
-
-<!--/54b7243ad41cf1421288506-->
-
-<!--54b7243ad41cf1421288506-->
-
-<div style="display:none;">
-  <a href="https://topodin.com/seo/post/eksperiment-kak-kontekstnaya-reklama-povyshaet-prodazhi">контекстная реклама в москве</a>
-</div>
-
-<!--/54b7243ad41cf1421288506-->
-
-<!--54cd9b6444c531422760804-->
-
-<div style="display:none;">
-  <a href="http://seomagik.com/50-kr-gratis-casino-room.php">spela casino på ipad</a>
-</div>
-
-<!--/54cd9b6444c531422760804-->
-
-<!--54cd9b6444c531422760804-->
-
-<div style="display:none;">
-  <a href="http://childssiattorney.com/100-kr-gratis-casino-2014.php">nettikasinot netent</a>
-</div>
-
-<!--/54cd9b6444c531422760804-->
-
-<!--54cd9b6444c531422760804-->
-
-<div style="display:none;">
-  <a href="http://325soldiercreekrd.info/alfa-bank-kreditnaya-karti-1.php">фсс открытие расчетного счета</a>
-</div>
-
-<!--/54cd9b6444c531422760804-->
+And your pretty permalinks should be working now! Nice!

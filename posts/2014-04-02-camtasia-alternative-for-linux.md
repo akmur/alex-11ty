@@ -1,5 +1,5 @@
 ---
-layout: layout.njk
+layout: single.njk
 title: Camtasia alternative for Linux
 author: akmur
 type: post
@@ -16,17 +16,17 @@ Camtasia (you can find it [here][1]) is a cool software for Mac and Windows, use
 
 It is very useful for screencasts, to give them more of a personal touch, or in case you need to record how people behave while testing out your website or application.
 
-It a can be a fundamental tool, but what if you&#8217;re on Ubuntu Linux? What&#8217;s the alternative?
+It a can be a fundamental tool, but what if you're on Ubuntu Linux? What's the alternative?
 
-Well, we need to use two softwares. One is [Kazam][2] &#8211; available from the Ubuntu Software Centre. This is a complete screencasting tool, which you need to set like in the following image:
+Well, we need to use two softwares. One is [Kazam][2] available from the Ubuntu Software Centre. This is a complete screencasting tool, which you need to set like in the following image:
 
-<img class="alignnone size-full wp-image-819" src="https://muraro.xyz/wp/wp-content/uploads/2017/01/kazam-screencaster_009.jpeg" alt="kazam-screencaster_009" width="711" height="304" srcset="https://vccw.test/wp-content/uploads/2017/01/kazam-screencaster_009.jpeg 711w, https://vccw.test/wp-content/uploads/2017/01/kazam-screencaster_009-300x128.jpeg 300w" sizes="(max-width: 711px) 100vw, 711px" />
+<img class="alignnone size-full wp-image-819" src="/images/camtasia-post-screen-1.jpeg" alt="kazam-screencaster_009" />
 
 &nbsp;
 
-Please note that you have to activate and set the audio source as &#8220;Built in Analog Stereo&#8221; (or whatever your input) so that you can record audio too.
+Please note that you have to activate and set the audio source as "Built in Analog Stereo" (or whatever your input) so that you can record audio too.
 
-Now, for the webcam bit, I found the best option to be [GUVC View][3], also available in the Software Center. Once installled it, it should open up. Go to the settings, and &#8211; just to be sure &#8211; disable the audio input.
+Now, for the webcam bit, I found the best option to be [GUVC View][3], also available in the Software Center. Once installled it, it should open up. Go to the settings, and just to be sure disable the audio input.
 
 <img class="alignnone size-full wp-image-820" src="https://muraro.xyz/wp/wp-content/uploads/2017/01/kazam-screencaster_0091.jpeg" alt="kazam-screencaster_009" width="711" height="304" srcset="https://vccw.test/wp-content/uploads/2017/01/kazam-screencaster_0091.jpeg 711w, https://vccw.test/wp-content/uploads/2017/01/kazam-screencaster_0091-300x128.jpeg 300w" sizes="(max-width: 711px) 100vw, 711px" />
 
@@ -36,7 +36,7 @@ You should see your nice mug now, on a second window. What you want to do is to 
 
 &nbsp;
 
-Now you can move this window in the proper position on your screen, and start recording your screencast using Kazam. Before starting, you might want to select the encoder type (MP4 or WebM) and select the region to be recorded through the button &#8220;Record Region&#8221; so that you don&#8217;t end up recording unnecessary screen regions.
+Now you can move this window in the proper position on your screen, and start recording your screencast using Kazam. Before starting, you might want to select the encoder type (MP4 or WebM) and select the region to be recorded through the button &#8220;Record Region&#8221; so that you don't end up recording unnecessary screen regions.
 
 <img class="alignnone size-full wp-image-822" src="https://muraro.xyz/wp/wp-content/uploads/2017/01/kazam-screencaster_00911.jpeg" alt="Kazam-Screencaster_0091.jpeg" width="711" height="304" srcset="https://vccw.test/wp-content/uploads/2017/01/kazam-screencaster_00911.jpeg 711w, https://vccw.test/wp-content/uploads/2017/01/kazam-screencaster_00911-300x128.jpeg 300w" sizes="(max-width: 711px) 100vw, 711px" />
 

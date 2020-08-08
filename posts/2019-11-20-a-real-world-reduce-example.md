@@ -1,5 +1,5 @@
 ---
-layout: layout.njk
+layout: single.njk
 title: A real world reduce() example
 author: akmur
 type: post
@@ -9,7 +9,7 @@ categories:
   - Articles
 ---
 
-For a long time I couldn&#8217;t think of a way to use _reduce_ beyond the classic sum example (taken from [MDN][1])
+For a long time I couldn't think of a way to use _reduce_ beyond the classic sum example (taken from [MDN][1])
 
 ````jsconst array1 = [1, 2, 3, 4];
 const reducer = (accumulator, currentValue) =>

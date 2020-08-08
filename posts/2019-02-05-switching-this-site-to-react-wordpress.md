@@ -1,5 +1,5 @@
 ---
-layout: layout.njk
+layout: single.njk
 title: Switching this site to React + WordPress
 author: akmur
 type: post
@@ -12,7 +12,7 @@ categories:
   - Articles
 ---
 
-_UPDATE 15th of March 2019: The solution below works perfectl, except for the fact that social network sites won&#8217;t pick up the preview from your posts. For this reason i have opted to go back to a local WordPress installation, from which  a static version of the site is generated and deployed to Netlify. All this is done using [WP2Static][1] plugin._
+_UPDATE 15th of March 2019: The solution below works perfectl, except for the fact that social network sites won't pick up the preview from your posts. For this reason i have opted to go back to a local WordPress installation, from which  a static version of the site is generated and deployed to Netlify. All this is done using [WP2Static][1] plugin._
 
 Yesterday I have deployed a new version of my site. It looks exactly like before, but it has some important differences:
 
@@ -31,10 +31,10 @@ So, in the end, I still think React is overkill, but the overall javaScript size
 
 When I started this new version of my blog, i went for [Contentful][3] at first. Partly because I wanted a very fast response, partly because I wanted to try out the new kid on the block.
 
-However, after some playing around, I have resorted to using [WordPress][4], which provides APIs. The publishing experience is much more polished on WordPress, media management is way better, there is no usage-limit since it&#8217;s self hosted, and I own the data.
-Granted, Contentful response feels maybe a bit faster, but that&#8217;s not a major concern.
-I am using the cheapest managed hosting solution from NameCheap. not super fast perhaps, but for what I need, it&#8217;s fine.
-Worth noting is the fact that you can also use APIs from their free wordpress.com service, but in that case the pages will not be crawlable by Google bot, since they block it. With WordpPress.com still I can export my content anytime in case I want a custom installation on a server of mine, while I&#8217;m locked-in with Contentful.
+However, after some playing around, I have resorted to using [WordPress][4], which provides APIs. The publishing experience is much more polished on WordPress, media management is way better, there is no usage-limit since it's self hosted, and I own the data.
+Granted, Contentful response feels maybe a bit faster, but that's not a major concern.
+I am using the cheapest managed hosting solution from NameCheap. not super fast perhaps, but for what I need, it's fine.
+Worth noting is the fact that you can also use APIs from their free wordpress.com service, but in that case the pages will not be crawlable by Google bot, since they block it. With WordpPress.com still I can export my content anytime in case I want a custom installation on a server of mine, while I'm locked-in with Contentful.
 
 ### Netlify
 
@@ -42,7 +42,7 @@ I was blown away by [Netlify][5]&#8216;s ease of use. It allows me to connect my
 
 ### Conclusions
 
-All in all, I&#8217;m currently very happy of my React / WordPress combo. It allows for fun development, great performances and simple deployments, while retaining the great publishing experience of WordPress and the no-nonsense [JAM stack][6] approach. Using WordPress also makes it easy to expand my blog with categories, tags, and plugins like Advanced Custom Fields in case I want to.
+All in all, I'm currently very happy of my React / WordPress combo. It allows for fun development, great performances and simple deployments, while retaining the great publishing experience of WordPress and the no-nonsense [JAM stack][6] approach. Using WordPress also makes it easy to expand my blog with categories, tags, and plugins like Advanced Custom Fields in case I want to.
 This is definitely the way I would go in case I had to do any &#8220;artisan&#8221; client work in 2019.
 
 _Photo by [Thierry Meier][7] on [Unsplash][8]_

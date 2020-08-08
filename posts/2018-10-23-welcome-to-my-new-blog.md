@@ -1,5 +1,5 @@
 ---
-layout: layout.njk
+layout: single.njk
 title: Welcome to my new blog
 author: akmur
 type: post
@@ -35,7 +35,7 @@ Talking about the technological side, the site has been powered by WordPress for
 
 So, this morning I am deploying the version of the site you can see now. It is a purely frontend website, with its content pulled from [Contentful][9]. I have decided not to use any frontend framework after having played around with React, Preact, React router, and Next.js. It was fun to implement my site with different tools, and I learnt a lot during the process, but in the end I decided all that stuff was overkill, and went with vanilla JavaScript. The only JavaScript library I use is [Navigo.js][10] for routing.
 
-I feel really happy with the result, I like the new design and the site is super fast. Plus, I can create new posts just by creating new markdown files. Google can even index JavaScript rendered pages, so what&#8217;s not to love? 🙂
+I feel really happy with the result, I like the new design and the site is super fast. Plus, I can create new posts just by creating new markdown files. Google can even index JavaScript rendered pages, so what's not to love? 🙂
 
 [1]: https://web.archive.org/web/20120114220703/http://inteoria.net/
 [2]: https://muraro.xyz/wp/wp-content/uploads/2019/02/acmpxm5.jpg

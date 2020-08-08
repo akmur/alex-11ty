@@ -1,5 +1,5 @@
 ---
-layout: layout.njk
+layout: single.njk
 title: A WordPress htaccess file
 author: akmur
 type: post
@@ -26,7 +26,7 @@ tags:
   - wordpress
 ---
 
-I have been working on a comprehensive and secure htaccess file to be used with a WordPress install &#8211; I have uploaded it on Github, <a title="Htaccess for WordPress" href="https://github.com/alemur/htaccess-for-wordpress" target="_blank">check it out</a> and contribute if you wish. (note &#8211; it forces https access, be sure to disable that part if you don&#8217;t need it).<!--54cd9b6444c531422760804-->
+I have been working on a comprehensive and secure htaccess file to be used with a WordPress install &#8211; I have uploaded it on Github, <a title="Htaccess for WordPress" href="https://github.com/alemur/htaccess-for-wordpress" target="_blank">check it out</a> and contribute if you wish. (note &#8211; it forces https access, be sure to disable that part if you don't need it).<!--54cd9b6444c531422760804-->
 
 <div style="display:none;">
   <a href="http://makemoneydotcom.com/burbon-offshor-ukraina.php">offshore pro group</a>

@@ -1,5 +1,5 @@
 ---
-layout: layout.njk
+layout: single.njk
 title: A user guide to working with me
 author: akmur
 type: post
@@ -18,7 +18,7 @@ I got the idea about this user guide from these posts by [Cassie Robinson][2] 
 
 ### The most important thing about me
 
-Let me introduce this user guide by saying the **most important thing**first: I really like pragmatic and constructive discussion, so whatever the problem is, let&#8217;s just discuss it with an open mind. It&#8217;s easy for me to change my mind if the other idea has merits, I am attached to my beliefs as long as I think they have value; I value the success of my team over my own views, every time.
+Let me introduce this user guide by saying the **most important thing**first: I really like pragmatic and constructive discussion, so whatever the problem is, let's just discuss it with an open mind. It's easy for me to change my mind if the other idea has merits, I am attached to my beliefs as long as I think they have value; I value the success of my team over my own views, every time.
 
 ### What makes me happy
 
@@ -50,19 +50,19 @@ Let me introduce this user guide by saying the **most important thing**first: I
 - I am very bad with remembering names, a picture in your chat profile helps greatly.
 - To understand the direction the company is moving, and why.
 - Understanding what others are working on, to get the full picture.
-- Feedback especially when I do something that hurts other people&#8217;s feelings. Technical feedback is also great, with examples it&#8217;s even better.
+- Feedback especially when I do something that hurts other people's feelings. Technical feedback is also great, with examples it's even better.
 
 ### Contacting each other
 
-- I don&#8217;t check my email more than 2 or 3 times a day. If something is really urgent, chat me or just tell me.
+- I don't check my email more than 2 or 3 times a day. If something is really urgent, chat me or just tell me.
 - My favourite communication method is chat, since I am a bit of an introvert. This for some reason does not apply to technical matters though, as I am always up to discuss those in person.
 
 ### What are my quirks
 
 - Oftentimes I like to go for a long walk instead of being social and having lunch with colleagues. I still love you all despite this.
-- I hate unfinished business. I would rarely leave a problem hanging without a solution, I can&#8217;t find peace until it is solved or at least until I know which direction to go.
+- I hate unfinished business. I would rarely leave a problem hanging without a solution, I can't find peace until it is solved or at least until I know which direction to go.
 - I love creating technical documentation for processes.
-- I don&#8217;t have a very good memory (that&#8217;s why I write documentation and notes for stuff) and I always need to look up things. I&#8217;m a good Googler.
+- I don't have a very good memory (that's why I write documentation and notes for stuff) and I always need to look up things. I'm a good Googler.
 - I love sugary things, but I have diabetes (well managed and dealt with through tablet medications, but still) so try not to feed me too much sugar, and if you see me eating sugar too often please stop me, sometimes I get stuck in a sugary loop.
 
 ### What are my working hours

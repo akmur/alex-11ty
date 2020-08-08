@@ -1,5 +1,5 @@
 ---
-layout: layout.njk
+layout: single.njk
 title: Using Linters
 author: akmur
 type: post
@@ -45,7 +45,7 @@ Well, there are quite a few reasons:
 - to follow conventions
 - to share code within a team without losing your mind
 
-Let me double stress the fact that linters are especially important if you work in a team (meaning not alone), because by following some rules you can make sure that your code looks the same regardless of who&#8217;s writing the code.
+Let me double stress the fact that linters are especially important if you work in a team (meaning not alone), because by following some rules you can make sure that your code looks the same regardless of who's writing the code.
 
 And finally, let me triple stress that linters are super good to learn how to code as they point out issues while you type (I especially find JavaScript linters useful for this reason).
 
@@ -64,7 +64,7 @@ While a sass linter looks like this (screenshot courtesy of <a href="http://stac
 
 Depending on your tool of choice, there are different ways to install and use a linter. To have a working linter for JavaScript and Sass, you need to:
 
-- Install <a href="https://nodejs.org/en/" target="_blank" rel="noopener noreferrer">Node</a> on your machine if you haven&#8217;t already.
+- Install <a href="https://nodejs.org/en/" target="_blank" rel="noopener noreferrer">Node</a> on your machine if you haven't already.
 - Install the linters globally using the node package manager (aka NPM)
   - to install ESlint (the JavaScript linter): `npm install -g eslint`
   - to install Sass lint: `npm install -g sass-lint`
@@ -91,7 +91,7 @@ This will start a little program that will ask you a few questions. The first qu
 
 <img class="wp-image-1133 size-large" src="https://muraro.xyz/wp/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-15-59-1024x154.png" alt="screen-shot-2017-02-04-at-13-15-59" width="640" height="96" srcset="https://vccw.test/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-15-59-1024x154.png 1024w, https://vccw.test/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-15-59-300x45.png 300w, https://vccw.test/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-15-59-768x116.png 768w, https://vccw.test/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-15-59.png 1498w" sizes="(max-width: 640px) 100vw, 640px" /> <figcaption id="caption-attachment-1133" class="wp-caption-text">Eslint wants answers</figcaption></figure>
 
-Then you&#8217;ll be asked a bunch of additional question, choose whatever you want:<figure id="attachment_1137" aria-describedby="caption-attachment-1137" style="width: 640px" class="wp-caption aligncenter">
+Then you'll be asked a bunch of additional question, choose whatever you want:<figure id="attachment_1137" aria-describedby="caption-attachment-1137" style="width: 640px" class="wp-caption aligncenter">
 
 <img class="wp-image-1137 size-large" src="https://muraro.xyz/wp/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-17-29-1024x350.png" alt="screen-shot-2017-02-04-at-13-17-29" width="640" height="219" srcset="https://vccw.test/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-17-29-1024x350.png 1024w, https://vccw.test/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-17-29-300x103.png 300w, https://vccw.test/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-17-29-768x263.png 768w, https://vccw.test/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-17-29.png 1544w" sizes="(max-width: 640px) 100vw, 640px" /> <figcaption id="caption-attachment-1137" class="wp-caption-text">More eslint questions</figcaption></figure>
 
@@ -99,7 +99,7 @@ This will create a _.eslintrc.json_ file which will look like this:<figure id="a
 
 <img class="alignnone wp-image-1146" src="https://muraro.xyz/wp/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-21-14.png" alt="screen-shot-2017-02-04-at-13-21-14" width="356" height="475" srcset="https://vccw.test/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-21-14.png 510w, https://vccw.test/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-21-14-225x300.png 225w" sizes="(max-width: 356px) 100vw, 356px" /> <figcaption id="caption-attachment-1146" class="wp-caption-text">.eslintrc.json</figcaption></figure>
 
-That&#8217;s it, you got a working ESlint configuration.
+That's it, you got a working ESlint configuration.
 
 ### Sass lint
 

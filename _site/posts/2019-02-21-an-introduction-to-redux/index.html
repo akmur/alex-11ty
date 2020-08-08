@@ -14,55 +14,54 @@
     <div class="wrapper">
       <div class="layout">
         <div class="header">
-          <a class="logo" href="/"><svg class="logo__triangle logo__triangle--left" style="isolation: isolate;" viewbox="217 167 106 96">
-          <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--center" style="isolation: isolate;" viewbox="217 167 106 96">
-          <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--right" style="isolation: isolate;" viewbox="217 167 106 96">
-          <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg></a>
-          <div id="nav">
-            <div class="menu-my-menu-container">
-              <ul class="menu" id="menu-my-menu">
-                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1408" id="menu-item-1408">
-                  <a href="/">Home</a>
-                </li>
-                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1409" id="menu-item-1409">
-                  <a href="/posts/">Posts</a>
-                </li>
-                <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6 current_page_item menu-item-1411" id="menu-item-1411">
-                  <a href="/about/">About</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+  <a class="logo" href="/"><svg class="logo__triangle logo__triangle--left" style="isolation: isolate;" viewbox="217 167 106 96">
+  <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--center" style="isolation: isolate;" viewbox="217 167 106 96">
+  <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--right" style="isolation: isolate;" viewbox="217 167 106 96">
+  <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg></a>
+  <div id="nav">
+    <div class="menu-my-menu-container">
+      <ul class="menu" id="menu-my-menu">
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1408" id="menu-item-1408">
+          <a href="/">Home</a>
+        </li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1409" id="menu-item-1409">
+          <a href="/posts/">Posts</a>
+        </li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6 current_page_item menu-item-1411" id="menu-item-1411">
+          <a href="/about/">About</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
         <div id="main" class="main">
           <article class="post">
-      <header class="entry-header">
-        <h1 class="pageContent__title title title--h1">
-          An introduction to Redux
-        </h1>
-        <div class="pageContent__date date">
-          Posted on Thu, 21 Feb 2019 11:18:09 GMT
-        </div><!-- .entry-meta -->
-      </header>
-          </article>
-          <p>Redux is a small popular library used to keep track of the state of an interface without going crazy. It is mainly used together with React, a popular library used to create snappy user interfaces on the web.</p>
+            <header class="entry-header">
+              <h1 class="pageContent__title title title--h1">
+                An introduction to Redux
+              </h1>
+              <div class="pageContent__date date">
+                Posted on Thu, 21 Feb 2019 11:18:09 GMT
+              </div><!-- .entry-meta -->
+            </header>
+            <p>Redux is a small popular library used to keep track of the state of an interface without going crazy. It is mainly used together with React, a popular library used to create snappy user interfaces on the web.</p>
 <p>Getting started with redux might take a while, because you need to get accustomed to the way it does things. In this post i want to cut straight to the meat of the issue, without unnecessary technical explanations. I will show you how to get started with Redux in a React project.</p>
 <h3>Why? {#why}</h3>
 <p>Why another tutorial about Redux? Because I finally grasped it after struggling with it for a while, and I have the feeling a new tutorial with new ways to explain the same concept might be helpful.</p>
 <h3>Credits {#credits}</h3>
-<p>This tutorial would have not been possible without this one: <a href="https://www.valentinog.com/blog/redux/">React Redux Tutorial for Beginners: The Definitive Guide</a> which I recommend as it’s much more in depth than mine and very easy to follow.
+<p>This tutorial would have not been possible without this one: <a href="https://www.valentinog.com/blog/redux/">React Redux Tutorial for Beginners: The Definitive Guide</a> which I recommend as it's much more in depth than mine and very easy to follow.
 Another great tutorial that helped me greatly is this one: <a href="https://medium.com/@ohansemmanuel/table-of-contents-for-understanding-redux-1-ea0667e1453d">Understanding Redux — 1. – Ohans Emmanuel</a>
-Also, once you have some understanding of Redux, I recommend checking out <a href="https://read.reduxbook.com/">Human Redux</a>, it’s really well written.</p>
+Also, once you have some understanding of Redux, I recommend checking out <a href="https://read.reduxbook.com/">Human Redux</a>, it's really well written.</p>
 <h3>Prerequisites {#prerequisites}</h3>
 <ul>
 <li>node installed on your machine</li>
-<li>some basic react knowledge might help (so you don’t feel completely lost)</li>
+<li>some basic react knowledge might help (so you don't feel completely lost)</li>
 </ul>
 <h2>Cloning the project {#cloningtheproject}</h2>
-<p>Instead of copy-pasting stuff from a webpage, let’s be modern and just clone or download this Git repository:</p>
+<p>Instead of copy-pasting stuff from a webpage, let's be modern and just clone or download this Git repository:</p>
 <p><a href="https://github.com/akmur/redux-tutorial">GitHub – akmur/redux-tutorial: Redux Tutorial</a></p>
 <p>where you will find a little project already setup.</p>
-<p>Once downloaded or cloned, open your Terminal and go to the project’s folder, then type:</p>
+<p>Once downloaded or cloned, open your Terminal and go to the project's folder, then type:</p>
 <pre class="line-numbers"><code class="language-javascript">npm install
 </code></pre>
 <p>followed by:</p>
@@ -123,9 +122,9 @@ We are importing the “Provider” component and the Redux store we already cre
 <p>Found in:
 ./src/User.js</p>
 <p>At the top of the file, we have our standard imports needed to load React, load the “connect” feature from Redux, and load our Redux actions.</p>
-<p>Inside the component, in the beginning of the component’s lifecycle, inside the componentDidMount() function, we check if data is already loaded, and if not, we load it.</p>
+<p>Inside the component, in the beginning of the component's lifecycle, inside the componentDidMount() function, we check if data is already loaded, and if not, we load it.</p>
 <p>Inside the render() function we simply output the data.</p>
-<p>Towards the end of the file, we have “const = mapStateToProps”. Here we are mapping the user state saved in Redux, with the component’s properties (props) so that they are available in the render() function.</p>
+<p>Towards the end of the file, we have “const = mapStateToProps”. Here we are mapping the user state saved in Redux, with the component's properties (props) so that they are available in the render() function.</p>
 <p>In the last few lines, we are doing the actual plumbing, connecting everything together and exporting the component.</p>
 <h4>Redux Action {#redux-action}</h4>
 <p>Found in:
@@ -140,7 +139,7 @@ We are importing the “Provider” component and the Redux store we already cre
 <p>Found in:
 ./src/redux/reducers/user.reducers.js</p>
 <p>This reducer, receives a state (the default if none other is available, is initialState) and an action.
-If the reducer receives the action ‘USER_LOADED’ it will change the state accordingly. You can see some further comments in the snippet above.</p>
+If the reducer receives the action ‘USER_LOADED' it will change the state accordingly. You can see some further comments in the snippet above.</p>
 <h4>Redux store {#redux-store}</h4>
 <p>Found in:
 ./src/redux/stores/index.stores.js</p>
@@ -164,13 +163,13 @@ If the reducer receives the action ‘USER_LOADED’ it will change the state ac
 <li>In the component, the content is changed according to the data coming from Redux</li>
 </ul>
 <h2>Conclusions {#conclusions}</h2>
-<p>I know there are many moving parts involved, but Redux seems like a great solution and it’s probably here to stay.
+<p>I know there are many moving parts involved, but Redux seems like a great solution and it's probably here to stay.
 What I generally like to do is to avoid almost completely the usage of component-level state, except for small UI-related information (e.g. show/hide a menu), and use Redux for everything else, with the advantage that important global state is available from anywhere in the App, I just need to “connect” to the redux store.</p>
 <p>There is surely much more to it than what is in this guide, and I am probably just scratching the surface here, but hopefully this will be enough to get you started.</p>
 <p>If you would like to discuss this, just do so on LinkedIn:</p>
 <blockquote class="blockquote__linkedin data-lang=" style="border-color: #1D77B5;">
   <p dir="ltr" lang="en">
-    After having learnt about Redux from Valentino Gagliardi, I thought it would have been a good idea to explain it again in my own words. The more explanations, the better, so here&#8217;s my contribution to the understanding of Redux for newcomers.
+    After having learnt about Redux from Valentino Gagliardi, I thought it would have been a good idea to explain it again in my own words. The more explanations, the better, so here's my contribution to the understanding of Redux for newcomers.
   </p>
   <p>
     — Alessandro Muraro &#8211; February 21, 2019
@@ -182,15 +181,16 @@ What I generally like to do is to avoid almost completely the usage of component
 <p> </p>
 <p>Photo by <a href="https://unsplash.com/photos/VwGcs_D_Q2w?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Rúben Marques</a> on <a href="https://unsplash.com/search/photos/web?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></p>
 
+          </article>
         </div>
         <footer class="footer">
-          <div class="footer__container">
-            <p class="footer__text">Find me on:<br>
-              <a class="footer__link" href="https://twitter.com/akmur">Twitter</a>,
-              <a rel="me" href="https://mastodon.social/@akmur" class="footer__link">Mastodon</a>, <a class="footer__link" href="https://www.linkedin.com/in/alessandromuraro/">LinkedIn</a>, <a class="footer__link" href="https://github.com/akmur">Github</a>.
-            </p>
-          </div>
-        </footer>
+  <div class="footer__container">
+    <p class="footer__text">Find me on:<br>
+      <a class="footer__link" href="https://twitter.com/akmur">Twitter</a>,
+      <a rel="me" href="https://mastodon.social/@akmur" class="footer__link">Mastodon</a>, <a class="footer__link" href="https://www.linkedin.com/in/alessandromuraro/">LinkedIn</a>, <a class="footer__link" href="https://github.com/akmur">Github</a>.
+    </p>
+  </div>
+</footer>
       </div>
     </div>
   </body>

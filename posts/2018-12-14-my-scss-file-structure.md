@@ -1,5 +1,5 @@
 ---
-layout: layout.njk
+layout: single.njk
 title: My SCSS file structure
 author: akmur
 type: post
@@ -11,7 +11,7 @@ categories:
   - Articles
 ---
 
-After having created folder structures for my SCSS files many times for many different projects over the years, I decided to create a Github repository so that it&#8217;s easier for me to get started and improve; hopefully it can be useful to somebody else trying to wrap his/her head around it as well.
+After having created folder structures for my SCSS files many times for many different projects over the years, I decided to create a Github repository so that it's easier for me to get started and improve; hopefully it can be useful to somebody else trying to wrap his/her head around it as well.
 
 First of all, [here is the repository][1] that you can clone to get started, and here below is an image that shows how the folder structure looks like.
 
@@ -22,13 +22,13 @@ The main ideas behind the organization of these files come from a couple of reso
 - [SASS Guidelines: 7-in-1 pattern][3]
 - [ITCSS: Scalable and maintainable Scss architecture][4]
 
-I am basically merging the two approaches, in order to have something that makes a lot of sense yet is easier to understand than the resources above. During the years I always found that the first approach was great but could have done with a bit more modularity, while the second one is a bit too technical to wrap one&#8217;s head around.
+I am basically merging the two approaches, in order to have something that makes a lot of sense yet is easier to understand than the resources above. During the years I always found that the first approach was great but could have done with a bit more modularity, while the second one is a bit too technical to wrap one's head around.
 
 So these are my folders:
 
 ### 01-Abstracts
 
-Here you can find mixins, extends, placeholders and variables and all that code that doesn&#8217;t actually outputs CSS.
+Here you can find mixins, extends, placeholders and variables and all that code that doesn't actually outputs CSS.
 
 ### 02-Base
 

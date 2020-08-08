@@ -14,38 +14,37 @@
     <div class="wrapper">
       <div class="layout">
         <div class="header">
-          <a class="logo" href="/"><svg class="logo__triangle logo__triangle--left" style="isolation: isolate;" viewbox="217 167 106 96">
-          <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--center" style="isolation: isolate;" viewbox="217 167 106 96">
-          <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--right" style="isolation: isolate;" viewbox="217 167 106 96">
-          <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg></a>
-          <div id="nav">
-            <div class="menu-my-menu-container">
-              <ul class="menu" id="menu-my-menu">
-                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1408" id="menu-item-1408">
-                  <a href="/">Home</a>
-                </li>
-                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1409" id="menu-item-1409">
-                  <a href="/posts/">Posts</a>
-                </li>
-                <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6 current_page_item menu-item-1411" id="menu-item-1411">
-                  <a href="/about/">About</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+  <a class="logo" href="/"><svg class="logo__triangle logo__triangle--left" style="isolation: isolate;" viewbox="217 167 106 96">
+  <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--center" style="isolation: isolate;" viewbox="217 167 106 96">
+  <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--right" style="isolation: isolate;" viewbox="217 167 106 96">
+  <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg></a>
+  <div id="nav">
+    <div class="menu-my-menu-container">
+      <ul class="menu" id="menu-my-menu">
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1408" id="menu-item-1408">
+          <a href="/">Home</a>
+        </li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1409" id="menu-item-1409">
+          <a href="/posts/">Posts</a>
+        </li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6 current_page_item menu-item-1411" id="menu-item-1411">
+          <a href="/about/">About</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
         <div id="main" class="main">
           <article class="post">
-      <header class="entry-header">
-        <h1 class="pageContent__title title title--h1">
-          The simplest practical React Hooks tutorial
-        </h1>
-        <div class="pageContent__date date">
-          Posted on Thu, 14 Mar 2019 08:47:05 GMT
-        </div><!-- .entry-meta -->
-      </header>
-          </article>
-          <p>Since React hooks came out with React 16.8, I’ve seen many hooks tutorials popping up. They are surely interesting and I recommend them, but they can be sometimes a bit long and scary. In any case, as always I think it is beneficial to explain things with different words.</p>
+            <header class="entry-header">
+              <h1 class="pageContent__title title title--h1">
+                The simplest practical React Hooks tutorial
+              </h1>
+              <div class="pageContent__date date">
+                Posted on Thu, 14 Mar 2019 08:47:05 GMT
+              </div><!-- .entry-meta -->
+            </header>
+            <p>Since React hooks came out with React 16.8, I've seen many hooks tutorials popping up. They are surely interesting and I recommend them, but they can be sometimes a bit long and scary. In any case, as always I think it is beneficial to explain things with different words.</p>
 <p>In a nutshell, React Hooks are used to add state and lifecycle to function components, which, prior to Hooks, could only be “dumb” and print whatever props they were passed from outer components.</p>
 <p>In this post I want to show the simplest React Hooks example. It contains both <strong>“useState”</strong>, used make use of  state inside the component, and <strong>“useEffect”</strong>, used to run code when the component is loaded, or when props or state change.</p>
 <p>So, here is my example, which is hopefully pretty self explanatory. (click on the coloured buttons to switch between editor and browser view)</p>
@@ -58,7 +57,7 @@ To be more precise, when we set:</p>
 <p>On line 12, we have the useEffect function. As the <a href="https://reactjs.org/docs/hooks-effect.html">React docs</a> say, “you can think of useEffect Hook as componentDidMount, componentDidUpdate, and componentWillUnmount combined”. This means this <em>useEffect</em> function will run when the component mounts, and everytime we update it by changing its props.</p>
 <p>Then from line 18 to 21 we render the component.</p>
 <p>Please note that useState and useEffect are only 2 of a number of available hooks (like useRef, useMemo, useDebugValue), although probably these are the most used. On <a href="https://usehooks.com/">usehooks.com</a> you can find lots of info about hooks.</p>
-<p>So that’s it, there are the basics of React Hooks. If you would like to discuss it, you can do so on Linkedin:</p>
+<p>So that's it, there are the basics of React Hooks. If you would like to discuss it, you can do so on Linkedin:</p>
 <blockquote class="blockquote__linkedin data-lang=" style="border-color: #1D77B5;">
   <p dir="ltr" lang="en">
     I have written (hopefully) the simplest practical React Hooks tutorial
@@ -72,15 +71,16 @@ To be more precise, when we set:</p>
 </blockquote>
 <p><em>Photo by <a href="https://unsplash.com/photos/f76zzdCEBgw?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Christian Fregnan</a> on</em> <a href="https://unsplash.com/search/photos/hook?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"><em>Unsplash</em></a></p>
 
+          </article>
         </div>
         <footer class="footer">
-          <div class="footer__container">
-            <p class="footer__text">Find me on:<br>
-              <a class="footer__link" href="https://twitter.com/akmur">Twitter</a>,
-              <a rel="me" href="https://mastodon.social/@akmur" class="footer__link">Mastodon</a>, <a class="footer__link" href="https://www.linkedin.com/in/alessandromuraro/">LinkedIn</a>, <a class="footer__link" href="https://github.com/akmur">Github</a>.
-            </p>
-          </div>
-        </footer>
+  <div class="footer__container">
+    <p class="footer__text">Find me on:<br>
+      <a class="footer__link" href="https://twitter.com/akmur">Twitter</a>,
+      <a rel="me" href="https://mastodon.social/@akmur" class="footer__link">Mastodon</a>, <a class="footer__link" href="https://www.linkedin.com/in/alessandromuraro/">LinkedIn</a>, <a class="footer__link" href="https://github.com/akmur">Github</a>.
+    </p>
+  </div>
+</footer>
       </div>
     </div>
   </body>

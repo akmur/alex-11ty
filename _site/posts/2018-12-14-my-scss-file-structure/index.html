@@ -14,38 +14,37 @@
     <div class="wrapper">
       <div class="layout">
         <div class="header">
-          <a class="logo" href="/"><svg class="logo__triangle logo__triangle--left" style="isolation: isolate;" viewbox="217 167 106 96">
-          <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--center" style="isolation: isolate;" viewbox="217 167 106 96">
-          <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--right" style="isolation: isolate;" viewbox="217 167 106 96">
-          <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg></a>
-          <div id="nav">
-            <div class="menu-my-menu-container">
-              <ul class="menu" id="menu-my-menu">
-                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1408" id="menu-item-1408">
-                  <a href="/">Home</a>
-                </li>
-                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1409" id="menu-item-1409">
-                  <a href="/posts/">Posts</a>
-                </li>
-                <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6 current_page_item menu-item-1411" id="menu-item-1411">
-                  <a href="/about/">About</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+  <a class="logo" href="/"><svg class="logo__triangle logo__triangle--left" style="isolation: isolate;" viewbox="217 167 106 96">
+  <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--center" style="isolation: isolate;" viewbox="217 167 106 96">
+  <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--right" style="isolation: isolate;" viewbox="217 167 106 96">
+  <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg></a>
+  <div id="nav">
+    <div class="menu-my-menu-container">
+      <ul class="menu" id="menu-my-menu">
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1408" id="menu-item-1408">
+          <a href="/">Home</a>
+        </li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1409" id="menu-item-1409">
+          <a href="/posts/">Posts</a>
+        </li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6 current_page_item menu-item-1411" id="menu-item-1411">
+          <a href="/about/">About</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
         <div id="main" class="main">
           <article class="post">
-      <header class="entry-header">
-        <h1 class="pageContent__title title title--h1">
-          My SCSS file structure
-        </h1>
-        <div class="pageContent__date date">
-          Posted on Fri, 14 Dec 2018 00:14:58 GMT
-        </div><!-- .entry-meta -->
-      </header>
-          </article>
-          <p>After having created folder structures for my SCSS files many times for many different projects over the years, I decided to create a Github repository so that it’s easier for me to get started and improve; hopefully it can be useful to somebody else trying to wrap his/her head around it as well.</p>
+            <header class="entry-header">
+              <h1 class="pageContent__title title title--h1">
+                My SCSS file structure
+              </h1>
+              <div class="pageContent__date date">
+                Posted on Fri, 14 Dec 2018 00:14:58 GMT
+              </div><!-- .entry-meta -->
+            </header>
+            <p>After having created folder structures for my SCSS files many times for many different projects over the years, I decided to create a Github repository so that it's easier for me to get started and improve; hopefully it can be useful to somebody else trying to wrap his/her head around it as well.</p>
 <p>First of all, <a href="https://github.com/akmur/scss-structure" title="Scss Structure Github Repo">here is the repository</a> that you can clone to get started, and here below is an image that shows how the folder structure looks like.</p>
 <p><a href="https://muraro.xyz/wp/wp-content/uploads/2019/02/3pm3of9.png"><img class="alignnone size-medium wp-image-1224" src="https://muraro.xyz/wp/wp-content/uploads/2019/02/3pm3of9.png?w=300" alt="" width="300" height="264" srcset="https://vccw.test/wp-content/uploads/2019/02/3pm3of9.png 337w, https://vccw.test/wp-content/uploads/2019/02/3pm3of9-300x264.png 300w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
 <p>The main ideas behind the organization of these files come from a couple of resources with a few tweaks, and 99% of the credit goes to them of course.</p>
@@ -53,10 +52,10 @@
 <li><a href="https://sass-guidelin.es/#the-7-1-pattern">SASS Guidelines: 7-in-1 pattern</a></li>
 <li><a href="https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/">ITCSS: Scalable and maintainable Scss architecture</a></li>
 </ul>
-<p>I am basically merging the two approaches, in order to have something that makes a lot of sense yet is easier to understand than the resources above. During the years I always found that the first approach was great but could have done with a bit more modularity, while the second one is a bit too technical to wrap one’s head around.</p>
+<p>I am basically merging the two approaches, in order to have something that makes a lot of sense yet is easier to understand than the resources above. During the years I always found that the first approach was great but could have done with a bit more modularity, while the second one is a bit too technical to wrap one's head around.</p>
 <p>So these are my folders:</p>
 <h3>01-Abstracts</h3>
-<p>Here you can find mixins, extends, placeholders and variables and all that code that doesn’t actually outputs CSS.</p>
+<p>Here you can find mixins, extends, placeholders and variables and all that code that doesn't actually outputs CSS.</p>
 <h3>02-Base</h3>
 <p>In this folder you can put generic reset styles like normalize.css, starters like Bootstrap or Bulma, typographic starters, stuff like fontawesome, and so on.</p>
 <h3>03-Elements</h3>
@@ -77,15 +76,16 @@
 <p>Overrides for any of the folders above go here, however this is mainly for plugins. It should not be abused.</p>
 <p>So far this file organization has proved to be quite good, easy to understand yet complex enough to allow for enough flexibility. Let me know if you have ideas for improvements.</p>
 
+          </article>
         </div>
         <footer class="footer">
-          <div class="footer__container">
-            <p class="footer__text">Find me on:<br>
-              <a class="footer__link" href="https://twitter.com/akmur">Twitter</a>,
-              <a rel="me" href="https://mastodon.social/@akmur" class="footer__link">Mastodon</a>, <a class="footer__link" href="https://www.linkedin.com/in/alessandromuraro/">LinkedIn</a>, <a class="footer__link" href="https://github.com/akmur">Github</a>.
-            </p>
-          </div>
-        </footer>
+  <div class="footer__container">
+    <p class="footer__text">Find me on:<br>
+      <a class="footer__link" href="https://twitter.com/akmur">Twitter</a>,
+      <a rel="me" href="https://mastodon.social/@akmur" class="footer__link">Mastodon</a>, <a class="footer__link" href="https://www.linkedin.com/in/alessandromuraro/">LinkedIn</a>, <a class="footer__link" href="https://github.com/akmur">Github</a>.
+    </p>
+  </div>
+</footer>
       </div>
     </div>
   </body>

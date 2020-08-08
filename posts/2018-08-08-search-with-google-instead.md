@@ -1,5 +1,5 @@
 ---
-layout: layout.njk
+layout: single.njk
 title: Search with Google instead
 author: akmur
 type: post

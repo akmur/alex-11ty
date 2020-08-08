@@ -1,5 +1,5 @@
 ---
-layout: layout.njk
+layout: single.njk
 title: The difference between pixels, ems and rems
 author: akmur
 type: post
@@ -35,10 +35,10 @@ It **will not be** affected by what is around it or by its own font-size. If a u
 ### Rem
 
 With **rem units**, one unit is relative to the font-size of the root html element.
-It **will not be affected** by what is around it nor by its own font-size. In this regard it&#8217;s similar to a pixel value.  However, when a user will change his/her accessibility settings, **rem units will be affected**.
+It **will not be affected** by what is around it nor by its own font-size. In this regard it's similar to a pixel value.  However, when a user will change his/her accessibility settings, **rem units will be affected**.
 
 **Example:
-** Let&#8217;s say that the root html element has a font-size of 12px.
+** Let's say that the root html element has a font-size of 12px.
 If we have a box with _width: 10rem_, it will be rendered on screen with a 120px width.
 
 <p class="codepen" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-height="265" data-theme-id="default" data-default-tab="css,result" data-user="akmur" data-slug-hash="jOOJQVv" data-pen-title="Example rem">
@@ -53,7 +53,7 @@ With **em units**, the unit is related **to the font size of the element** itsel
 **Example:
 ** If we have a box with _font-size: 16px_, and the width is _10em,_ it will be rendered on screen with a _160px width_. If we apply a 2em padding, this padding will be 16 \* 2 = 32px.
 
-This is very useful because we **don&#8217;t need to explicitly define spacing** of an element in pixels.
+This is very useful because we **don't need to explicitly define spacing** of an element in pixels.
 
 We can simply say that the padding equals 1em, and it will mean that the padding equals the font size, whatever it is. So basically we are specifying _ratios_ relative to the font size, instead of absolute values.
 
@@ -71,7 +71,7 @@ My general rule of thumb as a developer is:
 
 In my experience, _Ems_ should be avoided for setting font sizes, because they easily becomes complex to manage when we have many nested components. _Rems_ for font-sizes are much easier to reason with.
 
-_Ems_ are perfect for setting spacing and sizes because this unit grows with the element&#8217;s font-size.
+_Ems_ are perfect for setting spacing and sizes because this unit grows with the element's font-size.
 
 In general, in frontend we should almost never use pixels to avoid all sorts of issues.
 

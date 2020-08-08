@@ -1,5 +1,5 @@
 ---
-layout: layout.njk
+layout: single.njk
 title: An introduction to Redux
 author: akmur
 type: post
@@ -20,24 +20,24 @@ Why another tutorial about Redux? Because I finally grasped it after struggling 
 
 ### Credits {#credits}
 
-This tutorial would have not been possible without this one: [React Redux Tutorial for Beginners: The Definitive Guide][1] which I recommend as it&#8217;s much more in depth than mine and very easy to follow.
+This tutorial would have not been possible without this one: [React Redux Tutorial for Beginners: The Definitive Guide][1] which I recommend as it's much more in depth than mine and very easy to follow.
 Another great tutorial that helped me greatly is this one: [Understanding Redux — 1. – Ohans Emmanuel][2]
-Also, once you have some understanding of Redux, I recommend checking out [Human Redux][3], it&#8217;s really well written.
+Also, once you have some understanding of Redux, I recommend checking out [Human Redux][3], it's really well written.
 
 ### Prerequisites {#prerequisites}
 
 - node installed on your machine
-- some basic react knowledge might help (so you don&#8217;t feel completely lost)
+- some basic react knowledge might help (so you don't feel completely lost)
 
 ## Cloning the project {#cloningtheproject}
 
-Instead of copy-pasting stuff from a webpage, let&#8217;s be modern and just clone or download this Git repository:
+Instead of copy-pasting stuff from a webpage, let's be modern and just clone or download this Git repository:
 
 [GitHub &#8211; akmur/redux-tutorial: Redux Tutorial][4]
 
 where you will find a little project already setup.
 
-Once downloaded or cloned, open your Terminal and go to the project&#8217;s folder, then type:
+Once downloaded or cloned, open your Terminal and go to the project's folder, then type:
 
 <pre class="line-numbers"><code class="language-javascript">npm install
 </code></pre>
@@ -118,11 +118,11 @@ Found in:
 
 At the top of the file, we have our standard imports needed to load React, load the &#8220;connect&#8221; feature from Redux, and load our Redux actions.
 
-Inside the component, in the beginning of the component&#8217;s lifecycle, inside the componentDidMount() function, we check if data is already loaded, and if not, we load it.
+Inside the component, in the beginning of the component's lifecycle, inside the componentDidMount() function, we check if data is already loaded, and if not, we load it.
 
 Inside the render() function we simply output the data.
 
-Towards the end of the file, we have &#8220;const = mapStateToProps&#8221;. Here we are mapping the user state saved in Redux, with the component&#8217;s properties (props) so that they are available in the render() function.
+Towards the end of the file, we have &#8220;const = mapStateToProps&#8221;. Here we are mapping the user state saved in Redux, with the component's properties (props) so that they are available in the render() function.
 
 In the last few lines, we are doing the actual plumbing, connecting everything together and exporting the component.
 
@@ -148,7 +148,7 @@ Found in:
 ./src/redux/reducers/user.reducers.js
 
 This reducer, receives a state (the default if none other is available, is initialState) and an action.
-If the reducer receives the action &#8216;USER_LOADED&#8217; it will change the state accordingly. You can see some further comments in the snippet above.
+If the reducer receives the action &#8216;USER_LOADED' it will change the state accordingly. You can see some further comments in the snippet above.
 
 #### Redux store {#redux-store}
 
@@ -172,7 +172,7 @@ To sum up, the steps you need to follow to work with redux are:
 
 ## Conclusions {#conclusions}
 
-I know there are many moving parts involved, but Redux seems like a great solution and it&#8217;s probably here to stay.
+I know there are many moving parts involved, but Redux seems like a great solution and it's probably here to stay.
 What I generally like to do is to avoid almost completely the usage of component-level state, except for small UI-related information (e.g. show/hide a menu), and use Redux for everything else, with the advantage that important global state is available from anywhere in the App, I just need to &#8220;connect&#8221; to the redux store.
 
 There is surely much more to it than what is in this guide, and I am probably just scratching the surface here, but hopefully this will be enough to get you started.
@@ -181,7 +181,7 @@ If you would like to discuss this, just do so on LinkedIn:
 
 <blockquote class="blockquote__linkedin data-lang=" style="border-color: #1D77B5;">
   <p dir="ltr" lang="en">
-    After having learnt about Redux from Valentino Gagliardi, I thought it would have been a good idea to explain it again in my own words. The more explanations, the better, so here&#8217;s my contribution to the understanding of Redux for newcomers.
+    After having learnt about Redux from Valentino Gagliardi, I thought it would have been a good idea to explain it again in my own words. The more explanations, the better, so here's my contribution to the understanding of Redux for newcomers.
   </p>
 
   <p>

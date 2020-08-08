@@ -1,5 +1,5 @@
 ---
-layout: layout.njk
+layout: single.njk
 title: Super GiGi Flexbox grid system
 author: akmur
 type: post
@@ -27,9 +27,9 @@ categories:
 Flexbox has been getting lots of attention lately, and rightly so, as it makes it possible to solve problems in unique and responsive ways.
 You might want to take into consideration Flexbox-based layouts in case you are building a truly responsive web application and you want to take advantage of cool Flexbox properties like ordering, direction, wrapping, growing, etc.
 
-In this post I&#8217;m going to explain how to get started with [Super GiGi][1], a Flexbox based grid system created by the people at [Objectway][2] and by <a href="https://twitter.com/MakhBeth" target="_blank">Davide Di Pumpo</a> in particular.
+In this post I'm going to explain how to get started with [Super GiGi][1], a Flexbox based grid system created by the people at [Objectway][2] and by <a href="https://twitter.com/MakhBeth" target="_blank">Davide Di Pumpo</a> in particular.
 
-But first, here&#8217;s what Davide himself has to say about SuperGigi:
+But first, here's what Davide himself has to say about SuperGigi:
 
 _&#8220;When you design a website, usually you will use some kind of grid system. There are a lot of frameworks on the old wide web that will help you accomplish this. Sometimes they use float, sometimes they use tables, but there are a few that are using Flexbox.
 And if you know [Flexbox][3] you know two things about it: 1, It’s awesome and 2, it can be a pain to do general layout with._
@@ -38,9 +38,9 @@ And if you know [Flexbox][3] you know two things about it: 1, It’s awesome and
 
 _So Super GiGi does exactly this. It will help you set up your own Flexbox grid system, carrying in all the tricks to achieve cross browser support (yes, even IE), solutions for the known [Flexbug][5], optimisation for performances, and a lot of helpers to build a “row -> columns” structure that will be easier to manage and to maintain._
 
-_Super GiGi&#8217;s main purpose is to be compliant to the [separation of concerns][6]; the first impact can weird you out if you are used to a framework like Bootstrap or Foundation, but after a while (especially if you are used to Susy or similar) you will see the benefits of this choice.&#8221;_
+_Super GiGi's main purpose is to be compliant to the [separation of concerns][6]; the first impact can weird you out if you are used to a framework like Bootstrap or Foundation, but after a while (especially if you are used to Susy or similar) you will see the benefits of this choice.&#8221;_
 
-Now we&#8217;re ready to start getting acquainted with Super GiGi!
+Now we're ready to start getting acquainted with Super GiGi!
 
 ### Learning more about Flexbox
 
@@ -65,9 +65,9 @@ Then be sure to import the main.scss file at the start of your manifest style.sc
 <pre>@import [path to super-gigi]/dist/main
 </pre>
 
-### Let&#8217;s get rolling
+### Let's get rolling
 
-As you might have noticed, the documentation contains quite a bit of available configuration, but don&#8217;t let that scare you.
+As you might have noticed, the documentation contains quite a bit of available configuration, but don't let that scare you.
 This is how you can get started real quick to get a feeling of how this works.
 
 First of all, detect your outer container (aka a row) and the inner columns, then style them like:
@@ -118,9 +118,9 @@ And an everyday use case:
 
 ### Changing basic settings
 
-There is a wide number of settings that you might want to change to have Super GiGi work just like you need it, but before checking them out, let&#8217;s see how to overwrite the defaults.
+There is a wide number of settings that you might want to change to have Super GiGi work just like you need it, but before checking them out, let's see how to overwrite the defaults.
 
-First of all, if you wish (you know you do) to use Super GiGi&#8217;s utility functions, you should import Super GiGi&#8217;s \_functions.scss file before anything else.
+First of all, if you wish (you know you do) to use Super GiGi's utility functions, you should import Super GiGi's \_functions.scss file before anything else.
 
 So your manifest style.scss (where you keep all your imports) will look like this:
 

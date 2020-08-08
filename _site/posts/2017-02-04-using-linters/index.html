@@ -14,38 +14,37 @@
     <div class="wrapper">
       <div class="layout">
         <div class="header">
-          <a class="logo" href="/"><svg class="logo__triangle logo__triangle--left" style="isolation: isolate;" viewbox="217 167 106 96">
-          <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--center" style="isolation: isolate;" viewbox="217 167 106 96">
-          <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--right" style="isolation: isolate;" viewbox="217 167 106 96">
-          <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg></a>
-          <div id="nav">
-            <div class="menu-my-menu-container">
-              <ul class="menu" id="menu-my-menu">
-                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1408" id="menu-item-1408">
-                  <a href="/">Home</a>
-                </li>
-                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1409" id="menu-item-1409">
-                  <a href="/posts/">Posts</a>
-                </li>
-                <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6 current_page_item menu-item-1411" id="menu-item-1411">
-                  <a href="/about/">About</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+  <a class="logo" href="/"><svg class="logo__triangle logo__triangle--left" style="isolation: isolate;" viewbox="217 167 106 96">
+  <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--center" style="isolation: isolate;" viewbox="217 167 106 96">
+  <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--right" style="isolation: isolate;" viewbox="217 167 106 96">
+  <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg></a>
+  <div id="nav">
+    <div class="menu-my-menu-container">
+      <ul class="menu" id="menu-my-menu">
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1408" id="menu-item-1408">
+          <a href="/">Home</a>
+        </li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1409" id="menu-item-1409">
+          <a href="/posts/">Posts</a>
+        </li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6 current_page_item menu-item-1411" id="menu-item-1411">
+          <a href="/about/">About</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
         <div id="main" class="main">
           <article class="post">
-      <header class="entry-header">
-        <h1 class="pageContent__title title title--h1">
-          Using Linters
-        </h1>
-        <div class="pageContent__date date">
-          Posted on Sat, 04 Feb 2017 12:30:36 GMT
-        </div><!-- .entry-meta -->
-      </header>
-          </article>
-          <h3>What is a linter?</h3>
+            <header class="entry-header">
+              <h1 class="pageContent__title title title--h1">
+                Using Linters
+              </h1>
+              <div class="pageContent__date date">
+                Posted on Sat, 04 Feb 2017 12:30:36 GMT
+              </div><!-- .entry-meta -->
+            </header>
+            <h3>What is a linter?</h3>
 <p>According to google, the definition of “lint” is <em>“short, fine fibres which separate from the surface of cloth or yarn during processing.”</em></p>
 <p>However for us programmers a <strong>linter</strong> is a software that checks your code for errors, bad practices, bad formatting and logical issues, and gives you a warning when you make a mistake. A linter can be configurable according to rules that you decide.</p>
 <h3><strong>Why use a linter?</strong></h3>
@@ -58,7 +57,7 @@
 <li>to follow conventions</li>
 <li>to share code within a team without losing your mind</li>
 </ul>
-<p>Let me double stress the fact that linters are especially important if you work in a team (meaning not alone), because by following some rules you can make sure that your code looks the same regardless of who’s writing the code.</p>
+<p>Let me double stress the fact that linters are especially important if you work in a team (meaning not alone), because by following some rules you can make sure that your code looks the same regardless of who's writing the code.</p>
 <p>And finally, let me triple stress that linters are super good to learn how to code as they point out issues while you type (I especially find JavaScript linters useful for this reason).</p>
 <h3>How does a linter look like?</h3>
 <p>A (JavaScript) linter looks like this (screenshot courtesy of <a href="https://code.visualstudio.com/Docs/languages/javascript" target="_blank" rel="noopener noreferrer">Visual Studio Code by Microsoft</a>). Please notice the warning in the lower part of the screen. By clicking on the error there, you can get to the line containing the issue.
@@ -69,7 +68,7 @@ The error position is also specified within parenthesis, in this case it is 7,1
 <h3>How to use a linter?</h3>
 <p>Depending on your tool of choice, there are different ways to install and use a linter. To have a working linter for JavaScript and Sass, you need to:</p>
 <ul>
-<li>Install <a href="https://nodejs.org/en/" target="_blank" rel="noopener noreferrer">Node</a> on your machine if you haven’t already.</li>
+<li>Install <a href="https://nodejs.org/en/" target="_blank" rel="noopener noreferrer">Node</a> on your machine if you haven't already.</li>
 <li>Install the linters globally using the node package manager (aka NPM)
 <ul>
 <li>to install ESlint (the JavaScript linter): <code>npm install -g eslint</code></li>
@@ -94,26 +93,27 @@ The error position is also specified within parenthesis, in this case it is 7,1
 <pre class=" language-bash"><code>eslint &lt;span class="token operator"&gt;--&lt;/span&gt;init </code></pre>
 <p>This will start a little program that will ask you a few questions. The first question you get is the following, just press enter to proceed.<figure id="attachment_1133" aria-describedby="caption-attachment-1133" style="width: 640px" class="wp-caption aligncenter"></p>
 <p><img class="wp-image-1133 size-large" src="https://muraro.xyz/wp/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-15-59-1024x154.png" alt="screen-shot-2017-02-04-at-13-15-59" width="640" height="96" srcset="https://vccw.test/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-15-59-1024x154.png 1024w, https://vccw.test/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-15-59-300x45.png 300w, https://vccw.test/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-15-59-768x116.png 768w, https://vccw.test/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-15-59.png 1498w" sizes="(max-width: 640px) 100vw, 640px" /> <figcaption id="caption-attachment-1133" class="wp-caption-text">Eslint wants answers</figcaption></figure></p>
-<p>Then you’ll be asked a bunch of additional question, choose whatever you want:<figure id="attachment_1137" aria-describedby="caption-attachment-1137" style="width: 640px" class="wp-caption aligncenter"></p>
+<p>Then you'll be asked a bunch of additional question, choose whatever you want:<figure id="attachment_1137" aria-describedby="caption-attachment-1137" style="width: 640px" class="wp-caption aligncenter"></p>
 <p><img class="wp-image-1137 size-large" src="https://muraro.xyz/wp/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-17-29-1024x350.png" alt="screen-shot-2017-02-04-at-13-17-29" width="640" height="219" srcset="https://vccw.test/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-17-29-1024x350.png 1024w, https://vccw.test/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-17-29-300x103.png 300w, https://vccw.test/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-17-29-768x263.png 768w, https://vccw.test/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-17-29.png 1544w" sizes="(max-width: 640px) 100vw, 640px" /> <figcaption id="caption-attachment-1137" class="wp-caption-text">More eslint questions</figcaption></figure></p>
 <p>This will create a <em>.eslintrc.json</em> file which will look like this:<figure id="attachment_1146" aria-describedby="caption-attachment-1146" style="width: 356px" class="wp-caption aligncenter"></p>
 <p><img class="alignnone wp-image-1146" src="https://muraro.xyz/wp/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-21-14.png" alt="screen-shot-2017-02-04-at-13-21-14" width="356" height="475" srcset="https://vccw.test/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-21-14.png 510w, https://vccw.test/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-21-14-225x300.png 225w" sizes="(max-width: 356px) 100vw, 356px" /> <figcaption id="caption-attachment-1146" class="wp-caption-text">.eslintrc.json</figcaption></figure></p>
-<p>That’s it, you got a working ESlint configuration.</p>
+<p>That's it, you got a working ESlint configuration.</p>
 <h3>Sass lint</h3>
 <p>You can find a sample configuration file here <a href="https://github.com/sasstools/sass-lint/blob/master/docs/sass-lint.yml">on the official repository</a>. Download the file and add it to your root.</p>
 <h3>More linters</h3>
 <p>Linters are available for any coding language, and the installation steps are similar to these ones, although almost certainly slightly different.</p>
 <p><strong>Good luck!</strong></p>
 
+          </article>
         </div>
         <footer class="footer">
-          <div class="footer__container">
-            <p class="footer__text">Find me on:<br>
-              <a class="footer__link" href="https://twitter.com/akmur">Twitter</a>,
-              <a rel="me" href="https://mastodon.social/@akmur" class="footer__link">Mastodon</a>, <a class="footer__link" href="https://www.linkedin.com/in/alessandromuraro/">LinkedIn</a>, <a class="footer__link" href="https://github.com/akmur">Github</a>.
-            </p>
-          </div>
-        </footer>
+  <div class="footer__container">
+    <p class="footer__text">Find me on:<br>
+      <a class="footer__link" href="https://twitter.com/akmur">Twitter</a>,
+      <a rel="me" href="https://mastodon.social/@akmur" class="footer__link">Mastodon</a>, <a class="footer__link" href="https://www.linkedin.com/in/alessandromuraro/">LinkedIn</a>, <a class="footer__link" href="https://github.com/akmur">Github</a>.
+    </p>
+  </div>
+</footer>
       </div>
     </div>
   </body>

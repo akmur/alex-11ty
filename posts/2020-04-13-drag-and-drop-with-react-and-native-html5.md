@@ -1,5 +1,5 @@
 ---
-layout: layout.njk
+layout: single.njk
 title: Drag and drop with React and native HTML5
 author: akmur
 type: post

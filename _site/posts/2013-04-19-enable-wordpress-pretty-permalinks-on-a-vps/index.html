@@ -14,106 +14,86 @@
     <div class="wrapper">
       <div class="layout">
         <div class="header">
-          <a class="logo" href="/"><svg class="logo__triangle logo__triangle--left" style="isolation: isolate;" viewbox="217 167 106 96">
-          <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--center" style="isolation: isolate;" viewbox="217 167 106 96">
-          <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--right" style="isolation: isolate;" viewbox="217 167 106 96">
-          <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg></a>
-          <div id="nav">
-            <div class="menu-my-menu-container">
-              <ul class="menu" id="menu-my-menu">
-                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1408" id="menu-item-1408">
-                  <a href="/">Home</a>
-                </li>
-                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1409" id="menu-item-1409">
-                  <a href="/posts/">Posts</a>
-                </li>
-                <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6 current_page_item menu-item-1411" id="menu-item-1411">
-                  <a href="/about/">About</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+  <a class="logo" href="/"><svg class="logo__triangle logo__triangle--left" style="isolation: isolate;" viewbox="217 167 106 96">
+  <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--center" style="isolation: isolate;" viewbox="217 167 106 96">
+  <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--right" style="isolation: isolate;" viewbox="217 167 106 96">
+  <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg></a>
+  <div id="nav">
+    <div class="menu-my-menu-container">
+      <ul class="menu" id="menu-my-menu">
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1408" id="menu-item-1408">
+          <a href="/">Home</a>
+        </li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1409" id="menu-item-1409">
+          <a href="/posts/">Posts</a>
+        </li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6 current_page_item menu-item-1411" id="menu-item-1411">
+          <a href="/about/">About</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
         <div id="main" class="main">
           <article class="post">
-      <header class="entry-header">
-        <h1 class="pageContent__title title title--h1">
-          Enable WordPress pretty permalinks
-        </h1>
-        <div class="pageContent__date date">
-          Posted on Fri, 19 Apr 2013 00:14:10 GMT
-        </div><!-- .entry-meta -->
-      </header>
-          </article>
-          <p>Scenario: You have a VPS, you have installed Apache, MySQL, PHP and WOrdpress, and you want to enable pretty permalinks.
-If you’re getting a 404 error when accessing your WordPress posts after having enabled “pretty permalinks” in the settings, then this is how to solve the issue (at least it worked for me).</p>
+            <header class="entry-header">
+              <h1 class="pageContent__title title title--h1">
+                Enable WordPress pretty permalinks
+              </h1>
+              <div class="pageContent__date date">
+                Posted on Fri, 19 Apr 2013 00:14:10 GMT
+              </div><!-- .entry-meta -->
+            </header>
+            <p>Scenario: You have a VPS, you have installed Apache, MySQL, PHP and WOrdpress, and you want to enable pretty permalinks.
+If you're getting a 404 error when accessing your WordPress posts after having enabled pretty permalinks in the settings, then this is how to solve the issue (at least it worked for me).</p>
 <p>Log in into your VPS server.</p>
-<pre>ssh username@IP-ADDRESS
-</pre>
-<p>then let’s get to the sites-enabled folder</p>
+<pre><code>ssh username@IP-ADDRESS
+</code></pre>
+<p>then let's get to the sites-enabled folder</p>
 <p>cd /etc/apache2/sites-enabled</p>
 <p>Here there is a file called 000-default</p>
 <p>using something like nano (a simple text editor) open this file</p>
-<pre>(sudo) nano 000-default
-</pre>
-<p>Use sudo if you’re not logged in as root.</p>
-<p>Now that the file is open, you’ll see something like this:</p>
-<pre>DocumentRoot /var/www
+<pre><code>(sudo) nano 000-default
+</code></pre>
+<p>Use sudo if you're not logged in as root.</p>
+<p>Now that the file is open, you'll see something like this:</p>
+<pre><code>DocumentRoot /var/www
 
 Options FollowSymLinks
 AllowOverride None
 
-
 Options Indexes FollowSymLinks MultiViews
 AllowOverride None
 Order allow,deny
- Allow from all
+Allow from all
+</code></pre>
+<p>What we need to do is to change those two &quot;AllowOverride None&quot; to &quot;AllowOverride All&quot;.
+Like so:</p>
+<pre><code>DocumentRoot /var/www
 
-</pre>
-<p>What we need to do is to change those two “AllowOverride None” to “AllowOverride All”.</p>
-<p>Once it’s done, just restart your apache server</p>
-<pre>/etc/init.d/apache2 restart
-</pre>
-<p>And your pretty permalinks should be working now! Nice!<!--54b7243ad41cf1421288506--></p>
-<div style="display:none;">
-  <a href="http://www.topodin.com/consultant.php">интернет консультант</a>
-</div>
-<!--/54b7243ad41cf1421288506-->
-<!--54b7243ad41cf1421288506-->
-<div style="display:none;">
-  <a href="https://topodin.com/seo/post/klyuchevye-slova-pri-prodvizhenii-veb-sayta-ih-smysl-i-znachenie">комплексная реклама</a>
-</div>
-<!--/54b7243ad41cf1421288506-->
-<!--54b7243ad41cf1421288506-->
-<div style="display:none;">
-  <a href="https://topodin.com/seo/post/eksperiment-kak-kontekstnaya-reklama-povyshaet-prodazhi">контекстная реклама в москве</a>
-</div>
-<!--/54b7243ad41cf1421288506-->
-<!--54cd9b6444c531422760804-->
-<div style="display:none;">
-  <a href="http://seomagik.com/50-kr-gratis-casino-room.php">spela casino på ipad</a>
-</div>
-<!--/54cd9b6444c531422760804-->
-<!--54cd9b6444c531422760804-->
-<div style="display:none;">
-  <a href="http://childssiattorney.com/100-kr-gratis-casino-2014.php">nettikasinot netent</a>
-</div>
-<!--/54cd9b6444c531422760804-->
-<!--54cd9b6444c531422760804-->
-<div style="display:none;">
-  <a href="http://325soldiercreekrd.info/alfa-bank-kreditnaya-karti-1.php">фсс открытие расчетного счета</a>
-</div>
-<!--/54cd9b6444c531422760804-->
+Options FollowSymLinks
+AllowOverride All
 
+Options Indexes FollowSymLinks MultiViews
+AllowOverride All
+Order allow,deny
+Allow from all
+</code></pre>
+<p>Once it's done, just restart your apache server</p>
+<pre><code>/etc/init.d/apache2 restart
+</code></pre>
+<p>And your pretty permalinks should be working now! Nice!</p>
+
+          </article>
         </div>
         <footer class="footer">
-          <div class="footer__container">
-            <p class="footer__text">Find me on:<br>
-              <a class="footer__link" href="https://twitter.com/akmur">Twitter</a>,
-              <a rel="me" href="https://mastodon.social/@akmur" class="footer__link">Mastodon</a>, <a class="footer__link" href="https://www.linkedin.com/in/alessandromuraro/">LinkedIn</a>, <a class="footer__link" href="https://github.com/akmur">Github</a>.
-            </p>
-          </div>
-        </footer>
+  <div class="footer__container">
+    <p class="footer__text">Find me on:<br>
+      <a class="footer__link" href="https://twitter.com/akmur">Twitter</a>,
+      <a rel="me" href="https://mastodon.social/@akmur" class="footer__link">Mastodon</a>, <a class="footer__link" href="https://www.linkedin.com/in/alessandromuraro/">LinkedIn</a>, <a class="footer__link" href="https://github.com/akmur">Github</a>.
+    </p>
+  </div>
+</footer>
       </div>
     </div>
   </body>

@@ -1,5 +1,5 @@
 ---
-layout: layout.njk
+layout: single.njk
 title: Using Atom Text Editor
 author: akmur
 type: post
@@ -21,13 +21,13 @@ categories:
   - Articles
 ---
 
-I&#8217;ve recently started falling in love with the Atom editor. So much so, that I&#8217;m planning to hold a presentation about this little piece of software during one the upcoming local front end meetups.
+I've recently started falling in love with the Atom editor. So much so, that I'm planning to hold a presentation about this little piece of software during one the upcoming local front end meetups.
 
 There are a number of reasons why I decided to switch from Sublime to Atom:
 
 **As good as (or better than) Sublime Text**
 
-In order for a browser to compete in the editors market, it&#8217;s got to be at least on par with Sublime Text when it comes to the main functionalities. And Atom is.
+In order for a browser to compete in the editors market, it's got to be at least on par with Sublime Text when it comes to the main functionalities. And Atom is.
 
 **Support and Community**
 
@@ -43,7 +43,7 @@ I find Atom way easier to configure than Sublime Text. While in the latter all 
 
 **Package Manager**
 
-Again, Atom has a nice interface when it comes to package management. You can search for plugins and themes right from the package manager, and you can install, disable or uninstall them too. Way better than Sublime&#8217;s weird package control.
+Again, Atom has a nice interface when it comes to package management. You can search for plugins and themes right from the package manager, and you can install, disable or uninstall them too. Way better than Sublime's weird package control.
 
 **Powered by Chromium**
 

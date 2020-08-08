@@ -1,5 +1,5 @@
 ---
-layout: layout.njk
+layout: single.njk
 title: A JavaScript Learning Roadmap
 author: akmur
 type: post
@@ -12,7 +12,7 @@ categories:
 
 Since I had quite some fun redacting my [2017 Reading List][1], I thought it would be a good idea to write an article about learning JavaScript, something I would have loved to read when starting out, or during various stages of my ongoing learning process.
 
-Some of the resources in this post are from Sitepoint Premium (meaning you need to pay a subscription fee). I&#8217;m sure there are other resources out there, but right now Sitepoint is what I&#8217;m using.
+Some of the resources in this post are from Sitepoint Premium (meaning you need to pay a subscription fee). I'm sure there are other resources out there, but right now Sitepoint is what I'm using.
 
 Here we go!
 
@@ -30,7 +30,7 @@ Here we go!
 
 <a href="https://www.sitepoint.com/premium/screencasts/handle-your-layouts-with-javascript-and-handlebars" target="_blank">Handle Your Layouts with JavaScript and Handlebars</a> (Video)
 
-<a href="https://www.youtube.com/playlist?list=PL57atfCFqj2h5fpdZD-doGEIs0NZxeJTX" target="_blank">Let&#8217;s Learn ES6</a> (YouTube videos by Ryan Christiani)
+<a href="https://www.youtube.com/playlist?list=PL57atfCFqj2h5fpdZD-doGEIs0NZxeJTX" target="_blank">Let's Learn ES6</a> (YouTube videos by Ryan Christiani)
 
 <a href="https://online.reacttraining.com/p/reactjsfundamentals" target="_blank">Intro to React</a> (Free course, articles + videos by React Training)
 
@@ -43,7 +43,7 @@ Depending on your code editor, you will be able to install the proper linting pl
 
 **Suggestions**
 
-- Make time to study, follow each article and make sure you stop and try things out in <a href="https://jsbin.com/" target="_blank">jsBin</a>. Each time you don&#8217;t understand something, take your time to understand why something works or doesn&#8217;t work.
+- Make time to study, follow each article and make sure you stop and try things out in <a href="https://jsbin.com/" target="_blank">jsBin</a>. Each time you don't understand something, take your time to understand why something works or doesn't work.
 - Keep a diary of your studies in a note editor (I use Evernote) so that you can go back to your notes when needed.
 - Keep it up!
 

@@ -1,5 +1,5 @@
 ---
-layout: layout.njk
+layout: single.njk
 title: How to use AJAX to call a function in WordPress
 author: akmur
 type: post
@@ -22,7 +22,7 @@ tags:
   - JavaScript
 ---
 
-This might be old stuff for many people out there and I know that most things can be accomplished with the amazing WP API, still I think it&#8217;s good to have a simple example of using AJAX to call a WordPress function in one post. Here we go!
+This might be old stuff for many people out there and I know that most things can be accomplished with the amazing WP API, still I think it's good to have a simple example of using AJAX to call a WordPress function in one post. Here we go!
 
 ### Scenario:
 
@@ -30,7 +30,7 @@ You want to request some data from WordPress (e.g. the previous post ID), throug
 
 ### How to do this:
 
-The way I solved this was to add a global variable in the header, so that the WordPress AJAX URL is exposed. Then I added a function in my theme&#8217;s function.php file, which would do the actual work. Finally, in my JavaScript file it&#8217;s just a matter of calling my function with AJAX. I can then use the result to do what I need.
+The way I solved this was to add a global variable in the header, so that the WordPress AJAX URL is exposed. Then I added a function in my theme's function.php file, which would do the actual work. Finally, in my JavaScript file it's just a matter of calling my function with AJAX. I can then use the result to do what I need.
 
 ### In header.php
 

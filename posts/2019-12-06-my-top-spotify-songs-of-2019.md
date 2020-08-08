@@ -1,5 +1,5 @@
 ---
-layout: layout.njk
+layout: single.njk
 title: My Top Spotify Songs of 2019
 author: akmur
 type: post

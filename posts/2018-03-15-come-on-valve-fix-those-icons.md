@@ -1,5 +1,5 @@
 ---
-layout: layout.njk
+layout: single.njk
 title: Come on Valve, fix those icons
 author: akmur
 type: post
@@ -13,9 +13,9 @@ categories:
 
 _Update 24th October 2018: This is not the case anymore! Yay! The steam client has been updated, not sure when it happened, but it has happened! Hooray!_
 
-Maybe it&#8217;s my OCD, but you know what is the main reason i don&#8217;t buy any game from Steam? No, it&#8217;s not that I am on a Mac.
+Maybe it's my OCD, but you know what is the main reason i don't buy any game from Steam? No, it's not that I am on a Mac.
 
-Also, it&#8217;s not because Steam is a slow and bloated application, no.
+Also, it's not because Steam is a slow and bloated application, no.
 
 The real reason are those icon in the top right corner, the ones used to close, minimize and maximize applications.
 
@@ -37,13 +37,13 @@ Why. Why did Valve decide not to update the icons on their Steam client over the
 
 Is it too hard? Should I really think that the people who created Portal are unable to replace three icons? Clearly not.
 
-Do they have no employees or interns that can spend a few hours working on these icons? Also, clearly not the case, right? It’s freaking Valve we&#8217;re talking about.
+Do they have no employees or interns that can spend a few hours working on these icons? Also, clearly not the case, right? It’s freaking Valve we're talking about.
 
-So the only option left is they don&#8217;t care enough. And I hate giving my money to companies that do not care and cannot find one hour over the course of 4 years to improve their customer experience.
+So the only option left is they don't care enough. And I hate giving my money to companies that do not care and cannot find one hour over the course of 4 years to improve their customer experience.
 
 So I wonder, how many people are like me? This might be a very cost-effective UI improvement for Valve, especially because Mac people are fixated with UI consistency and stuff like this, it’s the main reason they get a Mac after all.
 
-Actually, those icons are the reason i started using GOG in the first place. It surely helps that GOG is better than Steam in so many other ways, so I wouldn&#8217;t go back now, but still&#8230; why, Valve?
+Actually, those icons are the reason i started using GOG in the first place. It surely helps that GOG is better than Steam in so many other ways, so I wouldn't go back now, but still&#8230; why, Valve?
 
 [1]: https://muraro.xyz/wp/wp-content/uploads/2019/02/jtzlwae.png
 [2]: https://muraro.xyz/wp/wp-content/uploads/2019/02/ytu0e05.png

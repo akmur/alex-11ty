@@ -1,5 +1,5 @@
 ---
-layout: layout.njk
+layout: single.njk
 title: I’ve got 99 problems but modules ain’t one
 author: akmur
 type: post
@@ -10,7 +10,7 @@ categories:
   - Articles
 ---
 
-Since ES6 came out, we&#8217;ve been able to use modules to neatly modularise our code. One thing that might be a little confusing is that there are different ways to import and export modules, so in this post I would like to list most of those.
+Since ES6 came out, we've been able to use modules to neatly modularise our code. One thing that might be a little confusing is that there are different ways to import and export modules, so in this post I would like to list most of those.
 
 I have put together a little Codesandbox which might be useful in order to see different ways in which we can import and export modules.
 

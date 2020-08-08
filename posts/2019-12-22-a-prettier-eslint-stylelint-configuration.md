@@ -1,5 +1,5 @@
 ---
-layout: layout.njk
+layout: single.njk
 title: A Prettier / ESlint / stylelint configuration
 author: akmur
 type: post
@@ -11,7 +11,7 @@ categories:
 
 [Prettier][1] is a tool that allows your code to be automatically formatted according to certain rules.
 
-It is a great time saver, because you can paste your code in any way you like, and upon saving it will be prettified. This is especially valuable in a team environment. Prettier works with JavaScript files and Scss/CSS files, and it&#8217;s even possible to automatically sort properties in Sass, by using stylelint and stylelint-order.
+It is a great time saver, because you can paste your code in any way you like, and upon saving it will be prettified. This is especially valuable in a team environment. Prettier works with JavaScript files and Scss/CSS files, and it's even possible to automatically sort properties in Sass, by using stylelint and stylelint-order.
 
 This is the magic that happens when you save a file:
 

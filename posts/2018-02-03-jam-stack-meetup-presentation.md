@@ -1,5 +1,5 @@
 ---
-layout: layout.njk
+layout: single.njk
 title: JAM stack Meetup presentation
 author: akmur
 type: post

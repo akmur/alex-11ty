@@ -1,5 +1,5 @@
 ---
-layout: layout.njk
+layout: single.njk
 title: Using react-i18next to localise your application
 author: akmur
 type: post

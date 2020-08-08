@@ -1,5 +1,5 @@
 ---
-layout: layout.njk
+layout: single.njk
 title: I love creating websites
 author: akmur
 type: post

@@ -1,5 +1,5 @@
 ---
-layout: layout.njk
+layout: single.njk
 title: Enable pretty permalinks on localhost
 author: akmur
 type: post
@@ -17,52 +17,14 @@ Just a quick and simple tip. If you are on ubuntu and working with WordPress on 
 
 How to do it? Just open up your terminal and write:
 
-<pre>sudo a2enmod rewrite</pre>
+```
+sudo a2enmod rewrite
+```
 
 Followed by:
 
-<pre>sudo service apache2 restart</pre>
+```
+sudo service apache2 restart
+```
 
-Now everything should work!<!--54b7243ad41cf1421288506-->
-
-<div style="display:none;">
-  <a href="https://topodin.com">topodin.com</a>
-</div>
-
-<!--/54b7243ad41cf1421288506-->
-
-<!--54b7243ad41cf1421288506-->
-
-<div style="display:none;">
-  <a href="http://www.topodin.com/soprovojdeniye.php">техническая поддержка и сопровождение сайта</a>
-</div>
-
-<!--/54b7243ad41cf1421288506-->
-
-<!--54b7243ad41cf1421288506-->
-
-<a style="display:none;">translate english to polish</a><!--/54b7243ad41cf1421288506-->
-
-<!--54cd9b6444c531422760804-->
-
-<div style="display:none;">
-  <a href="http://formaldehyde-safety.com/avshori-chto-takoe.php">offshore company list</a>
-</div>
-
-<!--/54cd9b6444c531422760804-->
-
-<!--54cd9b6444c531422760804-->
-
-<div style="display:none;">
-  <a href="http://junkgeni.com/beliz-offshori.php">infinity group brisbane</a>
-</div>
-
-<!--/54cd9b6444c531422760804-->
-
-<!--54cd9b6444c531422760804-->
-
-<div style="display:none;">
-  <a href="http://www.one-escort.com/Paris_escort.php">Paris escorts reviews</a>
-</div>
-
-<!--/54cd9b6444c531422760804-->
+Now everything should work!

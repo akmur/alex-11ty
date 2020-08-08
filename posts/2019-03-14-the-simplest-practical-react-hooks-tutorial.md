@@ -1,5 +1,5 @@
 ---
-layout: layout.njk
+layout: single.njk
 title: The simplest practical React Hooks tutorial
 author: akmur
 type: post
@@ -10,7 +10,7 @@ categories:
   - Articles
 ---
 
-Since React hooks came out with React 16.8, I&#8217;ve seen many hooks tutorials popping up. They are surely interesting and I recommend them, but they can be sometimes a bit long and scary. In any case, as always I think it is beneficial to explain things with different words.
+Since React hooks came out with React 16.8, I've seen many hooks tutorials popping up. They are surely interesting and I recommend them, but they can be sometimes a bit long and scary. In any case, as always I think it is beneficial to explain things with different words.
 
 In a nutshell, React Hooks are used to add state and lifecycle to function components, which, prior to Hooks, could only be &#8220;dumb&#8221; and print whatever props they were passed from outer components.
 
@@ -35,7 +35,7 @@ Then from line 18 to 21 we render the component.
 
 Please note that useState and useEffect are only 2 of a number of available hooks (like useRef, useMemo, useDebugValue), although probably these are the most used. On [usehooks.com][2] you can find lots of info about hooks.
 
-So that&#8217;s it, there are the basics of React Hooks. If you would like to discuss it, you can do so on Linkedin:
+So that's it, there are the basics of React Hooks. If you would like to discuss it, you can do so on Linkedin:
 
 <blockquote class="blockquote__linkedin data-lang=" style="border-color: #1D77B5;">
   <p dir="ltr" lang="en">

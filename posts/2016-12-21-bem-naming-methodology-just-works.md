@@ -1,5 +1,5 @@
 ---
-layout: layout.njk
+layout: single.njk
 title: "BEM: a naming philosophy that just works"
 author: akmur
 type: post

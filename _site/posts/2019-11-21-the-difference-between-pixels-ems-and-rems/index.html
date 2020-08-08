@@ -14,38 +14,37 @@
     <div class="wrapper">
       <div class="layout">
         <div class="header">
-          <a class="logo" href="/"><svg class="logo__triangle logo__triangle--left" style="isolation: isolate;" viewbox="217 167 106 96">
-          <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--center" style="isolation: isolate;" viewbox="217 167 106 96">
-          <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--right" style="isolation: isolate;" viewbox="217 167 106 96">
-          <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg></a>
-          <div id="nav">
-            <div class="menu-my-menu-container">
-              <ul class="menu" id="menu-my-menu">
-                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1408" id="menu-item-1408">
-                  <a href="/">Home</a>
-                </li>
-                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1409" id="menu-item-1409">
-                  <a href="/posts/">Posts</a>
-                </li>
-                <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6 current_page_item menu-item-1411" id="menu-item-1411">
-                  <a href="/about/">About</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+  <a class="logo" href="/"><svg class="logo__triangle logo__triangle--left" style="isolation: isolate;" viewbox="217 167 106 96">
+  <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--center" style="isolation: isolate;" viewbox="217 167 106 96">
+  <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--right" style="isolation: isolate;" viewbox="217 167 106 96">
+  <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg></a>
+  <div id="nav">
+    <div class="menu-my-menu-container">
+      <ul class="menu" id="menu-my-menu">
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1408" id="menu-item-1408">
+          <a href="/">Home</a>
+        </li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1409" id="menu-item-1409">
+          <a href="/posts/">Posts</a>
+        </li>
+        <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6 current_page_item menu-item-1411" id="menu-item-1411">
+          <a href="/about/">About</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
         <div id="main" class="main">
           <article class="post">
-      <header class="entry-header">
-        <h1 class="pageContent__title title title--h1">
-          The difference between pixels, ems and rems
-        </h1>
-        <div class="pageContent__date date">
-          Posted on Thu, 21 Nov 2019 13:49:31 GMT
-        </div><!-- .entry-meta -->
-      </header>
-          </article>
-          <h2>The issue</h2>
+            <header class="entry-header">
+              <h1 class="pageContent__title title title--h1">
+                The difference between pixels, ems and rems
+              </h1>
+              <div class="pageContent__date date">
+                Posted on Thu, 21 Nov 2019 13:49:31 GMT
+              </div><!-- .entry-meta -->
+            </header>
+            <h2>The issue</h2>
 <p>I think there is often a little bit of misunderstanding when frontend developers and designers talk to each other about dimensions on the web.
 Designers generally design in <em>pixels</em>, obviously. Frontend developers then usually develop in <em>ems</em> and <em>rems</em>.
 This post wants to bridge a knowledge gap that I feel might exist.</p>
@@ -61,9 +60,9 @@ It <strong>will not be</strong> affected by what is around it or by its own font
 </p>
 <h3>Rem</h3>
 <p>With <strong>rem units</strong>, one unit is relative to the font-size of the root html element.
-It <strong>will not be affected</strong> by what is around it nor by its own font-size. In this regard it’s similar to a pixel value.  However, when a user will change his/her accessibility settings, <strong>rem units will be affected</strong>.</p>
+It <strong>will not be affected</strong> by what is around it nor by its own font-size. In this regard it's similar to a pixel value.  However, when a user will change his/her accessibility settings, <strong>rem units will be affected</strong>.</p>
 <p>**Example:
-** Let’s say that the root html element has a font-size of 12px.
+** Let's say that the root html element has a font-size of 12px.
 If we have a box with <em>width: 10rem</em>, it will be rendered on screen with a 120px width.</p>
 <p class="codepen" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-height="265" data-theme-id="default" data-default-tab="css,result" data-user="akmur" data-slug-hash="jOOJQVv" data-pen-title="Example rem">
   See the Pen <a href="https://codepen.io/akmur/pen/jOOJQVv"><br /> Example rem</a> by Alessandro Muraro (<a href="https://codepen.io/akmur">@akmur</a>)<br /> on <a href="https://codepen.io">CodePen</a>.
@@ -73,7 +72,7 @@ If we have a box with <em>width: 10rem</em>, it will be rendered on screen with 
 <strong>Em units will be affected</strong> by accessibility settings.</p>
 <p>**Example:
 ** If we have a box with <em>font-size: 16px</em>, and the width is <em>10em,</em> it will be rendered on screen with a <em>160px width</em>. If we apply a 2em padding, this padding will be 16 * 2 = 32px.</p>
-<p>This is very useful because we <strong>don’t need to explicitly define spacing</strong> of an element in pixels.</p>
+<p>This is very useful because we <strong>don't need to explicitly define spacing</strong> of an element in pixels.</p>
 <p>We can simply say that the padding equals 1em, and it will mean that the padding equals the font size, whatever it is. So basically we are specifying <em>ratios</em> relative to the font size, instead of absolute values.</p>
 <p class="codepen" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-height="265" data-theme-id="default" data-default-tab="css,result" data-user="akmur" data-slug-hash="oNNVQZL" data-pen-title="Example em">
   See the Pen <a href="https://codepen.io/akmur/pen/oNNVQZL"><br /> Example em</a> by Alessandro Muraro (<a href="https://codepen.io/akmur">@akmur</a>)<br /> on <a href="https://codepen.io">CodePen</a>.
@@ -86,7 +85,7 @@ If we have a box with <em>width: 10rem</em>, it will be rendered on screen with 
 <li>Use <strong>Ems</strong> for spacing, padding, margin, width and height.</li>
 </ul>
 <p>In my experience, <em>Ems</em> should be avoided for setting font sizes, because they easily becomes complex to manage when we have many nested components. <em>Rems</em> for font-sizes are much easier to reason with.</p>
-<p><em>Ems</em> are perfect for setting spacing and sizes because this unit grows with the element’s font-size.</p>
+<p><em>Ems</em> are perfect for setting spacing and sizes because this unit grows with the element's font-size.</p>
 <p>In general, in frontend we should almost never use pixels to avoid all sorts of issues.</p>
 <h2>The advantage of this approach</h2>
 <p>By using the approach above, we can:</p>
@@ -114,15 +113,16 @@ Example: If we drop the element inside a box with a font-size of <em>32px</em>, 
   </p>
 </blockquote>
 
+          </article>
         </div>
         <footer class="footer">
-          <div class="footer__container">
-            <p class="footer__text">Find me on:<br>
-              <a class="footer__link" href="https://twitter.com/akmur">Twitter</a>,
-              <a rel="me" href="https://mastodon.social/@akmur" class="footer__link">Mastodon</a>, <a class="footer__link" href="https://www.linkedin.com/in/alessandromuraro/">LinkedIn</a>, <a class="footer__link" href="https://github.com/akmur">Github</a>.
-            </p>
-          </div>
-        </footer>
+  <div class="footer__container">
+    <p class="footer__text">Find me on:<br>
+      <a class="footer__link" href="https://twitter.com/akmur">Twitter</a>,
+      <a rel="me" href="https://mastodon.social/@akmur" class="footer__link">Mastodon</a>, <a class="footer__link" href="https://www.linkedin.com/in/alessandromuraro/">LinkedIn</a>, <a class="footer__link" href="https://github.com/akmur">Github</a>.
+    </p>
+  </div>
+</footer>
       </div>
     </div>
   </body>

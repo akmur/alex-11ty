@@ -1,5 +1,5 @@
 ---
-layout: layout.njk
+layout: single.njk
 title: "Atom: Resistance is Futile (Video)"
 author: akmur
 type: post
@@ -21,7 +21,7 @@ categories:
   - Articles
 ---
 
-A few days ago I gave this presentation (in italian) about Atom Editor at the [FrontEnd Milano Meetup][1], it&#8217;s now uploaded to YouTube!
+A few days ago I gave this presentation (in italian) about Atom Editor at the [FrontEnd Milano Meetup][1], it's now uploaded to YouTube!
 
 And here, the presentation on Speakerdeck
 

@@ -1,5 +1,5 @@
 ---
-layout: layout.njk
+layout: single.njk
 title: About
 author: akmur
 type: page

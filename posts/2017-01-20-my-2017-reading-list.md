@@ -1,5 +1,5 @@
 ---
-layout: layout.njk
+layout: single.njk
 title: My 2017 Reading List
 author: akmur
 type: post
@@ -16,8 +16,8 @@ categories:
   - Articles
 ---
 
-Here is my 2017 reading list. . Also, I&#8217;ve decided to start using [Goodreads][1] more consistently in my effort to read more!
-Some of the books (the ones marked with \*) are taken from [Scott Adams&#8217; &#8220;Persuasion Reading List&#8221;][2]. The reason why I&#8217;m adding them is that I think it&#8217;s good to be a little bit more aware of what happens around us.
+Here is my 2017 reading list. . Also, I've decided to start using [Goodreads][1] more consistently in my effort to read more!
+Some of the books (the ones marked with \*) are taken from [Scott Adams' &#8220;Persuasion Reading List&#8221;][2]. The reason why I'm adding them is that I think it's good to be a little bit more aware of what happens around us.
 Some others (the ones with two \*\*) were recommended by my good friend <a href="https://olegs.be" target="_blank">Oleg Belousov</a>.
 
 _Latest update: 04th of February 2017_
@@ -66,7 +66,7 @@ _Latest update: 04th of February 2017_
 
 **Bonus**
 
-- Hal Higdon&#8217;s Half Marathon Training
+- Hal Higdon's Half Marathon Training
 
 ######
 
