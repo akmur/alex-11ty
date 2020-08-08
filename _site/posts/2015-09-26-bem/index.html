@@ -6,14 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BEM naming convention</title>
     <link href="https://fonts.googleapis.com/css?family=Merriweather:700|Muli:300,700" rel="stylesheet">
-    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/atom-one-dark.min.css" integrity="sha512-Jlyabam8ztU2kOGN19fSzv1Go9nt9A43UA6vhmL1MPsQMeoPZd+p7pbmegAtyl8kulna0Cqwb7Pgj4adGTLCXA==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
   </head>
   <body class="ui-dark">
     <div class="wrapper">
-      <div class="layout">
-        <div class="header">
+      <div class="layout"> <div class="header">
   <a class="logo" href="/"><svg class="logo__triangle logo__triangle--left" style="isolation: isolate;" viewbox="217 167 106 96">
   <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--center" style="isolation: isolate;" viewbox="217 167 106 96">
   <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--right" style="isolation: isolate;" viewbox="217 167 106 96">
@@ -34,74 +31,78 @@
     </div>
   </div>
 </div>
-        <div id="main" class="main">
-          <article class="post">
-            <header class="entry-header">
-              <h1 class="pageContent__title title title--h1">
-                BEM naming convention
-              </h1>
-              <div class="pageContent__date date">
-                Posted on Sat, 26 Sep 2015 13:12:38 GMT
-              </div><!-- .entry-meta -->
-            </header>
-            <p>I like <a href="https://en.bem.info/">BEM</a>. BEM stands for “Block, Element, Modifier” and it's a way to write your CSS class names in an organized way.</p>
+<div id="main" class="main">
+  <article class="post">
+    <header class="entry-header">
+      
+      <h1 class="pageContent__title title title--h1">
+        BEM naming convention
+      </h1>
+       
+      <div class="pageContent__date date">
+        Posted on Sat, 26 Sep 2015 13:12:38 GMT
+      </div>
+      
+      <!-- .entry-meta -->
+    </header>
+    
+    <p>I like <a href="https://en.bem.info/">BEM</a>. BEM stands for &quot;Block, Element, Modifier&quot; and it's a way to write your CSS class names in an organized way.</p>
 <p>I've recently been at the <a href="http://2015.fromthefront.it/">From the front 2015</a> conference in Bologna, where <a href="http://csswizardry.com/">Harry Roberts</a> (creator of Inuit) gave a <a href="https://speakerdeck.com/csswizardry/css-for-software-engineers-for-css-developers">sweet talk</a> about structuring your CSS while keeping your sanity. Throughout the presentation he used the BEM naming convention, which I've also started using recently; it's easy to understand and really helped me make sense of large stylesheets.</p>
 <p>So I'm going to sum up BEM in just a few rules, let's start!</p>
 <h3>Rule number 1: Class all the things</h3>
 <p>Always use classes instead of tag names (this is important!). For example, you will have:</p>
-<pre>.btn {}
+<pre><code>.btn {}
 .header {}
 .main-nav {}
-</pre>
+</code></pre>
 <p>instead of</p>
-<pre>button {}
+<pre><code>button {}
 header {}
 nav.main-nav {}
-</pre>
+</code></pre>
 <p>This is because tags have higher specificity than classes, which would often result in difficulties when needed to change those values down the road. Also, never use IDs.</p>
 <h3>Rule number 2: Blocks and elements</h3>
-<p>Main layout elements are the <strong>“Blocks”</strong> part of the <strong>BEM</strong> metodology.
-Elements within Blocks are to be marked like follows: .blockname__elementname</p>
+<p>Main layout elements are the <strong>&quot;Blocks&quot;</strong> part of the <strong>BEM</strong> metodology.
+Elements within Blocks are to be marked like follows: <em>.blockname__elementname</em></p>
 <p>Example:</p>
-<pre>.users-list {}
+<pre><code>.users-list {}
 .users-list__item {}
 .users-list__link {}
-</pre>
+</code></pre>
 <p>and the relative html would be:</p>
-<pre></pre>
-<p> </p>
 <h3>Rule number 3: Modifiers</h3>
 <p>You will obviously have variants of an item. These are the Modifiers (the M in BEM). For example, classes for a default, a small and a large avatar would be named like follows:</p>
-<pre>.avatar {}
+<pre><code>.avatar {}
 .avatar--small {}
 .avatar--large {}
-</pre>
-<p>and they would be used like so</p>
-<pre></pre>
-<p> </p>
-<div class="avatar avatar--large">
-</div>
-<p> </p>
+</code></pre>
 <h3>Bonus rule: Javascript</h3>
-<p>For elements that work with Javascript, just add a special “js” class which you'll only use for Javascript tricks, without attaching any style to it:</p>
-<pre></pre>
-<div class="item -js-cool-trick">
-</div>
+<p>For elements that work with Javascript, just add a special &quot;js&quot; class which you'll only use for Javascript tricks, without attaching any style to it:</p>
+<pre><code>&lt;div class=&quot;item -js-cool-trick&quot;&gt;
+&lt;/div&gt;
+</code></pre>
 <p>That's it! It's really easy, just a few simple rules make your code more readable and maintainable. Check out <a title="undefined" href="https://speakerdeck.com/csswizardry/css-for-software-engineers-for-css-developers" target="">Harry Roberts presentation</a> for lots of additional info and tips.</p>
 
-          </article>
-        </div>
+  </article>
+</div>
         <footer class="footer">
-  <div class="footer__container">
-    <p class="footer__text">Find me on:<br>
-      <a class="footer__link" href="https://twitter.com/akmur">Twitter</a>,
-      <a rel="me" href="https://mastodon.social/@akmur" class="footer__link">Mastodon</a>, <a class="footer__link" href="https://www.linkedin.com/in/alessandromuraro/">LinkedIn</a>, <a class="footer__link" href="https://github.com/akmur">Github</a>.
-    </p>
-  </div>
-</footer>
+          <div class="footer__container">
+            <p class="footer__text">Find me on:<br>
+              <a class="footer__link" href="https://twitter.com/akmur">Twitter</a>,
+              <a class="footer__link" href="https://www.linkedin.com/in/alessandromuraro/">LinkedIn</a>,
+              <a class="footer__link" href="https://github.com/akmur">Github</a>.
+            </p>
+          </div>
+        </footer>
       </div>
     </div>
   </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js" integrity="sha512-tHQeqtcNWlZtEh8As/4MmZ5qpy0wj04svWFK7MIzLmUVIzaHXS8eod9OmHxyBL1UET5Rchvw7Ih4ZDv5JojZww==" crossorigin="anonymous"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"
+      integrity="sha512-tHQeqtcNWlZtEh8As/4MmZ5qpy0wj04svWFK7MIzLmUVIzaHXS8eod9OmHxyBL1UET5Rchvw7Ih4ZDv5JojZww=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
 </html>

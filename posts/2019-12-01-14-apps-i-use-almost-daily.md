@@ -69,7 +69,7 @@ Yes, I know a Mac is not Windows, but still, [CleanMyMac][8] makes it so easy an
 ### Boostnote
 
 [Boostnote][9] is my main note taking app. It used to be Evernote, but now I mostly use this one, and Evernote only to save documents.
-Boostnote is perfect for developers; it has markdown support, you can save code snippets with your chosen syntax, you can tag and categorise and search notes, it's open source, it's multi platform, a version for iOs and Android is coming, it can save notes on Dropbox or Google Drive&#8230; what else can one desire? I think it's really good.<figure class="wp-block-image">
+Boostnote is perfect for developers; it has markdown support, you can save code snippets with your chosen syntax, you can tag and categorise and search notes, it's open source, it's multi platform, a version for iOs and Android is coming, it can save notes on Dropbox or Google Drive... what else can one desire? I think it's really good.<figure class="wp-block-image">
 
 <img class="wp-image-1428" src="https://i1.wp.com/alexmuraro.me/wp-content/uploads/2019/11/image-5.png?fit=640%2C369&ssl=1" alt="" srcset="https://vccw.test/wp-content/uploads/2019/11/image-5.png 1370w, https://vccw.test/wp-content/uploads/2019/11/image-5-300x173.png 300w, https://vccw.test/wp-content/uploads/2019/11/image-5-768x443.png 768w, https://vccw.test/wp-content/uploads/2019/11/image-5-1024x590.png 1024w" sizes="(max-width: 1370px) 100vw, 1370px" /> </figure>
 
@@ -81,7 +81,7 @@ A picture is worth a thousand words, they say. Then what's a GIF worth? A thousa
 
 ### Dash
 
-This is an app that lets you download documentation for offline viewing: JavaScript, React, WordPress, Ruby, jQuery, Python&#8230; whatever you need, [Dash][10] probably has it, and if it doesn't you can add custom Github repos. Plus, it lets you download an offline copy of Stack Overflow questions and answers related to whatever you're interested in.
+This is an app that lets you download documentation for offline viewing: JavaScript, React, WordPress, Ruby, jQuery, Python... whatever you need, [Dash][10] probably has it, and if it doesn't you can add custom Github repos. Plus, it lets you download an offline copy of Stack Overflow questions and answers related to whatever you're interested in.
 It also has some extra features like snippets, which I use a lot, especially to type things like this in a chat: (╯°□°）╯︵ ┻━┻<figure class="wp-block-image">
 
 <img class="wp-image-1430" src="https://i0.wp.com/alexmuraro.me/wp-content/uploads/2019/11/image-7.png?fit=640%2C470&ssl=1" alt="" srcset="https://vccw.test/wp-content/uploads/2019/11/image-7.png 1004w, https://vccw.test/wp-content/uploads/2019/11/image-7-300x221.png 300w, https://vccw.test/wp-content/uploads/2019/11/image-7-768x565.png 768w, https://vccw.test/wp-content/uploads/2019/11/image-7-980x720.png 980w" sizes="(max-width: 1004px) 100vw, 1004px" /> </figure>
@@ -108,7 +108,7 @@ I have a Touch Bar MacBook Pro. It means I don't have an ESC key, and no functio
 
 ### RunJs
 
-RunJS is a little software that just does what it says&#8230; it runs JavaScript.
+RunJS is a little software that just does what it says... it runs JavaScript.
 Very useful to try out little algorithms, snippets, or npm packages.
 
 <img class="alignnone size-full wp-image-1454" src="https://vccw.test/wp-content/uploads/2019/12/Screenshot-2019-11-20-at-11.11.55.jpg" alt="" width="849" height="596" srcset="https://vccw.test/wp-content/uploads/2019/12/Screenshot-2019-11-20-at-11.11.55.jpg 849w, https://vccw.test/wp-content/uploads/2019/12/Screenshot-2019-11-20-at-11.11.55-300x211.jpg 300w, https://vccw.test/wp-content/uploads/2019/12/Screenshot-2019-11-20-at-11.11.55-768x539.jpg 768w" sizes="(max-width: 849px) 100vw, 849px" />

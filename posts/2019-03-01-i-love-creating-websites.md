@@ -4,8 +4,6 @@ title: I love creating websites
 author: akmur
 type: post
 date: 2019-03-01T08:01:56+00:00
-url: /posts/1305/i-love-creating-websites/
-featured_image: https://vccw.test/wp-content/uploads/2019/03/luca-bravo-134059-unsplash-e1551427473139.jpg
 categories:
   - Articles
 ---
@@ -16,7 +14,7 @@ Want to discuss? Do so [on LinkedIn][1]!
 
 <blockquote class="blockquote__linkedin data-lang=" style="border-color: #1D77B5;">
   <p dir="ltr" lang="en">
-    I really love creating websites because they give me the chance to simultaneously create something that did not exist before, solve puzzles, learn new things constantly [&#8230;]
+    I really love creating websites because they give me the chance to simultaneously create something that did not exist before, solve puzzles, learn new things constantly [...]
   </p>
 
   <p>

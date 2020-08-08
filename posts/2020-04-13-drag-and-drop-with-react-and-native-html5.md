@@ -4,8 +4,6 @@ title: Drag and drop with React and native HTML5
 author: akmur
 type: post
 date: 2020-04-13T01:58:31+00:00
-url: /posts/1550/drag-and-drop-with-react-and-native-html5/
-featured_image: https://vccw.test/wp-content/uploads/2020/04/ales-krivec-N-aTikX-b00-unsplash-1.jpg
 categories:
   - Articles
 ---
@@ -39,7 +37,3 @@ const handleDrop = e => {
 ```
 
 You can find the state of the app and the changeCardStatus function in **context.js.**
-
-&nbsp;
-
-Credits: Photo by Ales Krivec on Unsplash

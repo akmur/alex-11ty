@@ -3,21 +3,12 @@ layout: single.njk
 title: My 2017 Reading List
 author: akmur
 type: post
-date: 2017-01-20T21:52:24+00:00
-url: /posts/890/my-2017-reading-list/
-featured_image: https://vccw.test/wp-content/uploads/2017/01/slitfwbhijc-syd-wachs-1568x1045.jpg
-publicize_linkedin_url:
-  - "https://www.linkedin.com/updates?discuss=&scope=5122212&stype=M&topic=6228328151747952640&type=U&a=RLIW"
-publicize_twitter_user:
-  - akmur
-publicize_google_plus_url:
-  - https://plus.google.com/+AlessandroMuraroIT/posts/2hJQ9peRsWv
 categories:
   - Articles
 ---
 
 Here is my 2017 reading list. . Also, I've decided to start using [Goodreads][1] more consistently in my effort to read more!
-Some of the books (the ones marked with \*) are taken from [Scott Adams' &#8220;Persuasion Reading List&#8221;][2]. The reason why I'm adding them is that I think it's good to be a little bit more aware of what happens around us.
+Some of the books (the ones marked with \*) are taken from [Scott Adams' "Persuasion Reading List"][2]. The reason why I'm adding them is that I think it's good to be a little bit more aware of what happens around us.
 Some others (the ones with two \*\*) were recommended by my good friend <a href="https://olegs.be" target="_blank">Oleg Belousov</a>.
 
 _Latest update: 04th of February 2017_
@@ -67,10 +58,6 @@ _Latest update: 04th of February 2017_
 **Bonus**
 
 - Hal Higdon's Half Marathon Training
-
-######
-
-_Picture: [Unsplash][3]_
 
 [1]: https://www.goodreads.com/user/show/31299396-alessandro-muraro
 [2]: http://blog.dilbert.com/post/129784168866/the-persuasion-reading-list

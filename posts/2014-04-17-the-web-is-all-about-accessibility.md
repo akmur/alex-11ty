@@ -29,49 +29,5 @@ Another nice tool that I've been using for this purpose, is the <a href="https:
 The next step, would be read this <a title="Wordpress accessibility codex article" href="https://codex.wordpress.org/Accessibility" target="_blank">WordPress accessibility codex article</a> and then spend some time with the <a href="http://www.uiaccess.com/accessucd/index.html" target="_blank">Just Ask</a> book, also available in html format, or with any similar resource. At any rate, we should keep in mind that even the smallest step in the direction of accessibility, still is a step toward improvement, isn't it? <a title="Link to Gertrude Stein" href="http://en.wikipedia.org/wiki/Rose_is_a_rose_is_a_rose_is_a_rose" target="_blank">An inch is an inch is an inch</a>. that's what it is :).
 
 I believe that a site should rather be easily readable and accessible than nice to look at. After all, we're here to fulfill a mission, which is: spread information. That's what the web is about. **The web is all about accessibility**.
-So, let's start from this small step &#8211; making sure our sites are properly contrasted, fonts are properly sized and overall <a title="Readability principles" href="http://www.smashingmagazine.com/2009/03/18/10-principles-for-readable-web-typography/" target="_blank">readability</a> is top notch.
-We can then move on and improve on this, by properly catering for screen readers and other necessities. I know we can make it!<!--54b7243ad41cf1421288506-->
-
-<div style="display:none;">
-  <a href="http://drivemir.ru/kakie-avtomobili-sobirayut-v-rossii">здесь</a>
-</div>
-
-<!--/54b7243ad41cf1421288506-->
-
-<!--54b7243ad41cf1421288506-->
-
-<a style="display:none;">translate from english to greek</a><!--/54b7243ad41cf1421288506-->
-
-<!--54b7243ad41cf1421288506-->
-
-<div style="display:none;">
-  <a href="http://drivemir.ru/kakoy-benzin-zalivat-v-ladu-kalinu">www.drivemir.ru</a>
-</div>
-
-<!--/54b7243ad41cf1421288506-->
-
-<!--54cd9b6444c531422760804-->
-
-<div style="display:none;">
-  <a href="http://www.one-escort.com/Paris_escort.php">Paris escorts</a>
-</div>
-
-<!--/54cd9b6444c531422760804-->
-
-<!--54cd9b6444c531422760804-->
-
-<div style="display:none;">
-  <a href="http://inkisa.org/%D0%BB%D0%B5%D1%81%D0%B1%D0%B8%D1%8F%D0%BD%D0%BA%D0%B8-%D1%84%D0%BE%D1%82%D0%BE/">http://inkisa.org/%D0%BB%D0%B5%D1%81%D0%B1%D0%B8%D1%8F%D0%BD%D0%BA%D0%B8-%D1%84%D0%BE%D1%82%D0%BE/</a>
-</div>
-
-<!--/54cd9b6444c531422760804-->
-
-<!--54cd9b6444c531422760804-->
-
-<div style="display:none;">
-  <a href="http://www.english-russian-translations.com/scientific-translation.html">russian english</a>
-</div>
-
-<!--/54cd9b6444c531422760804-->
-
-[1]: https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en
+So, let's start from this small step making sure our sites are properly contrasted, fonts are properly sized and overall <a title="Readability principles" href="http://www.smashingmagazine.com/2009/03/18/10-principles-for-readable-web-typography/" target="_blank">readability</a> is top notch.
+We can then move on and improve on this, by properly catering for screen readers and other necessities. I know we can make it!

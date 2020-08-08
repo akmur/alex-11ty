@@ -6,14 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>An introduction to GIT</title>
     <link href="https://fonts.googleapis.com/css?family=Merriweather:700|Muli:300,700" rel="stylesheet">
-    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/atom-one-dark.min.css" integrity="sha512-Jlyabam8ztU2kOGN19fSzv1Go9nt9A43UA6vhmL1MPsQMeoPZd+p7pbmegAtyl8kulna0Cqwb7Pgj4adGTLCXA==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
   </head>
   <body class="ui-dark">
     <div class="wrapper">
-      <div class="layout">
-        <div class="header">
+      <div class="layout"> <div class="header">
   <a class="logo" href="/"><svg class="logo__triangle logo__triangle--left" style="isolation: isolate;" viewbox="217 167 106 96">
   <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--center" style="isolation: isolate;" viewbox="217 167 106 96">
   <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--right" style="isolation: isolate;" viewbox="217 167 106 96">
@@ -34,23 +31,28 @@
     </div>
   </div>
 </div>
-        <div id="main" class="main">
-          <article class="post">
-            <header class="entry-header">
-              <h1 class="pageContent__title title title--h1">
-                An introduction to GIT
-              </h1>
-              <div class="pageContent__date date">
-                Posted on Thu, 04 Oct 2012 21:18:32 GMT
-              </div><!-- .entry-meta -->
-            </header>
-            <p>I've recently been explaining the basics of git to a new colleague of mine, and while it is quite easy to use, I understand that at first it's not very intuitive, so I got the idea for this short tutorial on its usage, trying to stay quick and to the point, as usual.</p>
+<div id="main" class="main">
+  <article class="post">
+    <header class="entry-header">
+      
+      <h1 class="pageContent__title title title--h1">
+        An introduction to GIT
+      </h1>
+       
+      <div class="pageContent__date date">
+        Posted on Thu, 04 Oct 2012 21:18:32 GMT
+      </div>
+      
+      <!-- .entry-meta -->
+    </header>
+    
+    <p>I've recently been explaining the basics of git to a new colleague of mine, and while it is quite easy to use, I understand that at first it's not very intuitive, so I got the idea for this short tutorial on its usage, trying to stay quick and to the point, as usual.</p>
 <p><strong>What is GIT?</strong>
-From [Git's homepage][1]: “Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.”
-In other words, it's a little software capable of keeping track of changes to our files, making it possible to revert to older versions. Also, another basic cool feature is that it allows you to “branch” off a main tree and develop you own feature, without getting in the way of other developers, and then gives you ways to reintegrate your changes into the main tree.</p>
+From [Git's homepage][1]: &quot;Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.&quot;
+In other words, it's a little software capable of keeping track of changes to our files, making it possible to revert to older versions. Also, another basic cool feature is that it allows you to &quot;branch&quot; off a main tree and develop you own feature, without getting in the way of other developers, and then gives you ways to reintegrate your changes into the main tree.</p>
 <p>The good thing is that it <strong>doesn't need the internet</strong> to work, as you can set up a local repository on your machine and take advantage of Git's great features for versioning. of course to collaborate in a team, you do need the internet.</p>
 <p><strong>How do I install Git?</strong>
-I think a good page about installing and setting up Git, can be found on [github's “set up git” page][2]. Follow it, then come back.</p>
+I think a good page about installing and setting up Git, can be found on [github's &quot;set up git&quot; page][2]. Follow it, then come back.</p>
 <p><strong>Getting started</strong>
 If you've followed the Github's tutorial, you'll be ready to get your work started.
 Imagine you have a rails project, or a php project, or whatever you have. Open you Terminal and browse to your folder. (Need help with the terminal? maybe this video can help)</p>
@@ -59,7 +61,7 @@ Imagine you have a rails project, or a php project, or whatever you have. Open y
 </code></pre>
 <p>Now I am in my project folder. I have to initialize my project with git, and to do this i type:
 <code>git init</code></p>
-<p>A good idea to get started is to do what is called a “commit” of our whole project. Here are the two commands to type:</p>
+<p>A good idea to get started is to do what is called a &quot;commit&quot; of our whole project. Here are the two commands to type:</p>
 <pre><code>git add .
 git commit -m &quot;my first commit, hooray&quot;
 </code></pre>
@@ -70,7 +72,7 @@ For example, we may want to only commit a single file, in which case we would do
 </code></pre>
 <p><strong>Sharing with collaborators</strong>
 Now you might want to have your stuff saved online, maybe to collaborate with your friends. To do this, you first have to create your own repository on a website like [Github][3] or [Bitbucket][4]. I know Github is hip and social, but I dig Bitbucket. Either way, it's cool. The main difference being that Github's free account are public and its attitude is toward social sharing, while Bitbucket gives you free private account and it's attitude is toward personal and private projects.</p>
-<p>So, go to one of those website, (for example Bitbucket), create an account, then click on “Create a repo”, and finally, copy that little url after “git clone” (it would look like https://yourname@bitbucket.org/yourname/yourrepo). That is the address to your repository.</p>
+<p>So, go to one of those website, (for example Bitbucket), create an account, then click on &quot;Create a repo&quot;, and finally, copy that little url after &quot;git clone&quot; (it would look like https://yourname@bitbucket.org/yourname/yourrepo). That is the address to your repository.</p>
 <p>Now, back to the terminal, type the following (but replace the URL with your own):</p>
 <pre><code>git remote add origin https://you@bitbucket.org/..etc
 </code></pre>
@@ -81,19 +83,26 @@ Now you might want to have your stuff saved online, maybe to collaborate with yo
 <pre><code>git clone https://your-repo-url
 </code></pre>
 
-          </article>
-        </div>
+  </article>
+</div>
         <footer class="footer">
-  <div class="footer__container">
-    <p class="footer__text">Find me on:<br>
-      <a class="footer__link" href="https://twitter.com/akmur">Twitter</a>,
-      <a rel="me" href="https://mastodon.social/@akmur" class="footer__link">Mastodon</a>, <a class="footer__link" href="https://www.linkedin.com/in/alessandromuraro/">LinkedIn</a>, <a class="footer__link" href="https://github.com/akmur">Github</a>.
-    </p>
-  </div>
-</footer>
+          <div class="footer__container">
+            <p class="footer__text">Find me on:<br>
+              <a class="footer__link" href="https://twitter.com/akmur">Twitter</a>,
+              <a class="footer__link" href="https://www.linkedin.com/in/alessandromuraro/">LinkedIn</a>,
+              <a class="footer__link" href="https://github.com/akmur">Github</a>.
+            </p>
+          </div>
+        </footer>
       </div>
     </div>
   </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js" integrity="sha512-tHQeqtcNWlZtEh8As/4MmZ5qpy0wj04svWFK7MIzLmUVIzaHXS8eod9OmHxyBL1UET5Rchvw7Ih4ZDv5JojZww==" crossorigin="anonymous"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"
+      integrity="sha512-tHQeqtcNWlZtEh8As/4MmZ5qpy0wj04svWFK7MIzLmUVIzaHXS8eod9OmHxyBL1UET5Rchvw7Ih4ZDv5JojZww=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
 </html>

@@ -4,7 +4,7 @@ title: Basic usage of the new React Router v6 (beta)
 author: akmur
 type: post
 date: 2020-07-23T10:43:09+00:00
-featured_image: https://vccw.test/wp-content/uploads/2020/07/bogdan-karlenko-36b7JBzhfF4-unsplash-scaled-e1595501218479.jpg
+featured_image: /assets/images/bogdan-karlenko-36b7JBzhfF4-unsplash-scaled-e1595501218479.jpg
 categories:
   - Articles
 ---
@@ -95,7 +95,7 @@ export default Navigation;
 
 ### How to use the URL parameters
 
-In the Single page component, we can grab the URL parameter &#8220;id&#8221; and use it for whatever we need, like fetching some more data from some APIs.
+In the Single page component, we can grab the URL parameter "id" and use it for whatever we need, like fetching some more data from some APIs.
 
 ```
 import React from 'react'
@@ -131,5 +131,7 @@ export default Search;
 You can then use the _locationSearch_ variable to extract the single parameters
 
 So, that's it! Hopefully this gave you a good starting point to implement React Router V6 in your app.
+
+&nbsp;
 
 <span>Photo by <a href="https://unsplash.com/@bogdan_karlenko?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Bogdan Karlenko</a> on <a href="https://unsplash.com/s/photos/routes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>

@@ -4,8 +4,6 @@ title: Using react-i18next to localise your application
 author: akmur
 type: post
 date: 2019-07-04T08:15:44+00:00
-url: /posts/1391/using-react-i18next-to-localise-your-application/
-featured_image: https://vccw.test/wp-content/uploads/2019/07/tida-geog-s-e1562228468973.jpg
 categories:
   - Articles
 ---
@@ -19,40 +17,44 @@ These are the packages to be installed:
 `i18next` and `react-i18next` are the actual internationalization packages.
 `i18next-browser-languagedetector` is a package needed to set the default language to be the same as the current browser language.
 
-<pre class="line-numbers"><code class="language-javascript">npm install i18next react-i18next i18next-browser-languagedetector --save
-</code></pre>
+```
+npm install i18next react-i18next i18next-browser-languagedetector --save
+```
 
 ### Creating translations
 
 In order to load translations, we will create as many json files as you need (one for each language) in the `public` folder, inside the `locales` folder
 
-<pre class="line-numbers"><code class="language-javascript">./public
+```
+./public
     - /locales
         - /de
             - translations.json
         - /en
             - translations.json
-</code></pre>
+```
 
 The `./public/locales/de/translations.json` might look like this:
 
-<pre class="line-numbers"><code class="language-javascript">{
+```
+{
     "basics": {
         "affirmation": "ja",
         "negation": "nein"
     }
 }
-</code></pre>
+```
 
 and the `./public/locales/en/translations.json` will look like this:
 
-<pre class="line-numbers"><code class="language-javascript">{
+```
+{
     "basics": {
         "affirmation": "yes",
         "negation": "no"
     }
 }
-</code></pre>
+```
 
 ### Loading Translations in the App
 
@@ -60,7 +62,8 @@ This is the way I use these translation in `./src/index.js`:
 
 First I fetch the translations from the locales folder, and once that is done I load the App
 
-<pre class="line-numbers"><code class="language-javascript">import React from 'react'
+```
+import React from 'react'
 import ReactDOM from 'react-dom'
 
 import i18n from 'i18next'
@@ -82,11 +85,11 @@ i18n
   })
   .then(() => {
     ReactDOM.render(
-     &lt;App /&gt;,
+     <App />,
       document.getElementById('root')
     )
   })
-</code></pre>
+```
 
 ### Using the translations in your app
 
@@ -94,7 +97,8 @@ Using the translations in your App will then work like this:
 
 #### Function components:
 
-<pre class="line-numbers"><code class="language-javascript">// your react packages here...
+```
+// your react packages here...
 
 import { useTranslation } from 'react-i18next'
 
@@ -102,39 +106,41 @@ const TeamMemberItem = props => {
   const { t } = useTranslation()
 
   return (
-    &lt;div&gt;
+    <div>
       {t('basics.affirmation')}
       {/* will print yes */}
-    &lt;/div&gt;
+    </div>
   )
 }
-</code></pre>
+```
 
 #### React components:
 
-<pre class="line-numbers"><code class="language-javascript">// your react packages here...
+```
+// your react packages here...
 
 import { Translation } from 'react-i18next'
 
 class MyComponent extends Component {
   render(){
     return (
-    &lt;Translation&gt;
+    <Translation>
       {(t, { i18n }) => (
-        &lt;div&gt;
+        <div>
           {t('basics.negation')}
           {/* will print no */}
-        &lt;/div&gt;
+        </div>
       )}
-    &lt;/Translation&gt;
+    </Translation>
     )
   }
 }
-</code></pre>
+```
 
 ### Outside the render function of the component
 
-<pre class="line-numbers"><code class="language-javascript">// your react packages here...
+```
+// your react packages here...
 
 import i18n from 'i18next'
 
@@ -147,13 +153,14 @@ class MyComponent extends Component {
     )
   }
 }
-</code></pre>
+```
 
 ### Switching language
 
 Finally, if you want to switch language, you can do the following in your component
 
-<pre class="line-numbers"><code class="language-javascript">// your react packages here...
+```
+// your react packages here...
 
 import { useTranslation } from 'react-i18next'
 
@@ -172,12 +179,14 @@ const LanguageSwitch = () => {
     }
 
     return (
-        &lt;button onClick={handleOnLanguageSwitch}&gt;
+        <button onClick={handleOnLanguageSwitch}>
           Change Language
-        &lt;/button&gt;
+        </button>
     )
 }
-</code></pre>
+```
+
+&nbsp;
 
 If you would like to discuss this article, you can do so on Linkedin:
 
@@ -185,11 +194,9 @@ If you would like to discuss this article, you can do so on Linkedin:
   <p dir="ltr" lang="en">
     I wrote an article about localisation of React apps using react-i18next, hope you can find it interesting 🙂
   </p>
-
   <p>
-    — Alessandro Muraro &#8211; July 4, 2019
+    — Alessandro Muraro - July 4, 2019
   </p>
-
   <p>
     <a href="https://www.linkedin.com/feed/update/urn:li:activity:6552470270781739008/">Check it out on LinkedIn</a>
   </p>

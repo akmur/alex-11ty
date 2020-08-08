@@ -6,14 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A collection of useful git commands</title>
     <link href="https://fonts.googleapis.com/css?family=Merriweather:700|Muli:300,700" rel="stylesheet">
-    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/atom-one-dark.min.css" integrity="sha512-Jlyabam8ztU2kOGN19fSzv1Go9nt9A43UA6vhmL1MPsQMeoPZd+p7pbmegAtyl8kulna0Cqwb7Pgj4adGTLCXA==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
   </head>
   <body class="ui-dark">
     <div class="wrapper">
-      <div class="layout">
-        <div class="header">
+      <div class="layout"> <div class="header">
   <a class="logo" href="/"><svg class="logo__triangle logo__triangle--left" style="isolation: isolate;" viewbox="217 167 106 96">
   <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--center" style="isolation: isolate;" viewbox="217 167 106 96">
   <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--right" style="isolation: isolate;" viewbox="217 167 106 96">
@@ -34,38 +31,43 @@
     </div>
   </div>
 </div>
-        <div id="main" class="main">
-          <article class="post">
-            <header class="entry-header">
-              <h1 class="pageContent__title title title--h1">
-                A collection of useful git commands
-              </h1>
-              <div class="pageContent__date date">
-                Posted on Thu, 18 Oct 2012 23:38:32 GMT
-              </div><!-- .entry-meta -->
-            </header>
-            <p>In my previous article I have introduced the basic concepts around the awesome Git. <a href="http://localhost/alex/posts/an-introduction-to-git/" title="An introduction to GIT">Check it out</a> if you are not sure what we are talking about.</p>
+<div id="main" class="main">
+  <article class="post">
+    <header class="entry-header">
+      
+      <h1 class="pageContent__title title title--h1">
+        A collection of useful git commands
+      </h1>
+       
+      <div class="pageContent__date date">
+        Posted on Thu, 18 Oct 2012 23:38:32 GMT
+      </div>
+      
+      <!-- .entry-meta -->
+    </header>
+    
+    <p>In my previous article I have introduced the basic concepts around the awesome Git. <a href="http://localhost/alex/posts/an-introduction-to-git/" title="An introduction to GIT">Check it out</a> if you are not sure what we are talking about.</p>
 <p>If you do, but you are not a Git ninja (yet), you might find the following commands useful in your everyday work. They are not super advanced but they might be useful.</p>
 <p><strong>git status</strong>
 Useful to assess the current status of your branch. Where am I? What am I doing? Stuff like that.</p>
 <p><strong>git pull</strong>
 to get latest code from repo</p>
 <p><strong>git pull origin branchname</strong>
-to get latest code for a single branch which resides on the “origin” tree</p>
+to get latest code for a single branch which resides on the &quot;origin&quot; tree</p>
 <p><strong>git fetch</strong>
-imagine a friend of yours branched off to a new branch, called “myawesomebranch”. How do you retrieve his code? Simply enough, run git fecth to retrieve a list of all remote branches. Then with the next command, you'll be able to “download” that branch to your computer.</p>
+imagine a friend of yours branched off to a new branch, called &quot;myawesomebranch&quot;. How do you retrieve his code? Simply enough, run git fecth to retrieve a list of all remote branches. Then with the next command, you'll be able to &quot;download&quot; that branch to your computer.</p>
 <p><strong>git fetch origin branchname:branchname</strong>
 to fetch a new branch (for example, git fetch origin myawsomebranch:myawesomebranch)</p>
 <p><strong>git checkout -b myfeature master</strong>
-If you want to start working in a brand new branch, this is the command for you. In this case you are creating a branch called “myfeature”, and you're branching off the “master” branch.</p>
+If you want to start working in a brand new branch, this is the command for you. In this case you are creating a branch called &quot;myfeature&quot;, and you're branching off the &quot;master&quot; branch.</p>
 <p><strong>git checkout development</strong>
-To switch between branches, this is the command to run. In this case you would switch to the branch “development”</p>
+To switch between branches, this is the command to run. In this case you would switch to the branch &quot;development&quot;</p>
 <p><strong>git merge –no-ff myfeature</strong>
-If you want to merge the work you've done in your own branch with an existing branch, this is the command for the job (just be careful of possible conflicts). In this case you would merge the branch “myfeature” with the branch you're currently in.</p>
+If you want to merge the work you've done in your own branch with an existing branch, this is the command for the job (just be careful of possible conflicts). In this case you would merge the branch &quot;myfeature&quot; with the branch you're currently in.</p>
 <p><strong>git branch -d myfeature</strong>
 Delete a branch with this command</p>
 <p><strong>git push origin :new_feature_name</strong>
-delete a branch on origin (on the “server”)</p>
+delete a branch on origin (on the &quot;server&quot;)</p>
 <p><strong>git checkout 56e05fced214c44a37759efa2dfc25a65d8ae98d</strong>
 to revert to an earlier specified commit, use the above (each commit has a code like the one above which i made up). You can see such codes by looking at the repository online or by using a visual tool like gitk (on ubuntu/Linux)</p>
 <p><strong>git reset 56e05fcede05fcede05fced</strong>
@@ -81,19 +83,26 @@ When you delete files, they stay in your GIT history unless you remove them from
 <p>And i think this is a pretty good list of git commands, don't you think?
 Happy gitting!</p>
 
-          </article>
-        </div>
+  </article>
+</div>
         <footer class="footer">
-  <div class="footer__container">
-    <p class="footer__text">Find me on:<br>
-      <a class="footer__link" href="https://twitter.com/akmur">Twitter</a>,
-      <a rel="me" href="https://mastodon.social/@akmur" class="footer__link">Mastodon</a>, <a class="footer__link" href="https://www.linkedin.com/in/alessandromuraro/">LinkedIn</a>, <a class="footer__link" href="https://github.com/akmur">Github</a>.
-    </p>
-  </div>
-</footer>
+          <div class="footer__container">
+            <p class="footer__text">Find me on:<br>
+              <a class="footer__link" href="https://twitter.com/akmur">Twitter</a>,
+              <a class="footer__link" href="https://www.linkedin.com/in/alessandromuraro/">LinkedIn</a>,
+              <a class="footer__link" href="https://github.com/akmur">Github</a>.
+            </p>
+          </div>
+        </footer>
       </div>
     </div>
   </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js" integrity="sha512-tHQeqtcNWlZtEh8As/4MmZ5qpy0wj04svWFK7MIzLmUVIzaHXS8eod9OmHxyBL1UET5Rchvw7Ih4ZDv5JojZww==" crossorigin="anonymous"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"
+      integrity="sha512-tHQeqtcNWlZtEh8As/4MmZ5qpy0wj04svWFK7MIzLmUVIzaHXS8eod9OmHxyBL1UET5Rchvw7Ih4ZDv5JojZww=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
 </html>

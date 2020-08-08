@@ -87,7 +87,7 @@ By using the approach above, we can:
 
 ## The web is not a printer
 
-In my opinion designers (and stakeholders) need to take into consideration the fact that items should be allowed to grow or shrink as the font sizes change. They need to understand that elements can be subject to custom accessibility settings and accept the fact that, as someone said before me, &#8220;the web is not a printer&#8221;.  Their designs in Sketch are guidelines, not the single source of truth; the source of truth is still the CSS written by the developer, like it or not.
+In my opinion designers (and stakeholders) need to take into consideration the fact that items should be allowed to grow or shrink as the font sizes change. They need to understand that elements can be subject to custom accessibility settings and accept the fact that, as someone said before me, "the web is not a printer".  Their designs in Sketch are guidelines, not the single source of truth; the source of truth is still the CSS written by the developer, like it or not.
 
 ## What should designers do
 

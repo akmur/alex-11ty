@@ -4,33 +4,13 @@ title: Using Linters
 author: akmur
 type: post
 date: 2017-02-04T12:30:36+00:00
-excerpt: |
-  What is a linter?
-
-  According to google, the definition of "lint" is "short, fine fibres which separate from the surface of cloth or yarn during processing."
-
-  However for us programmers a linter is a software that checks your code for errors, bad practices and issues and gives you a warning when you make a mistake. A linter can be configurable according to rules that you decide.
-url: /posts/1051/using-linters/
-featured_image: https://vccw.test/wp-content/uploads/2017/02/wft93lgawwe-nick-casale.jpg
-geo_latitude:
-  - 45.518422
-timeline_notification:
-  - 1549152157
-publicize_twitter_user:
-  - akmur
-publicize_linkedin_url:
-  - "https://www.linkedin.com/updates?discuss=&scope=5122212&stype=M&topic=6233623980012511232&type=U&a=ydeS"
-publicize_google_plus_url:
-  - https://plus.google.com/+AlessandroMuraroIT/posts/R6AJG2vsbca
-geo_longitude:
-  - 9.174891
 categories:
   - Articles
 ---
 
 ### What is a linter?
 
-According to google, the definition of &#8220;lint&#8221; is *&#8220;short, fine fibres which separate from the surface of cloth or yarn during processing.&#8221;*
+According to google, the definition of "lint" is *"short, fine fibres which separate from the surface of cloth or yarn during processing."*
 
 However for us programmers a **linter** is a software that checks your code for errors, bad practices, bad formatting and logical issues, and gives you a warning when you make a mistake. A linter can be configurable according to rules that you decide.
 
@@ -54,11 +34,11 @@ And finally, let me triple stress that linters are super good to learn how to co
 A (JavaScript) linter looks like this (screenshot courtesy of <a href="https://code.visualstudio.com/Docs/languages/javascript" target="_blank" rel="noopener noreferrer">Visual Studio Code by Microsoft</a>). Please notice the warning in the lower part of the screen. By clicking on the error there, you can get to the line containing the issue.
 The error position is also specified within parenthesis, in this case it is 7,12 (line 7, char 12).
 
-<img class="aligncenter wp-image-1081 size-large" src="https://muraro.xyz/wp/wp-content/uploads/2017/02/javascript_eslint_warning-1024x523.png" alt="javascript_eslint_warning" width="640" height="327" srcset="https://vccw.test/wp-content/uploads/2017/02/javascript_eslint_warning-1024x523.png 1024w, https://vccw.test/wp-content/uploads/2017/02/javascript_eslint_warning-300x153.png 300w, https://vccw.test/wp-content/uploads/2017/02/javascript_eslint_warning-768x392.png 768w, https://vccw.test/wp-content/uploads/2017/02/javascript_eslint_warning.png 1194w" sizes="(max-width: 640px) 100vw, 640px" />
+<img class="aligncenter wp-image-1081 size-large" src="/assets/images/javascript_eslint_warning.png" />
 
 While a sass linter looks like this (screenshot courtesy of <a href="http://stackoverflow.com/questions/41420931/sass-lint-yml-disabled-rules-are-showing-as-infos-rather-than-absent" target="_blank" rel="noopener noreferrer">Stack Overflow</a>)
 
-<img class="wp-image-1085 size-large aligncenter" src="https://muraro.xyz/wp/wp-content/uploads/2017/02/hd1qq-1024x990.jpg" alt="hd1qq" width="640" height="619" srcset="https://vccw.test/wp-content/uploads/2017/02/hd1qq-1024x990.jpg 1024w, https://vccw.test/wp-content/uploads/2017/02/hd1qq-300x290.jpg 300w, https://vccw.test/wp-content/uploads/2017/02/hd1qq-768x743.jpg 768w, https://vccw.test/wp-content/uploads/2017/02/hd1qq.jpg 1492w" sizes="(max-width: 640px) 100vw, 640px" />
+<img class="wp-image-1085 size-large aligncenter" src="/assets/images/hd1qq-1024x990.jpg" />
 
 ### How to use a linter?
 
@@ -85,19 +65,19 @@ Linters need configuration files in order to give instructions to our linters ab
 
 Go to your project folder using your Terminal, and type:
 
-<pre class=" language-bash"><code>eslint &lt;span class="token operator"&gt;--&lt;/span&gt;init </code></pre>
+<pre class=" language-bash"><code>eslint <span class="token operator">--</span>init </code></pre>
 
 This will start a little program that will ask you a few questions. The first question you get is the following, just press enter to proceed.<figure id="attachment_1133" aria-describedby="caption-attachment-1133" style="width: 640px" class="wp-caption aligncenter">
 
-<img class="wp-image-1133 size-large" src="https://muraro.xyz/wp/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-15-59-1024x154.png" alt="screen-shot-2017-02-04-at-13-15-59" width="640" height="96" srcset="https://vccw.test/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-15-59-1024x154.png 1024w, https://vccw.test/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-15-59-300x45.png 300w, https://vccw.test/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-15-59-768x116.png 768w, https://vccw.test/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-15-59.png 1498w" sizes="(max-width: 640px) 100vw, 640px" /> <figcaption id="caption-attachment-1133" class="wp-caption-text">Eslint wants answers</figcaption></figure>
+<img class="wp-image-1133 size-large" src="/assets/images/screen-shot-2017-02-04-at-13-15-59-1024x154.png" /> <figcaption id="caption-attachment-1133" class="wp-caption-text">Eslint wants answers</figcaption></figure>
 
 Then you'll be asked a bunch of additional question, choose whatever you want:<figure id="attachment_1137" aria-describedby="caption-attachment-1137" style="width: 640px" class="wp-caption aligncenter">
 
-<img class="wp-image-1137 size-large" src="https://muraro.xyz/wp/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-17-29-1024x350.png" alt="screen-shot-2017-02-04-at-13-17-29" width="640" height="219" srcset="https://vccw.test/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-17-29-1024x350.png 1024w, https://vccw.test/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-17-29-300x103.png 300w, https://vccw.test/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-17-29-768x263.png 768w, https://vccw.test/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-17-29.png 1544w" sizes="(max-width: 640px) 100vw, 640px" /> <figcaption id="caption-attachment-1137" class="wp-caption-text">More eslint questions</figcaption></figure>
+<img class="wp-image-1137 size-large" src="/assets/images/screen-shot-2017-02-04-at-13-17-29-1024x350.png" /> <figcaption id="caption-attachment-1137" class="wp-caption-text">More eslint questions</figcaption></figure>
 
 This will create a _.eslintrc.json_ file which will look like this:<figure id="attachment_1146" aria-describedby="caption-attachment-1146" style="width: 356px" class="wp-caption aligncenter">
 
-<img class="alignnone wp-image-1146" src="https://muraro.xyz/wp/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-21-14.png" alt="screen-shot-2017-02-04-at-13-21-14" width="356" height="475" srcset="https://vccw.test/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-21-14.png 510w, https://vccw.test/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-21-14-225x300.png 225w" sizes="(max-width: 356px) 100vw, 356px" /> <figcaption id="caption-attachment-1146" class="wp-caption-text">.eslintrc.json</figcaption></figure>
+<img class="alignnone wp-image-1146" src="/assets/images/screen-shot-2017-02-04-at-13-21-14.png" /> <figcaption id="caption-attachment-1146" class="wp-caption-text">.eslintrc.json</figcaption></figure>
 
 That's it, you got a working ESlint configuration.
 

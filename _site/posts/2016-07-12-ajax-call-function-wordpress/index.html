@@ -6,14 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How to use AJAX to call a function in WordPress</title>
     <link href="https://fonts.googleapis.com/css?family=Merriweather:700|Muli:300,700" rel="stylesheet">
-    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/atom-one-dark.min.css" integrity="sha512-Jlyabam8ztU2kOGN19fSzv1Go9nt9A43UA6vhmL1MPsQMeoPZd+p7pbmegAtyl8kulna0Cqwb7Pgj4adGTLCXA==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
   </head>
   <body class="ui-dark">
     <div class="wrapper">
-      <div class="layout">
-        <div class="header">
+      <div class="layout"> <div class="header">
   <a class="logo" href="/"><svg class="logo__triangle logo__triangle--left" style="isolation: isolate;" viewbox="217 167 106 96">
   <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--center" style="isolation: isolate;" viewbox="217 167 106 96">
   <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--right" style="isolation: isolate;" viewbox="217 167 106 96">
@@ -34,32 +31,29 @@
     </div>
   </div>
 </div>
-        <div id="main" class="main">
-          <article class="post">
-            <header class="entry-header">
-              <h1 class="pageContent__title title title--h1">
-                How to use AJAX to call a function in WordPress
-              </h1>
-              <div class="pageContent__date date">
-                Posted on Tue, 12 Jul 2016 12:40:26 GMT
-              </div><!-- .entry-meta -->
-            </header>
-            <p>This might be old stuff for many people out there and I know that most things can be accomplished with the amazing WP API, still I think it's good to have a simple example of using AJAX to call a WordPress function in one post. Here we go!</p>
+<div id="main" class="main">
+  <article class="post">
+    <header class="entry-header">
+      
+      <h1 class="pageContent__title title title--h1">
+        How to use AJAX to call a function in WordPress
+      </h1>
+       
+      <!-- .entry-meta -->
+    </header>
+    
+    <p>This might be old stuff for many people out there and I know that most things can be accomplished with the amazing WP API, still I think it's good to have a simple example of using AJAX to call a WordPress function in one post. Here we go!</p>
 <h3>Scenario:</h3>
 <p>You want to request some data from WordPress (e.g. the previous post ID), through an AJAX call.</p>
 <h3>How to do this:</h3>
 <p>The way I solved this was to add a global variable in the header, so that the WordPress AJAX URL is exposed. Then I added a function in my theme's function.php file, which would do the actual work. Finally, in my JavaScript file it's just a matter of calling my function with AJAX. I can then use the result to do what I need.</p>
 <h3>In header.php</h3>
-<pre><code class="language-js">&amp;lt;script&amp;gt;
+<pre><code>&lt;script&gt;
   var ajaxurl = &quot;' . admin_url('admin-ajax.php') . '&quot;;
-&amp;lt;/script&amp;gt;
-&lt;/code&gt;
-&lt;/pre&gt;
-
-### In function.php
-
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;
-function get_prev_ajax_handler() {
+&lt;/script&gt;
+</code></pre>
+<h3>In function.php</h3>
+<pre><code>function get_prev_ajax_handler() {
   // this is how you get access to the database
   global $wpdb;
   // get the id value which has been posted
@@ -69,20 +63,16 @@ function get_prev_ajax_handler() {
   // Get the post object for the specified post
   $post = get_post( $post_id );
   // Echo the previous post ID
-  echo get_previous_post()-&amp;gt;ID;
+  echo get_previous_post()-&gt;ID;
   // close the connection
   wp_die();
 }
 
 add_action('wp_ajax_get_prev', 'get_prev_ajax_handler');
 add_action( 'wp_ajax_nopriv_get_prev', 'get_prev_ajax_handler' );
-&lt;/code&gt;
-&lt;/pre&gt;
-
-### In script.js
-
-&lt;pre&gt;&lt;code class=&quot;language-php&quot;&gt;
-function getPrevPostId(id){
+</code></pre>
+<h3>In script.js</h3>
+<pre><code>function getPrevPostId(id){
   var prevPostId;
   $.post( ajaxUrl, {
       action: &quot;get_prev&quot;,
@@ -91,23 +81,28 @@ function getPrevPostId(id){
       console.log(prevPostId)
     });
 }
-&lt;/code&gt;
-&lt;/pre&gt;
 </code></pre>
 
-          </article>
-        </div>
+  </article>
+</div>
         <footer class="footer">
-  <div class="footer__container">
-    <p class="footer__text">Find me on:<br>
-      <a class="footer__link" href="https://twitter.com/akmur">Twitter</a>,
-      <a rel="me" href="https://mastodon.social/@akmur" class="footer__link">Mastodon</a>, <a class="footer__link" href="https://www.linkedin.com/in/alessandromuraro/">LinkedIn</a>, <a class="footer__link" href="https://github.com/akmur">Github</a>.
-    </p>
-  </div>
-</footer>
+          <div class="footer__container">
+            <p class="footer__text">Find me on:<br>
+              <a class="footer__link" href="https://twitter.com/akmur">Twitter</a>,
+              <a class="footer__link" href="https://www.linkedin.com/in/alessandromuraro/">LinkedIn</a>,
+              <a class="footer__link" href="https://github.com/akmur">Github</a>.
+            </p>
+          </div>
+        </footer>
       </div>
     </div>
   </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js" integrity="sha512-tHQeqtcNWlZtEh8As/4MmZ5qpy0wj04svWFK7MIzLmUVIzaHXS8eod9OmHxyBL1UET5Rchvw7Ih4ZDv5JojZww==" crossorigin="anonymous"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"
+      integrity="sha512-tHQeqtcNWlZtEh8As/4MmZ5qpy0wj04svWFK7MIzLmUVIzaHXS8eod9OmHxyBL1UET5Rchvw7Ih4ZDv5JojZww=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
 </html>

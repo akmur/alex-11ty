@@ -6,14 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Switching this site to React + WordPress</title>
     <link href="https://fonts.googleapis.com/css?family=Merriweather:700|Muli:300,700" rel="stylesheet">
-    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/atom-one-dark.min.css" integrity="sha512-Jlyabam8ztU2kOGN19fSzv1Go9nt9A43UA6vhmL1MPsQMeoPZd+p7pbmegAtyl8kulna0Cqwb7Pgj4adGTLCXA==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
   </head>
   <body class="ui-dark">
     <div class="wrapper">
-      <div class="layout">
-        <div class="header">
+      <div class="layout"> <div class="header">
   <a class="logo" href="/"><svg class="logo__triangle logo__triangle--left" style="isolation: isolate;" viewbox="217 167 106 96">
   <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--center" style="isolation: isolate;" viewbox="217 167 106 96">
   <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--right" style="isolation: isolate;" viewbox="217 167 106 96">
@@ -34,17 +31,21 @@
     </div>
   </div>
 </div>
-        <div id="main" class="main">
-          <article class="post">
-            <header class="entry-header">
-              <h1 class="pageContent__title title title--h1">
-                Switching this site to React + WordPress
-              </h1>
-              <div class="pageContent__date date">
-                Posted on Tue, 05 Feb 2019 09:39:13 GMT
-              </div><!-- .entry-meta -->
-            </header>
-            <p><em>UPDATE 15th of March 2019: The solution below works perfectl, except for the fact that social network sites won't pick up the preview from your posts. For this reason i have opted to go back to a local WordPress installation, from which  a static version of the site is generated and deployed to Netlify. All this is done using <a href="https://wordpress.org/support/plugin/static-html-output-plugin/reviews/">WP2Static</a> plugin.</em></p>
+<div id="main" class="main">
+  <article class="post">
+    <header class="entry-header">
+      
+      <h1 class="pageContent__title title title--h1">
+        Switching this site to React + WordPress
+      </h1>
+       
+      <div class="pageContent__date date">
+        Posted on Tue, 05 Feb 2019 09:39:13 GMT
+      </div>
+      
+      <!-- .entry-meta -->
+    </header>
+    <p><em>UPDATE 15th of March 2019: The solution below works perfectl, except for the fact that social network sites won't pick up the preview from your posts. For this reason i have opted to go back to a local WordPress installation, from which  a static version of the site is generated and deployed to Netlify. All this is done using <a href="https://wordpress.org/support/plugin/static-html-output-plugin/reviews/">WP2Static</a> plugin.</em></p>
 <p>Yesterday I have deployed a new version of my site. It looks exactly like before, but it has some important differences:</p>
 <ul>
 <li>I am using React + Reach Router instead of Vanilla JS and Navigo.js</li>
@@ -66,22 +67,29 @@ Worth noting is the fact that you can also use APIs from their free wordpress.co
 <p>I was blown away by <a href="https://www.netlify.com/">Netlify</a>‘s ease of use. It allows me to connect my Github repository to Netlify, runs the build process when I push to master, and automatically redirects all requests to /index.html. Wow.</p>
 <h3>Conclusions</h3>
 <p>All in all, I'm currently very happy of my React / WordPress combo. It allows for fun development, great performances and simple deployments, while retaining the great publishing experience of WordPress and the no-nonsense <a href="https://jamstack.org/">JAM stack</a> approach. Using WordPress also makes it easy to expand my blog with categories, tags, and plugins like Advanced Custom Fields in case I want to.
-This is definitely the way I would go in case I had to do any “artisan” client work in 2019.</p>
+This is definitely the way I would go in case I had to do any &quot;artisan&quot; client work in 2019.</p>
 <p><em>Photo by <a href="https://unsplash.com/photos/PKEPAeMBOIU?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Thierry Meier</a> on <a href="https://unsplash.com/search/photos/sea?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></em></p>
 
-          </article>
-        </div>
+  </article>
+</div>
         <footer class="footer">
-  <div class="footer__container">
-    <p class="footer__text">Find me on:<br>
-      <a class="footer__link" href="https://twitter.com/akmur">Twitter</a>,
-      <a rel="me" href="https://mastodon.social/@akmur" class="footer__link">Mastodon</a>, <a class="footer__link" href="https://www.linkedin.com/in/alessandromuraro/">LinkedIn</a>, <a class="footer__link" href="https://github.com/akmur">Github</a>.
-    </p>
-  </div>
-</footer>
+          <div class="footer__container">
+            <p class="footer__text">Find me on:<br>
+              <a class="footer__link" href="https://twitter.com/akmur">Twitter</a>,
+              <a class="footer__link" href="https://www.linkedin.com/in/alessandromuraro/">LinkedIn</a>,
+              <a class="footer__link" href="https://github.com/akmur">Github</a>.
+            </p>
+          </div>
+        </footer>
       </div>
     </div>
   </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js" integrity="sha512-tHQeqtcNWlZtEh8As/4MmZ5qpy0wj04svWFK7MIzLmUVIzaHXS8eod9OmHxyBL1UET5Rchvw7Ih4ZDv5JojZww==" crossorigin="anonymous"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"
+      integrity="sha512-tHQeqtcNWlZtEh8As/4MmZ5qpy0wj04svWFK7MIzLmUVIzaHXS8eod9OmHxyBL1UET5Rchvw7Ih4ZDv5JojZww=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
 </html>

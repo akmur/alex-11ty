@@ -1,9 +1,7 @@
 ---
-layout: single.njk
-title: About
+layout: about.njk
 author: akmur
 type: page
-date: 2014-10-15T15:01:32+00:00
 eleventyExcludeFromCollections: true
 excerpt: |
   I am a Front end developer.
@@ -11,12 +9,16 @@ excerpt: |
   I help organize the Milano Front End Meetup.
 ---
 
-# Who I am
+# About me
 
-I am Alessandro Muraro, a frontend developer from Milano, Italy.
+My name is Alessandro Muraro, a frontend developer from [Milano, Italy](https://www.google.com/maps/place/Milan,+Metropolitan+City+of+Milan/data=!4m2!3m1!1s0x4786c1493f1275e7:0x3cffcd13c6740e8d?sa=X&ved=2ahUKEwic552K04zrAhXvRxUIHfYiACkQ8gEwAHoECAsQAQ).
+
 I have been hacking away at websites since 1999, but it was simply an hobby for many years. In 2011, I started my professional career in frontend development.
 Over the last 15 (!) years or so, I have been living around Europe: Italy🇮🇹, the Netherlands🇳🇱, Ireland🇮🇪, and Germany🇩🇪.
+
 Since December 2018 I am working with Innoloft where I take care of frontend architecture and UI development.
+
+![Picture of  myself](https://i.imgur.com/hlpNViT.jpg)
 
 # What I do
 
@@ -39,13 +41,13 @@ I am currently working daily with React and Redux at Innoloft. I am experienced 
 
 # Experience
 
-- [Innoloft GmbH](http://innoloft.com/) 🇩🇪 Lead Frontend developer, since 2018
-- [navabi GmbH](http://navabi.de/) 🇩🇪 Senior Frontend developer, 2017 to 2018
-- [Objectway](http://www.objectway.it/IT/default.asp) 🇮🇹 Frontend developer, 2015 to 2017
-- [The Level Group](http://www.thelevelgroup.com/) 🇮🇹 Frontend developer, 2014 to 2015
-- [Pazienti](http://www.pazienti.it/) 🇮🇹 Frontend developer / UX / UI, 2011 to 2014
-- [Apple](http://www.apple.com/) 🇮🇪 Tech support, 2003 to 2007
-- [Unisys](http://www.unisys.com/) 🇳🇱 Tech support, 2001 to 2003
+- [Innoloft GmbH](https://innoloft.com/) 🇩🇪 Lead Frontend developer, since 2018
+- [navabi GmbH](https://navabi.de/) 🇩🇪 Senior Frontend developer, 2017 to 2018
+- [Objectway](https://www.objectway.it) 🇮🇹 Frontend developer, 2015 to 2017
+- [The Level Group](https://www.thelevelgroup.com/) 🇮🇹 Frontend developer, 2014 to 2015
+- [Pazienti](https://www.pazienti.it/) 🇮🇹 Frontend developer / UX / UI, 2011 to 2014
+- [Apple](https://www.apple.com/) 🇮🇪 Tech support, 2003 to 2007
+- [Unisys](https://www.unisys.com/) 🇳🇱 Tech support, 2001 to 2003
 
 # Get in touch
 

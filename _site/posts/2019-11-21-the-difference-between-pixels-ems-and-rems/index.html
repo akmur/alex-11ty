@@ -6,14 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The difference between pixels, ems and rems</title>
     <link href="https://fonts.googleapis.com/css?family=Merriweather:700|Muli:300,700" rel="stylesheet">
-    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/atom-one-dark.min.css" integrity="sha512-Jlyabam8ztU2kOGN19fSzv1Go9nt9A43UA6vhmL1MPsQMeoPZd+p7pbmegAtyl8kulna0Cqwb7Pgj4adGTLCXA==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
   </head>
   <body class="ui-dark">
     <div class="wrapper">
-      <div class="layout">
-        <div class="header">
+      <div class="layout"> <div class="header">
   <a class="logo" href="/"><svg class="logo__triangle logo__triangle--left" style="isolation: isolate;" viewbox="217 167 106 96">
   <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--center" style="isolation: isolate;" viewbox="217 167 106 96">
   <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--right" style="isolation: isolate;" viewbox="217 167 106 96">
@@ -34,17 +31,28 @@
     </div>
   </div>
 </div>
-        <div id="main" class="main">
-          <article class="post">
-            <header class="entry-header">
-              <h1 class="pageContent__title title title--h1">
-                The difference between pixels, ems and rems
-              </h1>
-              <div class="pageContent__date date">
-                Posted on Thu, 21 Nov 2019 13:49:31 GMT
-              </div><!-- .entry-meta -->
-            </header>
-            <h2>The issue</h2>
+<div id="main" class="main">
+  <article class="post">
+    <header class="entry-header">
+      
+      <h1 class="pageContent__title title title--h1">
+        The difference between pixels, ems and rems
+      </h1>
+       
+      <div class="pageContent__date date">
+        Posted on Thu, 21 Nov 2019 13:49:31 GMT
+      </div>
+      
+      <!-- .entry-meta -->
+    </header>
+    
+    <div class="pageContent__image">
+      <div class="post-thumbnail">
+        <img src="https://vccw.test/wp-content/uploads/2019/11/pwpvgq-a5qi-e1574344273421.jpg" />
+      </div>
+    </div>
+    
+    <h2>The issue</h2>
 <p>I think there is often a little bit of misunderstanding when frontend developers and designers talk to each other about dimensions on the web.
 Designers generally design in <em>pixels</em>, obviously. Frontend developers then usually develop in <em>ems</em> and <em>rems</em>.
 This post wants to bridge a knowledge gap that I feel might exist.</p>
@@ -97,7 +105,7 @@ Example: If we drop the element inside a box with a font-size of <em>32px</em>, 
 <li>We can easily manage fonts, because rems are easy to reason about once we know the base font size of a website. I generally set the base font to 10px so that <em>1.6rem</em> is <em>16px</em>, and <em>4rem</em> is <em>40px</em>. Easy.</li>
 </ul>
 <h2>The web is not a printer</h2>
-<p>In my opinion designers (and stakeholders) need to take into consideration the fact that items should be allowed to grow or shrink as the font sizes change. They need to understand that elements can be subject to custom accessibility settings and accept the fact that, as someone said before me, “the web is not a printer”.  Their designs in Sketch are guidelines, not the single source of truth; the source of truth is still the CSS written by the developer, like it or not.</p>
+<p>In my opinion designers (and stakeholders) need to take into consideration the fact that items should be allowed to grow or shrink as the font sizes change. They need to understand that elements can be subject to custom accessibility settings and accept the fact that, as someone said before me, &quot;the web is not a printer&quot;.  Their designs in Sketch are guidelines, not the single source of truth; the source of truth is still the CSS written by the developer, like it or not.</p>
 <h2>What should designers do</h2>
 <p>Designers should design nice and balanced UIs without worrying too much about exact pixel sizes and pixel spacings; they should just communicate to frontend developers what are the <strong>ratios</strong> they have used for their elements, and these will be replicated using <em>rem</em> for font sizes and <em>em</em> for paddings and margins.</p>
 <p><strong>Example:</strong> when they design a button, they could tell the frontend developer that the padding should be 1 unit, and the margin on the left is equal to 0.5 units (where a unit is equal to the font size).</p>
@@ -113,19 +121,26 @@ Example: If we drop the element inside a box with a font-size of <em>32px</em>, 
   </p>
 </blockquote>
 
-          </article>
-        </div>
+  </article>
+</div>
         <footer class="footer">
-  <div class="footer__container">
-    <p class="footer__text">Find me on:<br>
-      <a class="footer__link" href="https://twitter.com/akmur">Twitter</a>,
-      <a rel="me" href="https://mastodon.social/@akmur" class="footer__link">Mastodon</a>, <a class="footer__link" href="https://www.linkedin.com/in/alessandromuraro/">LinkedIn</a>, <a class="footer__link" href="https://github.com/akmur">Github</a>.
-    </p>
-  </div>
-</footer>
+          <div class="footer__container">
+            <p class="footer__text">Find me on:<br>
+              <a class="footer__link" href="https://twitter.com/akmur">Twitter</a>,
+              <a class="footer__link" href="https://www.linkedin.com/in/alessandromuraro/">LinkedIn</a>,
+              <a class="footer__link" href="https://github.com/akmur">Github</a>.
+            </p>
+          </div>
+        </footer>
       </div>
     </div>
   </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js" integrity="sha512-tHQeqtcNWlZtEh8As/4MmZ5qpy0wj04svWFK7MIzLmUVIzaHXS8eod9OmHxyBL1UET5Rchvw7Ih4ZDv5JojZww==" crossorigin="anonymous"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"
+      integrity="sha512-tHQeqtcNWlZtEh8As/4MmZ5qpy0wj04svWFK7MIzLmUVIzaHXS8eod9OmHxyBL1UET5Rchvw7Ih4ZDv5JojZww=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
 </html>

@@ -3,9 +3,6 @@ layout: single.njk
 title: A JavaScript Learning Roadmap
 author: akmur
 type: post
-date: 2017-02-03T21:58:24+00:00
-url: /posts/955/a-javascript-learning-roadmap/
-featured_image: https://vccw.test/wp-content/uploads/2017/02/javascript-logo-banner.jpg
 categories:
   - Articles
 ---

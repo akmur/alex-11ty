@@ -4,19 +4,6 @@ title: Using Atom Text Editor
 author: akmur
 type: post
 date: 2016-02-24T21:56:28+00:00
-url: /posts/662/getting-started-with-atom-part-1/
-color_start_header:
-  - rgba(23, 56, 102, 1)
-color_start_footer:
-  - rgba(219, 55, 57, 1)
-color_end_header:
-  - rgba(219, 55, 57, 1)
-color_end_footer:
-  - rgba(23, 56, 102, 1)
-original_post_id:
-  - 662
-publicize_twitter_user:
-  - akmur
 categories:
   - Articles
 ---

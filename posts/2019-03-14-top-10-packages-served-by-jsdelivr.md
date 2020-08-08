@@ -4,14 +4,15 @@ title: Top 10 packages served by jsdelivr
 author: akmur
 type: post
 date: 2019-03-14T09:43:29+00:00
-url: /posts/1344/top-10-packages-served-by-jsdelivr/
 categories:
   - Articles
 ---
 
 Today 14th of March 2019 I was surprised reading the chart of the top 10 npm packages served by [jsdelivr.com][1], as it contains some entries I never heard of, and some others I would't expect to top the chart.
 
-<img class="alignnone wp-image-1367" src="https://muraro.xyz/wp/wp-content/uploads/2019/03/Screenshot-2019-03-15-at-14.08.18.png" alt="" width="599" height="598" srcset="https://vccw.test/wp-content/uploads/2019/03/Screenshot-2019-03-15-at-14.08.18.png 1106w, https://vccw.test/wp-content/uploads/2019/03/Screenshot-2019-03-15-at-14.08.18-150x150.png 150w, https://vccw.test/wp-content/uploads/2019/03/Screenshot-2019-03-15-at-14.08.18-300x300.png 300w, https://vccw.test/wp-content/uploads/2019/03/Screenshot-2019-03-15-at-14.08.18-768x767.png 768w, https://vccw.test/wp-content/uploads/2019/03/Screenshot-2019-03-15-at-14.08.18-721x720.png 721w" sizes="(max-width: 599px) 100vw, 599px" />
+<img class="alignnone wp-image-1367" src="/assets/images/Screenshot-2019-03-15-at-14.08.18.png" />
+
+&nbsp;
 
 1. Slick Carousel is number one. And I thought sliders were dying.
 2. Yandex Metrics, I suppose it makes sense.
@@ -22,9 +23,11 @@ Today 14th of March 2019 I was surprised reading the chart of the top 10 npm pac
 7. JS Cookie. The cookie monster.
 8. hls.js is used to do media streaming. Wow, never heard of it, such ignorance.
 9. [Vanilla lazyload][3], because images are getting heavier and heavier and performance matter, I think.
-10. [Prebid universal creative][4]. What? Prebid what? &#8220;A javascript api to render multiple formats.&#8221; Ok. I suppose I'll know when I need it.
+10. [Prebid universal creative][4]. What? Prebid what? "A javascript api to render multiple formats." Ok. I suppose I'll know when I need it.
 
-- - \*If you would liker to discuss this post, you can do so on Linkedin:
+If you would liker to discuss this post, you can do so on Linkedin:
+
+&nbsp;
 
 <blockquote class="blockquote__linkedin data-lang=" style="border-color: #1D77B5;">
   <p dir="ltr" lang="en">

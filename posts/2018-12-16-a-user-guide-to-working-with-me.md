@@ -4,10 +4,6 @@ title: A user guide to working with me
 author: akmur
 type: post
 date: 2018-12-16T00:16:23+00:00
-url: /posts/1226/a-user-guide-to-working-with-me/
-featured_image: https://vccw.test/wp-content/uploads/2019/02/sxp70zl.jpg
-timeline_notification:
-  - 1549153042
 categories:
   - Articles
 ---

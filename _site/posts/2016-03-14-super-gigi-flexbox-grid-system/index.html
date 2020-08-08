@@ -6,14 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Super GiGi Flexbox grid system</title>
     <link href="https://fonts.googleapis.com/css?family=Merriweather:700|Muli:300,700" rel="stylesheet">
-    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/atom-one-dark.min.css" integrity="sha512-Jlyabam8ztU2kOGN19fSzv1Go9nt9A43UA6vhmL1MPsQMeoPZd+p7pbmegAtyl8kulna0Cqwb7Pgj4adGTLCXA==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
   </head>
   <body class="ui-dark">
     <div class="wrapper">
-      <div class="layout">
-        <div class="header">
+      <div class="layout"> <div class="header">
   <a class="logo" href="/"><svg class="logo__triangle logo__triangle--left" style="isolation: isolate;" viewbox="217 167 106 96">
   <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--center" style="isolation: isolate;" viewbox="217 167 106 96">
   <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--right" style="isolation: isolate;" viewbox="217 167 106 96">
@@ -34,25 +31,29 @@
     </div>
   </div>
 </div>
-        <div id="main" class="main">
-          <article class="post">
-            <header class="entry-header">
-              <h1 class="pageContent__title title title--h1">
-                Super GiGi Flexbox grid system
-              </h1>
-              <div class="pageContent__date date">
-                Posted on Mon, 14 Mar 2016 22:18:26 GMT
-              </div><!-- .entry-meta -->
-            </header>
-            <p>Flexbox has been getting lots of attention lately, and rightly so, as it makes it possible to solve problems in unique and responsive ways.
+<div id="main" class="main">
+  <article class="post">
+    <header class="entry-header">
+      
+      <h1 class="pageContent__title title title--h1">
+        Super GiGi Flexbox grid system
+      </h1>
+       
+      <div class="pageContent__date date">
+        Posted on Mon, 14 Mar 2016 22:18:26 GMT
+      </div>
+      
+      <!-- .entry-meta -->
+    </header>
+    <p>Flexbox has been getting lots of attention lately, and rightly so, as it makes it possible to solve problems in unique and responsive ways.
 You might want to take into consideration Flexbox-based layouts in case you are building a truly responsive web application and you want to take advantage of cool Flexbox properties like ordering, direction, wrapping, growing, etc.</p>
 <p>In this post I'm going to explain how to get started with <a href="https://github.com/Objectway/super-gigi">Super GiGi</a>, a Flexbox based grid system created by the people at <a href="http://www.objectway.com/">Objectway</a> and by <a href="https://twitter.com/MakhBeth" target="_blank">Davide Di Pumpo</a> in particular.</p>
 <p>But first, here's what Davide himself has to say about SuperGigi:</p>
-<p><em>“When you design a website, usually you will use some kind of grid system. There are a lot of frameworks on the old wide web that will help you accomplish this. Sometimes they use float, sometimes they use tables, but there are a few that are using Flexbox.
+<p><em>&quot;When you design a website, usually you will use some kind of grid system. There are a lot of frameworks on the old wide web that will help you accomplish this. Sometimes they use float, sometimes they use tables, but there are a few that are using Flexbox.
 And if you know <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Flexbox</a> you know two things about it: 1, It’s awesome and 2, it can be a pain to do general layout with.</em></p>
-<p><em>Yeah I know, Flexbox isn’t meant to be used to develop grid systems. For this you should use <a href="https://hacks.mozilla.org/2015/09/the-future-of-layout-with-css-grid-layouts/">CSS Grid</a>. But you know, nobody (but Internet Explorer °</em>°) supports this feature yet…_</p>
+<p><em>Yeah I know, Flexbox isn’t meant to be used to develop grid systems. For this you should use <a href="https://hacks.mozilla.org/2015/09/the-future-of-layout-with-css-grid-layouts/">CSS Grid</a>. But you know, nobody (but Internet Explorer °</em>°) supports this feature yet..._</p>
 <p><em>So Super GiGi does exactly this. It will help you set up your own Flexbox grid system, carrying in all the tricks to achieve cross browser support (yes, even IE), solutions for the known <a href="https://github.com/philipwalton/flexbugs">Flexbug</a>, optimisation for performances, and a lot of helpers to build a “row -&gt; columns” structure that will be easier to manage and to maintain.</em></p>
-<p><em>Super GiGi's main purpose is to be compliant to the <a href="https://www.w3.org/TR/html-design-principles/#separation-of-concerns">separation of concerns</a>; the first impact can weird you out if you are used to a framework like Bootstrap or Foundation, but after a while (especially if you are used to Susy or similar) you will see the benefits of this choice.”</em></p>
+<p><em>Super GiGi's main purpose is to be compliant to the <a href="https://www.w3.org/TR/html-design-principles/#separation-of-concerns">separation of concerns</a>; the first impact can weird you out if you are used to a framework like Bootstrap or Foundation, but after a while (especially if you are used to Susy or similar) you will see the benefits of this choice.&quot;</em></p>
 <p>Now we're ready to start getting acquainted with Super GiGi!</p>
 <h3>Learning more about Flexbox</h3>
 <p>In case you want to know more about Flexbox in general, I recommend checking out the following resources:</p>
@@ -87,7 +88,7 @@ This is how you can get started real quick to get a feeling of how this works.</
 }
 </pre>
 <p>You will see that now your layout has got the familiar columns layout.</p>
-<p>It is worth noting that the grid-row() mixin uses “flex-direction: row” property by default. In case you need boxes to stack vertically, you will need to use:</p>
+<p>It is worth noting that the grid-row() mixin uses &quot;flex-direction: row&quot; property by default. In case you need boxes to stack vertically, you will need to use:</p>
 <pre>grid-row(false, true)
 </pre>
 <p>where the first attribute is to determine if the container is nested (in this example it is not), and the second is used to determine the flex-direction.</p>
@@ -133,7 +134,7 @@ $rem-base: 21px !default;
 <p>Hint: you can see all the default variables in the file:</p>
 <pre>@import [path to super-gigi]/dist/helpers/_variables.scss
 </pre>
-<p>Remember that this grid is mobile first by default, but in case you need it to be “desktop first”, you can set this variable in your _variables.scss file:</p>
+<p>Remember that this grid is mobile first by default, but in case you need it to be &quot;desktop first&quot;, you can set this variable in your _variables.scss file:</p>
 <pre>$query-direction: (max-width, min-width);
 </pre>
 <h3>Functions</h3>
@@ -147,19 +148,26 @@ $rem-base: 21px !default;
 <p>Lots of work and thinking went into Super Gigi, and you can tell. This is a powerful Sass library, and an absolute must if you need to deal with ultra-responsive Flexbox layouts.</p>
 <p>You can follow <a href="https://twitter.com/MakhBeth" target="_blank">Davide Di Pumpo</a> on Twitter. Davide is also the author of the Super GiGi logo!</p>
 
-          </article>
-        </div>
+  </article>
+</div>
         <footer class="footer">
-  <div class="footer__container">
-    <p class="footer__text">Find me on:<br>
-      <a class="footer__link" href="https://twitter.com/akmur">Twitter</a>,
-      <a rel="me" href="https://mastodon.social/@akmur" class="footer__link">Mastodon</a>, <a class="footer__link" href="https://www.linkedin.com/in/alessandromuraro/">LinkedIn</a>, <a class="footer__link" href="https://github.com/akmur">Github</a>.
-    </p>
-  </div>
-</footer>
+          <div class="footer__container">
+            <p class="footer__text">Find me on:<br>
+              <a class="footer__link" href="https://twitter.com/akmur">Twitter</a>,
+              <a class="footer__link" href="https://www.linkedin.com/in/alessandromuraro/">LinkedIn</a>,
+              <a class="footer__link" href="https://github.com/akmur">Github</a>.
+            </p>
+          </div>
+        </footer>
       </div>
     </div>
   </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js" integrity="sha512-tHQeqtcNWlZtEh8As/4MmZ5qpy0wj04svWFK7MIzLmUVIzaHXS8eod9OmHxyBL1UET5Rchvw7Ih4ZDv5JojZww==" crossorigin="anonymous"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"
+      integrity="sha512-tHQeqtcNWlZtEh8As/4MmZ5qpy0wj04svWFK7MIzLmUVIzaHXS8eod9OmHxyBL1UET5Rchvw7Ih4ZDv5JojZww=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
 </html>

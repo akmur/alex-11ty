@@ -4,8 +4,6 @@ title: An introduction to Redux
 author: akmur
 type: post
 date: 2019-02-21T11:18:09+00:00
-url: /posts/1274/an-introduction-to-redux/
-featured_image: https://vccw.test/wp-content/uploads/2019/02/ruben-marques-378741-unsplash-e1550753539312.jpg
 categories:
   - Articles
 ---
@@ -39,30 +37,34 @@ where you will find a little project already setup.
 
 Once downloaded or cloned, open your Terminal and go to the project's folder, then type:
 
-<pre class="line-numbers"><code class="language-javascript">npm install
-</code></pre>
+```
+npm install
+```
 
 followed by:
 
-<pre class="line-numbers"><code class="language-javascript">npm run start
-</code></pre>
+```
+npm run start
+```
 
 Now the application should be available at [localhost:3000][5].
 
 ## About the file structure {#aboutthefilestructure}
 
-Inside the &#8220;src&#8221; folder, the main files you will find are the following React files:
+Inside the "src" folder, the main files you will find are the following React files:
 
-<pre class="line-numbers"><code class="language-javascript">./src
+```
+./src
 ----User.js
 ----News.js
 ----Status.js
 ----index.js
-</code></pre>
+```
 
 And the following Redux files:
 
-<pre class="line-numbers"><code class="language-javascript">./src
+```
+./src
 ----redux
 --------actions
 ------------index.actions.js
@@ -75,7 +77,7 @@ And the following Redux files:
 ------------status.reducers.js
 --------store
 ------------index.js
-</code></pre>
+```
 
 ## Redux 101 {#redux101}
 
@@ -107,7 +109,7 @@ I will do my best to keep this short.
 #### React index file {#react-index}
 
 At the top of this files, you have all the imports needed to make it work. The last two imports are related to Redux.
-We are importing the &#8220;Provider&#8221; component and the Redux store we already created.
+We are importing the "Provider" component and the Redux store we already created.
 
 The Provider will take our store as prop and wrap our application so that every component can easily be informed of the current status.
 
@@ -116,13 +118,13 @@ The Provider will take our store as prop and wrap our application so that every 
 Found in:
 ./src/User.js
 
-At the top of the file, we have our standard imports needed to load React, load the &#8220;connect&#8221; feature from Redux, and load our Redux actions.
+At the top of the file, we have our standard imports needed to load React, load the "connect" feature from Redux, and load our Redux actions.
 
 Inside the component, in the beginning of the component's lifecycle, inside the componentDidMount() function, we check if data is already loaded, and if not, we load it.
 
 Inside the render() function we simply output the data.
 
-Towards the end of the file, we have &#8220;const = mapStateToProps&#8221;. Here we are mapping the user state saved in Redux, with the component's properties (props) so that they are available in the render() function.
+Towards the end of the file, we have "const = mapStateToProps". Here we are mapping the user state saved in Redux, with the component's properties (props) so that they are available in the render() function.
 
 In the last few lines, we are doing the actual plumbing, connecting everything together and exporting the component.
 
@@ -131,7 +133,7 @@ In the last few lines, we are doing the actual plumbing, connecting everything t
 Found in:
 ./src/redux/actions/index.actions.js
 
-Then we have two functions, loadUser() and loadNews(). What they do is to basically return a simple object describing the action we want to perform. This action will be &#8220;intercepted&#8221; by the middleware, which in turn will take care of the AJAX requests.
+Then we have two functions, loadUser() and loadNews(). What they do is to basically return a simple object describing the action we want to perform. This action will be "intercepted" by the middleware, which in turn will take care of the AJAX requests.
 
 #### Redux middleware {#redux-middleware}
 
@@ -140,7 +142,7 @@ Before we start, please note that I added some artificial delay to these Ajax re
 Found in:
 ./src/redux/middleware/index.middleware.js
 
-What this bit does is to intercept all actions and if, as an example, one called &#8220;LOAD USER&#8221; is found, it will dispatch a new action, in this case &#8220;USER_LOADED&#8221;, togerther twith a payload, in this case the result of an AJAX call.
+What this bit does is to intercept all actions and if, as an example, one called "LOAD USER" is found, it will dispatch a new action, in this case "USER_LOADED", togerther twith a payload, in this case the result of an AJAX call.
 
 #### Redux User Reducer {#redux-reducer}
 
@@ -173,7 +175,7 @@ To sum up, the steps you need to follow to work with redux are:
 ## Conclusions {#conclusions}
 
 I know there are many moving parts involved, but Redux seems like a great solution and it's probably here to stay.
-What I generally like to do is to avoid almost completely the usage of component-level state, except for small UI-related information (e.g. show/hide a menu), and use Redux for everything else, with the advantage that important global state is available from anywhere in the App, I just need to &#8220;connect&#8221; to the redux store.
+What I generally like to do is to avoid almost completely the usage of component-level state, except for small UI-related information (e.g. show/hide a menu), and use Redux for everything else, with the advantage that important global state is available from anywhere in the App, I just need to "connect" to the redux store.
 
 There is surely much more to it than what is in this guide, and I am probably just scratching the surface here, but hopefully this will be enough to get you started.
 
