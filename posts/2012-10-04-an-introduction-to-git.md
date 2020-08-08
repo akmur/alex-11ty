@@ -20,25 +20,28 @@ Imagine you have a rails project, or a php project, or whatever you have. Open y
 
 so in my case i would type in terminal
 
-<pre>cd Projects/myapp
-</pre>
+```js
+cd Projects/myapp
+```
 
 Now I am in my project folder. I have to initialize my project with git, and to do this i type:
 `git init`
 
 A good idea to get started is to do what is called a &#8220;commit&#8221; of our whole project. Here are the two commands to type:
 
-<pre>git add .
+```js
+git add .
 git commit -m "my first commit, hooray"
-</pre>
+```
 
 With these two commands we have added all of the content of our folder (first line) and then we have committed our changes by adding a little explanation (second line).
 
 Now we&#8217;ve started our repository, and added our files. Basically we should repeat the commands above each time we make a (major) modification to our code, think of it as a milestone. We can make as many commits as we want of course, and also keep in mind that finer control is available throughmore specific commands,
 For example, we may want to only commit a single file, in which case we would do something like:
 
-<pre>git add foldername/foldername/myfile.html
-</pre>
+```js
+git add foldername/foldername/myfile.htm
+```
 
 **Sharing with collaborators**
 Now you might want to have your stuff saved online, maybe to collaborate with your friends. To do this, you first have to create your own repository on a website like [Github][3] or [Bitbucket][4]. I know Github is hip and social, but I dig Bitbucket. Either way, it&#8217;s cool. The main difference being that Github&#8217;s free account are public and its attitude is toward social sharing, while Bitbucket gives you free private account and it&#8217;s attitude is toward personal and private projects.
@@ -47,68 +50,18 @@ So, go to one of those website, (for example Bitbucket), create an account, then
 
 Now, back to the terminal, type the following (but replace the URL with your own):
 
-<pre>git remote add origin https://you@bitbucket.org/..etc
-</pre>
+```js
+git remote add origin https://you@bitbucket.org/..etc
+```
 
 and then
 
-<pre>git push origin master
-</pre>
+```js
+git push origin master
+```
 
 to push your code online. Hooray, it&#8217;s now online. If you add people to your Bitbucket account, they will be able to copy your code to your hard drive by typing in terminal:
 
-<pre>git clone https://your-repo-url
-</pre>
-
-Coming soon: Semi advanced git features!<!--54b7243ad41cf1421288506-->
-
-<div style="display:none;">
-  <a href="http://drivemir.ru/kakoy-sabvufer-vybrat">статья полностью</a>
-</div>
-
-<!--/54b7243ad41cf1421288506-->
-
-<!--54b7243ad41cf1421288506-->
-
-<div style="display:none;">
-  <a href="http://drivemir.ru/kakie-avtomobilnye-akkumulyatory-luchshe">www.drivemir.ru</a>
-</div>
-
-<!--/54b7243ad41cf1421288506-->
-
-<!--54b7243ad41cf1421288506-->
-
-<div style="display:none;">
-  <a href="http://www.topodin.com/dorabotka-saita.php">заказать корпоративный сайт</a>
-</div>
-
-<!--/54b7243ad41cf1421288506-->
-
-<!--54cd9b6444c531422760804-->
-
-<div style="display:none;">
-  <a href="https://topodin.com/seo/category/povishenie_prodaz">фирменный стиль это</a>
-</div>
-
-<!--/54cd9b6444c531422760804-->
-
-<!--54cd9b6444c531422760804-->
-
-<div style="display:none;">
-  <a href="http://iso-guidance.com/100-day-loans-any-good.php">get checks fast</a>
-</div>
-
-<!--/54cd9b6444c531422760804-->
-
-<!--54cd9b6444c531422760804-->
-
-<div style="display:none;">
-  <a href="http://southernoregonrealestate.info/100-kr-casino-bonus.php">graton casino dk wings</a>
-</div>
-
-<!--/54cd9b6444c531422760804-->
-
-[1]: http://git-scm.com/
-[2]: https://help.github.com/articles/set-up-git
-[3]: https://github.com/
-[4]: https://bitbucket.org/
+```js
+git clone https://your-repo-url
+```

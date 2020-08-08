@@ -80,7 +80,7 @@ i18n
     },
     load: 'all'
   })
-  .then(() =&gt; {
+  .then(() => {
     ReactDOM.render(
      &lt;App /&gt;,
       document.getElementById('root')
@@ -98,7 +98,7 @@ Using the translations in your App will then work like this:
 
 import { useTranslation } from 'react-i18next'
 
-const TeamMemberItem = props =&gt; {
+const TeamMemberItem = props => {
   const { t } = useTranslation()
 
   return (
@@ -120,7 +120,7 @@ class MyComponent extends Component {
   render(){
     return (
     &lt;Translation&gt;
-      {(t, { i18n }) =&gt; (
+      {(t, { i18n }) => (
         &lt;div&gt;
           {t('basics.negation')}
           {/* will print no */}
@@ -157,10 +157,10 @@ Finally, if you want to switch language, you can do the following in your compon
 
 import { useTranslation } from 'react-i18next'
 
-const LanguageSwitch = () =&gt; {
+const LanguageSwitch = () => {
     const { i18n } = useTranslation()
 
-    const handleOnLanguageSwitch = () =&gt; {
+    const handleOnLanguageSwitch = () => {
         // get current language
         const currentLanguage = i18n.language || window.localStorage.i18nextLng || ''
 

@@ -7,6 +7,7 @@
     <title>A real world reduce() example</title>
     <link href="https://fonts.googleapis.com/css?family=Merriweather:700|Muli:300,700" rel="stylesheet">
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/atom-one-dark.min.css" integrity="sha512-Jlyabam8ztU2kOGN19fSzv1Go9nt9A43UA6vhmL1MPsQMeoPZd+p7pbmegAtyl8kulna0Cqwb7Pgj4adGTLCXA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="/css/index.css">
   </head>
   <body class="ui-dark">
@@ -33,14 +34,26 @@
             </div>
           </div>
         </div>
-        <div class="main">
-          <p>For a long time I couldn’t think of a way to use <em>reduce</em> beyond the classic sum example (taken from <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce">MDN</a>)</p>
-<pre><code class="language-javascript">const array1 = [1, 2, 3, 4];
-const reducer = (accumulator, currentValue) =&gt;
-  accumulator + currentValue;</code></pre>
-<p>A few days ago, I found a way to make reduce() actually useful to me. I have been using it to create a new array out of an array of objects.</p>
-<p>I had an array of complex objects, and I wanted to just get an array containing one of those properties, the name.</p>
-<pre><code class="language-javascript">const people = [
+        <div id="main" class="main">
+          <article class="post">
+      <header class="entry-header">
+        <h1 class="pageContent__title title title--h1">
+          A real world reduce() example
+        </h1>
+        <div class="pageContent__date date">
+          Posted on Wed, 20 Nov 2019 08:32:28 GMT
+        </div><!-- .entry-meta -->
+      </header>
+          </article>
+          <p>For a long time I couldn’t think of a way to use <em>reduce</em> beyond the classic sum example (taken from [MDN][1])</p>
+<pre><code class="language-jsconst">const reducer = (accumulator, currentValue) =&gt;
+  accumulator + currentValue;&lt;/code&gt;&lt;/pre&gt;
+
+A few days ago, I found a way to make reduce() actually useful to me. I have been using it to create a new array out of an array of objects.
+
+I had an array of complex objects, and I wanted to just get an array containing one of those properties, the name.
+
+``` jsconst people = [
   {
     id: 1,
     entries: [{name: 'Peach'}, {name: 'Mario'}]
@@ -57,8 +70,12 @@ const reducer = (acc, current) =&gt; {
 
 const names = people.reduce(reducer, [])
 
-console.log(names) // [{name: 'Peach'}, {name: 'Mario'}, {name: 'Bowser'}]</code></pre>
-<p>Not sure why I never thought of this before, but better late than never, right?</p>
+console.log(names) // [{name: 'Peach'}, {name: 'Mario'}, {name: 'Bowser'}]&lt;/code&gt;&lt;/pre&gt;
+
+Not sure why I never thought of this before, but better late than never, right?
+
+[1]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
+</code></pre>
 
         </div>
         <footer class="footer">
@@ -72,4 +89,6 @@ console.log(names) // [{name: 'Peach'}, {name: 'Mario'}, {name: 'Bowser'}]</code
       </div>
     </div>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js" integrity="sha512-tHQeqtcNWlZtEh8As/4MmZ5qpy0wj04svWFK7MIzLmUVIzaHXS8eod9OmHxyBL1UET5Rchvw7Ih4ZDv5JojZww==" crossorigin="anonymous"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </html>

@@ -7,6 +7,7 @@
     <title>Using Linters</title>
     <link href="https://fonts.googleapis.com/css?family=Merriweather:700|Muli:300,700" rel="stylesheet">
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/atom-one-dark.min.css" integrity="sha512-Jlyabam8ztU2kOGN19fSzv1Go9nt9A43UA6vhmL1MPsQMeoPZd+p7pbmegAtyl8kulna0Cqwb7Pgj4adGTLCXA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="/css/index.css">
   </head>
   <body class="ui-dark">
@@ -33,7 +34,17 @@
             </div>
           </div>
         </div>
-        <div class="main">
+        <div id="main" class="main">
+          <article class="post">
+      <header class="entry-header">
+        <h1 class="pageContent__title title title--h1">
+          Using Linters
+        </h1>
+        <div class="pageContent__date date">
+          Posted on Sat, 04 Feb 2017 12:30:36 GMT
+        </div><!-- .entry-meta -->
+      </header>
+          </article>
           <h3>What is a linter?</h3>
 <p>According to google, the definition of “lint” is <em>“short, fine fibres which separate from the surface of cloth or yarn during processing.”</em></p>
 <p>However for us programmers a <strong>linter</strong> is a software that checks your code for errors, bad practices, bad formatting and logical issues, and gives you a warning when you make a mistake. A linter can be configurable according to rules that you decide.</p>
@@ -106,4 +117,6 @@ The error position is also specified within parenthesis, in this case it is 7,1
       </div>
     </div>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js" integrity="sha512-tHQeqtcNWlZtEh8As/4MmZ5qpy0wj04svWFK7MIzLmUVIzaHXS8eod9OmHxyBL1UET5Rchvw7Ih4ZDv5JojZww==" crossorigin="anonymous"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </html>

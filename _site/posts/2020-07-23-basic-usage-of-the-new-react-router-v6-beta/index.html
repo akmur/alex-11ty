@@ -7,6 +7,7 @@
     <title>Basic usage of the new React Router v6 (beta)</title>
     <link href="https://fonts.googleapis.com/css?family=Merriweather:700|Muli:300,700" rel="stylesheet">
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/atom-one-dark.min.css" integrity="sha512-Jlyabam8ztU2kOGN19fSzv1Go9nt9A43UA6vhmL1MPsQMeoPZd+p7pbmegAtyl8kulna0Cqwb7Pgj4adGTLCXA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="/css/index.css">
   </head>
   <body class="ui-dark">
@@ -33,100 +34,111 @@
             </div>
           </div>
         </div>
-        <div class="main">
+        <div id="main" class="main">
+          <article class="post">
+      <header class="entry-header">
+        <h1 class="pageContent__title title title--h1">
+          Basic usage of the new React Router v6 (beta)
+        </h1>
+        <div class="pageContent__date date">
+          Posted on Thu, 23 Jul 2020 10:43:09 GMT
+        </div><!-- .entry-meta -->
+      </header>
+          </article>
           <p>In this post we are going to look into how to use get started with the upcoming React Router version 6, currently in beta. Surely there are many more capabilities than those shown here, but this will get any app started, and might be enough for most of them.</p>
 <h3>Installation</h3>
 <p>To get started, install these packages:</p>
-<pre><code class="language-javascript">npm install history react-router-dom@next react-router@next</code></pre>
+<pre><code>npm install history react-router-dom@next react-router@next
+</code></pre>
 <p>This will install (at the time of writing) these package versions in your package.json:</p>
-<pre><code class="language-">"history": "^5.0.0",
-"react-router": "^6.0.0-beta.0",
-"react-router-dom": "^6.0.0-beta.0"</code></pre>
+<pre><code>&quot;history&quot;: &quot;^5.0.0&quot;,
+&quot;react-router&quot;: &quot;^6.0.0-beta.0&quot;,
+&quot;react-router-dom&quot;: &quot;^6.0.0-beta.0&quot;
+</code></pre>
 <h3>The router component</h3>
 <p>For the sake of this example, we will create a few pages and we will see how to reach them, extract url parameters and search queries.</p>
 <p>This is the code for my <em>AppRouter</em> component, which you will likely import at some point within your application (for example, in the <em>App</em> component)</p>
 <p>Note: Your <em>Navigation</em> component needs to exist inside the router.</p>
-<pre><code class="language-javascript">import React from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+<pre><code>import React from &quot;react&quot;;
+import { BrowserRouter as Router, Routes, Route } from &quot;react-router-dom&quot;;
 
-import Home from './pages/Home'
-import About from './pages/About'
-import Single from './pages/Single'
-import FourOFour from './pages/FourOFour'
-import Search from './pages/Search'
-import Navigation from './ui/Navigation'
+import Home from &quot;./pages/Home&quot;;
+import About from &quot;./pages/About&quot;;
+import Single from &quot;./pages/Single&quot;;
+import FourOFour from &quot;./pages/FourOFour&quot;;
+import Search from &quot;./pages/Search&quot;;
+import Navigation from &quot;./ui/Navigation&quot;;
 
 const AppRouter = () =&gt; {
   return (
-    &lt;div className="AppRouter"&gt;
+    &lt;div className=&quot;AppRouter&quot;&gt;
       &lt;Router&gt;
         &lt;Navigation /&gt;
         &lt;Routes&gt;
-          &lt;Route element={&lt;Home /&gt;} path="/" /&gt;
-          &lt;Route element={&lt;About /&gt;} path="/about" /&gt;
-          &lt;Route element={&lt;Single /&gt;} path="/single/:id" /&gt;
-          &lt;Route element={&lt;Search /&gt;} path="/search" /&gt;
-          &lt;Route element={&lt;FourOFour /&gt;} path="/*" /&gt;
+          &lt;Route element={&lt;Home /&gt;} path=&quot;/&quot; /&gt;
+          &lt;Route element={&lt;About /&gt;} path=&quot;/about&quot; /&gt;
+          &lt;Route element={&lt;Single /&gt;} path=&quot;/single/:id&quot; /&gt;
+          &lt;Route element={&lt;Search /&gt;} path=&quot;/search&quot; /&gt;
+          &lt;Route element={&lt;FourOFour /&gt;} path=&quot;/*&quot; /&gt;
         &lt;/Routes&gt;
       &lt;/Router&gt;
     &lt;/div&gt;
-  )
-}
+  );
+};
 
-export default AppRouter
+export default AppRouter;
 </code></pre>
 <h3>Links within the application</h3>
 <p>We will now use the <em>Navigation</em> component to reach those pages we created:</p>
 <p>Here is how it looks like. As you can see it uses the Link component provided by the router.</p>
-<pre><code class="language-javascript">import React from 'react'
-import { Link } from 'react-router-dom'
+<pre><code>import React from &quot;react&quot;;
+import { Link } from &quot;react-router-dom&quot;;
 
 const Navigation = () =&gt; {
   return (
-    &lt;nav className="Navigation"&gt;
-      &lt;Link className="Navigation__link" to="/"&gt;
+    &lt;nav className=&quot;Navigation&quot;&gt;
+      &lt;Link className=&quot;Navigation__link&quot; to=&quot;/&quot;&gt;
         Home
       &lt;/Link&gt;
 
-      &lt;Link className="Navigation__link" to="/about"&gt;
+      &lt;Link className=&quot;Navigation__link&quot; to=&quot;/about&quot;&gt;
         About
       &lt;/Link&gt;
     &lt;/nav&gt;
-  )
-}
+  );
+};
 
-export default Navigation
+export default Navigation;
 </code></pre>
 <h3>How to use the URL parameters</h3>
 <p>In the Single page component, we can grab the URL parameter “id” and use it for whatever we need, like fetching some more data from some APIs.</p>
-<pre><code class="language-javascript">import React from 'react'
+<pre><code>import React from 'react'
 import { useParams } from 'react-router-dom'
 
 const Single = () =&gt; {
   const { id } = useParams()
 
-  return &lt;div&gt;{id}&lt;/div&gt;
+  return &lt;div&gt;&lt;/div&gt;{id}&lt;/div&gt;
 }
 
 export default Single
 </code></pre>
 <h3>How to use the location or query parameters</h3>
 <p>We have created a <em>Search</em> page which would show different search results according to search query parameters. In order to grab those parameters you do like this:</p>
-<pre><code class="language-javascript">import React from 'react'
-import { useLocation } from 'react-router-dom'
+<pre><code>import React from &quot;react&quot;;
+import { useLocation } from &quot;react-router-dom&quot;;
 
 const Search = () =&gt; {
-  const location = useLocation()
-  const locationSearch = location.search
+  const location = useLocation();
+  const locationSearch = location.search;
 
-  return &lt;div&gt;{locationSearch}&lt;/div&gt;
-}
+  return &lt;div&gt;{locationSearch}&lt;/div&gt;;
+};
 
-export default Search
+export default Search;
 </code></pre>
 <p>You can then use the <em>locationSearch</em> variable to extract the single parameters</p>
 <p>So, that’s it! Hopefully this gave you a good starting point to implement React Router V6 in your app.</p>
-<p>—</p>
 <p><span>Photo by <a href="https://unsplash.com/@bogdan_karlenko?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Bogdan Karlenko</a> on <a href="https://unsplash.com/s/photos/routes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span></p>
 
         </div>
@@ -141,4 +153,6 @@ export default Search
       </div>
     </div>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js" integrity="sha512-tHQeqtcNWlZtEh8As/4MmZ5qpy0wj04svWFK7MIzLmUVIzaHXS8eod9OmHxyBL1UET5Rchvw7Ih4ZDv5JojZww==" crossorigin="anonymous"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </html>

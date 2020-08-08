@@ -7,6 +7,7 @@
     <title>Welcome to my new blog</title>
     <link href="https://fonts.googleapis.com/css?family=Merriweather:700|Muli:300,700" rel="stylesheet">
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/atom-one-dark.min.css" integrity="sha512-Jlyabam8ztU2kOGN19fSzv1Go9nt9A43UA6vhmL1MPsQMeoPZd+p7pbmegAtyl8kulna0Cqwb7Pgj4adGTLCXA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="/css/index.css">
   </head>
   <body class="ui-dark">
@@ -33,7 +34,17 @@
             </div>
           </div>
         </div>
-        <div class="main">
+        <div id="main" class="main">
+          <article class="post">
+      <header class="entry-header">
+        <h1 class="pageContent__title title title--h1">
+          Welcome to my new blog
+        </h1>
+        <div class="pageContent__date date">
+          Posted on Tue, 23 Oct 2018 00:12:24 GMT
+        </div><!-- .entry-meta -->
+      </header>
+          </article>
           <p>Today I have launched my new blog. It is not simply a new theme (or actually, two themes, try out the “switch theme button” in the top right corner); it also has got an entirely new technical architecture to go with it.</p>
 <p>But first, I want to take the chance to go through all the designs I did for this site over the years, with a little help from the Wayback Machine. Unfortunately some iterations have been lost, but it is still fun to look at:</p>
 <p><a href="https://web.archive.org/web/20120114220703/http://inteoria.net/">2012 Theme (using a different domain)</a></p>
@@ -60,4 +71,6 @@
       </div>
     </div>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js" integrity="sha512-tHQeqtcNWlZtEh8As/4MmZ5qpy0wj04svWFK7MIzLmUVIzaHXS8eod9OmHxyBL1UET5Rchvw7Ih4ZDv5JojZww==" crossorigin="anonymous"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </html>

@@ -7,6 +7,7 @@
     <title>Modifying WP API response to add previous and next post ID</title>
     <link href="https://fonts.googleapis.com/css?family=Merriweather:700|Muli:300,700" rel="stylesheet">
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/atom-one-dark.min.css" integrity="sha512-Jlyabam8ztU2kOGN19fSzv1Go9nt9A43UA6vhmL1MPsQMeoPZd+p7pbmegAtyl8kulna0Cqwb7Pgj4adGTLCXA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="/css/index.css">
   </head>
   <body class="ui-dark">
@@ -33,7 +34,17 @@
             </div>
           </div>
         </div>
-        <div class="main">
+        <div id="main" class="main">
+          <article class="post">
+      <header class="entry-header">
+        <h1 class="pageContent__title title title--h1">
+          Modifying WP API response to add previous and next post ID
+        </h1>
+        <div class="pageContent__date date">
+          Posted on Tue, 12 Jul 2016 14:21:18 GMT
+        </div><!-- .entry-meta -->
+      </header>
+          </article>
           <p>I am pretty sure most people have at least heard about the mighty WordPress APIs. These APIs make it possible to create, modify and retrieve posts from our WordPress installations, although what we really want to do the most should be to using WordPress as an awesome backend to power cool applications. Think the possibilities…</p>
 <p>Playing around with the APIs, I found out that the single post endpoint doesn’t show the previous and next post, which might be useful for pagination. Thankfully, it turned out to be quite simple to extend the APIs, so I have packaged this into a small plugin you can find below… it’s really quite simple and goes to show the superpowers granted to us by the WP APIs. Also, it might serve as a good reference in case you’re a bit lost starting out with working with the APIs. Have fun!</p>
 <p><a href="https://github.com/akmur/add-prev-next-to-wp-api">github.com/akmur/add-prev-next-to-wp-api</a></p>
@@ -50,4 +61,6 @@
       </div>
     </div>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js" integrity="sha512-tHQeqtcNWlZtEh8As/4MmZ5qpy0wj04svWFK7MIzLmUVIzaHXS8eod9OmHxyBL1UET5Rchvw7Ih4ZDv5JojZww==" crossorigin="anonymous"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </html>

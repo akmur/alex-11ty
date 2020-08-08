@@ -7,6 +7,7 @@
     <title>Get related posts by custom taxonomy</title>
     <link href="https://fonts.googleapis.com/css?family=Merriweather:700|Muli:300,700" rel="stylesheet">
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/atom-one-dark.min.css" integrity="sha512-Jlyabam8ztU2kOGN19fSzv1Go9nt9A43UA6vhmL1MPsQMeoPZd+p7pbmegAtyl8kulna0Cqwb7Pgj4adGTLCXA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="/css/index.css">
   </head>
   <body class="ui-dark">
@@ -33,29 +34,39 @@
             </div>
           </div>
         </div>
-        <div class="main">
+        <div id="main" class="main">
+          <article class="post">
+      <header class="entry-header">
+        <h1 class="pageContent__title title title--h1">
+          Get related posts by custom taxonomy
+        </h1>
+        <div class="pageContent__date date">
+          Posted on Tue, 28 Jan 2014 23:56:21 GMT
+        </div><!-- .entry-meta -->
+      </header>
+          </article>
           <p>In this post we’re going to use <a href="http://codex.wordpress.org/Class_Reference/WP_Query">wp_query</a> and <a href="http://codex.wordpress.org/Function_Reference/register_taxonomy">custom taxonomies</a>. Let the fun begin!</p>
 <p>What we want is to retrieve posts related to the one we are currently displaying through one (or more) custom taxonomy term by using the following snippet to retrieve the current post type and use it in creative ways. In my case, since I was out of creativity, I just chose to run a simpler query whenever the post_type is not “event”. Check it out.</p>
 <pre>post_type = get_post_type();
 
 if ($post_type == 'event'){
   $args = array(
-    'post_type' =&gt; 'post',
-    'posts_per_page' =&gt; '3',
-    'tax_query' =&gt; array(
-    'relation' =&gt; 'AND',
+    'post_type' => 'post',
+    'posts_per_page' => '3',
+    'tax_query' => array(
+    'relation' => 'AND',
         array(
-        'taxonomy' =&gt; 'shtags',
-        'field' =&gt; 'slug',
-        'terms' =&gt; $myterm,
-        'operator' =&gt; 'IN'
+        'taxonomy' => 'shtags',
+        'field' => 'slug',
+        'terms' => $myterm,
+        'operator' => 'IN'
         )
     )
   $my_posts = new WP_Query($args);
 } else {
     $args = array(
-    'post_type' =&gt; 'post',
-    'posts_per_page'  =&gt; '1'
+    'post_type' => 'post',
+    'posts_per_page'  => '1'
     );
   $my_posts = new WP_Query($args);
 }
@@ -103,4 +114,6 @@ if ($post_type == 'event'){
       </div>
     </div>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js" integrity="sha512-tHQeqtcNWlZtEh8As/4MmZ5qpy0wj04svWFK7MIzLmUVIzaHXS8eod9OmHxyBL1UET5Rchvw7Ih4ZDv5JojZww==" crossorigin="anonymous"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </html>

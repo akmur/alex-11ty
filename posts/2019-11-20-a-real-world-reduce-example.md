@@ -12,7 +12,7 @@ categories:
 For a long time I couldn&#8217;t think of a way to use _reduce_ beyond the classic sum example (taken from [MDN][1])
 
 ````jsconst array1 = [1, 2, 3, 4];
-const reducer = (accumulator, currentValue) =&gt;
+const reducer = (accumulator, currentValue) =>
   accumulator + currentValue;</code></pre>
 
 A few days ago, I found a way to make reduce() actually useful to me. I have been using it to create a new array out of an array of objects.
@@ -30,7 +30,7 @@ I had an array of complex objects, and I wanted to just get an array containing 
   }
 ]
 
-const reducer = (acc, current) =&gt; {
+const reducer = (acc, current) => {
   return [...acc, ...current.entries]
 }
 

@@ -20,22 +20,22 @@ What we want is to retrieve posts related to the one we are currently displaying
 
 if ($post_type == 'event'){
   $args = array(
-    'post_type' =&gt; 'post',
-    'posts_per_page' =&gt; '3',
-    'tax_query' =&gt; array(
-    'relation' =&gt; 'AND',
+    'post_type' => 'post',
+    'posts_per_page' => '3',
+    'tax_query' => array(
+    'relation' => 'AND',
         array(
-        'taxonomy' =&gt; 'shtags',
-        'field' =&gt; 'slug',
-        'terms' =&gt; $myterm,
-        'operator' =&gt; 'IN'
+        'taxonomy' => 'shtags',
+        'field' => 'slug',
+        'terms' => $myterm,
+        'operator' => 'IN'
         )
     )
   $my_posts = new WP_Query($args);
 } else {
     $args = array(
-    'post_type' =&gt; 'post',
-    'posts_per_page'  =&gt; '1'
+    'post_type' => 'post',
+    'posts_per_page'  => '1'
     );
   $my_posts = new WP_Query($args);
 }

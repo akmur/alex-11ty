@@ -20,19 +20,23 @@ In this post I would like to show how you can implement a simple drag and drop f
 
 In order to accomplish the drag and drop, we make use of a number of native events implemented in _Card.js_ and _Dropzone.js_. In **Card.js** you should pay attention to the following **handleDragStart** function, which is triggered when you start dragging. It will save some data using the native HTML5 method _dataTransfer.setData_.
 
-<pre class="line-numbers"><code class="language-javascript">const handleDragStart = e =&gt; {
+```
+const handleDragStart = e => {
   e.dataTransfer.effectAllowed = 'move'
   e.dataTransfer.setData('id', props.id)
-}</code></pre>
+}
+```
 
 In **Dropzone.js** you will find a series of functions that are triggered when entering, leaving, hovering a _dropzone_, plus the **handleDrop** function, triggered when releasing an element over the _dropzone_. When this happens, the following function is used to retrieve the saved data, set the dragging state to false, and call the function that will take care of changing the status of the card. Please note that props.status comes down from _App.js._
 
-<pre class="line-numbers"><code class="language-javascript">const handleDrop = e =&gt; {
+```
+const handleDrop = e => {
   const id = parseInt(e.dataTransfer.getData('id'), 10)
   setIsDraggingOver(false)
 
   context.changeCardStatus(id, props.status)
-}</code></pre>
+}
+```
 
 You can find the state of the app and the changeCardStatus function in **context.js.**
 

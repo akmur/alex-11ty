@@ -28,8 +28,6 @@ The thing I use the most is the multiple clipboard though. Many apps provide mul
 
 ### Magnet
 
-###
-
 [Magnet][3] is a little utility I cannot live without. It allows you to easily snap windows to the right, left, centre or wherever you like, just by using a key combination.
 
 <p style="padding-left: 40px;">

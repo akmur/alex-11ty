@@ -7,6 +7,7 @@
     <title>Using react-i18next to localise your application</title>
     <link href="https://fonts.googleapis.com/css?family=Merriweather:700|Muli:300,700" rel="stylesheet">
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/atom-one-dark.min.css" integrity="sha512-Jlyabam8ztU2kOGN19fSzv1Go9nt9A43UA6vhmL1MPsQMeoPZd+p7pbmegAtyl8kulna0Cqwb7Pgj4adGTLCXA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="/css/index.css">
   </head>
   <body class="ui-dark">
@@ -33,7 +34,17 @@
             </div>
           </div>
         </div>
-        <div class="main">
+        <div id="main" class="main">
+          <article class="post">
+      <header class="entry-header">
+        <h1 class="pageContent__title title title--h1">
+          Using react-i18next to localise your application
+        </h1>
+        <div class="pageContent__date date">
+          Posted on Thu, 04 Jul 2019 08:15:44 GMT
+        </div><!-- .entry-meta -->
+      </header>
+          </article>
           <p>In this post I would like to go through the configuration I use to provide localisation features to a React application. This might not be the best way, but it surely is the way that works for me, so I hope it can be useful to other people looking to add this same feature.</p>
 <h3>Packages to install</h3>
 <p>These are the packages to be installed:</p>
@@ -89,7 +100,7 @@ i18n
     },
     load: 'all'
   })
-  .then(() =&gt; {
+  .then(() => {
     ReactDOM.render(
      &lt;App /&gt;,
       document.getElementById('root')
@@ -103,7 +114,7 @@ i18n
 
 import { useTranslation } from 'react-i18next'
 
-const TeamMemberItem = props =&gt; {
+const TeamMemberItem = props => {
   const { t } = useTranslation()
 
   return (
@@ -123,7 +134,7 @@ class MyComponent extends Component {
   render(){
     return (
     &lt;Translation&gt;
-      {(t, { i18n }) =&gt; (
+      {(t, { i18n }) => (
         &lt;div&gt;
           {t('basics.negation')}
           {/* will print no */}
@@ -155,10 +166,10 @@ class MyComponent extends Component {
 
 import { useTranslation } from 'react-i18next'
 
-const LanguageSwitch = () =&gt; {
+const LanguageSwitch = () => {
     const { i18n } = useTranslation()
 
-    const handleOnLanguageSwitch = () =&gt; {
+    const handleOnLanguageSwitch = () => {
         // get current language
         const currentLanguage = i18n.language || window.localStorage.i18nextLng || ''
 
@@ -202,4 +213,6 @@ const LanguageSwitch = () =&gt; {
       </div>
     </div>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js" integrity="sha512-tHQeqtcNWlZtEh8As/4MmZ5qpy0wj04svWFK7MIzLmUVIzaHXS8eod9OmHxyBL1UET5Rchvw7Ih4ZDv5JojZww==" crossorigin="anonymous"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </html>

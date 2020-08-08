@@ -1,0 +1,20 @@
+{
+  "name": "alex-11ty",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eleventy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akmur/alex-11ty.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akmur/alex-11ty/issues"
+  },
+  "homepage": "https://github.com/akmur/alex-11ty#readme",
+  "devDependencies": {}
+}

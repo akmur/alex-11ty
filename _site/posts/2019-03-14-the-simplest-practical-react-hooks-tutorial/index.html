@@ -7,6 +7,7 @@
     <title>The simplest practical React Hooks tutorial</title>
     <link href="https://fonts.googleapis.com/css?family=Merriweather:700|Muli:300,700" rel="stylesheet">
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/atom-one-dark.min.css" integrity="sha512-Jlyabam8ztU2kOGN19fSzv1Go9nt9A43UA6vhmL1MPsQMeoPZd+p7pbmegAtyl8kulna0Cqwb7Pgj4adGTLCXA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="/css/index.css">
   </head>
   <body class="ui-dark">
@@ -33,7 +34,17 @@
             </div>
           </div>
         </div>
-        <div class="main">
+        <div id="main" class="main">
+          <article class="post">
+      <header class="entry-header">
+        <h1 class="pageContent__title title title--h1">
+          The simplest practical React Hooks tutorial
+        </h1>
+        <div class="pageContent__date date">
+          Posted on Thu, 14 Mar 2019 08:47:05 GMT
+        </div><!-- .entry-meta -->
+      </header>
+          </article>
           <p>Since React hooks came out with React 16.8, I’ve seen many hooks tutorials popping up. They are surely interesting and I recommend them, but they can be sometimes a bit long and scary. In any case, as always I think it is beneficial to explain things with different words.</p>
 <p>In a nutshell, React Hooks are used to add state and lifecycle to function components, which, prior to Hooks, could only be “dumb” and print whatever props they were passed from outer components.</p>
 <p>In this post I want to show the simplest React Hooks example. It contains both <strong>“useState”</strong>, used make use of  state inside the component, and <strong>“useEffect”</strong>, used to run code when the component is loaded, or when props or state change.</p>
@@ -73,4 +84,6 @@ To be more precise, when we set:</p>
       </div>
     </div>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js" integrity="sha512-tHQeqtcNWlZtEh8As/4MmZ5qpy0wj04svWFK7MIzLmUVIzaHXS8eod9OmHxyBL1UET5Rchvw7Ih4ZDv5JojZww==" crossorigin="anonymous"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </html>

@@ -7,6 +7,7 @@
     <title>BEM naming convention</title>
     <link href="https://fonts.googleapis.com/css?family=Merriweather:700|Muli:300,700" rel="stylesheet">
     <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/styles/atom-one-dark.min.css" integrity="sha512-Jlyabam8ztU2kOGN19fSzv1Go9nt9A43UA6vhmL1MPsQMeoPZd+p7pbmegAtyl8kulna0Cqwb7Pgj4adGTLCXA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="/css/index.css">
   </head>
   <body class="ui-dark">
@@ -33,7 +34,17 @@
             </div>
           </div>
         </div>
-        <div class="main">
+        <div id="main" class="main">
+          <article class="post">
+      <header class="entry-header">
+        <h1 class="pageContent__title title title--h1">
+          BEM naming convention
+        </h1>
+        <div class="pageContent__date date">
+          Posted on Sat, 26 Sep 2015 13:12:38 GMT
+        </div><!-- .entry-meta -->
+      </header>
+          </article>
           <p>I like <a href="https://en.bem.info/">BEM</a>. BEM stands for “Block, Element, Modifier” and it’s a way to write your CSS class names in an organized way.</p>
 <p>I’ve recently been at the <a href="http://2015.fromthefront.it/">From the front 2015</a> conference in Bologna, where <a href="http://csswizardry.com/">Harry Roberts</a> (creator of Inuit) gave a <a href="https://speakerdeck.com/csswizardry/css-for-software-engineers-for-css-developers">sweet talk</a> about structuring your CSS while keeping your sanity. Throughout the presentation he used the BEM naming convention, which I’ve also started using recently; it’s easy to understand and really helped me make sense of large stylesheets.</p>
 <p>So I’m going to sum up BEM in just a few rules, let’s start!</p>
@@ -91,4 +102,6 @@ Elements within Blocks are to be marked like follows: .blockname__elementname</p
       </div>
     </div>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js" integrity="sha512-tHQeqtcNWlZtEh8As/4MmZ5qpy0wj04svWFK7MIzLmUVIzaHXS8eod9OmHxyBL1UET5Rchvw7Ih4ZDv5JojZww==" crossorigin="anonymous"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </html>
