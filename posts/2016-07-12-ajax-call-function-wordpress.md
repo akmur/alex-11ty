@@ -34,7 +34,7 @@ The way I solved this was to add a global variable in the header, so that the Wo
 
 ### In header.php
 
-<pre><code class="language-javascript">
+```js
 &lt;script&gt;
   var ajaxurl = "' . admin_url('admin-ajax.php') . '";
 &lt;/script&gt;
@@ -78,3 +78,4 @@ function getPrevPostId(id){
 }
 </code>
 </pre>
+```
