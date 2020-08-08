@@ -1,0 +1,143 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic usage of the new React Router v6 (beta)</title>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:700|Muli:300,700" rel="stylesheet">
+    <link rel="stylesheet" href="/css/index.css">
+  </head>
+  <body class="ui-dark">
+    <div class="wrapper">
+      <div class="layout">
+        <div class="header">
+          <a class="logo" href="/"><svg class="logo__triangle logo__triangle--left" style="isolation: isolate;" viewbox="217 167 106 96">
+          <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--center" style="isolation: isolate;" viewbox="217 167 106 96">
+          <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--right" style="isolation: isolate;" viewbox="217 167 106 96">
+          <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg></a>
+          <div id="nav">
+            <div class="menu-my-menu-container">
+              <ul class="menu" id="menu-my-menu">
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1408" id="menu-item-1408">
+                  <a href="/">Home</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1409" id="menu-item-1409">
+                  <a href="/posts/">Posts</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6 current_page_item menu-item-1411" id="menu-item-1411">
+                  <a href="/about/">About</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="main">
+          <p>In this post we are going to look into how to use get started with the upcoming React Router version 6, currently in beta. Surely there are many more capabilities than those shown here, but this will get any app started, and might be enough for most of them.</p>
+<h3>Installation</h3>
+<p>To get started, install these packages:</p>
+<pre><code class="language-javascript">npm install history react-router-dom@next react-router@next</code></pre>
+<p>This will install (at the time of writing) these package versions in your package.json:</p>
+<pre><code class="language-">"history": "^5.0.0",
+"react-router": "^6.0.0-beta.0",
+"react-router-dom": "^6.0.0-beta.0"</code></pre>
+<h3>The router component</h3>
+<p>For the sake of this example, we will create a few pages and we will see how to reach them, extract url parameters and search queries.</p>
+<p>This is the code for my <em>AppRouter</em> component, which you will likely import at some point within your application (for example, in the <em>App</em> component)</p>
+<p>Note: Your <em>Navigation</em> component needs to exist inside the router.</p>
+<pre><code class="language-javascript">import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+
+import Home from './pages/Home'
+import About from './pages/About'
+import Single from './pages/Single'
+import FourOFour from './pages/FourOFour'
+import Search from './pages/Search'
+import Navigation from './ui/Navigation'
+
+const AppRouter = () =&gt; {
+  return (
+    &lt;div className="AppRouter"&gt;
+      &lt;Router&gt;
+        &lt;Navigation /&gt;
+        &lt;Routes&gt;
+          &lt;Route element={&lt;Home /&gt;} path="/" /&gt;
+          &lt;Route element={&lt;About /&gt;} path="/about" /&gt;
+          &lt;Route element={&lt;Single /&gt;} path="/single/:id" /&gt;
+          &lt;Route element={&lt;Search /&gt;} path="/search" /&gt;
+          &lt;Route element={&lt;FourOFour /&gt;} path="/*" /&gt;
+        &lt;/Routes&gt;
+      &lt;/Router&gt;
+    &lt;/div&gt;
+  )
+}
+
+export default AppRouter
+</code></pre>
+<h3>Links within the application</h3>
+<p>We will now use the <em>Navigation</em> component to reach those pages we created:</p>
+<p>Here is how it looks like. As you can see it uses the Link component provided by the router.</p>
+<pre><code class="language-javascript">import React from 'react'
+import { Link } from 'react-router-dom'
+
+const Navigation = () =&gt; {
+  return (
+    &lt;nav className="Navigation"&gt;
+      &lt;Link className="Navigation__link" to="/"&gt;
+        Home
+      &lt;/Link&gt;
+
+      &lt;Link className="Navigation__link" to="/about"&gt;
+        About
+      &lt;/Link&gt;
+    &lt;/nav&gt;
+  )
+}
+
+export default Navigation
+</code></pre>
+<h3>How to use the URL parameters</h3>
+<p>In the Single page component, we can grab the URL parameter “id” and use it for whatever we need, like fetching some more data from some APIs.</p>
+<pre><code class="language-javascript">import React from 'react'
+import { useParams } from 'react-router-dom'
+
+const Single = () =&gt; {
+  const { id } = useParams()
+
+  return &lt;div&gt;{id}&lt;/div&gt;
+}
+
+export default Single
+</code></pre>
+<h3>How to use the location or query parameters</h3>
+<p>We have created a <em>Search</em> page which would show different search results according to search query parameters. In order to grab those parameters you do like this:</p>
+<pre><code class="language-javascript">import React from 'react'
+import { useLocation } from 'react-router-dom'
+
+const Search = () =&gt; {
+  const location = useLocation()
+  const locationSearch = location.search
+
+  return &lt;div&gt;{locationSearch}&lt;/div&gt;
+}
+
+export default Search
+</code></pre>
+<p>You can then use the <em>locationSearch</em> variable to extract the single parameters</p>
+<p>So, that’s it! Hopefully this gave you a good starting point to implement React Router V6 in your app.</p>
+<p>—</p>
+<p><span>Photo by <a href="https://unsplash.com/@bogdan_karlenko?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Bogdan Karlenko</a> on <a href="https://unsplash.com/s/photos/routes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span></p>
+
+        </div>
+        <footer class="footer">
+          <div class="footer__container">
+            <p class="footer__text">Find me on:<br>
+              <a class="footer__link" href="https://twitter.com/akmur">Twitter</a>,
+              <a rel="me" href="https://mastodon.social/@akmur" class="footer__link">Mastodon</a>, <a class="footer__link" href="https://www.linkedin.com/in/alessandromuraro/">LinkedIn</a>, <a class="footer__link" href="https://github.com/akmur">Github</a>.
+            </p>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

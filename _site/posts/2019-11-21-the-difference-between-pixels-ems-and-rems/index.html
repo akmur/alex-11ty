@@ -1,0 +1,117 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The difference between pixels, ems and rems</title>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:700|Muli:300,700" rel="stylesheet">
+    <link rel="stylesheet" href="/css/index.css">
+  </head>
+  <body class="ui-dark">
+    <div class="wrapper">
+      <div class="layout">
+        <div class="header">
+          <a class="logo" href="/"><svg class="logo__triangle logo__triangle--left" style="isolation: isolate;" viewbox="217 167 106 96">
+          <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--center" style="isolation: isolate;" viewbox="217 167 106 96">
+          <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--right" style="isolation: isolate;" viewbox="217 167 106 96">
+          <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg></a>
+          <div id="nav">
+            <div class="menu-my-menu-container">
+              <ul class="menu" id="menu-my-menu">
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1408" id="menu-item-1408">
+                  <a href="/">Home</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1409" id="menu-item-1409">
+                  <a href="/posts/">Posts</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6 current_page_item menu-item-1411" id="menu-item-1411">
+                  <a href="/about/">About</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="main">
+          <h2>The issue</h2>
+<p>I think there is often a little bit of misunderstanding when frontend developers and designers talk to each other about dimensions on the web.
+Designers generally design in <em>pixels</em>, obviously. Frontend developers then usually develop in <em>ems</em> and <em>rems</em>.
+This post wants to bridge a knowledge gap that I feel might exist.</p>
+<p><em>(I know other units also exists, but I think the ones covered in this article are the most important for a good designer-developer communication)</em></p>
+<h2>A  simple technical explanation</h2>
+<h3>Pixel</h3>
+<p>A <strong>pixel</strong> is the tiny dot that makes images on the monitor.</p>
+<p><strong>Example:</strong>
+If you specify that an element has to be 20px wide, it will be 20px wide.
+It <strong>will not be</strong> affected by what is around it or by its own font-size. If a user will change his/her accessibility settings, <strong>a pixel remains unaffected</strong>.</p>
+<p class="codepen" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-height="265" data-theme-id="default" data-default-tab="css,result" data-user="akmur" data-slug-hash="BaabGQJ" data-pen-title="Example px">
+  See the Pen <a href="https://codepen.io/akmur/pen/BaabGQJ"><br /> Example px</a> by Alessandro Muraro (<a href="https://codepen.io/akmur">@akmur</a>)<br /> on <a href="https://codepen.io">CodePen</a>.
+</p>
+<h3>Rem</h3>
+<p>With <strong>rem units</strong>, one unit is relative to the font-size of the root html element.
+It <strong>will not be affected</strong> by what is around it nor by its own font-size. In this regard it’s similar to a pixel value.  However, when a user will change his/her accessibility settings, <strong>rem units will be affected</strong>.</p>
+<p>**Example:
+** Let’s say that the root html element has a font-size of 12px.
+If we have a box with <em>width: 10rem</em>, it will be rendered on screen with a 120px width.</p>
+<p class="codepen" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-height="265" data-theme-id="default" data-default-tab="css,result" data-user="akmur" data-slug-hash="jOOJQVv" data-pen-title="Example rem">
+  See the Pen <a href="https://codepen.io/akmur/pen/jOOJQVv"><br /> Example rem</a> by Alessandro Muraro (<a href="https://codepen.io/akmur">@akmur</a>)<br /> on <a href="https://codepen.io">CodePen</a>.
+</p>
+<h3>Em</h3>
+<p>With <strong>em units</strong>, the unit is related <strong>to the font size of the element</strong> itself.
+<strong>Em units will be affected</strong> by accessibility settings.</p>
+<p>**Example:
+** If we have a box with <em>font-size: 16px</em>, and the width is <em>10em,</em> it will be rendered on screen with a <em>160px width</em>. If we apply a 2em padding, this padding will be 16 * 2 = 32px.</p>
+<p>This is very useful because we <strong>don’t need to explicitly define spacing</strong> of an element in pixels.</p>
+<p>We can simply say that the padding equals 1em, and it will mean that the padding equals the font size, whatever it is. So basically we are specifying <em>ratios</em> relative to the font size, instead of absolute values.</p>
+<p class="codepen" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-height="265" data-theme-id="default" data-default-tab="css,result" data-user="akmur" data-slug-hash="oNNVQZL" data-pen-title="Example em">
+  See the Pen <a href="https://codepen.io/akmur/pen/oNNVQZL"><br /> Example em</a> by Alessandro Muraro (<a href="https://codepen.io/akmur">@akmur</a>)<br /> on <a href="https://codepen.io">CodePen</a>.
+</p>
+<h2>When to use Pixels, Rems and Ems</h2>
+<p>My general rule of thumb as a developer is:</p>
+<ul>
+<li>Use <strong>pixels</strong> for elements that need to be rendered always at the same size. I probably only use this for borders.</li>
+<li>Use <strong>Rems</strong> for font-sizes</li>
+<li>Use <strong>Ems</strong> for spacing, padding, margin, width and height.</li>
+</ul>
+<p>In my experience, <em>Ems</em> should be avoided for setting font sizes, because they easily becomes complex to manage when we have many nested components. <em>Rems</em> for font-sizes are much easier to reason with.</p>
+<p><em>Ems</em> are perfect for setting spacing and sizes because this unit grows with the element’s font-size.</p>
+<p>In general, in frontend we should almost never use pixels to avoid all sorts of issues.</p>
+<h2>The advantage of this approach</h2>
+<p>By using the approach above, we can:</p>
+<ul>
+<li>Create a layout that harmonically grows/shrinks when a user changes the accessibility settings of his browser.
+Elements created with the pixel unit will not grow/shrink.</li>
+<li>Forget about setting exact numbers for padding and margins on each element. Instead of setting a padding to <em>16px</em>, we could set it to <em>1em</em>, knowing that it will grow/shrink automatically depending on the font-size of the element.
+Example: If we drop the element inside a box with a font-size of <em>32px</em>, the padding will be <em>32px</em>. If we drop the element in a box with font-size of <em>50px</em>, the padding will be <em>50px</em>.</li>
+<li>We can easily manage fonts, because rems are easy to reason about once we know the base font size of a website. I generally set the base font to 10px so that <em>1.6rem</em> is <em>16px</em>, and <em>4rem</em> is <em>40px</em>. Easy.</li>
+</ul>
+<h2>The web is not a printer</h2>
+<p>In my opinion designers (and stakeholders) need to take into consideration the fact that items should be allowed to grow or shrink as the font sizes change. They need to understand that elements can be subject to custom accessibility settings and accept the fact that, as someone said before me, “the web is not a printer”.  Their designs in Sketch are guidelines, not the single source of truth; the source of truth is still the CSS written by the developer, like it or not.</p>
+<h2>What should designers do</h2>
+<p>Designers should design nice and balanced UIs without worrying too much about exact pixel sizes and pixel spacings; they should just communicate to frontend developers what are the <strong>ratios</strong> they have used for their elements, and these will be replicated using <em>rem</em> for font sizes and <em>em</em> for paddings and margins.</p>
+<p><strong>Example:</strong> when they design a button, they could tell the frontend developer that the padding should be 1 unit, and the margin on the left is equal to 0.5 units (where a unit is equal to the font size).</p>
+<p>I believe that if this concept is understood, communication between developers and designers would be much simpler.</p>
+<hr>
+<p>If you would like to discuss this article, you can do so on Linkedin:</p>
+<blockquote class="blockquote__linkedin data-lang=" style="border-color: #1D77B5;">
+  <p dir="ltr" lang="en">
+    I have written a little article about the difference between pixels, rems and ems, mainly aimed at having a better communication between designers and (frontend) developers.
+  </p>
+  <p>
+    — Alessandro Muraro &#8211; November 21, 2019 <br /> <a href="https://www.linkedin.com/feed/update/urn:li:activity:6603323476801572864/">Check it out on LinkedIn</a>
+  </p>
+</blockquote>
+
+        </div>
+        <footer class="footer">
+          <div class="footer__container">
+            <p class="footer__text">Find me on:<br>
+              <a class="footer__link" href="https://twitter.com/akmur">Twitter</a>,
+              <a rel="me" href="https://mastodon.social/@akmur" class="footer__link">Mastodon</a>, <a class="footer__link" href="https://www.linkedin.com/in/alessandromuraro/">LinkedIn</a>, <a class="footer__link" href="https://github.com/akmur">Github</a>.
+            </p>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and drop with React and native HTML5</title>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:700|Muli:300,700" rel="stylesheet">
+    <link rel="stylesheet" href="/css/index.css">
+  </head>
+  <body class="ui-dark">
+    <div class="wrapper">
+      <div class="layout">
+        <div class="header">
+          <a class="logo" href="/"><svg class="logo__triangle logo__triangle--left" style="isolation: isolate;" viewbox="217 167 106 96">
+          <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--center" style="isolation: isolate;" viewbox="217 167 106 96">
+          <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--right" style="isolation: isolate;" viewbox="217 167 106 96">
+          <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg></a>
+          <div id="nav">
+            <div class="menu-my-menu-container">
+              <ul class="menu" id="menu-my-menu">
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1408" id="menu-item-1408">
+                  <a href="/">Home</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1409" id="menu-item-1409">
+                  <a href="/posts/">Posts</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6 current_page_item menu-item-1411" id="menu-item-1411">
+                  <a href="/about/">About</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="main">
+          <p>In this post I would like to show how you can implement a simple drag and drop features using the native HTML5 drag and drop events and React (but clearly you could use anything you like). I have seen a number of feature-packed libraries that surely accomplish everything you can dream of but this is how I you can get it done in the simplest way.</p>
+<h3>The code</h3>
+<p><strong>Warning</strong>: I did not implement reordering of the cards, too much work 🙂 but I suppose something can be hacked together by using the APIs shown here, by getting the initial order and the order of the card you are dropping onto.</p>
+<h3>How does it work</h3>
+<p>In order to accomplish the drag and drop, we make use of a number of native events implemented in <em>Card.js</em> and <em>Dropzone.js</em>. In <strong>Card.js</strong> you should pay attention to the following <strong>handleDragStart</strong> function, which is triggered when you start dragging. It will save some data using the native HTML5 method <em>dataTransfer.setData</em>.</p>
+<pre class="line-numbers"><code class="language-javascript">const handleDragStart = e =&gt; {
+  e.dataTransfer.effectAllowed = 'move'
+  e.dataTransfer.setData('id', props.id)
+}</code></pre>
+<p>In <strong>Dropzone.js</strong> you will find a series of functions that are triggered when entering, leaving, hovering a <em>dropzone</em>, plus the <strong>handleDrop</strong> function, triggered when releasing an element over the <em>dropzone</em>. When this happens, the following function is used to retrieve the saved data, set the dragging state to false, and call the function that will take care of changing the status of the card. Please note that props.status comes down from <em>App.js.</em></p>
+<pre class="line-numbers"><code class="language-javascript">const handleDrop = e =&gt; {
+  const id = parseInt(e.dataTransfer.getData('id'), 10)
+  setIsDraggingOver(false)
+
+  context.changeCardStatus(id, props.status)
+}</code></pre>
+<p>You can find the state of the app and the changeCardStatus function in <strong>context.js.</strong></p>
+<p> </p>
+<p>Credits: Photo by Ales Krivec on Unsplash</p>
+
+        </div>
+        <footer class="footer">
+          <div class="footer__container">
+            <p class="footer__text">Find me on:<br>
+              <a class="footer__link" href="https://twitter.com/akmur">Twitter</a>,
+              <a rel="me" href="https://mastodon.social/@akmur" class="footer__link">Mastodon</a>, <a class="footer__link" href="https://www.linkedin.com/in/alessandromuraro/">LinkedIn</a>, <a class="footer__link" href="https://github.com/akmur">Github</a>.
+            </p>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

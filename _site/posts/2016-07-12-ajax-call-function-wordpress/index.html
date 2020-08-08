@@ -1,0 +1,95 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to use AJAX to call a function in WordPress</title>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:700|Muli:300,700" rel="stylesheet">
+    <link rel="stylesheet" href="/css/index.css">
+  </head>
+  <body class="ui-dark">
+    <div class="wrapper">
+      <div class="layout">
+        <div class="header">
+          <a class="logo" href="/"><svg class="logo__triangle logo__triangle--left" style="isolation: isolate;" viewbox="217 167 106 96">
+          <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--center" style="isolation: isolate;" viewbox="217 167 106 96">
+          <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--right" style="isolation: isolate;" viewbox="217 167 106 96">
+          <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg></a>
+          <div id="nav">
+            <div class="menu-my-menu-container">
+              <ul class="menu" id="menu-my-menu">
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1408" id="menu-item-1408">
+                  <a href="/">Home</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1409" id="menu-item-1409">
+                  <a href="/posts/">Posts</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6 current_page_item menu-item-1411" id="menu-item-1411">
+                  <a href="/about/">About</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="main">
+          <p>This might be old stuff for many people out there and I know that most things can be accomplished with the amazing WP API, still I think it’s good to have a simple example of using AJAX to call a WordPress function in one post. Here we go!</p>
+<h3>Scenario:</h3>
+<p>You want to request some data from WordPress (e.g. the previous post ID), through an AJAX call.</p>
+<h3>How to do this:</h3>
+<p>The way I solved this was to add a global variable in the header, so that the WordPress AJAX URL is exposed. Then I added a function in my theme’s function.php file, which would do the actual work. Finally, in my JavaScript file it’s just a matter of calling my function with AJAX. I can then use the result to do what I need.</p>
+<h3>In header.php</h3>
+<pre><code class="language-javascript">
+&lt;script&gt;
+  var ajaxurl = "' . admin_url('admin-ajax.php') . '";
+&lt;/script&gt;
+</code>
+</pre>
+<h3>In function.php</h3>
+<pre><code class="language-php">
+function get_prev_ajax_handler() {
+  // this is how you get access to the database
+  global $wpdb;
+  // get the id value which has been posted
+  $post_id = intval( $_POST['id'] );
+  // Get a global post reference
+  global $post;
+  // Get the post object for the specified post
+  $post = get_post( $post_id );
+  // Echo the previous post ID
+  echo get_previous_post()-&gt;ID;
+  // close the connection
+  wp_die();
+}
+
+add_action('wp_ajax_get_prev', 'get_prev_ajax_handler');
+add_action( 'wp_ajax_nopriv_get_prev', 'get_prev_ajax_handler' );
+</code>
+</pre>
+<h3>In script.js</h3>
+<pre><code class="language-php">
+function getPrevPostId(id){
+  var prevPostId;
+  $.post( ajaxUrl, {
+      action: "get_prev",
+      id: id
+    }, function(prevPostId) {
+      console.log(prevPostId)
+    });
+}
+</code>
+</pre>
+
+        </div>
+        <footer class="footer">
+          <div class="footer__container">
+            <p class="footer__text">Find me on:<br>
+              <a class="footer__link" href="https://twitter.com/akmur">Twitter</a>,
+              <a rel="me" href="https://mastodon.social/@akmur" class="footer__link">Mastodon</a>, <a class="footer__link" href="https://www.linkedin.com/in/alessandromuraro/">LinkedIn</a>, <a class="footer__link" href="https://github.com/akmur">Github</a>.
+            </p>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

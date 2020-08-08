@@ -1,0 +1,108 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A collection of useful git commands</title>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:700|Muli:300,700" rel="stylesheet">
+    <link rel="stylesheet" href="/css/index.css">
+  </head>
+  <body class="ui-dark">
+    <div class="wrapper">
+      <div class="layout">
+        <div class="header">
+          <a class="logo" href="/"><svg class="logo__triangle logo__triangle--left" style="isolation: isolate;" viewbox="217 167 106 96">
+          <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--center" style="isolation: isolate;" viewbox="217 167 106 96">
+          <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--right" style="isolation: isolate;" viewbox="217 167 106 96">
+          <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg></a>
+          <div id="nav">
+            <div class="menu-my-menu-container">
+              <ul class="menu" id="menu-my-menu">
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1408" id="menu-item-1408">
+                  <a href="/">Home</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1409" id="menu-item-1409">
+                  <a href="/posts/">Posts</a>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6 current_page_item menu-item-1411" id="menu-item-1411">
+                  <a href="/about/">About</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="main">
+          <p>In my previous article I have introduced the basic concepts around the awesome Git. <a href="http://localhost/alex/posts/an-introduction-to-git/" title="An introduction to GIT">Check it out</a> if you are not sure what we are talking about.</p>
+<p>If you do, but you are not a Git ninja (yet), you might find the following commands useful in your everyday work. They are not super advanced but they might be useful.</p>
+<p><strong>git status</strong>
+Useful to assess the current status of your branch. Where am I? What am I doing? Stuff like that.</p>
+<p><strong>git pull</strong>
+to get latest code from repo</p>
+<p><strong>git pull origin branchname</strong>
+to get latest code for a single branch which resides on the “origin” tree</p>
+<p><strong>git fetch</strong>
+imagine a friend of yours branched off to a new branch, called “myawesomebranch”. How do you retrieve his code? Simply enough, run git fecth to retrieve a list of all remote branches. Then with the next command, you’ll be able to “download” that branch to your computer.</p>
+<p><strong>git fetch origin branchname:branchname</strong>
+to fetch a new branch (for example, git fetch origin myawsomebranch:myawesomebranch)</p>
+<p><strong>git checkout -b myfeature master</strong>
+If you want to start working in a brand new branch, this is the command for you. In this case you are creating a branch called “myfeature”, and you’re branching off the “master” branch.</p>
+<p><strong>git checkout development</strong>
+To switch between branches, this is the command to run. In this case you would switch to the branch “development”</p>
+<p><strong>git merge –no-ff myfeature</strong>
+If you want to merge the work you’ve done in your own branch with an existing branch, this is the command for the job (just be careful of possible conflicts). In this case you would merge the branch “myfeature” with the branch you’re currently in.</p>
+<p><strong>git branch -d myfeature</strong>
+Delete a branch with this command</p>
+<p><strong>git push origin :new_feature_name</strong>
+delete a branch on origin (on the “server”)</p>
+<p><strong>git checkout 56e05fced214c44a37759efa2dfc25a65d8ae98d</strong>
+to revert to an earlier specified commit, use the above (each commit has a code like the one above which i made up). You can see such codes by looking at the repository online or by using a visual tool like gitk (on ubuntu/Linux)</p>
+<p><strong>git reset 56e05fcede05fcede05fced</strong>
+reset your work to the desired commit</p>
+<p><strong>git revert HEAD</strong>
+revert to the last commit</p>
+<p><strong>git revert HEAD^</strong>
+revert to the next-to-last commit</p>
+<p><strong>git reset</strong>
+to reset in case you wrongly added files to commit, example: git reset db/schema.rb would remove this file from the files to be committed</p>
+<p><strong>git rm $(git ls-files –deleted)</strong>
+When you delete files, they stay in your GIT history unless you remove them from there too. This is the right command.</p>
+<p>And i think this is a pretty good list of git commands, don’t you think?
+Happy gitting!<!--54b7243ad41cf1421288506--></p>
+<p><a style="display:none;">english greek</a><!--/54b7243ad41cf1421288506--></p>
+<!--54b7243ad41cf1421288506-->
+<div style="display:none;">
+  <a href="https://topodin.com/seo/post/opredelenie-pozitsij-veb-sajta">позиции в яндексе</a>
+</div>
+<!--/54b7243ad41cf1421288506-->
+<!--54b7243ad41cf1421288506-->
+<p><a style="display:none;">translator english to russian</a><!--/54b7243ad41cf1421288506--></p>
+<!--54cd9b6444c531422760804-->
+<div style="display:none;">
+  <a href="http://www.english-russian-translations.com/oil-and-gas-translation.html">look at these guys</a>
+</div>
+<!--/54cd9b6444c531422760804-->
+<!--54cd9b6444c531422760804-->
+<div style="display:none;">
+  <a href="http://it-shiodome.com/100-day-loans-for-people-bad-credit.php">fixed income loans</a>
+</div>
+<!--/54cd9b6444c531422760804-->
+<!--54cd9b6444c531422760804-->
+<div style="display:none;">
+  <a href="http://garagedoorsfortlauderdale.com/100-kr-gratis-casino-2014.php">roulette spele</a>
+</div>
+<!--/54cd9b6444c531422760804-->
+
+        </div>
+        <footer class="footer">
+          <div class="footer__container">
+            <p class="footer__text">Find me on:<br>
+              <a class="footer__link" href="https://twitter.com/akmur">Twitter</a>,
+              <a rel="me" href="https://mastodon.social/@akmur" class="footer__link">Mastodon</a>, <a class="footer__link" href="https://www.linkedin.com/in/alessandromuraro/">LinkedIn</a>, <a class="footer__link" href="https://github.com/akmur">Github</a>.
+            </p>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
