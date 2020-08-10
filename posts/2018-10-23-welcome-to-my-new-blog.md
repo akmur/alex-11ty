@@ -4,7 +4,7 @@ title: Welcome to my new blog
 author: akmur
 type: post
 date: 2018-10-23T00:12:24+00:00
-categories:
+tags:
   - Articles
 ---
 

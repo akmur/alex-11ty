@@ -4,8 +4,11 @@ title: Using Linters
 author: akmur
 type: post
 date: 2017-02-04T12:30:36+00:00
-categories:
+tags:
   - Articles
+  - JavaScript
+  - SCSS
+  - CSS
 ---
 
 ### What is a linter?

@@ -3,8 +3,8 @@ layout: single.njk
 title: My 2017 Reading List
 author: akmur
 type: post
-categories:
-  - Articles
+tags:
+  - Thoughts
 ---
 
 Here is my 2017 reading list. . Also, I've decided to start using [Goodreads][1] more consistently in my effort to read more!

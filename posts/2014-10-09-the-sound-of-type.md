@@ -4,12 +4,8 @@ title: The Sound of Type
 author: akmur
 type: post
 date: 2014-10-08T23:12:20+00:00
-excerpt: "Over the last year I've grown increasingly tired of the previous dark theme of my site; not that it was THAT bad, it actually did the job, but I felt it didn't convey enough of what makes myself... well, myself. Wishing for something more light-hearted but still legible, and convinced these qualities were to come from a good choice of type, I started a quest for the perfect font, well before starting to code my new site."
-categories:
-  - Articles
 tags:
-  - fonts
-  - type
+  - Articles
 ---
 
 Over the last year I've grown increasingly tired of the previous "dark" theme of my site; not that it was THAT bad, it actually did the job, but I felt it didn't convey enough of what makes myself... well, myself. Wishing for something more light-hearted but still **legible**, and convinced these qualities were to come from a **good choice of type**, I started a quest for the perfect font, well before starting to code my new site.

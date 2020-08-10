@@ -4,15 +4,10 @@ title: The web is all about accessibility
 author: akmur
 type: post
 date: 2014-04-17T09:35:21+00:00
-excerpt: |
-  When will people wake up to the fact that accessibility is an important matter?
-  People generally consider accessibility to be somewhat secondary, and it is often either forgotten, or just a quick afterthought. And I include myself.
-categories:
-  - Articles
 tags:
-  - accessibility
-  - contrast
-  - ux
+  - Articles
+  - Accessibility
+  - UX
 ---
 
 When will people wake up to the fact that **accessibility** is an important matter?

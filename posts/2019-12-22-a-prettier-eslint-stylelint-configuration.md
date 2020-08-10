@@ -4,7 +4,7 @@ title: A Prettier / ESlint / stylelint configuration
 author: akmur
 type: post
 date: 2019-12-22T00:34:54+00:00
-categories:
+tags:
   - Articles
 ---
 

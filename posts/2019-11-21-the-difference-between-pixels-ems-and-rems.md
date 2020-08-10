@@ -4,10 +4,9 @@ title: The difference between pixels, ems and rems
 author: akmur
 type: post
 date: 2019-11-21T13:49:31+00:00
-url: /posts/1456/the-difference-between-pixels-ems-and-rems/
-featured_image: https://vccw.test/wp-content/uploads/2019/11/pwpvgq-a5qi-e1574344273421.jpg
-categories:
+tags:
   - Articles
+  - CSS
 ---
 
 ## The issue

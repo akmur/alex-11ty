@@ -7,12 +7,9 @@ date: 2013-06-11T21:20:30+00:00
 excerpt: Are you a Linux user? If you never thought about supporting, you should give some $$$
 original_post_id:
   - 201
-categories:
-  - Articles
 tags:
-  - free software
-  - linux
-  - love
+  - Articles
+  - Linux
 ---
 
 **The beauty of using Linux** in 2013 is that you end up forgetting that it's a piece of software made by the community for the community, and that most people live in a closed world when it comes to computing.

@@ -5,11 +5,11 @@ author: akmur
 type: post
 date: 2014-04-02T18:19:35+00:00
 excerpt: Is there an alternative to Camtasia for Ubuntu?
-categories:
-  - Articles
 tags:
-  - camtasia
-  - screencast
+  - Articles
+  - Camtasia
+  - Screencast
+  - Linux
 ---
 
 Camtasia (you can find it [here][1]) is a cool software for Mac and Windows, used to record your screen while simultaneously record your webcam stream.

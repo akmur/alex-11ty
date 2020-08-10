@@ -4,8 +4,9 @@ title: A real world reduce() example
 author: akmur
 type: post
 date: 2019-11-20T08:32:28+00:00
-categories:
+tags:
   - Articles
+  - JavaScript
 ---
 
 For a long time I couldn't think of a way to use _reduce_ beyond the classic sum example (taken from [MDN][1])

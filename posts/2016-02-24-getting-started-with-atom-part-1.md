@@ -4,7 +4,7 @@ title: Using Atom Text Editor
 author: akmur
 type: post
 date: 2016-02-24T21:56:28+00:00
-categories:
+tags:
   - Articles
 ---
 

@@ -5,12 +5,9 @@ author: akmur
 type: post
 date: 2014-01-20T15:03:18+00:00
 excerpt: Why on earth do you want to hide some content that you painstakingly put together?
-categories:
-  - Articles
 tags:
-  - 2014
-  - trends
-  - ux
+  - Articles
+  - UX
 ---
 
 This is not a a technical post. this is maybe a UX post, or perhaps just a "I'm slightly pissed off" post.

@@ -4,8 +4,9 @@ title: My SCSS file structure
 author: akmur
 type: post
 date: 2018-12-14T00:14:58+00:00
-categories:
+tags:
   - Articles
+  - SCSS
 ---
 
 After having created folder structures for my SCSS files many times for many different projects over the years, I decided to create a Github repository so that it's easier for me to get started and improve; hopefully it can be useful to somebody else trying to wrap his/her head around it as well.

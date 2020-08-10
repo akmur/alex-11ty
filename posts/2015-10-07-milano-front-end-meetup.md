@@ -4,7 +4,7 @@ title: Milano Frontend Meetup
 author: akmur
 type: post
 date: 2015-10-07T07:58:38+00:00
-categories:
+tags:
   - Articles
 ---
 

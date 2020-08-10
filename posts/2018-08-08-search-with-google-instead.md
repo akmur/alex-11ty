@@ -4,7 +4,7 @@ title: Search with Google instead
 author: akmur
 type: post
 date: 2018-08-08T00:09:51+00:00
-categories:
+tags:
   - Articles
 ---
 

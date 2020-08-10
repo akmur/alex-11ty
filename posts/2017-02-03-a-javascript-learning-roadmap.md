@@ -3,8 +3,9 @@ layout: single.njk
 title: A JavaScript Learning Roadmap
 author: akmur
 type: post
-categories:
+tags:
   - Articles
+  - JavaScript
 ---
 
 Since I had quite some fun redacting my [2017 Reading List][1], I thought it would be a good idea to write an article about learning JavaScript, something I would have loved to read when starting out, or during various stages of my ongoing learning process.

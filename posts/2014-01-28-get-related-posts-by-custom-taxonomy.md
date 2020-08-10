@@ -5,11 +5,9 @@ author: akmur
 type: post
 date: 2014-01-28T23:56:21+00:00
 excerpt: This is one great Wordpress snippet, wortyh of being safely saved on my blog
-categories:
-  - Articles
 tags:
-  - query
-  - wordpress
+  - Articles
+  - WordPress
 ---
 
 In this post we're going to use [wp_query][1] and [custom taxonomies][2]. Let the fun begin!

@@ -4,7 +4,10 @@ title: A collection of useful git commands
 author: akmur
 type: post
 date: 2012-10-18T23:38:32+00:00
-excerpt: A little something tp help you going from zero to hero in Git, the best version control system in town
+tags:
+  - Article
+  - Tutorial
+  - Git
 ---
 
 In my previous article I have introduced the basic concepts around the awesome Git. [Check it out][1] if you are not sure what we are talking about.

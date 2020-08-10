@@ -4,14 +4,9 @@ title: Thank you Canonical
 author: akmur
 type: post
 date: 2014-04-18T23:12:10+00:00
-excerpt: |
-  Ubuntu 14.04 Trusty Tahr is better than any previous Ubuntu release, no question about it. It's modern, faster, better looking, stable and reliable. An OS to be proud of, definitely improved under every aspect.  It's a "don't look back" kind of release, and after a few hours spent using it you can tell that this will be one release we will remember for years to come - even more than 10.04 I assure you.
-categories:
-  - Articles
 tags:
-  - linux
-  - lts
-  - ubuntu
+  - Articles
+  - Linux
 ---
 
 Precise Pangolin (version 12.04) has been a great Ubuntu release. It was the successor to another great release, one that will probably go down in history as the best release ever, **10.04** Lucid Lynx. Until 14.04, that is.

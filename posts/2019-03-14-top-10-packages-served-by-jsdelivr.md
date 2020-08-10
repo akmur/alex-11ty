@@ -4,7 +4,7 @@ title: Top 10 packages served by jsdelivr
 author: akmur
 type: post
 date: 2019-03-14T09:43:29+00:00
-categories:
+tags:
   - Articles
 ---
 

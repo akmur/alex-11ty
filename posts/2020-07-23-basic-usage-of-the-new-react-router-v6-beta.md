@@ -5,7 +5,10 @@ author: akmur
 type: post
 date: 2020-07-23T10:43:09+00:00
 featured_image: /assets/images/bogdan-karlenko-36b7JBzhfF4-unsplash-scaled-e1595501218479.jpg
-categories:
+tags:
+  - Tutorial
+  - React
+  - JavaScript
   - Articles
 ---
 

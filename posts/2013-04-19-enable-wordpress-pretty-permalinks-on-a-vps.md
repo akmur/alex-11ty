@@ -7,11 +7,9 @@ date: 2013-04-19T00:14:10+00:00
 excerpt: Pretty permalinks on your vrtual private server are driving you mad? No more!
 original_post_id:
   - 151
-categories:
-  - Articles
 tags:
-  - apache
-  - wordpress
+  - Articles
+  - WordPress
 ---
 
 Scenario: You have a VPS, you have installed Apache, MySQL, PHP and WOrdpress, and you want to enable pretty permalinks.

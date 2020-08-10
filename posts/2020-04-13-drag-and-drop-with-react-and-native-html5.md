@@ -4,7 +4,10 @@ title: Drag and drop with React and native HTML5
 author: akmur
 type: post
 date: 2020-04-13T01:58:31+00:00
-categories:
+tags:
+  - Tutorial
+  - React
+  - JavaScript
   - Articles
 ---
 

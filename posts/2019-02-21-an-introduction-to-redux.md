@@ -4,8 +4,11 @@ title: An introduction to Redux
 author: akmur
 type: post
 date: 2019-02-21T11:18:09+00:00
-categories:
-  - Articles
+tags:
+  - Tutorial
+  - Redux
+  - JavaScript
+  - Article
 ---
 
 Redux is a small popular library used to keep track of the state of an interface without going crazy. It is mainly used together with React, a popular library used to create snappy user interfaces on the web.

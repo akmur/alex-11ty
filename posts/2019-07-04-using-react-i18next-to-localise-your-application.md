@@ -4,7 +4,10 @@ title: Using react-i18next to localise your application
 author: akmur
 type: post
 date: 2019-07-04T08:15:44+00:00
-categories:
+tags:
+  - Tutorial
+  - React
+  - JavaScript
   - Articles
 ---
 

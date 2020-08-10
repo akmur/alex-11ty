@@ -4,9 +4,7 @@ title: 14 apps I use (almost) daily
 author: akmur
 type: post
 date: 2019-11-30T23:57:38+00:00
-url: /posts/1419/14-apps-i-use-almost-daily/
-featured_image: https://vccw.test/wp-content/uploads/2019/11/1uypsrwxefi-e1573739591373.jpg
-categories:
+tags:
   - Articles
 ---
 
