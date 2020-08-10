@@ -820,7 +820,7 @@ code.hljs {
 
 .postsList {
   max-width: 38em;
-  margin: 5.4rem auto 7.2rem;
+  margin: 3.2rem auto 7.2rem;
 }
 
 .postsList__list {
@@ -1173,4 +1173,8 @@ hr {
   background-image: none;
   background-image: linear-gradient(to right, #212121, #ccc, #212121);
   margin: 5rem 0;
+}
+
+.page {
+  margin-top: 5.2rem;
 }
