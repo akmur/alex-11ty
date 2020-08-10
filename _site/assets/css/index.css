@@ -1014,6 +1014,8 @@ code.hljs {
 @media screen and (min-width: 48em) {
   .postContent__thumbnail {
     display: block;
+    border-radius: 1em;
+    overflow: hidden;
   }
 }
 

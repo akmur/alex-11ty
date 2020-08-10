@@ -4,7 +4,7 @@ title: Basic usage of the new React Router v6 (beta)
 author: akmur
 type: post
 date: 2020-07-23T10:43:09+00:00
-featured_image: /assets/images/bogdan-karlenko-36b7JBzhfF4-unsplash-scaled-e1595501218479.jpg
+featured_image: /assets/images/react-router.jpg
 tags:
   - Tutorial
   - React
@@ -135,6 +135,6 @@ You can then use the _locationSearch_ variable to extract the single parameters
 
 So, that's it! Hopefully this gave you a good starting point to implement React Router V6 in your app.
 
-&nbsp;
+---
 
-<span>Photo by <a href="https://unsplash.com/@bogdan_karlenko?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Bogdan Karlenko</a> on <a href="https://unsplash.com/s/photos/routes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span>
+<span>Photo by <a href="https://unsplash.com/@heytowner?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">JOHN TOWNER</a> on <a href="https://unsplash.com/s/photos/mountains?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
