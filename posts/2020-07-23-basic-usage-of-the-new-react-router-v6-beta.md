@@ -104,7 +104,7 @@ import { useParams } from 'react-router-dom'
 const Single = () => {
   const { id } = useParams()
 
-  return <div></div>{id}</div>
+  return <div>{id}</div>
 }
 
 export default Single

@@ -65,7 +65,7 @@ Linters need configuration files in order to give instructions to our linters ab
 
 Go to your project folder using your Terminal, and type:
 
-<pre class=" language-bash"><code>eslint <span class="token operator">--</span>init </code></pre>
+<pre class=" language-bash"><code>eslint <span class="token operator"&gt;--</span&gt;init </code></pre>
 
 This will start a little program that will ask you a few questions. The first question you get is the following, just press enter to proceed.<figure id="attachment_1133" aria-describedby="caption-attachment-1133" style="width: 640px" class="wp-caption aligncenter">
 

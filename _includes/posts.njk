@@ -6,8 +6,8 @@ title: Alex Muraro - frontend developer
 <div class="main">
   <div class="postsList">
     {%- for post in collections.all | reverse -%}
-    <div id="post-1565" class="postsList__item">
-      <header class="entry-header">
+    <div class="postsList__item">
+      <header class="postsList__itemHeader">
         <h2 class="postsList__title">
           <a class="postsList__link" href="{{ post.url }}" rel="bookmark">
             {{ post.data.title }}

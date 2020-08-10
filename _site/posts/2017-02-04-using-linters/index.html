@@ -25,15 +25,15 @@
   <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg> <svg class="logo__triangle logo__triangle--right" style="isolation: isolate;" viewbox="217 167 106 96">
   <path d="M220 260l50-90 50 90H220z" vector-effect="non-scaling-stroke"></path></svg></a>
   <div id="nav">
-    <div class="menu-my-menu-container">
-      <ul class="menu" id="menu-my-menu">
-        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-1408" id="menu-item-1408">
+    <div class="menu-wrapper">
+      <ul class="menu">
+        <li class="menu-item">
           <a href="/">Home</a>
         </li>
-        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1409" id="menu-item-1409">
+        <li class="menu-item">
           <a href="/posts/">Posts</a>
         </li>
-        <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-6 current_page_item menu-item-1411" id="menu-item-1411">
+        <li class="menu-item">
           <a href="/about/">About</a>
         </li>
       </ul>
@@ -42,15 +42,13 @@
 </div>
 <div id="main" class="main">
   <article class="post">
-    <header class="entry-header">
+    <header class="postHeader">
       
-      <h1 class="pageContent__title title title--h1">
+      <h1 class="postContent__title">
         Using Linters
       </h1>
        
-      <div class="pageContent__date date">
-        Posted on Sat, 04 Feb 2017 12:30:36 GMT
-      </div>
+      <div class="postContent__date">Posted on Sat, 04 Feb 2017 12:30:36 GMT</div>
       
       <!-- .entry-meta -->
     </header>
@@ -101,7 +99,7 @@ The error position is also specified within parenthesis, in this case it is 7,1
 <h3>How to create a linter configuration file?</h3>
 <h4>ESlint</h4>
 <p>Go to your project folder using your Terminal, and type:</p>
-<pre class=" language-bash"><code>eslint <span class="token operator">--</span>init </code></pre>
+<pre class=" language-bash"><code>eslint <span class="token operator"&gt;--</span&gt;init </code></pre>
 <p>This will start a little program that will ask you a few questions. The first question you get is the following, just press enter to proceed.<figure id="attachment_1133" aria-describedby="caption-attachment-1133" style="width: 640px" class="wp-caption aligncenter"></p>
 <p><img class="wp-image-1133 size-large" src="/assets/images/screen-shot-2017-02-04-at-13-15-59-1024x154.png" /> <figcaption id="caption-attachment-1133" class="wp-caption-text">Eslint wants answers</figcaption></figure></p>
 <p>Then you'll be asked a bunch of additional question, choose whatever you want:<figure id="attachment_1137" aria-describedby="caption-attachment-1137" style="width: 640px" class="wp-caption aligncenter"></p>
