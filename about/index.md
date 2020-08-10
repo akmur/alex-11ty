@@ -1,15 +1,9 @@
 ---
-layout: about.njk
-author: akmur
+layout: single.njk
+title: About me
 type: page
 eleventyExcludeFromCollections: true
-excerpt: |
-  I am a Front end developer.
-  I work @ Objectway where I code modular dashboards for financial web products.
-  I help organize the Milano Front End Meetup.
 ---
-
-# About me
 
 My name is Alessandro Muraro, a frontend developer from [Milano, Italy](https://www.google.com/maps/place/Milan,+Metropolitan+City+of+Milan/data=!4m2!3m1!1s0x4786c1493f1275e7:0x3cffcd13c6740e8d?sa=X&ved=2ahUKEwic552K04zrAhXvRxUIHfYiACkQ8gEwAHoECAsQAQ).
 
@@ -18,7 +12,7 @@ Over the last 15 (!) years or so, I have been living around Europe: ItalyðŸ‡®ðŸ‡
 
 Since December 2018 I am working with Innoloft where I take care of frontend architecture and UI development.
 
-![Picture of  myself](https://i.imgur.com/hlpNViT.jpg)
+![Picture of  myself](/assets/images/me.jpg)
 
 # What I do
 
