@@ -3,7 +3,8 @@ layout: single.njk
 title: Switching from WordPress to Eleventy
 author: akmur
 type: post
-date: 2020-08-10T15:47:16+00:00
+date: 2020-08-10 15:47:16
+last_update: 2020-08-11 11:46:00
 featured_image: /assets/images/11ty.jpg
 url: https://alexmuraro.me/posts/2020-08-11-switching-from-wordpress-to-eleventy/
 excerpt: Here I talk about my (fast) journey switching from WordPress to Eleventy, a barebones but feature-rich JavaScript static site generator. In this article there is no code because I think whatever you need can be seen in the repository for this site.
@@ -74,8 +75,11 @@ Here is the [Github repository](https://github.com/akmur/alex-11ty) for this web
 ### The result
 
 All considered, I give my satisfaction with Eleventy a **9/10** (because 10/10 doesn't exist).
-I have a newfound passion with both updating my website with content, and updating it's style: I even already have a new design in mind.
-I think it's a great creative boost for the developer type, and it could even be the right solution in many cases, for agency work.
+Thanks to it, have a newfound passion with both updating my website with content, and updating it's style and code (I even already have a new design in mind). The freedom it grants is really refreshing after having being tied to complex systems like WordPress for so long.
+True, it doesn't have an admin dashboard, like WordPress does so well, but if you are a bit technically inclined, then that would not be a problem.
+Plus, the fact that it has support for [front matter](https://jekyllrb.com/docs/front-matter/), makes it so very intuitive and easy to add additional meta information to your posts.
+
+I think it's a great creative boost for the developer type of blogger, and it could even be the right solution in many cases, for agency work
 
 ---
 
