@@ -18,7 +18,7 @@ tags:
 
 Here I talk about my (fast) journey switching from WordPress to [Eleventy](https://www.11ty.dev/), a barebones but feature-rich JavaScript static site generator. In this article there is no code, because I think whatever you need can be seen in the [repository](https://github.com/akmur/alex-11ty) for this site, and anyway there are tutorials out there already, like [this one](https://giustino.blog/how-to-build-a-website-with-eleventy-and-deploy-it-on-netlify/).
 
-### The Situation
+### The situation
 
 I've always liked moving between platforms for this blog, and I've tried a few along the years: a self hosted WordPress installation, a ready made wordpress.com solution, a custom solution made with React and Contentful, and last year I settled for a static site generated starting from a local WordPress installation.
 
@@ -34,7 +34,7 @@ This worked fine, and I didn't have many complaints about it, except for one thi
 As you can see, not difficult, but convoluted.
 If I felt like changing some CSS... I just wouldn't do it. If I wanted to write a blog post, I would probably not do it as well.
 
-### The Idea
+### The idea
 
 My colleague and friend [https://giustino.blog](Giustino), whose technical tutorial I linked above, gave me the inspiration I needed to switch from my WordPress setup to [Eleventy](https://www.11ty.dev/). I read on Twitter he was about to write a book about Eleventy and since I already started playing around with Eleventy last year and got good vibes, but never did anything with it, I decided to actually do it and migrate to it.
 
@@ -70,6 +70,12 @@ The result is the site you are reading. So exactly the same as before, but faste
 ### The Github repository
 
 Here is the [Github repository](https://github.com/akmur/alex-11ty) for this website. Feel free to have a look. Hopefully the setup is self explainatory. There are more things one can do with Eleventy, but for my use case I didn't need to dig too deep.
+
+### The result
+
+All considered, I give my satisfaction with Eleventy a **9/10** (because 10/10 doesn't exist).
+I have a newfound passion with both updating my website with content, and updating it's style: I even already have a new design in mind.
+I think it's a great creative boost for the developer type, and it could even be the right solution in many cases, for agency work.
 
 ---
 
