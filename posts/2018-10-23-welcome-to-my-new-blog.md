@@ -6,12 +6,12 @@ type: post
 date: 2018-10-23T00:12:24+00:00
 featured_image: /assets/images/pxem.jpg
 url: https://alexmuraro.me/posts/2018-10-23-welcome-to-my-new-blog/
-excerpt: Today I have launched my new blog. It is not simply a new theme (or actually, two themes, try out the "switch theme button" in the top right corner); it also has got an entirely new technical architecture to go with it.
+excerpt: "Today I have launched my new blog. It is not simply a new theme; it also has got an entirely new technical architecture to go with it."
 tags:
   - Articles
 ---
 
-Today I have launched my new blog. It is not simply a new theme (or actually, two themes, try out the "switch theme button" in the top right corner); it also has got an entirely new technical architecture to go with it.
+Today I have launched my new blog. It is not simply a new theme; it also has got an entirely new technical architecture to go with it.
 
 But first, I want to take the chance to go through all the designs I did for this site over the years, with a little help from the Wayback Machine. Unfortunately some iterations have been lost, but it is still fun to look at:
 

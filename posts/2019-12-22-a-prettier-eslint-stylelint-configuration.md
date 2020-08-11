@@ -5,8 +5,8 @@ author: akmur
 type: post
 date: 2019-12-22T00:34:54+00:00
 url: https://alexmuraro.me/posts/2019-12-22-a-prettier-eslint-stylelint-configuration/
-excerpt: A prettier + eslint + stylelint configuration.
 featured_image: https://images.unsplash.com/photo-1485160497022-3e09382fb310?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60
+excerpt: "A prettier + eslint + stylelint configuration."
 tags:
   - Articles
 ---

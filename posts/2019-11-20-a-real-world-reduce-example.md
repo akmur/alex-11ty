@@ -6,7 +6,7 @@ type: post
 date: 2019-11-20T08:32:28+00:00
 featured_image: https://images.unsplash.com/photo-1491904768633-2b7e3e7fede5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60
 url: https://alexmuraro.me/posts/2019-11-20-a-real-world-reduce-example/
-excerpt: A simple use case for Array.reduce().
+excerpt: "A simple use case for Array.reduce()."
 tags:
   - Articles
   - JavaScript

@@ -18,10 +18,10 @@
     <meta name="theme-color" content="#ffffff">
     <meta property="og:title" content="Modifying WP API response to add previous and next post ID">
     <meta name="twitter:title" content="Modifying WP API response to add previous and next post ID">
-    <meta property="og:description" content="">
-    <meta property="og:image" content="">
-    <meta name="twitter:image" content="">
-    <meta property="og:url" content="">
+    <meta property="og:description" content="I am pretty sure most people have at least heard about the mighty WordPress APIs. These APIs make it possible to create, modify and retrieve posts from our WordPress installations, although what we really want to do the most should be to using WordPress as an awesome backend to power cool applications. Think the possibilities...">
+    <meta property="og:image" content="https://images.unsplash.com/46/iYvDeqVGRbebiQv2PIJi_DSC_8407.JPG?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=900&amp;q=60">
+    <meta name="twitter:image" content="https://images.unsplash.com/46/iYvDeqVGRbebiQv2PIJi_DSC_8407.JPG?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=900&amp;q=60">
+    <meta property="og:url" content="https://alexmuraro.me/posts/2016-07-12-modifying-wp-api-response-add-previous-next-post-id/">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:creator" content="akmur">
     <meta name="twitter:site" content="akmur">
@@ -96,9 +96,17 @@
       <!-- .entry-meta -->
     </header>
     
+    <div class="postContent__image">
+      <div class="postContent__thumbnail">
+        <img src="https://images.unsplash.com/46/iYvDeqVGRbebiQv2PIJi_DSC_8407.JPG?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=900&amp;q=60" />
+      </div>
+    </div>
+    
     <p>I am pretty sure most people have at least heard about the mighty WordPress APIs. These APIs make it possible to create, modify and retrieve posts from our WordPress installations, although what we really want to do the most should be to using WordPress as an awesome backend to power cool applications. Think the possibilities...</p>
 <p>Playing around with the APIs, I found out that the single post endpoint doesn't show the previous and next post, which might be useful for pagination. Thankfully, it turned out to be quite simple to extend the APIs, so I have packaged this into a small plugin you can find below... it's really quite simple and goes to show the superpowers granted to us by the WP APIs. Also, it might serve as a good reference in case you're a bit lost starting out with working with the APIs. Have fun!</p>
 <p><a href="https://github.com/akmur/add-prev-next-to-wp-api">github.com/akmur/add-prev-next-to-wp-api</a></p>
+<hr>
+<p><span>Photo by <a href="https://unsplash.com/@tanvimalik?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Tanvi Malik</a> on <a href="https://unsplash.com/collections/866966/mountains?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></p>
 
   </article>
 </div>

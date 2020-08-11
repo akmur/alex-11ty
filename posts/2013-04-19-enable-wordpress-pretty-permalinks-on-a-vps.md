@@ -4,9 +4,9 @@ title: Enable WordPress pretty permalinks
 author: akmur
 type: post
 date: 2013-04-19T00:14:10+00:00
-excerpt: Pretty permalinks on your vrtual private server are driving you mad? No more!
 url: https://alexmuraro.me/posts/2013-04-19-enable-wordpress-pretty-permalinks-on-a-vps/
-excerpt: "Can't access your Wordpress posts on a local installation because of an irritating 404 error? Fix it!"
+excerpt: "Scenario: You have a VPS, you have installed Apache, MySQL, PHP and WOrdpress, and you want to enable pretty permalinks.
+If you're getting a 404 error when accessing your WordPress posts after having enabled pretty permalinks in the settings, then this is how to solve the issue (at least it worked for me)."
 tags:
   - Articles
   - WordPress

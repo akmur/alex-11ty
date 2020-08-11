@@ -6,8 +6,8 @@ type: post
 date: 2014-04-17T09:35:21+00:00
 featured_image: /assets/images/bogdan-karlenko-36b7JBzhfF4-unsplash-scaled-e1595501218479.jpg
 url: https://alexmuraro.me/posts/2014-04-17-the-web-is-all-about-accessibility/
-excerpt: When will people wake up to the fact that accessibility is an important matter?
-People generally consider accessibility to be somewhat secondary, and it is often either forgotten, or just a quick afterthought. And I include myself.
+excerpt: "When will people wake up to the fact that accessibility is an important matter?
+People generally consider accessibility to be somewhat secondary, and it is often either forgotten, or just a quick afterthought. And I include myself."
 tags:
   - Articles
   - Accessibility

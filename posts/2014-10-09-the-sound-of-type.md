@@ -6,7 +6,7 @@ type: post
 date: 2014-10-08T23:12:20+00:00
 featured_image: https://images.unsplash.com/photo-1429892494097-cccc61109f58?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=70
 url: https://alexmuraro.me/posts/2014-10-09-the-sound-of-type/
-excerpt: Over the last year I've grown increasingly tired of the previous "dark" theme of my site; not that it was THAT bad, it actually did the job, but I felt it didn't convey enough of what makes myself... well, myself. Wishing for something more light-hearted but still legible, and convinced these qualities were to come from a good choice of type, I started a quest for the perfect font, well before starting to code my new site.
+excerpt: "Over the last year I've grown increasingly tired of the previous theme of my site; not that it was THAT bad, it actually did the job, but I felt it didn't convey enough of what makes myself... well, myself. Wishing for something more light-hearted but still legible, and convinced these qualities were to come from a good choice of type, I started a quest for the perfect font, well before starting to code my new site."
 tags:
   - Articles
   - Typography

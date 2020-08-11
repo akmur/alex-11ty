@@ -6,7 +6,7 @@ type: post
 date: 2020-04-13T01:58:31+00:00
 featured_image: https://images.unsplash.com/photo-1485160497022-3e09382fb310?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60
 url: https://alexmuraro.me/posts/2020-04-13-drag-and-drop-with-react-and-native-html5/
-excerpt: In this post I would like to show how you can implement a simple drag and drop features using the native HTML5 drag and drop events and React (but clearly you could use anything you like). I have seen a number of feature-packed libraries that surely accomplish everything you can dream of but this is how I you can get it done in the simplest way.
+excerpt: "In this post I would like to show how you can implement a simple drag and drop features using the native HTML5 drag and drop events and React (but clearly you could use anything you like). I have seen a number of feature-packed libraries that surely accomplish everything you can dream of but this is how I you can get it done in the simplest way."
 tags:
   - Tutorial
   - React

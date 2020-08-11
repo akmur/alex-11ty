@@ -6,7 +6,7 @@ type: post
 date: 2019-11-21T13:49:31+00:00
 featured_image: /assets/images/pxem.jpg
 url: https://alexmuraro.me/posts/2019-11-21-the-difference-between-pixels-ems-and-rems/
-excerpt: I think there is often a little bit of misunderstanding when frontend developers and designers talk to each other about dimensions on the web. Designers generally design in pixels, obviously. Frontend developers then usually develop in _ems_ and rems. This post wants to bridge a knowledge gap that I feel might exist.
+excerpt: "I think there is often a little bit of misunderstanding when frontend developers and designers talk to each other about dimensions on the web. Designers generally design in pixels, obviously. Frontend developers then usually develop in ems and rems. This post wants to bridge a knowledge gap that I feel might exist."
 tags:
   - Articles
   - CSS
