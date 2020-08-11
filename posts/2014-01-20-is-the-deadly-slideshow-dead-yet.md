@@ -5,6 +5,7 @@ author: akmur
 type: post
 date: 2014-01-20T15:03:18+00:00
 excerpt: Why on earth do you want to hide some content that you painstakingly put together?
+url: https://alexmuraro.me/posts/2014-01-20-is-the-deadly-slideshow-dead-yet/
 tags:
   - Articles
   - UX

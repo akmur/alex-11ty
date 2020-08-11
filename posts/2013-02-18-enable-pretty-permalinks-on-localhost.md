@@ -4,6 +4,7 @@ title: Enable pretty permalinks on localhost
 author: akmur
 type: post
 date: 2013-02-18T16:54:43+00:00
+url: https://alexmuraro.me/posts/posts/2013-02-18-enable-pretty-permalinks-on-localhost/
 excerpt: "Can't access your Wordpress posts on a local installation because of an irritating 404 error? Fix it!"
 tags:
   - Articles

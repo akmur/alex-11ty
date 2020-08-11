@@ -5,8 +5,7 @@ author: akmur
 type: post
 date: 2013-06-11T21:20:30+00:00
 excerpt: Are you a Linux user? If you never thought about supporting, you should give some $$$
-original_post_id:
-  - 201
+url: https://alexmuraro.me/posts/2013-06-11-a-declaration-of-love-for-linux/
 tags:
   - Articles
   - Linux

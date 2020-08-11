@@ -5,6 +5,7 @@ author: akmur
 type: post
 date: 2014-01-28T23:56:21+00:00
 excerpt: This is one great Wordpress snippet, wortyh of being safely saved on my blog
+url: https://alexmuraro.me/posts/2014-01-28-get-related-posts-by-custom-taxonomy
 tags:
   - Articles
   - WordPress

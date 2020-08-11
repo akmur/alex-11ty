@@ -4,7 +4,9 @@ title: Camtasia alternative for Linux
 author: akmur
 type: post
 date: 2014-04-02T18:19:35+00:00
+featured_image: /assets/images/apps.jpg
 excerpt: Is there an alternative to Camtasia for Ubuntu?
+url: https://alexmuraro.me/posts/2014-04-02-camtasia-alternative-for-linux/
 tags:
   - Articles
   - Camtasia

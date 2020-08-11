@@ -4,8 +4,9 @@ title: A WordPress htaccess file
 author: akmur
 type: post
 date: 2015-01-28T12:13:07+00:00
-publicize_twitter_user:
-  - akmur
+featured_image: /assets/images/bogdan-karlenko-36b7JBzhfF4-unsplash-scaled-e1595501218479.jpg
+url: https://alexmuraro.me/posts/2015-01-28-a-wordpress-htaccess-file/
+excerpt: I have been working on a comprehensive and secure htaccess file to be used with a WordPress install. I have uploaded it on Github, check it out and contribute if you wish.
 tags:
   - Articles
   - WordPress

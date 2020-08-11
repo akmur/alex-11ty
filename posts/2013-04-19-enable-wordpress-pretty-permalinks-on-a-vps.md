@@ -5,8 +5,8 @@ author: akmur
 type: post
 date: 2013-04-19T00:14:10+00:00
 excerpt: Pretty permalinks on your vrtual private server are driving you mad? No more!
-original_post_id:
-  - 151
+url: https://alexmuraro.me/posts/2013-04-19-enable-wordpress-pretty-permalinks-on-a-vps/
+excerpt: "Can't access your Wordpress posts on a local installation because of an irritating 404 error? Fix it!"
 tags:
   - Articles
   - WordPress
