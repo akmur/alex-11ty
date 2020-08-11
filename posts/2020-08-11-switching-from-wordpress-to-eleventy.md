@@ -64,7 +64,7 @@ So, once I had this idea, I proceeded as follows:
 
 ### How long did it take
 
-It took me about 6 hours all considered. 2 hours to actually setup Eleventy and port my theme from WordPress, and 3/4 hours to adapt my markdown files and review them.
+It took me about **6 hours** all considered. 2 hours to actually setup Eleventy and port my theme from WordPress, and 3/4 hours to adapt my markdown files and review them.
 
 The result is the site you are reading. So exactly the same as before, but faster, easier to edit, more fun to modify.
 
@@ -76,10 +76,10 @@ Here is the [Github repository](https://github.com/akmur/alex-11ty) for this web
 
 All considered, I give my satisfaction with Eleventy a **9/10** (because 10/10 doesn't exist).
 Thanks to it, have a newfound passion with both updating my website with content, and updating it's style and code (I even already have a new design in mind). The freedom it grants is really refreshing after having being tied to complex systems like WordPress for so long.
-True, it doesn't have an admin dashboard, like WordPress does so well, but if you are a bit technically inclined, then that would not be a problem.
+True, it doesn't have an admin dashboard, like WordPress does so well, but if you are a bit technically inclined, then that would not be a problem, and even an advantage if you're used to switching between files in an editor.
 Plus, the fact that it has support for [front matter](https://jekyllrb.com/docs/front-matter/), makes it so very intuitive and easy to add additional meta information to your posts.
 
-I think it's a great creative boost for the developer type of blogger, and it could even be the right solution in many cases, for agency work
+I think it's a **great creative boost** for the developer type of blogger, and it could even be the right solution in many cases, for agency work
 
 ---
 
