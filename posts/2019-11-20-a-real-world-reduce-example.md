@@ -4,6 +4,9 @@ title: A real world reduce() example
 author: akmur
 type: post
 date: 2019-11-20T08:32:28+00:00
+featured_image: https://images.unsplash.com/photo-1491904768633-2b7e3e7fede5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60
+url: https://alexmuraro.me/posts/2019-11-20-a-real-world-reduce-example/
+excerpt: A simple use case for Array.reduce().
 tags:
   - Articles
   - JavaScript
@@ -45,6 +48,6 @@ Not sure why I never thought of this before, but better late than never, right?
 
 [1]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
 
-```
+---
 
-```
+<span>Photo by <a href="https://unsplash.com/@kaidi_guo?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Kaidi Guo</a> on <a href="https://unsplash.com/s/photos/mountains?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>

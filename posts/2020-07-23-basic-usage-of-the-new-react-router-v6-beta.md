@@ -5,9 +5,12 @@ author: akmur
 type: post
 date: 2020-07-23T10:43:09+00:00
 featured_image: /assets/images/react-router.jpg
+url: https://alexmuraro.me/posts/2020-07-23-basic-usage-of-the-new-react-router-v6-beta/
+excerpt: In this post we are going to look into how to use get started with the upcoming React Router version 6, currently in beta. Surely there are many more capabilities than those shown here, but this will get any app started, and might be enough for most of them.
 tags:
   - Tutorial
   - React
+  - Router
   - JavaScript
   - Articles
 ---

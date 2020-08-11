@@ -4,6 +4,9 @@ title: 14 apps I use (almost) daily
 author: akmur
 type: post
 date: 2019-11-30T23:57:38+00:00
+featured_image: /assets/images/apps.jpg
+url: https://alexmuraro.me/posts/2020-07-23-basic-usage-of-the-new-react-router-v6-beta/
+excerpt: In this post we are going to look into how to use get started with the upcoming React Router version 6, currently in beta. Surely there are many more capabilities than those shown here, but this will get any app started, and might be enough for most of them.
 tags:
   - Articles
 ---
@@ -134,7 +137,7 @@ Bumpr is a little utility that just does one thing: when you click on a link, it
 <img class="alignnone size-full wp-image-1509" src="/assets/images/bumpr.jpg" />
 </figure>
 
-&nbsp;
+---
 
 If you would like to discuss this article, you can do so on LinkedIn:
 
@@ -147,8 +150,6 @@ If you would like to discuss this article, you can do so on LinkedIn:
 <blockquote class="blockquote__linkedin data-lang=" style="border-color: #1D77B5;">
   <a href="https://www.linkedin.com/feed/update/urn:li:activity:6607226905286455296/">Check it out on LinkedIn</a>
 </blockquote>
-
-&nbsp;
 
 [1]: https://danielwirtz.com/uses/
 [2]: https://www.alfredapp.com
@@ -164,3 +165,7 @@ If you would like to discuss this article, you can do so on LinkedIn:
 [12]: https://pqrs.org/osx/karabiner/
 [13]: http://monosnap.com
 [14]: https://www.apptorium.com/sidenotes
+
+---
+
+<span>Photo by <a href="https://unsplash.com/@kalenemsley?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Kalen Emsley</a> on <a href="https://unsplash.com/s/photos/mountains?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>

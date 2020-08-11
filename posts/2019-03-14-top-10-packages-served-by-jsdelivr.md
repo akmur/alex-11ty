@@ -4,6 +4,9 @@ title: Top 10 packages served by jsdelivr
 author: akmur
 type: post
 date: 2019-03-14T09:43:29+00:00
+featured_image: https://images.unsplash.com/photo-1462480803487-a2edfd796460?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60
+url: https://alexmuraro.me/posts/2019-03-14-top-10-packages-served-by-jsdelivr/
+excerpt: Today 14th of March 2019 I was surprised reading the chart of the top 10 npm packages served by jsdeliver, as it contains some entries I never heard of, and some others I would't expect to top the chart...
 tags:
   - Articles
 ---
@@ -27,7 +30,7 @@ Today 14th of March 2019 I was surprised reading the chart of the top 10 npm pac
 
 If you would liker to discuss this post, you can do so on Linkedin:
 
-&nbsp;
+---
 
 <blockquote class="blockquote__linkedin data-lang=" style="border-color: #1D77B5;">
   <p dir="ltr" lang="en">
@@ -38,6 +41,10 @@ If you would liker to discuss this post, you can do so on Linkedin:
     <a href="https://www.linkedin.com/feed/update/urn:li:activity:6512265502495109120/">Check it out on LinkedIn</a>
   </p>
 </blockquote>
+
+---
+
+<span>Photo by <a href="https://unsplash.com/@radel?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Marco Bonomo</a> on <a href="https://unsplash.com/s/photos/mountains?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
 
 [1]: http://jsdelivr.com
 [2]: https://www.emojione.com/discover/apps

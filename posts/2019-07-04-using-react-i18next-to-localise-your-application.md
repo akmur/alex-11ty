@@ -4,9 +4,13 @@ title: Using react-i18next to localise your application
 author: akmur
 type: post
 date: 2019-07-04T08:15:44+00:00
+featured_image: https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=70
+url: https://alexmuraro.me/posts/2019-07-04-using-react-i18next-to-localise-your-application/
+excerpt: In this post I would like to go through the configuration I use to provide localisation features to a React application. This might not be the best way, but it surely is the way that works for me, so I hope it can be useful to other people looking to add this same feature.
 tags:
   - Tutorial
   - React
+  - i18n
   - JavaScript
   - Articles
 ---
@@ -189,7 +193,7 @@ const LanguageSwitch = () => {
 }
 ```
 
-&nbsp;
+---
 
 If you would like to discuss this article, you can do so on Linkedin:
 
@@ -205,4 +209,6 @@ If you would like to discuss this article, you can do so on Linkedin:
   </p>
 </blockquote>
 
-&nbsp;
+---
+
+<span>Photo by <a href="https://unsplash.com/@samferrara?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Samuel Ferrara</a> on <a href="https://unsplash.com/s/photos/mountains?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
