@@ -1576,7 +1576,8 @@ Plus, the fact that it has support for &lt;a href=&quot;https://jekyllrb.com/doc
 &lt;p&gt;Today we learn about massive layoffs at Mozilla, involving MDN and Devtools team. It seems clear to me that if you lay off the devtools team, you don&#39;t want to keep playing the browser game.&lt;/p&gt;
 &lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;So to summarize what we know so far, the following teams at Mozilla have been either eliminated or gutted to oblivion:&lt;br&gt;&lt;br&gt;* Firefox devtools&lt;br&gt;* Firefox incident/threat management team (?!)&lt;br&gt;* Servo&lt;br&gt;* MDN&lt;br&gt;* WebXR/Firefox Reality&lt;br&gt;* DevRel/Community (???)&lt;br&gt;&lt;br&gt;I guess they&amp;#39;re giving up?&lt;/p&gt;&amp;mdash; Kat Marchán 🍑🍑🍑 (@zkat__) &lt;a href=&quot;https://twitter.com/zkat__/status/1293585676336693253?ref_src=twsrc%5Etfw&quot;&gt;August 12, 2020&lt;/a&gt;&lt;/blockquote&gt; &lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
 &lt;p&gt;One can&#39;t fail to see a pattern there, and wonder: will we soon get a Chromium based Firefox browser? I think it&#39;s likely.
-What this will mean, I&#39;m not exactly sure, but can&#39;t be too good, but if that ius the case we&#39;re going to need good devtools in Safari.&lt;/p&gt;
+What this will in case it happens, I&#39;m not exactly sure.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;But&lt;/strong&gt; if that is indeed the case, we&#39;re going to need good devtools in Safari I think, so we can test our stuff out.&lt;/p&gt;
 &lt;p&gt;We&#39;ll see I guess.&lt;/p&gt;
 </content>
   </entry>
