@@ -4,8 +4,8 @@
   "description": "",
   "main": ".eleventy.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "eleventy --serve --port=8888"
+    "dev": "eleventy --serve --port=8888",
+    "styles": "node-sass --watch --output-style compressed ./assets/css/index.scss ./assets/css/index.css"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,8 @@
   "homepage": "https://github.com/akmur/alex-11ty#readme",
   "devDependencies": {
     "@11ty/eleventy-plugin-rss": "^1.0.9"
+  },
+  "dependencies": {
+    "node-sass": "^4.14.1"
   }
 }
