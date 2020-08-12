@@ -17,5 +17,7 @@
     "url": "https://github.com/akmur/alex-11ty/issues"
   },
   "homepage": "https://github.com/akmur/alex-11ty#readme",
-  "devDependencies": {}
+  "devDependencies": {
+    "@11ty/eleventy-plugin-rss": "^1.0.9"
+  }
 }
