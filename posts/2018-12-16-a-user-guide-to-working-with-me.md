@@ -5,7 +5,7 @@ author: akmur
 type: post
 date: 2018-12-16T00:16:23+00:00
 tags:
-  - Thoughts
+  - Articles
 ---
 
 I recently started as a frontend developer at [Energieloft][1] (a cool startup in the Aachen area with the really neat mission of enabling networking among companies to create innovative products) and I thought this could be a good occasion to write down something like a user guide to working with me.
