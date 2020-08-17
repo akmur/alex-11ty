@@ -2,7 +2,12 @@
   --red: #cb4855;
   --white: #f9f9f9;
   --black: #212121;
-  --grey: #ccc; }
+  --grey: #ccc;
+  --iron: #d6d6d6;
+  --background: var(--black);
+  --top-border: var(--red);
+  --text-color: var(--iron);
+  --text-link-hover: var(--red); }
 
 /* Document ========================================================================== */
 /** 1. Correct the line height in all browsers. 2. Prevent adjustments of font size after orientation changes in iOS. */
@@ -528,7 +533,7 @@ code.hljs {
     top: -2rem; } }
 
 .hero__preTitle {
-  color: var(--white);
+  color: var(--text-color);
   font-size: 0.75em;
   font-weight: 700;
   margin-bottom: 0.5em;
@@ -550,10 +555,6 @@ code.hljs {
 .hero__description {
   font-size: 1.8rem; }
 
-.decoration {
-  height: 4px;
-  background: var(--red); }
-
 .footer {
   font-size: 1.4rem;
   text-align: center; }
@@ -566,10 +567,10 @@ code.hljs {
     padding: 0; } }
 
 .footer__link {
-  border-bottom: 1px dotted var(--white); }
+  border-bottom: 1px dotted var(--text-color); }
 
 .footer__link:hover {
-  border-bottom: 1px dotted var(--red); }
+  border-bottom: 1px dotted var(--text-color-hover); }
 
 .header {
   display: flex;
@@ -719,12 +720,9 @@ code.hljs {
   padding-top: 0; }
 
 .postsList__link {
-  border: 0 !important;
-  color: #4a4a4a;
-  display: block; }
-
-.postsList__link:hover {
-  color: var(--red); }
+  border: 0 !important; }
+  .postsList__link :hover {
+    color: var(--text-link-hover); }
 
 .postsList__title {
   display: block;
@@ -742,7 +740,7 @@ code.hljs {
     line-height: 1.25; } }
 
 .postsList__date {
-  color: #d6d6d6;
+  color: var(--text-color);
   font-size: 1.5rem; }
 
 @media screen and (max-width: 768px) {
@@ -753,10 +751,9 @@ code.hljs {
   font-size: 1.4rem; }
 
 .wrapper {
-  background-color: var(--black);
-  box-shadow: inset 0 4px 0 0 var(--red);
-  color: #4a4a4a;
-  color: #d6d6d6;
+  background-color: var(--background);
+  box-shadow: inset 0 4px 0 0 var(--top-border);
+  color: var(--text-color);
   padding: 0 1.5rem;
   transition: all 500ms ease; }
 
@@ -866,9 +863,9 @@ code.hljs {
 hr {
   border: 0;
   height: 1px;
-  background: var(--black);
+  background: var(--blackground);
   background-image: none;
-  background-image: linear-gradient(to right, var(--black), var(--grey), var(--black));
+  background-image: linear-gradient(to right, var(--blackground), var(--text-color), var(--blackground));
   margin: 5rem 0; }
 
 .page {
