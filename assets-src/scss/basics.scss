@@ -141,7 +141,7 @@ button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
-  outline: 1px dotted var(--red);
+  outline: 1px dotted var(--link-color-hover);
 }
 
 /** Correct the padding in Firefox. */
@@ -297,24 +297,14 @@ sup {
 }
 
 a {
-  border-bottom: 2px dotted var(--red);
-  color: var(--red);
+  border-bottom: 2px dotted var(--link-color);
+  color: var(--link-color);
   text-decoration: none;
 }
 
-.ui-dark a {
-  border-bottom: 2px dotted #e7e7e7;
-  color: #e7e7e7;
-}
-
 a:hover {
-  border-color: var(--red);
-  color: var(--red);
-}
-
-.ui-dark a:hover {
-  border-bottom: 2px dotted var(--red);
-  color: var(--red);
+  border-bottom: 2px dotted var(--link-color);
+  color: var(--text-color);
 }
 
 ul {
@@ -326,7 +316,7 @@ li {
 }
 
 blockquote {
-  border-left: 3px solid var(--red);
+  border-left: 3px solid var(--link-color-hover);
   font-style: italic;
   margin-left: 0;
   padding-left: 1.5rem;
@@ -351,7 +341,7 @@ textarea {
 
 input:focus,
 textarea:focus {
-  border: 1px solid var(--red);
+  border: 1px solid var(--link-color-hover);
 }
 
 textarea {
@@ -363,9 +353,9 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-  background-color: var(--red);
+  background-color: var(--link-color-hover);
   border-radius: 1px;
-  border: 1px solid var(--red);
+  border: 1px solid var(--link-color-hover);
   box-sizing: border-box;
   color: var(--white);
   cursor: pointer;
@@ -382,8 +372,8 @@ input[type="button"] {
 .ui-dark input[type="reset"],
 .ui-dark input[type="button"] {
   color: var(--white);
-  background-color: var(--red);
-  border: 1px solid var(--red);
+  background-color: var(--link-color-hover);
+  border: 1px solid var(--link-color-hover);
 }
 
 .button[disabled],
@@ -404,8 +394,8 @@ input[type="reset"]:hover,
 input[type="button"]:focus,
 input[type="button"]:hover {
   color: var(--white);
-  background-color: var(--red);
-  border: 1px solid var(--red);
+  background-color: var(--link-color-hover);
+  border: 1px solid var(--link-color-hover);
 }
 
 textarea,
@@ -424,12 +414,12 @@ input[type] {
 textarea:focus,
 select:focus,
 input[type]:focus {
-  border: 1px solid var(--red);
+  border: 1px solid var(--link-color-hover);
   outline: 0;
 }
 
 input[type="checkbox"]:focus {
-  outline: 1px dotted var(--red);
+  outline: 1px dotted var(--link-color-hover);
 }
 
 label,

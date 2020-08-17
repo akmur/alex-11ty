@@ -1,13 +1,14 @@
 :root {
-  --red: #cb4855;
+  --red: #ff5349;
   --white: #f9f9f9;
   --black: #212121;
   --grey: #ccc;
   --iron: #d6d6d6;
   --background: var(--black);
   --top-border: var(--red);
-  --text-color: var(--iron);
-  --text-link-hover: var(--red); }
+  --text-color: var(--white);
+  --link-color: var(--red);
+  --link-color-hover: var(--red); }
 
 /* Document ========================================================================== */
 /** 1. Correct the line height in all browsers. 2. Prevent adjustments of font size after orientation changes in iOS. */
@@ -148,7 +149,7 @@ button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
-  outline: 1px dotted var(--red); }
+  outline: 1px dotted var(--link-color-hover); }
 
 /** Correct the padding in Firefox. */
 fieldset {
@@ -287,21 +288,13 @@ sup {
   font-size: 75%; }
 
 a {
-  border-bottom: 2px dotted var(--red);
-  color: var(--red);
+  border-bottom: 2px dotted var(--link-color);
+  color: var(--link-color);
   text-decoration: none; }
 
-.ui-dark a {
-  border-bottom: 2px dotted #e7e7e7;
-  color: #e7e7e7; }
-
 a:hover {
-  border-color: var(--red);
-  color: var(--red); }
-
-.ui-dark a:hover {
-  border-bottom: 2px dotted var(--red);
-  color: var(--red); }
+  border-bottom: 2px dotted var(--link-color);
+  color: var(--text-color); }
 
 ul {
   padding-left: 1.5rem; }
@@ -310,7 +303,7 @@ li {
   margin-bottom: 0.4em; }
 
 blockquote {
-  border-left: 3px solid var(--red);
+  border-left: 3px solid var(--link-color-hover);
   font-style: italic;
   margin-left: 0;
   padding-left: 1.5rem; }
@@ -331,7 +324,7 @@ textarea {
 
 input:focus,
 textarea:focus {
-  border: 1px solid var(--red); }
+  border: 1px solid var(--link-color-hover); }
 
 textarea {
   width: 100%; }
@@ -341,9 +334,9 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-  background-color: var(--red);
+  background-color: var(--link-color-hover);
   border-radius: 1px;
-  border: 1px solid var(--red);
+  border: 1px solid var(--link-color-hover);
   box-sizing: border-box;
   color: var(--white);
   cursor: pointer;
@@ -359,8 +352,8 @@ input[type="button"] {
 .ui-dark input[type="reset"],
 .ui-dark input[type="button"] {
   color: var(--white);
-  background-color: var(--red);
-  border: 1px solid var(--red); }
+  background-color: var(--link-color-hover);
+  border: 1px solid var(--link-color-hover); }
 
 .button[disabled],
 button[disabled],
@@ -379,8 +372,8 @@ input[type="reset"]:hover,
 input[type="button"]:focus,
 input[type="button"]:hover {
   color: var(--white);
-  background-color: var(--red);
-  border: 1px solid var(--red); }
+  background-color: var(--link-color-hover);
+  border: 1px solid var(--link-color-hover); }
 
 textarea,
 select,
@@ -398,11 +391,11 @@ input[type] {
 textarea:focus,
 select:focus,
 input[type]:focus {
-  border: 1px solid var(--red);
+  border: 1px solid var(--link-color-hover);
   outline: 0; }
 
 input[type="checkbox"]:focus {
-  outline: 1px dotted var(--red); }
+  outline: 1px dotted var(--link-color-hover); }
 
 label,
 legend,
@@ -570,7 +563,7 @@ code.hljs {
   border-bottom: 1px dotted var(--text-color); }
 
 .footer__link:hover {
-  border-bottom: 1px dotted var(--text-color-hover); }
+  border-bottom: 1px dotted var(--link-color-hover); }
 
 .header {
   display: flex;
@@ -613,7 +606,7 @@ code.hljs {
   border-color: transparent; }
 
 .logo__triangle {
-  fill: var(--white);
+  fill: var(--text-color);
   left: 50%;
   position: absolute;
   stroke: #4a4a4a;
@@ -625,11 +618,11 @@ code.hljs {
   stroke-width: 2px; }
 
 .ui-dark .logo__triangle {
-  fill: var(--black);
-  stroke: var(--white); }
+  fill: var(--background);
+  stroke: var(--text-color); }
 
 .logo:hover .logo__triangle {
-  stroke: var(--red); }
+  stroke: var(--link-color-hover); }
 
 .logo__triangle--center {
   width: 4rem;
@@ -688,10 +681,13 @@ code.hljs {
 
 .menu__link {
   border: 0 !important;
+  color: var(--text-color);
   font-size: 1.4rem;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase; }
+  .menu__link:hover {
+    color: var(--link-color-hover); }
 
 @media screen and (max-width: 500px) {
   .menu__link {
@@ -722,7 +718,7 @@ code.hljs {
 .postsList__link {
   border: 0 !important; }
   .postsList__link :hover {
-    color: var(--text-link-hover); }
+    color: var(--link-color-hover); }
 
 .postsList__title {
   display: block;

@@ -2,7 +2,6 @@
 layout: single.njk
 title: About me
 type: page
-featured_image: https://images.unsplash.com/photo-1482773978480-ec6de571e24f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60
 url: https://alexmuraro.me/about/
 excerpt: My name is Alessandro Muraro, a frontend developer from Milano, Italy. I have been hacking away at websites since 1999, but it was simply an hobby for many years. In 2011, I started my professional career in frontend development.
 eleventyExcludeFromCollections: true
