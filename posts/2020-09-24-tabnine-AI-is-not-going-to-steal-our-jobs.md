@@ -24,9 +24,10 @@ In a nutshell, this plugin/extension will read you code, almost trying to unders
 At first I was **almost put off** by the lack of any configuration file.
 
 My thoughts were like:
-_"How can this be real, there is no configuration to enter, nothing to toggle on and off, nothing at all, I have no control over it?"_
-_"Surely it won't work"
-"The default autocomplete will be just fine."_
+
+- "How can this be real, there is no configuration to enter, nothing to toggle on and off, nothing at all, I have no control over it?"\_
+- "Surely it won't work"
+- "The default autocomplete will be just fine."
 
 Wrong, wrong and wrong.
 

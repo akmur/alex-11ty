@@ -1593,10 +1593,12 @@ What this will in case it happens, I&#39;m not exactly sure.&lt;/p&gt;
 &lt;p&gt;We are talking about a &lt;strong&gt;zero-config&lt;/strong&gt; &lt;strong&gt;AI powered auto-completion plugin&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;In a nutshell, this plugin/extension will read you code, almost trying to understand it. It will read the code around it, the files you are importing, and draw knowledge from public Github repos, in order to try and give you a better code autocompletion experience.&lt;/p&gt;
 &lt;p&gt;At first I was &lt;strong&gt;almost put off&lt;/strong&gt; by the lack of any configuration file.&lt;/p&gt;
-&lt;p&gt;My thoughts were like:
-&lt;em&gt;&amp;quot;How can this be real, there is no configuration to enter, nothing to toggle on and off, nothing at all, I have no control over it?&amp;quot;&lt;/em&gt;
-&lt;em&gt;&amp;quot;Surely it won&#39;t work&amp;quot;
-&amp;quot;The default autocomplete will be just fine.&amp;quot;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;My thoughts were like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;quot;How can this be real, there is no configuration to enter, nothing to toggle on and off, nothing at all, I have no control over it?&amp;quot;_&lt;/li&gt;
+&lt;li&gt;&amp;quot;Surely it won&#39;t work&amp;quot;&lt;/li&gt;
+&lt;li&gt;&amp;quot;The default autocomplete will be just fine.&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;Wrong, wrong and wrong.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;It f*****g delivers&lt;/strong&gt;, it just does what it says on the tin, which is a lot. It does autocomplete.&lt;/p&gt;
 &lt;h2&gt;Perfection doesn&#39;t exist...&lt;/h2&gt;
