@@ -21,7 +21,7 @@ We are talking about a **zero-config** **AI powered auto-completion plugin**.
 
 In a nutshell, this plugin/extension will read you code, almost trying to understand it. It will read the code around it, the files you are importing, and draw knowledge from public Github repos, in order to try and give you a better code autocompletion experience.
 
-At first I was **almost put off** by the lack of any configuration file.
+At first I was **almost put off** by the lack of any configuration file but then I figu
 
 My thoughts were like:
 
@@ -90,3 +90,9 @@ Autocompleting the target property
 Quite amazingly, TabNine even autocompletes comments
 
 <img src="/assets/images/tabnine7.png" />
+
+### Markdown
+
+Or even markdown!
+
+<img src="/assets/images/tabnine8.jpg" />
