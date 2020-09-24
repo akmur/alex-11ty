@@ -2,6 +2,10 @@
 @import "./basics.scss";
 @import "./hljs.scss";
 
+* {
+  transition: all 250ms ease;
+}
+
 .actions {
   align-items: center;
   display: -webkit-box;
@@ -277,10 +281,11 @@ code.hljs {
   padding-top: 0;
 }
 
-.postsList__link {
+a.postsList__link {
   border: 0 !important;
+  color: var(--link-color);
 
-  :hover {
+  &:hover {
     color: var(--link-color-hover);
   }
 }

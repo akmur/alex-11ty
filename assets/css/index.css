@@ -7,7 +7,7 @@
   --background: var(--black);
   --top-border: var(--red);
   --text-color: var(--white);
-  --link-color: var(--red);
+  --link-color: var(--white);
   --link-color-hover: var(--red); }
 
 /* Document ========================================================================== */
@@ -499,6 +499,9 @@ strong {
   display: inline-block;
   width: 100%; }
 
+* {
+  transition: all 250ms ease; }
+
 .actions {
   align-items: center;
   display: -webkit-box;
@@ -715,9 +718,10 @@ code.hljs {
 .postsList__item:first-child {
   padding-top: 0; }
 
-.postsList__link {
-  border: 0 !important; }
-  .postsList__link :hover {
+a.postsList__link {
+  border: 0 !important;
+  color: var(--link-color); }
+  a.postsList__link:hover {
     color: var(--link-color-hover); }
 
 .postsList__title {

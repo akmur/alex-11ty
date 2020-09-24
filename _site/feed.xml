@@ -4,7 +4,7 @@
   <subtitle>Personal site with thoughts, technical posts, bio, resume.</subtitle>
   <link href="https://alexmuraro.me/feed.xml" rel="self"/>
   <link href="https://alexmuraro.me/"/>
-  <updated>2020-08-12T21:55:04+02:00</updated>
+  <updated>2020-09-24T09:30:07+02:00</updated>
   <id>https://alexmuraro.me/</id>
   <author>
     <name>Alessandro Muraro</name>
@@ -1568,9 +1568,9 @@ Plus, the fact that it has support for &lt;a href=&quot;https://jekyllrb.com/doc
   
   <entry>
     <title>61% through 2020</title>
-    <link href="https://alexmuraro.me/posts/2020-12-08-61-through-2020/"/>
+    <link href="https://alexmuraro.me/posts/2020-08-24-61-through-2020/"/>
     <updated>2020-08-12T21:55:04+02:00</updated>
-    <id>https://alexmuraro.me/posts/2020-12-08-61-through-2020/</id>
+    <id>https://alexmuraro.me/posts/2020-08-24-61-through-2020/</id>
     <content type="html">&lt;p&gt;We&#39;re 61% through 2020. Quite a year so far.&lt;/p&gt;
 &lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;2020 is 61% complete. &lt;a href=&quot;https://t.co/hj2cPLWBNC&quot;&gt;pic.twitter.com/hj2cPLWBNC&lt;/a&gt;&lt;/p&gt;&amp;mdash; Progress Bar 2020 (@ProgressBar202_) &lt;a href=&quot;https://twitter.com/ProgressBar202_/status/1293068133658484736?ref_src=twsrc%5Etfw&quot;&gt;August 11, 2020&lt;/a&gt;&lt;/blockquote&gt; &lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
 &lt;p&gt;Today we learn about massive &lt;a href=&quot;https://www.theverge.com/2020/8/11/21363424/mozilla-layoffs-quarter-staff-250-people-new-revenue-focus&quot;&gt;layoffs at Mozilla&lt;/a&gt;, involving both the MDN and Devtools teams, among others. It seems clear to me that if you layoff the devtools team, you don&#39;t want to keep playing the browser game in the long run, and if you layoff the MDN team you&#39;re not interested in being that involved in the web community.&lt;/p&gt;
@@ -1579,6 +1579,56 @@ Plus, the fact that it has support for &lt;a href=&quot;https://jekyllrb.com/doc
 What this will in case it happens, I&#39;m not exactly sure.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;But&lt;/strong&gt; if that is indeed the case, we&#39;re going to need good React devtools in Safari I think, so we can debug our stuff out.&lt;/p&gt;
 &lt;p&gt;We&#39;ll see I guess.&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>TabNine - AI is not going to steal our jobs</title>
+    <link href="https://alexmuraro.me/posts/2020-09-24-tabnine-AI-is-not-going-to-steal-our-jobs/"/>
+    <updated>2020-09-24T09:30:07+02:00</updated>
+    <id>https://alexmuraro.me/posts/2020-09-24-tabnine-AI-is-not-going-to-steal-our-jobs/</id>
+    <content type="html">&lt;p&gt;I&#39;ve recently started using an extension for Visual Studio Code (but also available for most IDEs) called &lt;a href=&quot;https://www.tabnine.com/&quot;&gt;&lt;strong&gt;TabNine&lt;/strong&gt;&lt;/a&gt;, made by &lt;a href=&quot;https://www.codota.com/&quot;&gt;Codota&lt;/a&gt;, a tech startup from Israel. I use it for my JavaScript + CSS projects, but it supports any language out there.&lt;/p&gt;
+&lt;p&gt;This extension impressed me quite a bit, so I decided to share my thoughts about it&lt;/p&gt;
+&lt;h2&gt;What about it?&lt;/h2&gt;
+&lt;p&gt;We are talking about a &lt;strong&gt;zero-config&lt;/strong&gt; &lt;strong&gt;AI powered auto-completion plugin&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;In a nutshell, this plugin/extension will read, almost trying to understand your code, the code around it, the files you are importing, and draw knowledge from public Github repos, in order to try and give you a better code autocompletion experience.&lt;/p&gt;
+&lt;p&gt;At first I was &lt;strong&gt;almost put off&lt;/strong&gt; by the lack of any configuration file.&lt;/p&gt;
+&lt;p&gt;My thoughts were like:
+&lt;em&gt;&amp;quot;How can this be real, there is no configuration to enter, nothing to toggle on and off, nothing at all, I have no control over it?&amp;quot;&lt;/em&gt;
+&lt;em&gt;&amp;quot;Surely it won&#39;t work&amp;quot;
+&amp;quot;The default autocomplete will be just fine.&amp;quot;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Wrong, wrong and wrong.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;It f*****g delivers&lt;/strong&gt;, it just does what it says on the tin, which is a lot. It does autocomplete.&lt;/p&gt;
+&lt;h2&gt;Perfection doesn&#39;t exist...&lt;/h2&gt;
+&lt;p&gt;Yes, it could be better, it could give better suggestions, always provide that perfect autocomplete import path, those arguments you need in your functions exactly where you need them, the correct CSS variables you forgot the name of, and so on. It does not always provide exactly what you need, when you need it. Often, but not always.&lt;/p&gt;
+&lt;p&gt;In a perfect world, it could probably use less resources in its free version (which resides on your machine, as opposed to the paid version for &lt;strong&gt;15$/month&lt;/strong&gt; - the one I am using currently - which uses TabNine&#39;s servers to provide autocompletion).&lt;/p&gt;
+&lt;h2&gt;... Yet&lt;/h2&gt;
+&lt;p&gt;Yet, If you ask me, this extension provides a pretty valuable help.&lt;/p&gt;
+&lt;p&gt;This is a technology that improves your developer experience, saves you time, allows you to decrease a bit the (already quite high) cognitive load by offloading some work to some kind of AI.&lt;/p&gt;
+&lt;h2&gt;The future?&lt;/h2&gt;
+&lt;p&gt;Every now and then, there is a &lt;strong&gt;discussion&lt;/strong&gt; coming up, about the future of work in general, and - in my bubble - about the future of software development in particular.&lt;/p&gt;
+&lt;p&gt;People have now been discussing for at least ten years whether robots, or AI, or both, are going to steal all the jobs.
+If you ask me, as time goes by, AI domination feels more and more unlikely in most fields, but programmers in particular are generally quite certain AI is not going to replace them anytime soon.&lt;/p&gt;
+&lt;p&gt;That is because in order to build any piece of software, you need not only a vision, which is usually provided by the founders of a company, but also actual people capable of translating that vision into feasible requirements, managing trade offs, balancing between the &amp;quot;optimum&amp;quot; and the &amp;quot;good enough&amp;quot;, all this while business goals shift and morph, companies pivot to explore new ways to grow, new technologies emerge.&lt;/p&gt;
+&lt;p&gt;Why am I saying all this, and how does this relate to TabNine? With TabNine I think I have seen, or actually experienced, the &lt;strong&gt;future of my job&lt;/strong&gt; as a programmer.&lt;/p&gt;
+&lt;p&gt;And that future is &lt;strong&gt;not&lt;/strong&gt; one of stolen jobs, taken by cold artificial intelligences executing flawlessly flawed visions.&lt;/p&gt;
+&lt;p&gt;The future that awaits us programmers, and most likely a good chunk of the working population, is that of an AI that works with us (not in competition), taking away some boring parts of the job, giving us suggestions and hints about how to go faster and with more satisfaction toward the completion of our current task, making us more creative and satisfied, less stressed out, less anxious, less tired at the end of the day.
+&lt;strong&gt;TabNine confirms this vision of the future&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2&gt;Finally, some examples&lt;/h2&gt;
+&lt;p&gt;Here are a few, stupid examples from my everyday use. I almost never remember to take a screenshot, so the help provided by this extension is not limited to these usecases, clearly.&lt;/p&gt;
+&lt;h3&gt;CSS/Scss&lt;/h3&gt;
+&lt;p&gt;Here tabNine is suggesting the correct CSS variable I use for border colors.&lt;/p&gt;
+&lt;img src=&quot;https://alexmuraro.me/assets/images/tabnine1.png&quot;&gt;
+&lt;p&gt;Another CSS example: I often give a border radius to containers, and it is correctly recommending the variable to go with it.&lt;/p&gt;
+&lt;img src=&quot;https://alexmuraro.me/assets/images/tabnine2.png&quot;&gt;
+&lt;h3&gt;JavaScript&lt;/h3&gt;
+&lt;p&gt;In this use case, you can see TabNine correctly autocompleting not only the name of the import I want to use, but also the correct, non trivial path.&lt;/p&gt;
+&lt;img src=&quot;https://alexmuraro.me/assets/images/tabnine3.png&quot;&gt;
+&lt;p&gt;Autocompleting the target property&lt;/p&gt;
+&lt;img src=&quot;https://alexmuraro.me/assets/images/tabnine6.png&quot;&gt;
+&lt;h3&gt;Comments&lt;/h3&gt;
+&lt;p&gt;Quite amazingly, TabNine even autocompletes comments&lt;/p&gt;
+&lt;img src=&quot;https://alexmuraro.me/assets/images/tabnine7.png&quot;&gt;
 </content>
   </entry>
 </feed>
