@@ -19,7 +19,7 @@ This extension impressed me quite a bit, so I decided to share my thoughts about
 
 We are talking about a **zero-config** **AI powered auto-completion plugin**.
 
-In a nutshell, this plugin/extension will read, almost trying to understand your code, the code around it, the files you are importing, and draw knowledge from public Github repos, in order to try and give you a better code autocompletion experience.
+In a nutshell, this plugin/extension will read you code, almost trying to understand it. It will read the code around it, the files you are importing, and draw knowledge from public Github repos, in order to try and give you a better code autocompletion experience.
 
 At first I was **almost put off** by the lack of any configuration file.
 
