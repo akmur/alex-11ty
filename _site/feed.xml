@@ -1592,7 +1592,7 @@ What this will in case it happens, I&#39;m not exactly sure.&lt;/p&gt;
 &lt;h2&gt;What about it?&lt;/h2&gt;
 &lt;p&gt;We are talking about a &lt;strong&gt;zero-config&lt;/strong&gt; &lt;strong&gt;AI powered auto-completion plugin&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;In a nutshell, this plugin/extension will read you code, almost trying to understand it. It will read the code around it, the files you are importing, and draw knowledge from public Github repos, in order to try and give you a better code autocompletion experience.&lt;/p&gt;
-&lt;p&gt;At first I was &lt;strong&gt;almost put off&lt;/strong&gt; by the lack of any configuration file but then I figu&lt;/p&gt;
+&lt;p&gt;At first I was &lt;strong&gt;almost put off&lt;/strong&gt; by the lack of any configuration file.&lt;/p&gt;
 &lt;p&gt;My thoughts were like:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&amp;quot;How can this be real, there is no configuration to enter, nothing to toggle on and off, nothing at all, I have no control over it?&amp;quot;_&lt;/li&gt;
