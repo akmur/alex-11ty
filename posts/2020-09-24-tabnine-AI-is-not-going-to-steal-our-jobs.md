@@ -35,7 +35,7 @@ Wrong, wrong and wrong.
 
 ## Perfection doesn't exist...
 
-Yes, it could be better, it could give better suggestions, always provide that perfect autocomplete import path, those arguments you need in your functions exactly where you need them, the correct CSS variables you forgot the name of, and so on. It does not always provide exactly what you need, when you need it. Often, but not always.
+Yes, it could be better, it could give better suggestions, always provide that perfect autocomplete import path or those arguments you need in your functions exactly where you need them. It does not always provide exactly what you need, when you need it. Often though, but not always.
 
 In a perfect world, it could probably use less resources in its free version (which resides on your machine, as opposed to the paid version for **15\$/month** - the one I am using currently - which uses TabNine's servers to provide autocompletion).
 
@@ -43,7 +43,7 @@ In a perfect world, it could probably use less resources in its free version (wh
 
 Yet, If you ask me, this extension provides a pretty valuable help.
 
-This is a technology that improves your developer experience, saves you time, allows you to decrease a bit the (already quite high) cognitive load by offloading some work to some kind of AI.
+This is a technology that improves your developer experience, saves you time, allows you to decrease a bit the (already quite high) cognitive load by offloading some work to some kind of AI when it comes to those things (like variable names, property names, function arguments) that are as simple as they are annoying to remember over and over again.
 
 ## The future?
 
