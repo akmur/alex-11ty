@@ -18,22 +18,22 @@ Redux is a small popular library used to keep track of the state of an interface
 
 Getting started with redux might take a while, because you need to get accustomed to the way it does things. In this post i want to cut straight to the meat of the issue, without unnecessary technical explanations. I will show you how to get started with Redux in a React project.
 
-### Why? {#why}
+### Why?
 
 Why another tutorial about Redux? Because I finally grasped it after struggling with it for a while, and I have the feeling a new tutorial with new ways to explain the same concept might be helpful.
 
-### Credits {#credits}
+### Credits
 
 This tutorial would have not been possible without this one: [React Redux Tutorial for Beginners: The Definitive Guide][1] which I recommend as it's much more in depth than mine and very easy to follow.
 Another great tutorial that helped me greatly is this one: [Understanding Redux — 1. – Ohans Emmanuel][2]
 Also, once you have some understanding of Redux, I recommend checking out [Human Redux][3], it's really well written.
 
-### Prerequisites {#prerequisites}
+### Prerequisites
 
 - node installed on your machine
 - some basic react knowledge might help (so you don't feel completely lost)
 
-## Cloning the project {#cloningtheproject}
+## Cloning the project
 
 Instead of copy-pasting stuff from a webpage, let's be modern and just clone or download this Git repository:
 
@@ -55,7 +55,7 @@ npm run start
 
 Now the application should be available at [localhost:3000][5].
 
-## About the file structure {#aboutthefilestructure}
+## About the file structure
 
 Inside the "src" folder, the main files you will find are the following React files:
 
@@ -85,7 +85,7 @@ And the following Redux files:
 ------------index.js
 ```
 
-## Redux 101 {#redux101}
+## Redux 101
 
 The main concept behind Redux is that you have:
 
@@ -99,7 +99,7 @@ Actions is where we dictate what needs to happen in the form of a simple object.
 Reducers are where the new state is updated with information coming from the actions.
 Middlewares make it possible to intercept actions, and introduce secondary effects (like dispatching a new action or making an AJAX request).
 
-## How does this work? {#howdoesthiswork}
+## How does this work?
 
 I suppose we need some explanation, so we will be going through:
 
@@ -112,14 +112,14 @@ I suppose we need some explanation, so we will be going through:
 
 I will do my best to keep this short.
 
-#### React index file {#react-index}
+#### React index file
 
 At the top of this files, you have all the imports needed to make it work. The last two imports are related to Redux.
 We are importing the "Provider" component and the Redux store we already created.
 
 The Provider will take our store as prop and wrap our application so that every component can easily be informed of the current status.
 
-#### React User Component {#react-component}
+#### React User Component
 
 Found in:
 ./src/User.js
@@ -134,14 +134,14 @@ Towards the end of the file, we have "const = mapStateToProps". Here we are mapp
 
 In the last few lines, we are doing the actual plumbing, connecting everything together and exporting the component.
 
-#### Redux Action {#redux-action}
+#### Redux Action
 
 Found in:
 ./src/redux/actions/index.actions.js
 
 Then we have two functions, loadUser() and loadNews(). What they do is to basically return a simple object describing the action we want to perform. This action will be "intercepted" by the middleware, which in turn will take care of the AJAX requests.
 
-#### Redux middleware {#redux-middleware}
+#### Redux middleware
 
 Before we start, please note that I added some artificial delay to these Ajax requests, so the state change can be seen more easily.
 
@@ -150,7 +150,7 @@ Found in:
 
 What this bit does is to intercept all actions and if, as an example, one called "LOAD USER" is found, it will dispatch a new action, in this case "USER_LOADED", togerther twith a payload, in this case the result of an AJAX call.
 
-#### Redux User Reducer {#redux-reducer}
+#### Redux User Reducer
 
 Found in:
 ./src/redux/reducers/user.reducers.js
@@ -158,7 +158,7 @@ Found in:
 This reducer, receives a state (the default if none other is available, is initialState) and an action.
 If the reducer receives the action &#8216;USER_LOADED' it will change the state accordingly. You can see some further comments in the snippet above.
 
-#### Redux store {#redux-store}
+#### Redux store
 
 Found in:
 ./src/redux/stores/index.stores.js
@@ -178,7 +178,7 @@ To sum up, the steps you need to follow to work with redux are:
   - The reducer picks up the action, and modifies the state
 - In the component, the content is changed according to the data coming from Redux
 
-## Conclusions {#conclusions}
+## Conclusions
 
 I know there are many moving parts involved, but Redux seems like a great solution and it's probably here to stay.
 What I generally like to do is to avoid almost completely the usage of component-level state, except for small UI-related information (e.g. show/hide a menu), and use Redux for everything else, with the advantage that important global state is available from anywhere in the App, I just need to "connect" to the redux store.

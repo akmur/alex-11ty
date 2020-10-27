@@ -43,7 +43,8 @@ pre {
   font-family: Menlo, Consolas, Courier, monospace;
   /* 1 */
   font-size: 1.4rem;
-  /* 2 */ }
+  /* 2 */
+  margin: 0; }
 
 .post pre {
   overflow-x: scroll;

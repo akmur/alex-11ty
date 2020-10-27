@@ -789,18 +789,18 @@ The error position is also specified within parenthesis, in this case it is 7,1
     <id>https://alexmuraro.me/posts/2019-02-21-an-introduction-to-redux/</id>
     <content type="html">&lt;p&gt;Redux is a small popular library used to keep track of the state of an interface without going crazy. It is mainly used together with React, a popular library used to create snappy user interfaces on the web.&lt;/p&gt;
 &lt;p&gt;Getting started with redux might take a while, because you need to get accustomed to the way it does things. In this post i want to cut straight to the meat of the issue, without unnecessary technical explanations. I will show you how to get started with Redux in a React project.&lt;/p&gt;
-&lt;h3&gt;Why? {#why}&lt;/h3&gt;
+&lt;h3&gt;Why?&lt;/h3&gt;
 &lt;p&gt;Why another tutorial about Redux? Because I finally grasped it after struggling with it for a while, and I have the feeling a new tutorial with new ways to explain the same concept might be helpful.&lt;/p&gt;
-&lt;h3&gt;Credits {#credits}&lt;/h3&gt;
+&lt;h3&gt;Credits&lt;/h3&gt;
 &lt;p&gt;This tutorial would have not been possible without this one: &lt;a href=&quot;https://www.valentinog.com/blog/redux/&quot;&gt;React Redux Tutorial for Beginners: The Definitive Guide&lt;/a&gt; which I recommend as it&#39;s much more in depth than mine and very easy to follow.
 Another great tutorial that helped me greatly is this one: &lt;a href=&quot;https://medium.com/@ohansemmanuel/table-of-contents-for-understanding-redux-1-ea0667e1453d&quot;&gt;Understanding Redux — 1. – Ohans Emmanuel&lt;/a&gt;
 Also, once you have some understanding of Redux, I recommend checking out &lt;a href=&quot;https://read.reduxbook.com/&quot;&gt;Human Redux&lt;/a&gt;, it&#39;s really well written.&lt;/p&gt;
-&lt;h3&gt;Prerequisites {#prerequisites}&lt;/h3&gt;
+&lt;h3&gt;Prerequisites&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;node installed on your machine&lt;/li&gt;
 &lt;li&gt;some basic react knowledge might help (so you don&#39;t feel completely lost)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;Cloning the project {#cloningtheproject}&lt;/h2&gt;
+&lt;h2&gt;Cloning the project&lt;/h2&gt;
 &lt;p&gt;Instead of copy-pasting stuff from a webpage, let&#39;s be modern and just clone or download this Git repository:&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/akmur/redux-tutorial&quot;&gt;GitHub – akmur/redux-tutorial: Redux Tutorial&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;where you will find a little project already setup.&lt;/p&gt;
@@ -811,7 +811,7 @@ Also, once you have some understanding of Redux, I recommend checking out &lt;a 
 &lt;pre&gt;&lt;code&gt;npm run start
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Now the application should be available at &lt;a href=&quot;http://localhost:3000/&quot;&gt;localhost:3000&lt;/a&gt;.&lt;/p&gt;
-&lt;h2&gt;About the file structure {#aboutthefilestructure}&lt;/h2&gt;
+&lt;h2&gt;About the file structure&lt;/h2&gt;
 &lt;p&gt;Inside the &amp;quot;src&amp;quot; folder, the main files you will find are the following React files:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;./src
 ----User.js
@@ -834,7 +834,7 @@ Also, once you have some understanding of Redux, I recommend checking out &lt;a 
 --------store
 ------------index.js
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2&gt;Redux 101 {#redux101}&lt;/h2&gt;
+&lt;h2&gt;Redux 101&lt;/h2&gt;
 &lt;p&gt;The main concept behind Redux is that you have:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Stores&lt;/li&gt;
@@ -846,7 +846,7 @@ Also, once you have some understanding of Redux, I recommend checking out &lt;a 
 Actions is where we dictate what needs to happen in the form of a simple object.
 Reducers are where the new state is updated with information coming from the actions.
 Middlewares make it possible to intercept actions, and introduce secondary effects (like dispatching a new action or making an AJAX request).&lt;/p&gt;
-&lt;h2&gt;How does this work? {#howdoesthiswork}&lt;/h2&gt;
+&lt;h2&gt;How does this work?&lt;/h2&gt;
 &lt;p&gt;I suppose we need some explanation, so we will be going through:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#react-index&quot;&gt;React index file&lt;/a&gt;&lt;/li&gt;
@@ -857,11 +857,11 @@ Middlewares make it possible to intercept actions, and introduce secondary effec
 &lt;li&gt;&lt;a href=&quot;#redux-store&quot;&gt;Redux store&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;I will do my best to keep this short.&lt;/p&gt;
-&lt;h4&gt;React index file {#react-index}&lt;/h4&gt;
+&lt;h4&gt;React index file&lt;/h4&gt;
 &lt;p&gt;At the top of this files, you have all the imports needed to make it work. The last two imports are related to Redux.
 We are importing the &amp;quot;Provider&amp;quot; component and the Redux store we already created.&lt;/p&gt;
 &lt;p&gt;The Provider will take our store as prop and wrap our application so that every component can easily be informed of the current status.&lt;/p&gt;
-&lt;h4&gt;React User Component {#react-component}&lt;/h4&gt;
+&lt;h4&gt;React User Component&lt;/h4&gt;
 &lt;p&gt;Found in:
 ./src/User.js&lt;/p&gt;
 &lt;p&gt;At the top of the file, we have our standard imports needed to load React, load the &amp;quot;connect&amp;quot; feature from Redux, and load our Redux actions.&lt;/p&gt;
@@ -869,21 +869,21 @@ We are importing the &amp;quot;Provider&amp;quot; component and the Redux store 
 &lt;p&gt;Inside the render() function we simply output the data.&lt;/p&gt;
 &lt;p&gt;Towards the end of the file, we have &amp;quot;const = mapStateToProps&amp;quot;. Here we are mapping the user state saved in Redux, with the component&#39;s properties (props) so that they are available in the render() function.&lt;/p&gt;
 &lt;p&gt;In the last few lines, we are doing the actual plumbing, connecting everything together and exporting the component.&lt;/p&gt;
-&lt;h4&gt;Redux Action {#redux-action}&lt;/h4&gt;
+&lt;h4&gt;Redux Action&lt;/h4&gt;
 &lt;p&gt;Found in:
 ./src/redux/actions/index.actions.js&lt;/p&gt;
 &lt;p&gt;Then we have two functions, loadUser() and loadNews(). What they do is to basically return a simple object describing the action we want to perform. This action will be &amp;quot;intercepted&amp;quot; by the middleware, which in turn will take care of the AJAX requests.&lt;/p&gt;
-&lt;h4&gt;Redux middleware {#redux-middleware}&lt;/h4&gt;
+&lt;h4&gt;Redux middleware&lt;/h4&gt;
 &lt;p&gt;Before we start, please note that I added some artificial delay to these Ajax requests, so the state change can be seen more easily.&lt;/p&gt;
 &lt;p&gt;Found in:
 ./src/redux/middleware/index.middleware.js&lt;/p&gt;
 &lt;p&gt;What this bit does is to intercept all actions and if, as an example, one called &amp;quot;LOAD USER&amp;quot; is found, it will dispatch a new action, in this case &amp;quot;USER_LOADED&amp;quot;, togerther twith a payload, in this case the result of an AJAX call.&lt;/p&gt;
-&lt;h4&gt;Redux User Reducer {#redux-reducer}&lt;/h4&gt;
+&lt;h4&gt;Redux User Reducer&lt;/h4&gt;
 &lt;p&gt;Found in:
 ./src/redux/reducers/user.reducers.js&lt;/p&gt;
 &lt;p&gt;This reducer, receives a state (the default if none other is available, is initialState) and an action.
 If the reducer receives the action ‘USER_LOADED&#39; it will change the state accordingly. You can see some further comments in the snippet above.&lt;/p&gt;
-&lt;h4&gt;Redux store {#redux-store}&lt;/h4&gt;
+&lt;h4&gt;Redux store&lt;/h4&gt;
 &lt;p&gt;Found in:
 ./src/redux/stores/index.stores.js&lt;/p&gt;
 &lt;p&gt;Here we are putting together all the stuff that we created; you can read more detailed comments in the code above.&lt;/p&gt;
@@ -905,7 +905,7 @@ If the reducer receives the action ‘USER_LOADED&#39; it will change the state 
 &lt;/li&gt;
 &lt;li&gt;In the component, the content is changed according to the data coming from Redux&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;Conclusions {#conclusions}&lt;/h2&gt;
+&lt;h2&gt;Conclusions&lt;/h2&gt;
 &lt;p&gt;I know there are many moving parts involved, but Redux seems like a great solution and it&#39;s probably here to stay.
 What I generally like to do is to avoid almost completely the usage of component-level state, except for small UI-related information (e.g. show/hide a menu), and use Redux for everything else, with the advantage that important global state is available from anywhere in the App, I just need to &amp;quot;connect&amp;quot; to the redux store.&lt;/p&gt;
 &lt;p&gt;There is surely much more to it than what is in this guide, and I am probably just scratching the surface here, but hopefully this will be enough to get you started.&lt;/p&gt;
