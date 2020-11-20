@@ -1,34 +1,68 @@
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modifying WP API response to add previous and next post ID</title>
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:700|Muli:300,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/css/index.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/assets/favicons/site.webmanifest">
-    <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#000000">
-    <link rel="shortcut icon" href="/assets/favicons/favicon.ico">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
-    <meta property="og:title" content="Modifying WP API response to add previous and next post ID">
-    <meta name="twitter:title" content="Modifying WP API response to add previous and next post ID">
-    <meta property="og:description" content="I am pretty sure most people have at least heard about the mighty WordPress APIs. These APIs make it possible to create, modify and retrieve posts from our WordPress installations, although what we really want to do the most should be to using WordPress as an awesome backend to power cool applications. Think the possibilities...">
-    <meta property="og:image" content="https://images.unsplash.com/46/iYvDeqVGRbebiQv2PIJi_DSC_8407.JPG?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=900&amp;q=60">
-    <meta name="twitter:image" content="https://images.unsplash.com/46/iYvDeqVGRbebiQv2PIJi_DSC_8407.JPG?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=900&amp;q=60">
-    <meta property="og:url" content="https://alexmuraro.me/posts/2016-07-12-modifying-wp-api-response-add-previous-next-post-id/">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:creator" content="akmur">
-    <meta name="twitter:site" content="akmur">
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather:700|Muli:300,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/index.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/assets/favicons/safari-pinned-tab.svg"
+      color="#000000"
+    />
+    <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta
+      name="msapplication-config"
+      content="/assets/favicons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <meta property="og:title" content="Modifying WP API response to add previous and next post ID" />
+    <meta name="twitter:title" content="Modifying WP API response to add previous and next post ID" />
+    <meta property="og:description" content="I am pretty sure most people have at least heard about the mighty WordPress APIs. These APIs make it possible to create, modify and retrieve posts from our WordPress installations, although what we really want to do the most should be to using WordPress as an awesome backend to power cool applications. Think the possibilities..." />
+    <meta property="og:image" content="https://images.unsplash.com/46/iYvDeqVGRbebiQv2PIJi_DSC_8407.JPG?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=900&amp;q=60" />
+    <meta name="twitter:image" content="https://images.unsplash.com/46/iYvDeqVGRbebiQv2PIJi_DSC_8407.JPG?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=900&amp;q=60" />
+    <meta property="og:url" content="https://alexmuraro.me/posts/2016-07-12-modifying-wp-api-response-add-previous-next-post-id/" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:creator" content="akmur" />
+    <meta name="twitter:site" content="akmur" />
+    <script
+      async
+      defer
+      data-domain="alexmuraro.me"
+      src="https://plausible.io/js/plausible.js"
+    ></script>
   </head>
   <body class="ui-dark">
     <div class="wrapper">
-      <div class="layout"> <div class="header">
+      <div class="layout"></div>
+    </div>
+  </body>
+</html>
+ <div class="header">
   <div class="header__logo">
     <a class="logo" href="/"
       ><svg
