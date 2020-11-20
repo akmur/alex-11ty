@@ -6,7 +6,7 @@ type: post
 date: 2019-11-21T13:49:31+00:00
 featured_image: /assets/images/pxem.jpg
 url: https://alexmuraro.me/posts/2019-11-21-the-difference-between-pixels-ems-and-rems/
-excerpt: "I think there is often a little bit of misunderstanding when frontend developers and designers talk to each other about dimensions on the web. Designers generally design in pixels, obviously. Frontend developers then usually develop in ems and rems. This post wants to bridge a knowledge gap that I feel might exist."
+excerpt: 'I think there is often a little bit of misunderstanding when frontend developers and designers talk to each other about dimensions on the web. Designers generally design in pixels, obviously. Frontend developers then usually develop in ems and rems. This post wants to bridge a knowledge gap that I feel might exist.'
 tags:
   - Articles
   - CSS
@@ -30,9 +30,10 @@ A **pixel** is the tiny dot that makes images on the monitor.
 If you specify that an element has to be 20px wide, it will be 20px wide.
 It **will not be** affected by what is around it or by its own font-size. If a user will change his/her accessibility settings, **a pixel remains unaffected**.
 
-<p class="codepen" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-height="265" data-theme-id="default" data-default-tab="css,result" data-user="akmur" data-slug-hash="BaabGQJ" data-pen-title="Example px">
-  See the Pen <a href="https://codepen.io/akmur/pen/BaabGQJ"><br /> Example px</a> by Alessandro Muraro (<a href="https://codepen.io/akmur">@akmur</a>)<br /> on <a href="https://codepen.io">CodePen</a>.
-</p>
+<iframe height="265" style="width: 100%;" scrolling="no" title="Example px" src="https://codepen.io/akmur/embed/BaabGQJ?height=265&theme-id=dark&default-tab=css,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/akmur/pen/BaabGQJ'>Example px</a> by Alessandro Muraro
+  (<a href='https://codepen.io/akmur'>@akmur</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 ### Rem
 
@@ -43,9 +44,10 @@ It **will not be affected** by what is around it nor by its own font-size. In th
 ** Let's say that the root html element has a font-size of 12px.
 If we have a box with _width: 10rem_, it will be rendered on screen with a 120px width.
 
-<p class="codepen" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-height="265" data-theme-id="default" data-default-tab="css,result" data-user="akmur" data-slug-hash="jOOJQVv" data-pen-title="Example rem">
-  See the Pen <a href="https://codepen.io/akmur/pen/jOOJQVv"><br /> Example rem</a> by Alessandro Muraro (<a href="https://codepen.io/akmur">@akmur</a>)<br /> on <a href="https://codepen.io">CodePen</a>.
-</p>
+<iframe height="265" style="width: 100%;" scrolling="no" title="Example px" src="https://codepen.io/akmur/embed/jOOJQVv?height=265&theme-id=dark&default-tab=css,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/akmur/pen/jOOJQVv'>Example rem</a> by Alessandro Muraro
+  (<a href='https://codepen.io/akmur'>@akmur</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 ### Em
 
@@ -59,16 +61,17 @@ This is very useful because we **don't need to explicitly define spacing** of an
 
 We can simply say that the padding equals 1em, and it will mean that the padding equals the font size, whatever it is. So basically we are specifying _ratios_ relative to the font size, instead of absolute values.
 
-<p class="codepen" style="height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-height="265" data-theme-id="default" data-default-tab="css,result" data-user="akmur" data-slug-hash="oNNVQZL" data-pen-title="Example em">
-  See the Pen <a href="https://codepen.io/akmur/pen/oNNVQZL"><br /> Example em</a> by Alessandro Muraro (<a href="https://codepen.io/akmur">@akmur</a>)<br /> on <a href="https://codepen.io">CodePen</a>.
-</p>
+<iframe height="265" style="width: 100%;" scrolling="no" title="Example px" src="https://codepen.io/akmur/embed/oNNVQZL?height=265&theme-id=dark&default-tab=css,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+  See the Pen <a href='https://codepen.io/akmur/pen/oNNVQZL'>Example em</a> by Alessandro Muraro
+  (<a href='https://codepen.io/akmur'>@akmur</a>) on <a href='https://codepen.io'>CodePen</a>.
+</iframe>
 
 ## When to use Pixels, Rems and Ems
 
 My general rule of thumb as a developer is:
 
 - Use **pixels** for elements that need to be rendered always at the same size. I probably only use this for borders.
-- Use **Rems** for font-sizes
+- Use **Rems** for font-sizes, and for spacing elements between each other
 - Use **Ems** for spacing, padding, margin, width and height.
 
 In my experience, _Ems_ should be avoided for setting font sizes, because they easily becomes complex to manage when we have many nested components. _Rems_ for font-sizes are much easier to reason with.

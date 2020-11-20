@@ -1200,18 +1200,20 @@ This post wants to bridge a knowledge gap that I feel might exist.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt;
 If you specify that an element has to be 20px wide, it will be 20px wide.
 It &lt;strong&gt;will not be&lt;/strong&gt; affected by what is around it or by its own font-size. If a user will change his/her accessibility settings, &lt;strong&gt;a pixel remains unaffected&lt;/strong&gt;.&lt;/p&gt;
-&lt;p class=&quot;codepen&quot; style=&quot;height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot; data-height=&quot;265&quot; data-theme-id=&quot;default&quot; data-default-tab=&quot;css,result&quot; data-user=&quot;akmur&quot; data-slug-hash=&quot;BaabGQJ&quot; data-pen-title=&quot;Example px&quot;&gt;
-  See the Pen &lt;a href=&quot;https://codepen.io/akmur/pen/BaabGQJ&quot;&gt;&lt;br&gt; Example px&lt;/a&gt; by Alessandro Muraro (&lt;a href=&quot;https://codepen.io/akmur&quot;&gt;@akmur&lt;/a&gt;)&lt;br&gt; on &lt;a href=&quot;https://codepen.io/&quot;&gt;CodePen&lt;/a&gt;.
-&lt;/p&gt;
+&lt;iframe height=&quot;265&quot; style=&quot;width: 100%;&quot; scrolling=&quot;no&quot; title=&quot;Example px&quot; src=&quot;https://codepen.io/akmur/embed/BaabGQJ?height=265&amp;theme-id=dark&amp;default-tab=css,result&quot; frameborder=&quot;no&quot; loading=&quot;lazy&quot; allowtransparency=&quot;true&quot; allowfullscreen=&quot;true&quot;&gt;
+  See the Pen &lt;a href=&quot;https://codepen.io/akmur/pen/BaabGQJ&quot;&gt;Example px&lt;/a&gt; by Alessandro Muraro
+  (&lt;a href=&quot;https://codepen.io/akmur&quot;&gt;@akmur&lt;/a&gt;) on &lt;a href=&quot;https://codepen.io/&quot;&gt;CodePen&lt;/a&gt;.
+&lt;/iframe&gt;
 &lt;h3&gt;Rem&lt;/h3&gt;
 &lt;p&gt;With &lt;strong&gt;rem units&lt;/strong&gt;, one unit is relative to the font-size of the root html element.
 It &lt;strong&gt;will not be affected&lt;/strong&gt; by what is around it nor by its own font-size. In this regard it&#39;s similar to a pixel value.  However, when a user will change his/her accessibility settings, &lt;strong&gt;rem units will be affected&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;**Example:
 ** Let&#39;s say that the root html element has a font-size of 12px.
 If we have a box with &lt;em&gt;width: 10rem&lt;/em&gt;, it will be rendered on screen with a 120px width.&lt;/p&gt;
-&lt;p class=&quot;codepen&quot; style=&quot;height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot; data-height=&quot;265&quot; data-theme-id=&quot;default&quot; data-default-tab=&quot;css,result&quot; data-user=&quot;akmur&quot; data-slug-hash=&quot;jOOJQVv&quot; data-pen-title=&quot;Example rem&quot;&gt;
-  See the Pen &lt;a href=&quot;https://codepen.io/akmur/pen/jOOJQVv&quot;&gt;&lt;br&gt; Example rem&lt;/a&gt; by Alessandro Muraro (&lt;a href=&quot;https://codepen.io/akmur&quot;&gt;@akmur&lt;/a&gt;)&lt;br&gt; on &lt;a href=&quot;https://codepen.io/&quot;&gt;CodePen&lt;/a&gt;.
-&lt;/p&gt;
+&lt;iframe height=&quot;265&quot; style=&quot;width: 100%;&quot; scrolling=&quot;no&quot; title=&quot;Example px&quot; src=&quot;https://codepen.io/akmur/embed/jOOJQVv?height=265&amp;theme-id=dark&amp;default-tab=css,result&quot; frameborder=&quot;no&quot; loading=&quot;lazy&quot; allowtransparency=&quot;true&quot; allowfullscreen=&quot;true&quot;&gt;
+  See the Pen &lt;a href=&quot;https://codepen.io/akmur/pen/jOOJQVv&quot;&gt;Example rem&lt;/a&gt; by Alessandro Muraro
+  (&lt;a href=&quot;https://codepen.io/akmur&quot;&gt;@akmur&lt;/a&gt;) on &lt;a href=&quot;https://codepen.io/&quot;&gt;CodePen&lt;/a&gt;.
+&lt;/iframe&gt;
 &lt;h3&gt;Em&lt;/h3&gt;
 &lt;p&gt;With &lt;strong&gt;em units&lt;/strong&gt;, the unit is related &lt;strong&gt;to the font size of the element&lt;/strong&gt; itself.
 &lt;strong&gt;Em units will be affected&lt;/strong&gt; by accessibility settings.&lt;/p&gt;
@@ -1219,14 +1221,15 @@ If we have a box with &lt;em&gt;width: 10rem&lt;/em&gt;, it will be rendered on 
 ** If we have a box with &lt;em&gt;font-size: 16px&lt;/em&gt;, and the width is &lt;em&gt;10em,&lt;/em&gt; it will be rendered on screen with a &lt;em&gt;160px width&lt;/em&gt;. If we apply a 2em padding, this padding will be 16 * 2 = 32px.&lt;/p&gt;
 &lt;p&gt;This is very useful because we &lt;strong&gt;don&#39;t need to explicitly define spacing&lt;/strong&gt; of an element in pixels.&lt;/p&gt;
 &lt;p&gt;We can simply say that the padding equals 1em, and it will mean that the padding equals the font size, whatever it is. So basically we are specifying &lt;em&gt;ratios&lt;/em&gt; relative to the font size, instead of absolute values.&lt;/p&gt;
-&lt;p class=&quot;codepen&quot; style=&quot;height: 400px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;&quot; data-height=&quot;265&quot; data-theme-id=&quot;default&quot; data-default-tab=&quot;css,result&quot; data-user=&quot;akmur&quot; data-slug-hash=&quot;oNNVQZL&quot; data-pen-title=&quot;Example em&quot;&gt;
-  See the Pen &lt;a href=&quot;https://codepen.io/akmur/pen/oNNVQZL&quot;&gt;&lt;br&gt; Example em&lt;/a&gt; by Alessandro Muraro (&lt;a href=&quot;https://codepen.io/akmur&quot;&gt;@akmur&lt;/a&gt;)&lt;br&gt; on &lt;a href=&quot;https://codepen.io/&quot;&gt;CodePen&lt;/a&gt;.
-&lt;/p&gt;
+&lt;iframe height=&quot;265&quot; style=&quot;width: 100%;&quot; scrolling=&quot;no&quot; title=&quot;Example px&quot; src=&quot;https://codepen.io/akmur/embed/oNNVQZL?height=265&amp;theme-id=dark&amp;default-tab=css,result&quot; frameborder=&quot;no&quot; loading=&quot;lazy&quot; allowtransparency=&quot;true&quot; allowfullscreen=&quot;true&quot;&gt;
+  See the Pen &lt;a href=&quot;https://codepen.io/akmur/pen/oNNVQZL&quot;&gt;Example em&lt;/a&gt; by Alessandro Muraro
+  (&lt;a href=&quot;https://codepen.io/akmur&quot;&gt;@akmur&lt;/a&gt;) on &lt;a href=&quot;https://codepen.io/&quot;&gt;CodePen&lt;/a&gt;.
+&lt;/iframe&gt;
 &lt;h2&gt;When to use Pixels, Rems and Ems&lt;/h2&gt;
 &lt;p&gt;My general rule of thumb as a developer is:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Use &lt;strong&gt;pixels&lt;/strong&gt; for elements that need to be rendered always at the same size. I probably only use this for borders.&lt;/li&gt;
-&lt;li&gt;Use &lt;strong&gt;Rems&lt;/strong&gt; for font-sizes&lt;/li&gt;
+&lt;li&gt;Use &lt;strong&gt;Rems&lt;/strong&gt; for font-sizes, and for spacing elements between each other&lt;/li&gt;
 &lt;li&gt;Use &lt;strong&gt;Ems&lt;/strong&gt; for spacing, padding, margin, width and height.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;In my experience, &lt;em&gt;Ems&lt;/em&gt; should be avoided for setting font sizes, because they easily becomes complex to manage when we have many nested components. &lt;em&gt;Rems&lt;/em&gt; for font-sizes are much easier to reason with.&lt;/p&gt;
