@@ -538,6 +538,7 @@ code.hljs {
   text-align: center; }
 
 .hero__title {
+  color: var(--text-color);
   font-family: "Merriweather", Serif;
   font-size: 2.25em;
   font-weight: 700;
