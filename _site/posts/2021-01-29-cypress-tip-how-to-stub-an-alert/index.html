@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cypress tip: how to stub an alert</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather:700|Muli:300,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/index.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/assets/favicons/safari-pinned-tab.svg"
+      color="#000000"
+    />
+    <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta
+      name="msapplication-config"
+      content="/assets/favicons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <meta property="og:title" content="Cypress tip: how to stub an alert" />
+    <meta name="twitter:title" content="Cypress tip: how to stub an alert" />
+    <meta property="og:description" content="I&#39;ve recently started using an extension for Visual Studio Code (but also available for most IDEs) called TabNine, made by Codota, a tech startup from Israel. I use it for my JavaScript + CSS projects, but it supports any language out there. This extension impressed me quite a bit, so I decided to share my thoughts about it" />
+    <meta property="og:image" content="/assets/images/apps.jpg" />
+    <meta name="twitter:image" content="/assets/images/apps.jpg" />
+    <meta property="og:url" content="https://alexmuraro.me/posts/2021-01-29-cypress-tip-how-to-stub-an-alert" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:creator" content="akmur" />
+    <meta name="twitter:site" content="akmur" />
+    <script
+      async
+      defer
+      data-domain="alexmuraro.me"
+      src="https://plausible.io/js/plausible.js"
+    ></script>
+  </head>
+  <body class="ui-dark">
+    <div class="wrapper">
+      <div class="layout">
+ <div class="header">
+  <div class="header__logo">
+    <a class="logo" href="/"
+      ><svg
+        class="logo__triangle logo__triangle--left"
+        style="isolation: isolate;"
+        viewbox="217 167 106 96"
+      >
+        <path
+          d="M220 260l50-90 50 90H220z"
+          vector-effect="non-scaling-stroke"
+        ></path>
+      </svg>
+      <svg
+        class="logo__triangle logo__triangle--center"
+        style="isolation: isolate;"
+        viewbox="217 167 106 96"
+      >
+        <path
+          d="M220 260l50-90 50 90H220z"
+          vector-effect="non-scaling-stroke"
+        ></path>
+      </svg>
+      <svg
+        class="logo__triangle logo__triangle--right"
+        style="isolation: isolate;"
+        viewbox="217 167 106 96"
+      >
+        <path
+          d="M220 260l50-90 50 90H220z"
+          vector-effect="non-scaling-stroke"
+        ></path>
+      </svg>
+    </a>
+  </div>
+  <div class="header__nav">
+    <div id="nav">
+      <div class="nav__menu">
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link" href="/">Home</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/posts/">Posts</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="/about/">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="main" class="main">
+  <article class="post">
+    <header class="postHeader">
+      
+      <h1 class="postContent__title">
+        Cypress tip: how to stub an alert
+      </h1>
+       
+      <div class="postContent__date">Posted on Fri, 29 Jan 2021 16:21:50 GMT</div>
+      
+      <!-- .entry-meta -->
+    </header>
+    
+    <div class="postContent__image">
+      <div class="postContent__thumbnail">
+        <img src="/assets/images/apps.jpg" />
+      </div>
+    </div>
+    
+    <p>I've recently started using Cypress for testing web applications, and even for unit testing. One thing that was not immediately clear to me was how to stub (aka, fake) a basic thing like an alert, so that I can &quot;listen&quot; for this alert to be called, and assert that yes, it was indeed called.
+Simple enough, but took me some Googling to find how to do it, so I'm adding it here so it's more available.</p>
+<h2>How to do it</h2>
+<p>This is my snippet of code, used in a unit test in this case:</p>
+<pre><code>it('an element be clicked when &quot;handleOnClick&quot; prop is passed correctly', () =&gt; {
+  const stub = cy.stub()
+
+  cy.on('window:alert', stub)
+
+  cy.get('[data-test-id=&quot;element&quot;]')
+    .click()
+    .then(() =&gt; {
+      expect(stub.getCall(0)).to.be.calledWith('Hello')
+    })
+})
+</code></pre>
+
+  </article>
+</div>
+        <footer class="footer">
+          <div class="footer__container">
+            <p class="footer__text">Find me on:<br>
+              <a class="footer__link" href="https://twitter.com/akmur">Twitter</a>,
+              <a class="footer__link" href="https://www.linkedin.com/in/alessandromuraro/">LinkedIn</a>,
+              <a class="footer__link" href="https://github.com/akmur">Github</a>.
+            </p>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"
+      integrity="sha512-tHQeqtcNWlZtEh8As/4MmZ5qpy0wj04svWFK7MIzLmUVIzaHXS8eod9OmHxyBL1UET5Rchvw7Ih4ZDv5JojZww=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+</html>

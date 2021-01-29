@@ -4,7 +4,7 @@
   <subtitle>Personal site with thoughts, technical posts, bio, resume.</subtitle>
   <link href="https://alexmuraro.me/feed.xml" rel="self"/>
   <link href="https://alexmuraro.me/"/>
-  <updated>2020-09-24T09:30:07+02:00</updated>
+  <updated>2021-01-29T15:21:50+01:00</updated>
   <id>https://alexmuraro.me/</id>
   <author>
     <name>Alessandro Muraro</name>
@@ -1637,6 +1637,30 @@ If you ask me, as time goes by, AI domination feels more and more unlikely in mo
 &lt;h3&gt;Markdown&lt;/h3&gt;
 &lt;p&gt;Or even markdown!&lt;/p&gt;
 &lt;img src=&quot;https://alexmuraro.me/assets/images/tabnine8.jpg&quot;&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>Cypress tip: how to stub an alert</title>
+    <link href="https://alexmuraro.me/posts/2021-01-29-cypress-tip-how-to-stub-an-alert/"/>
+    <updated>2021-01-29T15:21:50+01:00</updated>
+    <id>https://alexmuraro.me/posts/2021-01-29-cypress-tip-how-to-stub-an-alert/</id>
+    <content type="html">&lt;p&gt;I&#39;ve recently started using Cypress for testing web applications, and even for unit testing. One thing that was not immediately clear to me was how to stub (aka, fake) a basic thing like an alert, so that I can &amp;quot;listen&amp;quot; for this alert to be called, and assert that yes, it was indeed called.
+Simple enough, but took me some Googling to find how to do it, so I&#39;m adding it here so it&#39;s more available.&lt;/p&gt;
+&lt;h2&gt;How to do it&lt;/h2&gt;
+&lt;p&gt;This is my snippet of code, used in a unit test in this case:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;it(&#39;an element be clicked when &amp;quot;handleOnClick&amp;quot; prop is passed correctly&#39;, () =&amp;gt; {
+  const stub = cy.stub()
+
+  cy.on(&#39;window:alert&#39;, stub)
+
+  cy.get(&#39;[data-test-id=&amp;quot;element&amp;quot;]&#39;)
+    .click()
+    .then(() =&amp;gt; {
+      expect(stub.getCall(0)).to.be.calledWith(&#39;Hello&#39;)
+    })
+})
+&lt;/code&gt;&lt;/pre&gt;
 </content>
   </entry>
 </feed>
