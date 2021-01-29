@@ -21,18 +21,17 @@ I am currently working daily with React and Redux at Innoloft. I am experienced 
 
 # Skills
 
-- HTML / CSS / SCSS /JavaScript
+- HTML / CSS / SCSS / JavaScript
 - React / Redux
 - Test Driven Development with Cypress
 - Gulp / NPM scripts / webpack
 - Linters
 - Scrum / Agile methodologies
 - Git
-- Basic DevOps
 - UX / UI
 - Web performances
+- Basic DevOps
 - Common sense
-- Independence and responsibility
 - Fluent English / Native Italian / Basic German
 
 # Experience
