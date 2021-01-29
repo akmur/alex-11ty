@@ -1649,7 +1649,7 @@ If you ask me, as time goes by, AI domination feels more and more unlikely in mo
 Simple enough, but took me some Googling to find how to do it, so I&#39;m adding it here so it&#39;s more available.&lt;/p&gt;
 &lt;h2&gt;How to do it&lt;/h2&gt;
 &lt;p&gt;This is my snippet of code, used in a unit test in this case:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;it(&#39;an element be clicked when &amp;quot;handleOnClick&amp;quot; prop is passed correctly&#39;, () =&amp;gt; {
+&lt;pre&gt;&lt;code&gt;it(&#39;the &amp;quot;handleOnClick&amp;quot; prop works correctly&#39;, () =&amp;gt; {
   const stub = cy.stub()
 
   cy.on(&#39;window:alert&#39;, stub)

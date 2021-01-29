@@ -42,7 +42,7 @@
     <meta name="theme-color" content="#ffffff" />
     <meta property="og:title" content="Cypress tip: how to stub an alert" />
     <meta name="twitter:title" content="Cypress tip: how to stub an alert" />
-    <meta property="og:description" content="I&#39;ve recently started using an extension for Visual Studio Code (but also available for most IDEs) called TabNine, made by Codota, a tech startup from Israel. I use it for my JavaScript + CSS projects, but it supports any language out there. This extension impressed me quite a bit, so I decided to share my thoughts about it" />
+    <meta property="og:description" content="I&#39;ve recently started using Cypress for testing web applications, and even for unit testing. One thing that was not immediately clear to me was how to stub (aka, fake) a basic thing like an alert, so that I can listen for this alert to be called, and assert that yes, it was indeed called." />
     <meta property="og:image" content="/assets/images/apps.jpg" />
     <meta name="twitter:image" content="/assets/images/apps.jpg" />
     <meta property="og:url" content="https://alexmuraro.me/posts/2021-01-29-cypress-tip-how-to-stub-an-alert" />
@@ -136,7 +136,7 @@
 Simple enough, but took me some Googling to find how to do it, so I'm adding it here so it's more available.</p>
 <h2>How to do it</h2>
 <p>This is my snippet of code, used in a unit test in this case:</p>
-<pre><code>it('an element be clicked when &quot;handleOnClick&quot; prop is passed correctly', () =&gt; {
+<pre><code>it('the &quot;handleOnClick&quot; prop works correctly', () =&gt; {
   const stub = cy.stub()
 
   cy.on('window:alert', stub)
