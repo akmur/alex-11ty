@@ -126,12 +126,14 @@
   </div>
 </div>
 <script>
+;(function () {
   var emojiArray = ['💪', '⚛️', '👍', '🤦‍♀️', '😍', '🤞', '🚀', '🙏', '🤔', '😱', '🧐', '😮', '😶', '🍕', '🔥', '😅', '🤟', '🤙']
   var textArray = ['UX', 'React', 'websites', 'JavaScript', 'CSS', 'Sass', 'Redux', 'stuff', 'web apps', 'UI dev', 'HTML', 'refactoring', 'web']
 
   setInterval(function(){
     document.getElementById('text').innerText = textArray[Math.floor(Math.random() * textArray.length)] + ' ' + emojiArray[Math.floor(Math.random() * emojiArray.length)]
   }, 2000)
+})();
 </script>
         <footer class="footer">
           <div class="footer__container">

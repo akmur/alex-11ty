@@ -258,12 +258,12 @@ code.hljs {
 
 .postsList {
   max-width: 38em;
-  margin: 5rem auto 7rem;
+  margin: 0rem auto 7rem;
 }
 
 @media screen and (max-width: 500px) {
   .postsList {
-    margin: 3rem auto 4rem;
+    margin: 0rem auto 4rem;
   }
 }
 
@@ -278,10 +278,6 @@ code.hljs {
   margin-bottom: 0;
   text-align: center;
   padding-top: 2rem;
-}
-
-.postsList__item:first-child {
-  padding-top: 0;
 }
 
 a.postsList__link {
@@ -490,4 +486,22 @@ hr {
 
 .page {
   margin-top: 5rem;
+}
+
+.input-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+input.search-input {
+  background-color: transparent;
+  border: 1px solid #565656;
+  font-size: 3rem;
+  padding: 0.5em 1em;
+  color: var(--grey);
+}
+
+input.search-input:focus {
+  border: 1px solid var(--red);
 }

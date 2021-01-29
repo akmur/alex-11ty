@@ -4,9 +4,12 @@ title: Alex Muraro - frontend developer
 
 {% include '_head.html' %} {% include '_nav.html' %}
 <div class="main">
-  <div class="postsList">
+  <div class="input-wrapper">
+    <input type="text" class="search-input" id="search-input" placeholder="Type to filter..." />
+  </div>
+  <div class="postsList" id="posts-list">
     {%- for post in collections.Articles | reverse -%}
-    <div class="postsList__item">
+    <div class="postsList__item" data-title="{{ post.data.title }}">
       <header class="postsList__itemHeader">
         <h2 class="postsList__title">
           <a class="postsList__link" href="{{ post.url }}" rel="bookmark">
@@ -22,4 +25,22 @@ title: Alex Muraro - frontend developer
     {%- endfor -%}
   </div>
 </div>
+
+<script>
+;(function () {
+  const searchInput = document.getElementById('search-input')
+
+  const items = document.querySelectorAll('.postsList__item')
+
+  searchInput.addEventListener('keyup', (e) => {
+    const filteredItems = Array.from(items).forEach(item => {
+      if (item.dataset.title.toLowerCase().includes(e.target.value.toLowerCase())) {
+        item.style.display = 'block'
+      } else {
+        item.style.display = 'none'
+      }
+    })
+  })
+})();
+</script>
 {% include '_footer.html' %}
