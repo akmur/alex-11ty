@@ -3,6 +3,7 @@ layout: single.njk
 title: About me
 type: page
 url: https://alexmuraro.me/about/
+featured_image: /assets/images/me.jpg
 excerpt: My name is Alessandro Muraro, a frontend developer from Milano, Italy. I have been hacking away at websites since 1999, but it was simply an hobby for many years. In 2011, I started my professional career in frontend development.
 eleventyExcludeFromCollections: true
 ---
@@ -12,9 +13,7 @@ My name is Alessandro Muraro, a frontend developer from [Milano, Italy](https://
 I have been hacking away at websites since 1999, but it was simply an hobby for many years. In 2011, I started my professional career in frontend development.
 Over the last 15 (!) years or so, I have been living around Europe: Italy🇮🇹, the Netherlands🇳🇱, Ireland🇮🇪, and Germany🇩🇪.
 
-Since December 2018 I am working with Innoloft where I take care of frontend architecture and UI development.
-
-![Picture of  myself](/assets/images/me.jpg)
+Since November 2020 I am working with [Cleafy](https://cleafy.com/) where I take care of UI development as a frontend engineer.
 
 # What I do
 
@@ -22,14 +21,15 @@ I am currently working daily with React and Redux at Innoloft. I am experienced 
 
 # Skills
 
-- HTML / CSS / SCSS /JavaScript ES6
-- UX / UI
+- HTML / CSS / SCSS /JavaScript
 - React / Redux
+- Test Driven Development with Cypress
 - Gulp / NPM scripts / webpack
 - Linters
 - Scrum / Agile methodologies
 - Git
 - Basic DevOps
+- UX / UI
 - Web performances
 - Common sense
 - Independence and responsibility
@@ -37,7 +37,8 @@ I am currently working daily with React and Redux at Innoloft. I am experienced 
 
 # Experience
 
-- [Innoloft GmbH](https://innoloft.com/) 🇩🇪 Lead Frontend developer, since 2018
+- [Cleafy](https://cleafy.com/) 🇮🇹 Frontend engineer, since 2020
+- [Innoloft GmbH](https://innoloft.com/) 🇩🇪 Lead Frontend developer, 2018 to 2020
 - [navabi GmbH](https://navabi.de/) 🇩🇪 Senior Frontend developer, 2017 to 2018
 - [Objectway](https://www.objectway.it) 🇮🇹 Frontend developer, 2015 to 2017
 - [The Level Group](https://www.thelevelgroup.com/) 🇮🇹 Frontend developer, 2014 to 2015
