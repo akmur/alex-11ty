@@ -1,5 +1,5 @@
 ---
-layout: single.njk
+layout: layouts/post.njk
 title: Modifying WP API response to add previous and next post ID
 author: akmur
 type: post
@@ -7,7 +7,6 @@ featured_image: https://images.unsplash.com/46/iYvDeqVGRbebiQv2PIJi_DSC_8407.JPG
 url: https://alexmuraro.me/posts/2016-07-12-modifying-wp-api-response-add-previous-next-post-id/
 excerpt: "I am pretty sure most people have at least heard about the mighty WordPress APIs. These APIs make it possible to create, modify and retrieve posts from our WordPress installations, although what we really want to do the most should be to using WordPress as an awesome backend to power cool applications. Think the possibilities..."
 tags:
-  - Articles
   - WordPress
 ---
 

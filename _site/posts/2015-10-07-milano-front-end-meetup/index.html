@@ -1,15 +1,17 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Milano Frontend Meetup</title>
     <link
       href="https://fonts.googleapis.com/css?family=Merriweather:700|Muli:300,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/assets/css/index.css" />
+    <meta name="description" content="Personal site with thoughts, technical posts, bio, resume.">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Alex Muraro - Frontend engineer">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Alex Muraro - Frontend engineer">
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -27,7 +29,6 @@
       sizes="16x16"
       href="/assets/favicons/favicon-16x16.png"
     />
-    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
     <link
       rel="mask-icon"
       href="/assets/favicons/safari-pinned-tab.svg"
@@ -39,80 +40,66 @@
       name="msapplication-config"
       content="/assets/favicons/browserconfig.xml"
     />
-    <meta name="theme-color" content="#ffffff" />
-    <meta property="og:title" content="Milano Frontend Meetup" />
-    <meta name="twitter:title" content="Milano Frontend Meetup" />
-    <meta property="og:description" content="" />
-    <meta property="og:image" content="" />
-    <meta name="twitter:image" content="" />
-    <meta property="og:url" content="" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:creator" content="akmur" />
-    <meta name="twitter:site" content="akmur" />
-    <script
-      async
-      defer
-      data-domain="alexmuraro.me"
-      src="https://plausible.io/js/plausible.js"
-    ></script>
   </head>
   <body class="ui-dark">
     <div class="wrapper">
       <div class="layout">
- <div class="header">
-  <div class="header__logo">
-    <a class="logo" href="/"
-      ><svg
-        class="logo__triangle logo__triangle--left"
-        style="isolation: isolate;"
-        viewbox="217 167 106 96"
-      >
-        <path
-          d="M220 260l50-90 50 90H220z"
-          vector-effect="non-scaling-stroke"
-        ></path>
-      </svg>
-      <svg
-        class="logo__triangle logo__triangle--center"
-        style="isolation: isolate;"
-        viewbox="217 167 106 96"
-      >
-        <path
-          d="M220 260l50-90 50 90H220z"
-          vector-effect="non-scaling-stroke"
-        ></path>
-      </svg>
-      <svg
-        class="logo__triangle logo__triangle--right"
-        style="isolation: isolate;"
-        viewbox="217 167 106 96"
-      >
-        <path
-          d="M220 260l50-90 50 90H220z"
-          vector-effect="non-scaling-stroke"
-        ></path>
-      </svg>
-    </a>
-  </div>
-  <div class="header__nav">
-    <div id="nav">
-      <div class="nav__menu">
-        <ul class="menu">
-          <li class="menu__item">
-            <a class="menu__link" href="/">Home</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="/posts/">Posts</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="/about/">About</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
+        <header class="header">
+          <div class="header__logo">
+            <a class="logo" href="/"
+              ><svg
+                class="logo__triangle logo__triangle--left"
+                style="isolation: isolate;"
+                viewbox="217 167 106 96"
+              >
+                <path
+                  d="M220 260l50-90 50 90H220z"
+                  vector-effect="non-scaling-stroke"
+                ></path>
+              </svg>
+              <svg
+                class="logo__triangle logo__triangle--center"
+                style="isolation: isolate;"
+                viewbox="217 167 106 96"
+              >
+                <path
+                  d="M220 260l50-90 50 90H220z"
+                  vector-effect="non-scaling-stroke"
+                ></path>
+              </svg>
+              <svg
+                class="logo__triangle logo__triangle--right"
+                style="isolation: isolate;"
+                viewbox="217 167 106 96"
+              >
+                <path
+                  d="M220 260l50-90 50 90H220z"
+                  vector-effect="non-scaling-stroke"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div class="header__nav">
+            <div id="nav">
+              <div class="nav__menu">
+                <ul class="menu">
+                  <li class="menu__item">
+                    <a class="menu__link" href="/">Home</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="/posts/">Posts</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="/about/">About</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </header>
 
+        <main class="tmpl-post">
+          
 <div id="main" class="main">
   <article class="post">
     <header class="postHeader">
@@ -121,18 +108,34 @@
         Milano Frontend Meetup
       </h1>
        
+      
       <div class="postContent__date">Posted on Wed, 07 Oct 2015 07:58:38 GMT</div>
+      
+      
+      
+        <div class="postContent__tags">
+          
+            <div class="postContent__tag">
+              <a href="/tags/Community/" class="Tag">Community</a>
+            </div>
+        </div>
       
       <!-- .entry-meta -->
     </header>
     
     <p>A few days ago, I was browsing <a href="http://www.meetup.com/">meetup.com</a> looking for front-end web-development meetups in my area (Milan, Italy) and to my surprise, I found none. There were a few quite specialized ones like <a href="http://www.meetup.com/MM-MeanMilan/">M&amp;M Mean Milan</a>, <a href="http://www.meetup.com/Meteor-Milano/">MeteorJS Milano</a> or <a href="http://www.meetup.com/MongoDB-Milan/">MongoDB Milan</a>, but I couldn't fine a more generic one where people could talk about front-end in general.</p>
-<p>So I was like &quot;What the hell, let's do it!&quot; and I opened a new meetup group, the <a href="http://www.meetup.com/Milano-Front-end-Web-Development-Meetup/">Milano Front-end Web-development Meetup</a>. Since creating the group, we've already got 40 subscribers, which I think is cool.
+<p>So I was like &quot;What the hell, let's do it!&quot; and I opened a new meetup group, the <a href="http://www.meetup.com/Milano-Front-end-Web-Development-Meetup/">Milano Front-end Web-development Meetup</a>. Since creating the group, we've already got 40 subscribers, which I think is cool.<br>
 The goal of the group would be to talk about all things front-end, from CSS to SVG to JS to HTML. I've also created a <a href="https://twitter.com/frontendmilano">Twitter</a> account to go with it.</p>
 <p>The first meeting will be on the 30th of October so if you live in the area, then by all means join us!</p>
 
   </article>
+
+  <ul class="PrevNextPosts"><li><< <a href="/posts/2016-02-24-getting-started-with-atom-part-1/">Using Atom Text Editor</a></li><li><a href="/posts/2015-09-26-bem/">BEM naming convention</a> >></li>
+  </ul>
+
 </div>
+        </main>
+
         <footer class="footer">
           <div class="footer__container">
             <p class="footer__text">Find me on:<br>
@@ -144,28 +147,24 @@ The goal of the group would be to talk about all things front-end, from CSS to S
         </footer>
       </div>
     </div>
-  </body>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"
-      integrity="sha512-tHQeqtcNWlZtEh8As/4MmZ5qpy0wj04svWFK7MIzLmUVIzaHXS8eod9OmHxyBL1UET5Rchvw7Ih4ZDv5JojZww=="
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      hljs.initHighlightingOnLoad();
-    </script>
 
-    <!-- Default Statcounter code for My Personal Website https://alexmuraro.me -->
-    <script type="text/javascript">
-    var sc_project=12470952; 
-    var sc_invisible=1; 
-    var sc_security="52b110a1"; 
-    var sc_https=1; 
-    </script>
-    <script type="text/javascript"
-    src="https://www.statcounter.com/counter/counter.js" async></script>
-    <noscript><div class="statcounter"><a title="Web Analytics Made Easy -
-    StatCounter" href="https://statcounter.com/" target="_blank"><img
-    class="statcounter" src="https://c.statcounter.com/12470952/0/52b110a1/1/"
-    alt="Web Analytics Made Easy - StatCounter"></a></div></noscript>
-    <!-- End of Statcounter Code -->
+    <!-- Current page: /posts/2015-10-07-milano-front-end-meetup/ -->
+  </body>
+
+  
+
+  <!-- Default Statcounter code for My Personal Website https://alexmuraro.me -->
+  <script type="text/javascript">
+  var sc_project=12470952; 
+  var sc_invisible=1; 
+  var sc_security="52b110a1"; 
+  var sc_https=1; 
+  </script>
+  <script type="text/javascript"
+  src="https://www.statcounter.com/counter/counter.js" async></script>
+  <noscript><div class="statcounter"><a title="Web Analytics Made Easy -
+  StatCounter" href="https://statcounter.com/" target="_blank"><img
+  class="statcounter" src="https://c.statcounter.com/12470952/0/52b110a1/1/"
+  alt="Web Analytics Made Easy - StatCounter"></a></div></noscript>
+  <!-- End of Statcounter Code -->
 </html>

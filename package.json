@@ -1,26 +1,36 @@
 {
-  "name": "alex-11ty",
-  "version": "1.0.0",
-  "description": "",
-  "main": ".eleventy.js",
+  "name": "eleventy-base-blog",
+  "version": "5.0.2",
+  "description": "A starter repository for a blog web site using the Eleventy static site generator.",
   "scripts": {
+    "build": "eleventy",
+    "watch": "eleventy --watch",
     "dev": "eleventy --serve --port=8888",
-    "styles": "node-sass --watch --output-style nested ./assets-src/scss/index.scss ./assets/css/index.css"
+    "styles": "node-sass --watch --output-style nested ./scss/index.scss ./css/index.css",
+    "debug": "DEBUG=* eleventy"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/akmur/alex-11ty.git"
+    "url": "git://github.com/11ty/eleventy-base-blog.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": {
+    "name": "Zach Leatherman",
+    "email": "zachleatherman@gmail.com",
+    "url": "https://zachleat.com/"
+  },
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/akmur/alex-11ty/issues"
+    "url": "https://github.com/11ty/eleventy-base-blog/issues"
   },
-  "homepage": "https://github.com/akmur/alex-11ty#readme",
+  "homepage": "https://github.com/11ty/eleventy-base-blog#readme",
   "devDependencies": {
-    "@11ty/eleventy-plugin-rss": "^1.0.9"
-  },
-  "dependencies": {
-    "node-sass": "^4.14.1"
+    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy-navigation": "^0.1.6",
+    "@11ty/eleventy-plugin-rss": "^1.1.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.6",
+    "luxon": "^1.25.0",
+    "markdown-it": "^8.4.2",
+    "markdown-it-anchor": "^5.2.5",
+    "node-sass": "^5.0.0"
   }
 }

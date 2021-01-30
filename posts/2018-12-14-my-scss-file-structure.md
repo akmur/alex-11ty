@@ -1,19 +1,19 @@
 ---
-layout: single.njk
+layout: layouts/post.njk
 title: My SCSS file structure
 author: akmur
 type: post
 date: 2018-12-14T00:14:58+00:00
 tags:
-  - Articles
-  - SCSS
+  - CSS
+  - Scss
 ---
 
 After having created folder structures for my SCSS files many times for many different projects over the years, I decided to create a Github repository so that it's easier for me to get started and improve; hopefully it can be useful to somebody else trying to wrap his/her head around it as well.
 
 First of all, [here is the repository][1] that you can clone to get started, and here below is an image that shows how the folder structure looks like.
 
-<img src="/assets/images/3pm3of9.png" />
+<img src="/img/3pm3of9.png" />
 
 The main ideas behind the organization of these files come from a couple of resources with a few tweaks, and 99% of the credit goes to them of course.
 

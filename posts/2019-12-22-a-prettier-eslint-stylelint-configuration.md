@@ -1,5 +1,5 @@
 ---
-layout: single.njk
+layout: layouts/post.njk
 title: A Prettier / ESlint / stylelint configuration
 author: akmur
 type: post
@@ -8,7 +8,7 @@ url: https://alexmuraro.me/posts/2019-12-22-a-prettier-eslint-stylelint-configur
 featured_image: https://images.unsplash.com/photo-1485160497022-3e09382fb310?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60
 excerpt: "A prettier + eslint + stylelint configuration."
 tags:
-  - Articles
+  - Tools
 ---
 
 [Prettier][1] is a tool that allows your code to be automatically formatted according to certain rules.

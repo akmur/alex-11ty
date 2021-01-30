@@ -1,15 +1,17 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic usage of the new React Router v6 (beta)</title>
     <link
       href="https://fonts.googleapis.com/css?family=Merriweather:700|Muli:300,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/assets/css/index.css" />
+    <meta name="description" content="Personal site with thoughts, technical posts, bio, resume.">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Alex Muraro - Frontend engineer">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Alex Muraro - Frontend engineer">
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -27,7 +29,6 @@
       sizes="16x16"
       href="/assets/favicons/favicon-16x16.png"
     />
-    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
     <link
       rel="mask-icon"
       href="/assets/favicons/safari-pinned-tab.svg"
@@ -39,80 +40,66 @@
       name="msapplication-config"
       content="/assets/favicons/browserconfig.xml"
     />
-    <meta name="theme-color" content="#ffffff" />
-    <meta property="og:title" content="Basic usage of the new React Router v6 (beta)" />
-    <meta name="twitter:title" content="Basic usage of the new React Router v6 (beta)" />
-    <meta property="og:description" content="In this post we are going to look into how to use get started with the upcoming React Router version 6, currently in beta. Surely there are many more capabilities than those shown here, but this will get any app started, and might be enough for most of them." />
-    <meta property="og:image" content="/assets/images/react-router.jpg" />
-    <meta name="twitter:image" content="/assets/images/react-router.jpg" />
-    <meta property="og:url" content="https://alexmuraro.me/posts/2020-07-23-basic-usage-of-the-new-react-router-v6-beta/" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:creator" content="akmur" />
-    <meta name="twitter:site" content="akmur" />
-    <script
-      async
-      defer
-      data-domain="alexmuraro.me"
-      src="https://plausible.io/js/plausible.js"
-    ></script>
   </head>
   <body class="ui-dark">
     <div class="wrapper">
       <div class="layout">
- <div class="header">
-  <div class="header__logo">
-    <a class="logo" href="/"
-      ><svg
-        class="logo__triangle logo__triangle--left"
-        style="isolation: isolate;"
-        viewbox="217 167 106 96"
-      >
-        <path
-          d="M220 260l50-90 50 90H220z"
-          vector-effect="non-scaling-stroke"
-        ></path>
-      </svg>
-      <svg
-        class="logo__triangle logo__triangle--center"
-        style="isolation: isolate;"
-        viewbox="217 167 106 96"
-      >
-        <path
-          d="M220 260l50-90 50 90H220z"
-          vector-effect="non-scaling-stroke"
-        ></path>
-      </svg>
-      <svg
-        class="logo__triangle logo__triangle--right"
-        style="isolation: isolate;"
-        viewbox="217 167 106 96"
-      >
-        <path
-          d="M220 260l50-90 50 90H220z"
-          vector-effect="non-scaling-stroke"
-        ></path>
-      </svg>
-    </a>
-  </div>
-  <div class="header__nav">
-    <div id="nav">
-      <div class="nav__menu">
-        <ul class="menu">
-          <li class="menu__item">
-            <a class="menu__link" href="/">Home</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="/posts/">Posts</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="/about/">About</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
+        <header class="header">
+          <div class="header__logo">
+            <a class="logo" href="/"
+              ><svg
+                class="logo__triangle logo__triangle--left"
+                style="isolation: isolate;"
+                viewbox="217 167 106 96"
+              >
+                <path
+                  d="M220 260l50-90 50 90H220z"
+                  vector-effect="non-scaling-stroke"
+                ></path>
+              </svg>
+              <svg
+                class="logo__triangle logo__triangle--center"
+                style="isolation: isolate;"
+                viewbox="217 167 106 96"
+              >
+                <path
+                  d="M220 260l50-90 50 90H220z"
+                  vector-effect="non-scaling-stroke"
+                ></path>
+              </svg>
+              <svg
+                class="logo__triangle logo__triangle--right"
+                style="isolation: isolate;"
+                viewbox="217 167 106 96"
+              >
+                <path
+                  d="M220 260l50-90 50 90H220z"
+                  vector-effect="non-scaling-stroke"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div class="header__nav">
+            <div id="nav">
+              <div class="nav__menu">
+                <ul class="menu">
+                  <li class="menu__item">
+                    <a class="menu__link" href="/">Home</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="/posts/">Posts</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="/about/">About</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </header>
 
+        <main class="tmpl-post">
+          
 <div id="main" class="main">
   <article class="post">
     <header class="postHeader">
@@ -121,19 +108,35 @@
         Basic usage of the new React Router v6 (beta)
       </h1>
        
+      
       <div class="postContent__date">Posted on Thu, 23 Jul 2020 10:43:09 GMT</div>
+      
+      
+      
+        <div class="postContent__tags">
+          
+            <div class="postContent__tag">
+              <a href="/tags/React/" class="Tag">React</a>
+            </div>
+            <div class="postContent__tag">
+              <a href="/tags/Router/" class="Tag">Router</a>
+            </div>
+            <div class="postContent__tag">
+              <a href="/tags/JavaScript/" class="Tag">JavaScript</a>
+            </div>
+        </div>
       
       <!-- .entry-meta -->
     </header>
     
     <div class="postContent__image">
       <div class="postContent__thumbnail">
-        <img src="/assets/images/react-router.jpg" />
+        <img src="/img/react-router.jpg" />
       </div>
     </div>
     
     <p>In this post we are going to look into how to use get started with the upcoming React Router version 6, currently in beta. Surely there are many more capabilities than those shown here, but this will get any app started, and might be enough for most of them.</p>
-<h3>Installation</h3>
+<h3 id="installation">Installation <a class="direct-link" href="#installation">#</a></h3>
 <p>To get started, install these packages:</p>
 <pre><code>npm install history react-router-dom@next react-router@next
 </code></pre>
@@ -142,7 +145,7 @@
 &quot;react-router&quot;: &quot;^6.0.0-beta.0&quot;,
 &quot;react-router-dom&quot;: &quot;^6.0.0-beta.0&quot;
 </code></pre>
-<h3>The router component</h3>
+<h3 id="the-router-component">The router component <a class="direct-link" href="#the-router-component">#</a></h3>
 <p>For the sake of this example, we will create a few pages and we will see how to reach them, extract url parameters and search queries.</p>
 <p>This is the code for my <em>AppRouter</em> component, which you will likely import at some point within your application (for example, in the <em>App</em> component)</p>
 <p>Note: Your <em>Navigation</em> component needs to exist inside the router.</p>
@@ -175,7 +178,7 @@ const AppRouter = () =&gt; {
 
 export default AppRouter;
 </code></pre>
-<h3>Links within the application</h3>
+<h3 id="links-within-the-application">Links within the application <a class="direct-link" href="#links-within-the-application">#</a></h3>
 <p>We will now use the <em>Navigation</em> component to reach those pages we created:</p>
 <p>Here is how it looks like. As you can see it uses the Link component provided by the router.</p>
 <pre><code>import React from &quot;react&quot;;
@@ -197,7 +200,7 @@ const Navigation = () =&gt; {
 
 export default Navigation;
 </code></pre>
-<h3>How to use the URL parameters</h3>
+<h3 id="how-to-use-the-url-parameters">How to use the URL parameters <a class="direct-link" href="#how-to-use-the-url-parameters">#</a></h3>
 <p>In the Single page component, we can grab the URL parameter &quot;id&quot; and use it for whatever we need, like fetching some more data from some APIs.</p>
 <pre><code>import React from 'react'
 import { useParams } from 'react-router-dom'
@@ -210,7 +213,7 @@ const Single = () =&gt; {
 
 export default Single
 </code></pre>
-<h3>How to use the location or query parameters</h3>
+<h3 id="how-to-use-the-location-or-query-parameters">How to use the location or query parameters <a class="direct-link" href="#how-to-use-the-location-or-query-parameters">#</a></h3>
 <p>We have created a <em>Search</em> page which would show different search results according to search query parameters. In order to grab those parameters you do like this:</p>
 <pre><code>import React from &quot;react&quot;;
 import { useLocation } from &quot;react-router-dom&quot;;
@@ -230,7 +233,13 @@ export default Search;
 <p><span>Photo by <a href="https://unsplash.com/@heytowner?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">JOHN TOWNER</a> on <a href="https://unsplash.com/s/photos/mountains?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></p>
 
   </article>
+
+  <ul class="PrevNextPosts"><li><< <a href="/posts/2020-08-11-switching-from-wordpress-to-eleventy/">Switching from WordPress to Eleventy</a></li><li><a href="/posts/2020-04-13-drag-and-drop-with-react-and-native-html5/">Drag and drop with React and native HTML5</a> >></li>
+  </ul>
+
 </div>
+        </main>
+
         <footer class="footer">
           <div class="footer__container">
             <p class="footer__text">Find me on:<br>
@@ -242,28 +251,24 @@ export default Search;
         </footer>
       </div>
     </div>
-  </body>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"
-      integrity="sha512-tHQeqtcNWlZtEh8As/4MmZ5qpy0wj04svWFK7MIzLmUVIzaHXS8eod9OmHxyBL1UET5Rchvw7Ih4ZDv5JojZww=="
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      hljs.initHighlightingOnLoad();
-    </script>
 
-    <!-- Default Statcounter code for My Personal Website https://alexmuraro.me -->
-    <script type="text/javascript">
-    var sc_project=12470952; 
-    var sc_invisible=1; 
-    var sc_security="52b110a1"; 
-    var sc_https=1; 
-    </script>
-    <script type="text/javascript"
-    src="https://www.statcounter.com/counter/counter.js" async></script>
-    <noscript><div class="statcounter"><a title="Web Analytics Made Easy -
-    StatCounter" href="https://statcounter.com/" target="_blank"><img
-    class="statcounter" src="https://c.statcounter.com/12470952/0/52b110a1/1/"
-    alt="Web Analytics Made Easy - StatCounter"></a></div></noscript>
-    <!-- End of Statcounter Code -->
+    <!-- Current page: /posts/2020-07-23-basic-usage-of-the-new-react-router-v6-beta/ -->
+  </body>
+
+  
+
+  <!-- Default Statcounter code for My Personal Website https://alexmuraro.me -->
+  <script type="text/javascript">
+  var sc_project=12470952; 
+  var sc_invisible=1; 
+  var sc_security="52b110a1"; 
+  var sc_https=1; 
+  </script>
+  <script type="text/javascript"
+  src="https://www.statcounter.com/counter/counter.js" async></script>
+  <noscript><div class="statcounter"><a title="Web Analytics Made Easy -
+  StatCounter" href="https://statcounter.com/" target="_blank"><img
+  class="statcounter" src="https://c.statcounter.com/12470952/0/52b110a1/1/"
+  alt="Web Analytics Made Easy - StatCounter"></a></div></noscript>
+  <!-- End of Statcounter Code -->
 </html>

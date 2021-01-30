@@ -1,5 +1,5 @@
 ---
-layout: single.njk
+layout: layouts/post.njk
 title: How to use AJAX to call a function in WordPress
 author: akmur
 type: post
@@ -7,7 +7,6 @@ featured_image: https://images.unsplash.com/photo-1425136738262-212551713a58?ixl
 url: https://alexmuraro.me/posts/2016-07-12-ajax-call-function-wordpress/
 excerpt: "This might be old stuff for many people out there and I know that most things can be accomplished with the amazing WP API, still I think it's good to have a simple example of using AJAX to call a WordPress function in one post. Here we go!"
 tags:
-  - Articles
   - JavaScript
   - WordPress
 ---

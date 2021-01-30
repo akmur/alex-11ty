@@ -1,5 +1,5 @@
 ---
-layout: single.njk
+layout: layouts/post.njk
 title: A collection of useful git commands
 author: akmur
 type: post
@@ -7,8 +7,6 @@ date: 2012-10-18T23:38:32+00:00
 url: https://alexmuraro.me/posts/2012-10-18-a-collection-of-useful-git-commands/
 excerpt: "In my previous article I have introduced the basic concepts around the awesome Git. Check it out if you are not sure what we are talking about."
 tags:
-  - Articles
-  - Tutorial
   - Git
 ---
 

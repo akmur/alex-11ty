@@ -1,18 +1,17 @@
 ---
-layout: single.njk
+layout: layouts/post.njk
 title: Switching from WordPress to Eleventy
 author: akmur
 type: post
 date: 2020-08-10T15:47:16
 last_update: 2020-08-11T11:46:00
-featured_image: /assets/images/11ty.jpg
+featured_image: /img/11ty.jpg
 url: https://alexmuraro.me/posts/2020-08-11-switching-from-wordpress-to-eleventy/
 excerpt: "Here I talk about my (fast) journey switching from WordPress to Eleventy, a barebones but feature-rich JavaScript static site generator. In this article there is no code because I think whatever you need can be seen in the repository for this site."
 tags:
-  - Tutorial
   - JavaScript
   - WordPress
-  - Articles
+  - Eleventy
 ---
 
 ### What is this article about?

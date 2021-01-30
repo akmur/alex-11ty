@@ -1,11 +1,11 @@
 ---
-layout: single.njk
+layout: layouts/post.njk
 title: Using Atom Text Editor
 author: akmur
 type: post
 date: 2016-02-24T21:56:28+00:00
 tags:
-  - Articles
+  - Tools
 ---
 
 I've recently started falling in love with the Atom editor. So much so, that I'm planning to hold a presentation about this little piece of software during one the upcoming local front end meetups.

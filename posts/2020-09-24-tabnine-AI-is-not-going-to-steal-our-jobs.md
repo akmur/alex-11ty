@@ -1,14 +1,13 @@
 ---
-layout: single.njk
+layout: layouts/post.njk
 title: "TabNine - AI is not going to steal our jobs"
 type: post
 date: 2020-09-24 11:30:07
-featured_image: /assets/images/react-router.jpg
+featured_image: /img/react-router.jpg
 url: https://alexmuraro.me/posts/2020-09-24-tabnine-AI-is-not-going-to-steal-our-jobs
 excerpt: "I've recently started using an extension for Visual Studio Code (but also available for most IDEs) called TabNine, made by Codota, a tech startup from Israel. I use it for my JavaScript + CSS projects, but it supports any language out there.
 This extension impressed me quite a bit, so I decided to share my thoughts about it"
-tags:
-  - Articles
+tags: Tools
 ---
 
 I've recently started using an extension for Visual Studio Code (but also available for most IDEs) called <a href="https://www.tabnine.com/">**TabNine**</a>, made by <a href="https://www.codota.com">Codota</a>, a tech startup from Israel. I use it for my JavaScript + CSS projects, but it supports any language out there.
@@ -69,30 +68,30 @@ Here are a few, stupid examples from my everyday use. I almost never remember to
 
 Here tabNine is suggesting the correct CSS variable I use for border colors.
 
-<img src="/assets/images/tabnine1.png" />
+<img src="/img/tabnine1.png" />
 
 Another CSS example: I often give a border radius to containers, and it is correctly recommending the variable to go with it.
 
-<img src="/assets/images/tabnine2.png" />
+<img src="/img/tabnine2.png" />
 
 ### JavaScript
 
 In this use case, you can see TabNine correctly autocompleting not only the name of the import I want to use, but also the correct, non trivial path.
 
-<img src="/assets/images/tabnine3.png" />
+<img src="/img/tabnine3.png" />
 
 Autocompleting the target property
 
-<img src="/assets/images/tabnine6.png" />
+<img src="/img/tabnine6.png" />
 
 ### Comments
 
 Quite amazingly, TabNine even autocompletes comments
 
-<img src="/assets/images/tabnine7.png" />
+<img src="/img/tabnine7.png" />
 
 ### Markdown
 
 Or even markdown!
 
-<img src="/assets/images/tabnine8.jpg" />
+<img src="/img/tabnine8.jpg" />

@@ -1,12 +1,10 @@
 ---
-layout: single.njk
+layout: layouts/post.njk
 title: An introduction to GIT
 date: 2012-10-04T21:18:32+00:00
 url: https://alexmuraro.me/posts/2012-10-04-an-introduction-to-git/
 excerpt: "I've recently been explaining the basics of git to a new colleague of mine, and while it is quite easy to use, I understand that at first it's not very intuitive, so I got the idea for this short tutorial on its usage, trying to stay quick and to the point, as usual."
 tags:
-  - Articles
-  - Tutorial
   - Git
 ---
 

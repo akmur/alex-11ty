@@ -1,15 +1,17 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Switching from WordPress to Eleventy</title>
     <link
       href="https://fonts.googleapis.com/css?family=Merriweather:700|Muli:300,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/assets/css/index.css" />
+    <meta name="description" content="Personal site with thoughts, technical posts, bio, resume.">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Alex Muraro - Frontend engineer">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Alex Muraro - Frontend engineer">
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -27,7 +29,6 @@
       sizes="16x16"
       href="/assets/favicons/favicon-16x16.png"
     />
-    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
     <link
       rel="mask-icon"
       href="/assets/favicons/safari-pinned-tab.svg"
@@ -39,80 +40,66 @@
       name="msapplication-config"
       content="/assets/favicons/browserconfig.xml"
     />
-    <meta name="theme-color" content="#ffffff" />
-    <meta property="og:title" content="Switching from WordPress to Eleventy" />
-    <meta name="twitter:title" content="Switching from WordPress to Eleventy" />
-    <meta property="og:description" content="Here I talk about my (fast) journey switching from WordPress to Eleventy, a barebones but feature-rich JavaScript static site generator. In this article there is no code because I think whatever you need can be seen in the repository for this site." />
-    <meta property="og:image" content="/assets/images/11ty.jpg" />
-    <meta name="twitter:image" content="/assets/images/11ty.jpg" />
-    <meta property="og:url" content="https://alexmuraro.me/posts/2020-08-11-switching-from-wordpress-to-eleventy/" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:creator" content="akmur" />
-    <meta name="twitter:site" content="akmur" />
-    <script
-      async
-      defer
-      data-domain="alexmuraro.me"
-      src="https://plausible.io/js/plausible.js"
-    ></script>
   </head>
   <body class="ui-dark">
     <div class="wrapper">
       <div class="layout">
- <div class="header">
-  <div class="header__logo">
-    <a class="logo" href="/"
-      ><svg
-        class="logo__triangle logo__triangle--left"
-        style="isolation: isolate;"
-        viewbox="217 167 106 96"
-      >
-        <path
-          d="M220 260l50-90 50 90H220z"
-          vector-effect="non-scaling-stroke"
-        ></path>
-      </svg>
-      <svg
-        class="logo__triangle logo__triangle--center"
-        style="isolation: isolate;"
-        viewbox="217 167 106 96"
-      >
-        <path
-          d="M220 260l50-90 50 90H220z"
-          vector-effect="non-scaling-stroke"
-        ></path>
-      </svg>
-      <svg
-        class="logo__triangle logo__triangle--right"
-        style="isolation: isolate;"
-        viewbox="217 167 106 96"
-      >
-        <path
-          d="M220 260l50-90 50 90H220z"
-          vector-effect="non-scaling-stroke"
-        ></path>
-      </svg>
-    </a>
-  </div>
-  <div class="header__nav">
-    <div id="nav">
-      <div class="nav__menu">
-        <ul class="menu">
-          <li class="menu__item">
-            <a class="menu__link" href="/">Home</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="/posts/">Posts</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="/about/">About</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
+        <header class="header">
+          <div class="header__logo">
+            <a class="logo" href="/"
+              ><svg
+                class="logo__triangle logo__triangle--left"
+                style="isolation: isolate;"
+                viewbox="217 167 106 96"
+              >
+                <path
+                  d="M220 260l50-90 50 90H220z"
+                  vector-effect="non-scaling-stroke"
+                ></path>
+              </svg>
+              <svg
+                class="logo__triangle logo__triangle--center"
+                style="isolation: isolate;"
+                viewbox="217 167 106 96"
+              >
+                <path
+                  d="M220 260l50-90 50 90H220z"
+                  vector-effect="non-scaling-stroke"
+                ></path>
+              </svg>
+              <svg
+                class="logo__triangle logo__triangle--right"
+                style="isolation: isolate;"
+                viewbox="217 167 106 96"
+              >
+                <path
+                  d="M220 260l50-90 50 90H220z"
+                  vector-effect="non-scaling-stroke"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div class="header__nav">
+            <div id="nav">
+              <div class="nav__menu">
+                <ul class="menu">
+                  <li class="menu__item">
+                    <a class="menu__link" href="/">Home</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="/posts/">Posts</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="/about/">About</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </header>
 
+        <main class="tmpl-post">
+          
 <div id="main" class="main">
   <article class="post">
     <header class="postHeader">
@@ -121,21 +108,37 @@
         Switching from WordPress to Eleventy
       </h1>
        
+      
       <div class="postContent__date">Posted on Mon, 10 Aug 2020 15:47:16 GMT</div>
+      
+      
+      
+        <div class="postContent__tags">
+          
+            <div class="postContent__tag">
+              <a href="/tags/JavaScript/" class="Tag">JavaScript</a>
+            </div>
+            <div class="postContent__tag">
+              <a href="/tags/WordPress/" class="Tag">WordPress</a>
+            </div>
+            <div class="postContent__tag">
+              <a href="/tags/Eleventy/" class="Tag">Eleventy</a>
+            </div>
+        </div>
       
       <!-- .entry-meta -->
     </header>
     
     <div class="postContent__image">
       <div class="postContent__thumbnail">
-        <img src="/assets/images/11ty.jpg" />
+        <img src="/img/11ty.jpg" />
       </div>
     </div>
     
-    <h3>What is this article about?</h3>
+    <h3 id="what-is-this-article-about%3F">What is this article about? <a class="direct-link" href="#what-is-this-article-about%3F">#</a></h3>
 <p>Here I talk about my (fast) journey switching from WordPress to <a href="https://www.11ty.dev/">Eleventy</a>, a barebones but feature-rich JavaScript static site generator. In this article there is no code, because I think whatever you need can be seen in the <a href="https://github.com/akmur/alex-11ty">repository</a> for this site, and anyway there are tutorials out there already, like <a href="https://giustino.blog/how-to-build-a-website-with-eleventy-and-deploy-it-on-netlify/">this one</a>.</p>
-<h3>The situation</h3>
-<p>I've always liked moving between platforms for this blog, and I've tried a few along the years: a self hosted WordPress installation, a ready made wordpress.com solution, a custom solution made with React and Contentful, and last year I settled for a static site generated starting from a local WordPress installation.</p>
+<h3 id="the-situation">The situation <a class="direct-link" href="#the-situation">#</a></h3>
+<p>I've always liked moving between platforms for this blog, and I've tried a few along the years: a self hosted WordPress installation, a ready made <a href="http://wordpress.com">wordpress.com</a> solution, a custom solution made with React and Contentful, and last year I settled for a static site generated starting from a local WordPress installation.</p>
 <p>This worked fine, and I didn't have many complaints about it, except for one thing. There was a barrier about thinking about some content to add, or modifications to make to the theme, and going online. That barrier was the fact that I had to:</p>
 <ul>
 <li>connect my external SSD where I keep Virtual Machines.</li>
@@ -145,11 +148,11 @@
 <li>push a button and generate a static version of the WordPress site.</li>
 <li>drag and drop the generated static files to Netlify (because I didn't want to pay for the pro version of static generator).</li>
 </ul>
-<p>As you can see, not difficult, but convoluted.
+<p>As you can see, not difficult, but convoluted.<br>
 If I felt like changing some CSS... I just wouldn't do it. If I wanted to write a blog post, I would probably not do it as well.</p>
-<h3>The idea</h3>
+<h3 id="the-idea">The idea <a class="direct-link" href="#the-idea">#</a></h3>
 <p>My colleague and friend <a href="https://giustino.blog">Giustino</a>, whose technical tutorial I linked above, gave me the inspiration I needed to switch from my WordPress setup to <a href="https://www.11ty.dev/">Eleventy</a>. I read on Twitter he was about to write a book about Eleventy and since I already started playing around with Eleventy last year and got good vibes, but never did anything with it, I decided to actually do it and migrate to it.</p>
-<h3>Why Eleventy</h3>
+<h3 id="why-eleventy">Why Eleventy <a class="direct-link" href="#why-eleventy">#</a></h3>
 <p>There are a few compelling reasons for Eleventy.</p>
 <ul>
 <li>I can write in Markdown.</li>
@@ -159,7 +162,7 @@ If I felt like changing some CSS... I just wouldn't do it. If I wanted to write 
 <li>For my use case, barrier from thought to post is lower than with WordPress.</li>
 <li>While I write or edit content, Eleventy will watch for changes and save everything to the <code>_site</code> folder. If you then push to Github, and you have linked Github with Netlify, the content of the <code>_site</code> folder will be automatically served.</li>
 </ul>
-<h3>The Process</h3>
+<h3 id="the-process">The Process <a class="direct-link" href="#the-process">#</a></h3>
 <p>So, once I had this idea, I proceeded as follows:</p>
 <ul>
 <li>I installed <a href="https://www.11ty.dev/">Eleventy</a> globally and made sure it was working.</li>
@@ -170,22 +173,28 @@ If I felt like changing some CSS... I just wouldn't do it. If I wanted to write 
 <li>In the process, I removed a ton of unused images. Right now only a handful of posts have images, and I like it like that. I can always start adding exactly what I need at any point in the future.</li>
 <li>I deployed to Netlify.</li>
 </ul>
-<h3>How long did it take</h3>
+<h3 id="how-long-did-it-take">How long did it take <a class="direct-link" href="#how-long-did-it-take">#</a></h3>
 <p>It took me about <strong>6 hours</strong> all considered. 2 hours to actually setup Eleventy and port my theme from WordPress, and 3/4 hours to adapt my markdown files and review them.</p>
 <p>The result is the site you are reading. So exactly the same as before, but faster, easier to edit, more fun to modify.</p>
-<h3>The Github repository</h3>
+<h3 id="the-github-repository">The Github repository <a class="direct-link" href="#the-github-repository">#</a></h3>
 <p>Here is the <a href="https://github.com/akmur/alex-11ty">Github repository</a> for this website. Feel free to have a look. Hopefully the setup is self explainatory. There are more things one can do with Eleventy, but for my use case I didn't need to dig too deep.</p>
-<h3>The result</h3>
-<p>All considered, I give my satisfaction with Eleventy a <strong>9/10</strong> (because 10/10 doesn't exist).
-Thanks to it, have a newfound passion with both updating my website with content, and updating it's style and code (I even already have a new design in mind). The freedom it grants is really refreshing after having being tied to complex systems like WordPress for so long.
-True, it doesn't have an admin dashboard, like WordPress does so well, but if you are a bit technically inclined, then that would not be a problem, and even an advantage if you're used to switching between files in an editor.
+<h3 id="the-result">The result <a class="direct-link" href="#the-result">#</a></h3>
+<p>All considered, I give my satisfaction with Eleventy a <strong>9/10</strong> (because 10/10 doesn't exist).<br>
+Thanks to it, have a newfound passion with both updating my website with content, and updating it's style and code (I even already have a new design in mind). The freedom it grants is really refreshing after having being tied to complex systems like WordPress for so long.<br>
+True, it doesn't have an admin dashboard, like WordPress does so well, but if you are a bit technically inclined, then that would not be a problem, and even an advantage if you're used to switching between files in an editor.<br>
 Plus, the fact that it has support for <a href="https://jekyllrb.com/docs/front-matter/">front matter</a>, makes it so very intuitive and easy to add additional meta information to your posts.</p>
 <p>I think it's a <strong>great creative boost</strong> for the developer type of blogger, and it could even be the right solution in many cases, for agency work</p>
 <hr>
 <p><span>Photo by <a href="https://unsplash.com/@davidmonje?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">David Monje</a> on <a href="https://unsplash.com/s/photos/eleven?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></p>
 
   </article>
+
+  <ul class="PrevNextPosts"><li><< <a href="/posts/2020-08-24-61-through-2020/">61% through 2020</a></li><li><a href="/posts/2020-07-23-basic-usage-of-the-new-react-router-v6-beta/">Basic usage of the new React Router v6 (beta)</a> >></li>
+  </ul>
+
 </div>
+        </main>
+
         <footer class="footer">
           <div class="footer__container">
             <p class="footer__text">Find me on:<br>
@@ -197,28 +206,24 @@ Plus, the fact that it has support for <a href="https://jekyllrb.com/docs/front-
         </footer>
       </div>
     </div>
-  </body>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"
-      integrity="sha512-tHQeqtcNWlZtEh8As/4MmZ5qpy0wj04svWFK7MIzLmUVIzaHXS8eod9OmHxyBL1UET5Rchvw7Ih4ZDv5JojZww=="
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      hljs.initHighlightingOnLoad();
-    </script>
 
-    <!-- Default Statcounter code for My Personal Website https://alexmuraro.me -->
-    <script type="text/javascript">
-    var sc_project=12470952; 
-    var sc_invisible=1; 
-    var sc_security="52b110a1"; 
-    var sc_https=1; 
-    </script>
-    <script type="text/javascript"
-    src="https://www.statcounter.com/counter/counter.js" async></script>
-    <noscript><div class="statcounter"><a title="Web Analytics Made Easy -
-    StatCounter" href="https://statcounter.com/" target="_blank"><img
-    class="statcounter" src="https://c.statcounter.com/12470952/0/52b110a1/1/"
-    alt="Web Analytics Made Easy - StatCounter"></a></div></noscript>
-    <!-- End of Statcounter Code -->
+    <!-- Current page: /posts/2020-08-11-switching-from-wordpress-to-eleventy/ -->
+  </body>
+
+  
+
+  <!-- Default Statcounter code for My Personal Website https://alexmuraro.me -->
+  <script type="text/javascript">
+  var sc_project=12470952; 
+  var sc_invisible=1; 
+  var sc_security="52b110a1"; 
+  var sc_https=1; 
+  </script>
+  <script type="text/javascript"
+  src="https://www.statcounter.com/counter/counter.js" async></script>
+  <noscript><div class="statcounter"><a title="Web Analytics Made Easy -
+  StatCounter" href="https://statcounter.com/" target="_blank"><img
+  class="statcounter" src="https://c.statcounter.com/12470952/0/52b110a1/1/"
+  alt="Web Analytics Made Easy - StatCounter"></a></div></noscript>
+  <!-- End of Statcounter Code -->
 </html>

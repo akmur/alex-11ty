@@ -1,15 +1,17 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alex Muraro - frontend developer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Muraro - Frontend engineer</title>
     <link
       href="https://fonts.googleapis.com/css?family=Merriweather:700|Muli:300,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/assets/css/index.css" />
+    <meta name="description" content="Personal site with thoughts, technical posts, bio, resume.">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Alex Muraro - Frontend engineer">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Alex Muraro - Frontend engineer">
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -27,7 +29,6 @@
       sizes="16x16"
       href="/assets/favicons/favicon-16x16.png"
     />
-    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
     <link
       rel="mask-icon"
       href="/assets/favicons/safari-pinned-tab.svg"
@@ -39,81 +40,66 @@
       name="msapplication-config"
       content="/assets/favicons/browserconfig.xml"
     />
-    <meta name="theme-color" content="#ffffff" />
-    <meta property="og:title" content="Alex Muraro - frontend developer" />
-    <meta name="twitter:title" content="Alex Muraro - frontend developer" />
-    <meta property="og:description" content="" />
-    <meta property="og:image" content="" />
-    <meta name="twitter:image" content="" />
-    <meta property="og:url" content="" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:creator" content="akmur" />
-    <meta name="twitter:site" content="akmur" />
-    <script
-      async
-      defer
-      data-domain="alexmuraro.me"
-      src="https://plausible.io/js/plausible.js"
-    ></script>
   </head>
   <body class="ui-dark">
     <div class="wrapper">
       <div class="layout">
+        <header class="header">
+          <div class="header__logo">
+            <a class="logo" href="/"
+              ><svg
+                class="logo__triangle logo__triangle--left"
+                style="isolation: isolate;"
+                viewbox="217 167 106 96"
+              >
+                <path
+                  d="M220 260l50-90 50 90H220z"
+                  vector-effect="non-scaling-stroke"
+                ></path>
+              </svg>
+              <svg
+                class="logo__triangle logo__triangle--center"
+                style="isolation: isolate;"
+                viewbox="217 167 106 96"
+              >
+                <path
+                  d="M220 260l50-90 50 90H220z"
+                  vector-effect="non-scaling-stroke"
+                ></path>
+              </svg>
+              <svg
+                class="logo__triangle logo__triangle--right"
+                style="isolation: isolate;"
+                viewbox="217 167 106 96"
+              >
+                <path
+                  d="M220 260l50-90 50 90H220z"
+                  vector-effect="non-scaling-stroke"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div class="header__nav">
+            <div id="nav">
+              <div class="nav__menu">
+                <ul class="menu">
+                  <li class="menu__item">
+                    <a class="menu__link" href="/">Home</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="/posts/">Posts</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="/about/">About</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </header>
 
-<div class="header">
-  <div class="header__logo">
-    <a class="logo" href="/"
-      ><svg
-        class="logo__triangle logo__triangle--left"
-        style="isolation: isolate;"
-        viewbox="217 167 106 96"
-      >
-        <path
-          d="M220 260l50-90 50 90H220z"
-          vector-effect="non-scaling-stroke"
-        ></path>
-      </svg>
-      <svg
-        class="logo__triangle logo__triangle--center"
-        style="isolation: isolate;"
-        viewbox="217 167 106 96"
-      >
-        <path
-          d="M220 260l50-90 50 90H220z"
-          vector-effect="non-scaling-stroke"
-        ></path>
-      </svg>
-      <svg
-        class="logo__triangle logo__triangle--right"
-        style="isolation: isolate;"
-        viewbox="217 167 106 96"
-      >
-        <path
-          d="M220 260l50-90 50 90H220z"
-          vector-effect="non-scaling-stroke"
-        ></path>
-      </svg>
-    </a>
-  </div>
-  <div class="header__nav">
-    <div id="nav">
-      <div class="nav__menu">
-        <ul class="menu">
-          <li class="menu__item">
-            <a class="menu__link" href="/">Home</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="/posts/">Posts</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="/about/">About</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
+        <main class="tmpl-home">
+          
 <div class="main">
   <div class="pageHome">
     <div class="hero">
@@ -135,6 +121,9 @@
   }, 2000)
 })();
 </script>
+
+        </main>
+
         <footer class="footer">
           <div class="footer__container">
             <p class="footer__text">Find me on:<br>
@@ -146,28 +135,24 @@
         </footer>
       </div>
     </div>
-  </body>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"
-      integrity="sha512-tHQeqtcNWlZtEh8As/4MmZ5qpy0wj04svWFK7MIzLmUVIzaHXS8eod9OmHxyBL1UET5Rchvw7Ih4ZDv5JojZww=="
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      hljs.initHighlightingOnLoad();
-    </script>
 
-    <!-- Default Statcounter code for My Personal Website https://alexmuraro.me -->
-    <script type="text/javascript">
-    var sc_project=12470952; 
-    var sc_invisible=1; 
-    var sc_security="52b110a1"; 
-    var sc_https=1; 
-    </script>
-    <script type="text/javascript"
-    src="https://www.statcounter.com/counter/counter.js" async></script>
-    <noscript><div class="statcounter"><a title="Web Analytics Made Easy -
-    StatCounter" href="https://statcounter.com/" target="_blank"><img
-    class="statcounter" src="https://c.statcounter.com/12470952/0/52b110a1/1/"
-    alt="Web Analytics Made Easy - StatCounter"></a></div></noscript>
-    <!-- End of Statcounter Code -->
+    <!-- Current page: / -->
+  </body>
+
+  
+
+  <!-- Default Statcounter code for My Personal Website https://alexmuraro.me -->
+  <script type="text/javascript">
+  var sc_project=12470952; 
+  var sc_invisible=1; 
+  var sc_security="52b110a1"; 
+  var sc_https=1; 
+  </script>
+  <script type="text/javascript"
+  src="https://www.statcounter.com/counter/counter.js" async></script>
+  <noscript><div class="statcounter"><a title="Web Analytics Made Easy -
+  StatCounter" href="https://statcounter.com/" target="_blank"><img
+  class="statcounter" src="https://c.statcounter.com/12470952/0/52b110a1/1/"
+  alt="Web Analytics Made Easy - StatCounter"></a></div></noscript>
+  <!-- End of Statcounter Code -->
 </html>

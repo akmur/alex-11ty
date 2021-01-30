@@ -1,10 +1,10 @@
 ---
-layout: single.njk
+layout: layouts/post.njk
 title: My 2017 Reading List
 author: akmur
 type: post
 tags:
-  - Articles
+  - Ideas
 ---
 
 Here is my 2017 reading list. . Also, I've decided to start using [Goodreads][1] more consistently in my effort to read more!

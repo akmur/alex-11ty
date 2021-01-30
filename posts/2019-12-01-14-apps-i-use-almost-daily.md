@@ -1,14 +1,14 @@
 ---
-layout: single.njk
+layout: layouts/post.njk
 title: 14 apps I use (almost) daily
 author: akmur
 type: post
 date: 2019-11-30T23:57:38+00:00
-featured_image: /assets/images/apps.jpg
+featured_image: /img/apps.jpg
 url: https://alexmuraro.me/posts/2020-07-23-basic-usage-of-the-new-react-router-v6-beta/
 excerpt: "In this post we are going to look into how to use get started with the upcoming React Router version 6, currently in beta. Surely there are many more capabilities than those shown here, but this will get any app started, and might be enough for most of them."
 tags:
-  - Articles
+  - Tools
 ---
 
 I really like tools, extensions and productivity softwares; every now and I read articles about this topic, and I always enjoy them a lot. A couple of days ago, I read [this one by Daniel Wirtz][1], so I thought I should write one myself.

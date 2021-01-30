@@ -1,5 +1,5 @@
 ---
-layout: single.njk
+layout: layouts/post.njk
 title: Thank you Canonical
 author: akmur
 type: post
@@ -7,7 +7,6 @@ date: 2014-04-18T23:12:10+00:00
 url: https://alexmuraro.me/posts/2014-04-19-thank-you-canonical/
 excerpt: "14.04 Trusty Tahr is better than any previous Ubuntu release, no question about it. It's modern, faster, better looking, stable and reliable. An OS to be proud of, definitely improved under every aspect. It's a don't look back kind of release, and after a few hours spent using it you can tell that this will be one release we will remember for years to come, even more than 10.04 I assure you."
 tags:
-  - Articles
   - Linux
 ---
 

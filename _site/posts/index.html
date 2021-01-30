@@ -1,15 +1,17 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Posts</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Muraro - Frontend engineer</title>
     <link
       href="https://fonts.googleapis.com/css?family=Merriweather:700|Muli:300,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/assets/css/index.css" />
+    <meta name="description" content="Personal site with thoughts, technical posts, bio, resume.">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Alex Muraro - Frontend engineer">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Alex Muraro - Frontend engineer">
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -27,7 +29,6 @@
       sizes="16x16"
       href="/assets/favicons/favicon-16x16.png"
     />
-    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
     <link
       rel="mask-icon"
       href="/assets/favicons/safari-pinned-tab.svg"
@@ -39,553 +40,751 @@
       name="msapplication-config"
       content="/assets/favicons/browserconfig.xml"
     />
-    <meta name="theme-color" content="#ffffff" />
-    <meta property="og:title" content="Posts" />
-    <meta name="twitter:title" content="Posts" />
-    <meta property="og:description" content="the collection of techincal posts from alexmuraro.me" />
-    <meta property="og:image" content="" />
-    <meta name="twitter:image" content="" />
-    <meta property="og:url" content="https://alexmuraro.me/posts/" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:creator" content="akmur" />
-    <meta name="twitter:site" content="akmur" />
-    <script
-      async
-      defer
-      data-domain="alexmuraro.me"
-      src="https://plausible.io/js/plausible.js"
-    ></script>
   </head>
   <body class="ui-dark">
     <div class="wrapper">
       <div class="layout">
- <div class="header">
-  <div class="header__logo">
-    <a class="logo" href="/"
-      ><svg
-        class="logo__triangle logo__triangle--left"
-        style="isolation: isolate;"
-        viewbox="217 167 106 96"
-      >
-        <path
-          d="M220 260l50-90 50 90H220z"
-          vector-effect="non-scaling-stroke"
-        ></path>
-      </svg>
-      <svg
-        class="logo__triangle logo__triangle--center"
-        style="isolation: isolate;"
-        viewbox="217 167 106 96"
-      >
-        <path
-          d="M220 260l50-90 50 90H220z"
-          vector-effect="non-scaling-stroke"
-        ></path>
-      </svg>
-      <svg
-        class="logo__triangle logo__triangle--right"
-        style="isolation: isolate;"
-        viewbox="217 167 106 96"
-      >
-        <path
-          d="M220 260l50-90 50 90H220z"
-          vector-effect="non-scaling-stroke"
-        ></path>
-      </svg>
-    </a>
-  </div>
-  <div class="header__nav">
-    <div id="nav">
-      <div class="nav__menu">
-        <ul class="menu">
-          <li class="menu__item">
-            <a class="menu__link" href="/">Home</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="/posts/">Posts</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="/about/">About</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
+        <header class="header">
+          <div class="header__logo">
+            <a class="logo" href="/"
+              ><svg
+                class="logo__triangle logo__triangle--left"
+                style="isolation: isolate;"
+                viewbox="217 167 106 96"
+              >
+                <path
+                  d="M220 260l50-90 50 90H220z"
+                  vector-effect="non-scaling-stroke"
+                ></path>
+              </svg>
+              <svg
+                class="logo__triangle logo__triangle--center"
+                style="isolation: isolate;"
+                viewbox="217 167 106 96"
+              >
+                <path
+                  d="M220 260l50-90 50 90H220z"
+                  vector-effect="non-scaling-stroke"
+                ></path>
+              </svg>
+              <svg
+                class="logo__triangle logo__triangle--right"
+                style="isolation: isolate;"
+                viewbox="217 167 106 96"
+              >
+                <path
+                  d="M220 260l50-90 50 90H220z"
+                  vector-effect="non-scaling-stroke"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div class="header__nav">
+            <div id="nav">
+              <div class="nav__menu">
+                <ul class="menu">
+                  <li class="menu__item">
+                    <a class="menu__link" href="/">Home</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="/posts/">Posts</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="/about/">About</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </header>
 
+        <main class="tmpl-home">
+          
 <div class="main">
   <div class="input-wrapper">
     <input type="text" class="search-input" id="search-input" placeholder="Type to filter..." />
   </div>
-  <div class="postsList" id="posts-list"><div class="postsList__item" data-title="Cypress tip: how to stub an alert">
-      <header class="postsList__itemHeader">
+  <div class="postsList" id="posts-list">
+    
+      <div class="postsList__item" data-title="Cypress tip: how to stub an alert">
         <h2 class="postsList__title">
           <a class="postsList__link" href="/posts/2021-01-29-cypress-tip-how-to-stub-an-alert/" rel="bookmark">
             Cypress tip: how to stub an alert
           </a>
         </h2>
 
-        <div class="postsList__date">
-          Fri, 29 Jan 2021 16:21:50 GMT
+        <div>
+          <time class="postsList__date" datetime="2021-01-29">29 Jan 2021</time>
         </div>
-      </header>
-    </div><div class="postsList__item" data-title="TabNine - AI is not going to steal our jobs">
-      <header class="postsList__itemHeader">
+        
+          <div class="postsList__tag">
+            <a href="/tags/Testing/" class="Tag">Testing</a>
+          </div>
+          <div class="postsList__tag">
+            <a href="/tags/Cypress/" class="Tag">Cypress</a>
+          </div>
+          <div class="postsList__tag">
+            <a href="/tags/Tools/" class="Tag">Tools</a>
+          </div>
+      </div>
+    
+      <div class="postsList__item" data-title="TabNine - AI is not going to steal our jobs">
         <h2 class="postsList__title">
           <a class="postsList__link" href="/posts/2020-09-24-tabnine-AI-is-not-going-to-steal-our-jobs/" rel="bookmark">
             TabNine - AI is not going to steal our jobs
           </a>
         </h2>
 
-        <div class="postsList__date">
-          Thu, 24 Sep 2020 11:30:07 GMT
+        <div>
+          <time class="postsList__date" datetime="2020-09-24">24 Sep 2020</time>
         </div>
-      </header>
-    </div><div class="postsList__item" data-title="61% through 2020">
-      <header class="postsList__itemHeader">
+        
+          <div class="postsList__tag">
+            <a href="/tags/Tools/" class="Tag">Tools</a>
+          </div>
+      </div>
+    
+      <div class="postsList__item" data-title="61% through 2020">
         <h2 class="postsList__title">
           <a class="postsList__link" href="/posts/2020-08-24-61-through-2020/" rel="bookmark">
             61% through 2020
           </a>
         </h2>
 
-        <div class="postsList__date">
-          Wed, 12 Aug 2020 23:55:04 GMT
+        <div>
+          <time class="postsList__date" datetime="2020-08-12">12 Aug 2020</time>
         </div>
-      </header>
-    </div><div class="postsList__item" data-title="Switching from WordPress to Eleventy">
-      <header class="postsList__itemHeader">
+        
+          <div class="postsList__tag">
+            <a href="/tags/Ideas/" class="Tag">Ideas</a>
+          </div>
+      </div>
+    
+      <div class="postsList__item" data-title="Switching from WordPress to Eleventy">
         <h2 class="postsList__title">
           <a class="postsList__link" href="/posts/2020-08-11-switching-from-wordpress-to-eleventy/" rel="bookmark">
             Switching from WordPress to Eleventy
           </a>
         </h2>
 
-        <div class="postsList__date">
-          Mon, 10 Aug 2020 15:47:16 GMT
+        <div>
+          <time class="postsList__date" datetime="2020-08-10">10 Aug 2020</time>
         </div>
-      </header>
-    </div><div class="postsList__item" data-title="Basic usage of the new React Router v6 (beta)">
-      <header class="postsList__itemHeader">
+        
+          <div class="postsList__tag">
+            <a href="/tags/JavaScript/" class="Tag">JavaScript</a>
+          </div>
+          <div class="postsList__tag">
+            <a href="/tags/WordPress/" class="Tag">WordPress</a>
+          </div>
+          <div class="postsList__tag">
+            <a href="/tags/Eleventy/" class="Tag">Eleventy</a>
+          </div>
+      </div>
+    
+      <div class="postsList__item" data-title="Basic usage of the new React Router v6 (beta)">
         <h2 class="postsList__title">
           <a class="postsList__link" href="/posts/2020-07-23-basic-usage-of-the-new-react-router-v6-beta/" rel="bookmark">
             Basic usage of the new React Router v6 (beta)
           </a>
         </h2>
 
-        <div class="postsList__date">
-          Thu, 23 Jul 2020 10:43:09 GMT
+        <div>
+          <time class="postsList__date" datetime="2020-07-23">23 Jul 2020</time>
         </div>
-      </header>
-    </div><div class="postsList__item" data-title="Drag and drop with React and native HTML5">
-      <header class="postsList__itemHeader">
+        
+          <div class="postsList__tag">
+            <a href="/tags/React/" class="Tag">React</a>
+          </div>
+          <div class="postsList__tag">
+            <a href="/tags/Router/" class="Tag">Router</a>
+          </div>
+          <div class="postsList__tag">
+            <a href="/tags/JavaScript/" class="Tag">JavaScript</a>
+          </div>
+      </div>
+    
+      <div class="postsList__item" data-title="Drag and drop with React and native HTML5">
         <h2 class="postsList__title">
           <a class="postsList__link" href="/posts/2020-04-13-drag-and-drop-with-react-and-native-html5/" rel="bookmark">
             Drag and drop with React and native HTML5
           </a>
         </h2>
 
-        <div class="postsList__date">
-          Mon, 13 Apr 2020 01:58:31 GMT
+        <div>
+          <time class="postsList__date" datetime="2020-04-13">13 Apr 2020</time>
         </div>
-      </header>
-    </div><div class="postsList__item" data-title="A Prettier / ESlint / stylelint configuration">
-      <header class="postsList__itemHeader">
+        
+          <div class="postsList__tag">
+            <a href="/tags/React/" class="Tag">React</a>
+          </div>
+          <div class="postsList__tag">
+            <a href="/tags/JavaScript/" class="Tag">JavaScript</a>
+          </div>
+      </div>
+    
+      <div class="postsList__item" data-title="A Prettier / ESlint / stylelint configuration">
         <h2 class="postsList__title">
           <a class="postsList__link" href="/posts/2019-12-22-a-prettier-eslint-stylelint-configuration/" rel="bookmark">
             A Prettier / ESlint / stylelint configuration
           </a>
         </h2>
 
-        <div class="postsList__date">
-          Sun, 22 Dec 2019 00:34:54 GMT
+        <div>
+          <time class="postsList__date" datetime="2019-12-22">22 Dec 2019</time>
         </div>
-      </header>
-    </div><div class="postsList__item" data-title="14 apps I use (almost) daily">
-      <header class="postsList__itemHeader">
+        
+          <div class="postsList__tag">
+            <a href="/tags/Tools/" class="Tag">Tools</a>
+          </div>
+      </div>
+    
+      <div class="postsList__item" data-title="14 apps I use (almost) daily">
         <h2 class="postsList__title">
           <a class="postsList__link" href="/posts/2019-12-01-14-apps-i-use-almost-daily/" rel="bookmark">
             14 apps I use (almost) daily
           </a>
         </h2>
 
-        <div class="postsList__date">
-          Sat, 30 Nov 2019 23:57:38 GMT
+        <div>
+          <time class="postsList__date" datetime="2019-11-30">30 Nov 2019</time>
         </div>
-      </header>
-    </div><div class="postsList__item" data-title="The difference between pixels, ems and rems">
-      <header class="postsList__itemHeader">
+        
+          <div class="postsList__tag">
+            <a href="/tags/Tools/" class="Tag">Tools</a>
+          </div>
+      </div>
+    
+      <div class="postsList__item" data-title="The difference between pixels, ems and rems">
         <h2 class="postsList__title">
           <a class="postsList__link" href="/posts/2019-11-21-the-difference-between-pixels-ems-and-rems/" rel="bookmark">
             The difference between pixels, ems and rems
           </a>
         </h2>
 
-        <div class="postsList__date">
-          Thu, 21 Nov 2019 13:49:31 GMT
+        <div>
+          <time class="postsList__date" datetime="2019-11-21">21 Nov 2019</time>
         </div>
-      </header>
-    </div><div class="postsList__item" data-title="A real world reduce() example">
-      <header class="postsList__itemHeader">
+        
+          <div class="postsList__tag">
+            <a href="/tags/CSS/" class="Tag">CSS</a>
+          </div>
+      </div>
+    
+      <div class="postsList__item" data-title="A real world reduce() example">
         <h2 class="postsList__title">
           <a class="postsList__link" href="/posts/2019-11-20-a-real-world-reduce-example/" rel="bookmark">
             A real world reduce() example
           </a>
         </h2>
 
-        <div class="postsList__date">
-          Wed, 20 Nov 2019 08:32:28 GMT
+        <div>
+          <time class="postsList__date" datetime="2019-11-20">20 Nov 2019</time>
         </div>
-      </header>
-    </div><div class="postsList__item" data-title="Using react-i18next to localise your application">
-      <header class="postsList__itemHeader">
+        
+          <div class="postsList__tag">
+            <a href="/tags/JavaScript/" class="Tag">JavaScript</a>
+          </div>
+      </div>
+    
+      <div class="postsList__item" data-title="Using react-i18next to localise your application">
         <h2 class="postsList__title">
           <a class="postsList__link" href="/posts/2019-07-04-using-react-i18next-to-localise-your-application/" rel="bookmark">
             Using react-i18next to localise your application
           </a>
         </h2>
 
-        <div class="postsList__date">
-          Thu, 04 Jul 2019 08:15:44 GMT
+        <div>
+          <time class="postsList__date" datetime="2019-07-04">04 Jul 2019</time>
         </div>
-      </header>
-    </div><div class="postsList__item" data-title="Top 10 packages served by jsdelivr">
-      <header class="postsList__itemHeader">
+        
+          <div class="postsList__tag">
+            <a href="/tags/React/" class="Tag">React</a>
+          </div>
+          <div class="postsList__tag">
+            <a href="/tags/i18n/" class="Tag">i18n</a>
+          </div>
+          <div class="postsList__tag">
+            <a href="/tags/JavaScript/" class="Tag">JavaScript</a>
+          </div>
+          <div class="postsList__tag">
+            <a href="/tags/Articles/" class="Tag">Articles</a>
+          </div>
+      </div>
+    
+      <div class="postsList__item" data-title="Top 10 packages served by jsdelivr">
         <h2 class="postsList__title">
           <a class="postsList__link" href="/posts/2019-03-14-top-10-packages-served-by-jsdelivr/" rel="bookmark">
             Top 10 packages served by jsdelivr
           </a>
         </h2>
 
-        <div class="postsList__date">
-          Thu, 14 Mar 2019 09:43:29 GMT
+        <div>
+          <time class="postsList__date" datetime="2019-03-14">14 Mar 2019</time>
         </div>
-      </header>
-    </div><div class="postsList__item" data-title="I love creating websites">
-      <header class="postsList__itemHeader">
+        
+          <div class="postsList__tag">
+            <a href="/tags/Tools/" class="Tag">Tools</a>
+          </div>
+      </div>
+    
+      <div class="postsList__item" data-title="I love creating websites">
         <h2 class="postsList__title">
           <a class="postsList__link" href="/posts/2019-03-01-i-love-creating-websites/" rel="bookmark">
             I love creating websites
           </a>
         </h2>
 
-        <div class="postsList__date">
-          Fri, 01 Mar 2019 08:01:56 GMT
+        <div>
+          <time class="postsList__date" datetime="2019-03-01">01 Mar 2019</time>
         </div>
-      </header>
-    </div><div class="postsList__item" data-title="An introduction to Redux">
-      <header class="postsList__itemHeader">
+        
+          <div class="postsList__tag">
+            <a href="/tags/Ideas/" class="Tag">Ideas</a>
+          </div>
+      </div>
+    
+      <div class="postsList__item" data-title="An introduction to Redux">
         <h2 class="postsList__title">
           <a class="postsList__link" href="/posts/2019-02-21-an-introduction-to-redux/" rel="bookmark">
             An introduction to Redux
           </a>
         </h2>
 
-        <div class="postsList__date">
-          Thu, 21 Feb 2019 11:18:09 GMT
+        <div>
+          <time class="postsList__date" datetime="2019-02-21">21 Feb 2019</time>
         </div>
-      </header>
-    </div><div class="postsList__item" data-title="Timeworth">
-      <header class="postsList__itemHeader">
+        
+          <div class="postsList__tag">
+            <a href="/tags/Redux/" class="Tag">Redux</a>
+          </div>
+          <div class="postsList__tag">
+            <a href="/tags/JavaScript/" class="Tag">JavaScript</a>
+          </div>
+          <div class="postsList__tag">
+            <a href="/tags/Articles/" class="Tag">Articles</a>
+          </div>
+      </div>
+    
+      <div class="postsList__item" data-title="Timeworth">
         <h2 class="postsList__title">
           <a class="postsList__link" href="/posts/2019-01-17-timeworth/" rel="bookmark">
             Timeworth
           </a>
         </h2>
 
-        <div class="postsList__date">
-          Thu, 17 Jan 2019 00:18:50 GMT
+        <div>
+          <time class="postsList__date" datetime="2019-01-17">17 Jan 2019</time>
         </div>
-      </header>
-    </div><div class="postsList__item" data-title="A user guide to working with me">
-      <header class="postsList__itemHeader">
+        
+          <div class="postsList__tag">
+            <a href="/tags/Ideas/" class="Tag">Ideas</a>
+          </div>
+      </div>
+    
+      <div class="postsList__item" data-title="A user guide to working with me">
         <h2 class="postsList__title">
           <a class="postsList__link" href="/posts/2018-12-16-a-user-guide-to-working-with-me/" rel="bookmark">
             A user guide to working with me
           </a>
         </h2>
 
-        <div class="postsList__date">
-          Sun, 16 Dec 2018 00:16:23 GMT
+        <div>
+          <time class="postsList__date" datetime="2018-12-16">16 Dec 2018</time>
         </div>
-      </header>
-    </div><div class="postsList__item" data-title="My SCSS file structure">
-      <header class="postsList__itemHeader">
+        
+          <div class="postsList__tag">
+            <a href="/tags/Ideas/" class="Tag">Ideas</a>
+          </div>
+      </div>
+    
+      <div class="postsList__item" data-title="My SCSS file structure">
         <h2 class="postsList__title">
           <a class="postsList__link" href="/posts/2018-12-14-my-scss-file-structure/" rel="bookmark">
             My SCSS file structure
           </a>
         </h2>
 
-        <div class="postsList__date">
-          Fri, 14 Dec 2018 00:14:58 GMT
+        <div>
+          <time class="postsList__date" datetime="2018-12-14">14 Dec 2018</time>
         </div>
-      </header>
-    </div><div class="postsList__item" data-title="Welcome to my new blog">
-      <header class="postsList__itemHeader">
+        
+          <div class="postsList__tag">
+            <a href="/tags/CSS/" class="Tag">CSS</a>
+          </div>
+          <div class="postsList__tag">
+            <a href="/tags/Scss/" class="Tag">Scss</a>
+          </div>
+      </div>
+    
+      <div class="postsList__item" data-title="Welcome to my new blog">
         <h2 class="postsList__title">
           <a class="postsList__link" href="/posts/2018-10-23-welcome-to-my-new-blog/" rel="bookmark">
             Welcome to my new blog
           </a>
         </h2>
 
-        <div class="postsList__date">
-          Tue, 23 Oct 2018 00:12:24 GMT
+        <div>
+          <time class="postsList__date" datetime="2018-10-23">23 Oct 2018</time>
         </div>
-      </header>
-    </div><div class="postsList__item" data-title="Search with Google instead">
-      <header class="postsList__itemHeader">
+        
+          <div class="postsList__tag">
+            <a href="/tags/Ideas/" class="Tag">Ideas</a>
+          </div>
+      </div>
+    
+      <div class="postsList__item" data-title="Search with Google instead">
         <h2 class="postsList__title">
           <a class="postsList__link" href="/posts/2018-08-08-search-with-google-instead/" rel="bookmark">
             Search with Google instead
           </a>
         </h2>
 
-        <div class="postsList__date">
-          Wed, 08 Aug 2018 00:09:51 GMT
+        <div>
+          <time class="postsList__date" datetime="2018-08-08">08 Aug 2018</time>
         </div>
-      </header>
-    </div><div class="postsList__item" data-title="Using Linters">
-      <header class="postsList__itemHeader">
+        
+          <div class="postsList__tag">
+            <a href="/tags/Tools/" class="Tag">Tools</a>
+          </div>
+      </div>
+    
+      <div class="postsList__item" data-title="Using Linters">
         <h2 class="postsList__title">
           <a class="postsList__link" href="/posts/2017-02-04-using-linters/" rel="bookmark">
             Using Linters
           </a>
         </h2>
 
-        <div class="postsList__date">
-          Sat, 04 Feb 2017 12:30:36 GMT
+        <div>
+          <time class="postsList__date" datetime="2017-02-04">04 Feb 2017</time>
         </div>
-      </header>
-    </div><div class="postsList__item" data-title="A JavaScript Learning Roadmap">
-      <header class="postsList__itemHeader">
+        
+          <div class="postsList__tag">
+            <a href="/tags/Tools/" class="Tag">Tools</a>
+          </div>
+      </div>
+    
+      <div class="postsList__item" data-title="A JavaScript Learning Roadmap">
         <h2 class="postsList__title">
           <a class="postsList__link" href="/posts/2017-02-03-a-javascript-learning-roadmap/" rel="bookmark">
             A JavaScript Learning Roadmap
           </a>
         </h2>
 
-        <div class="postsList__date">
-          Thu, 02 Feb 2017 23:00:00 GMT
+        <div>
+          <time class="postsList__date" datetime="2017-02-02">02 Feb 2017</time>
         </div>
-      </header>
-    </div><div class="postsList__item" data-title="My 2017 Reading List">
-      <header class="postsList__itemHeader">
+        
+          <div class="postsList__tag">
+            <a href="/tags/JavaScript/" class="Tag">JavaScript</a>
+          </div>
+      </div>
+    
+      <div class="postsList__item" data-title="My 2017 Reading List">
         <h2 class="postsList__title">
           <a class="postsList__link" href="/posts/2017-01-20-my-2017-reading-list/" rel="bookmark">
             My 2017 Reading List
           </a>
         </h2>
 
-        <div class="postsList__date">
-          Thu, 19 Jan 2017 23:00:00 GMT
+        <div>
+          <time class="postsList__date" datetime="2017-01-19">19 Jan 2017</time>
         </div>
-      </header>
-    </div><div class="postsList__item" data-title="Modifying WP API response to add previous and next post ID">
-      <header class="postsList__itemHeader">
+        
+          <div class="postsList__tag">
+            <a href="/tags/Ideas/" class="Tag">Ideas</a>
+          </div>
+      </div>
+    
+      <div class="postsList__item" data-title="Modifying WP API response to add previous and next post ID">
         <h2 class="postsList__title">
           <a class="postsList__link" href="/posts/2016-07-12-modifying-wp-api-response-add-previous-next-post-id/" rel="bookmark">
             Modifying WP API response to add previous and next post ID
           </a>
         </h2>
 
-        <div class="postsList__date">
-          Mon, 11 Jul 2016 22:00:00 GMT
+        <div>
+          <time class="postsList__date" datetime="2016-07-11">11 Jul 2016</time>
         </div>
-      </header>
-    </div><div class="postsList__item" data-title="How to use AJAX to call a function in WordPress">
-      <header class="postsList__itemHeader">
+        
+          <div class="postsList__tag">
+            <a href="/tags/WordPress/" class="Tag">WordPress</a>
+          </div>
+      </div>
+    
+      <div class="postsList__item" data-title="How to use AJAX to call a function in WordPress">
         <h2 class="postsList__title">
           <a class="postsList__link" href="/posts/2016-07-12-ajax-call-function-wordpress/" rel="bookmark">
             How to use AJAX to call a function in WordPress
           </a>
         </h2>
 
-        <div class="postsList__date">
-          Mon, 11 Jul 2016 22:00:00 GMT
+        <div>
+          <time class="postsList__date" datetime="2016-07-11">11 Jul 2016</time>
         </div>
-      </header>
-    </div><div class="postsList__item" data-title="Using Atom Text Editor">
-      <header class="postsList__itemHeader">
+        
+          <div class="postsList__tag">
+            <a href="/tags/JavaScript/" class="Tag">JavaScript</a>
+          </div>
+          <div class="postsList__tag">
+            <a href="/tags/WordPress/" class="Tag">WordPress</a>
+          </div>
+      </div>
+    
+      <div class="postsList__item" data-title="Using Atom Text Editor">
         <h2 class="postsList__title">
           <a class="postsList__link" href="/posts/2016-02-24-getting-started-with-atom-part-1/" rel="bookmark">
             Using Atom Text Editor
           </a>
         </h2>
 
-        <div class="postsList__date">
-          Wed, 24 Feb 2016 21:56:28 GMT
+        <div>
+          <time class="postsList__date" datetime="2016-02-24">24 Feb 2016</time>
         </div>
-      </header>
-    </div><div class="postsList__item" data-title="Milano Frontend Meetup">
-      <header class="postsList__itemHeader">
+        
+          <div class="postsList__tag">
+            <a href="/tags/Tools/" class="Tag">Tools</a>
+          </div>
+      </div>
+    
+      <div class="postsList__item" data-title="Milano Frontend Meetup">
         <h2 class="postsList__title">
           <a class="postsList__link" href="/posts/2015-10-07-milano-front-end-meetup/" rel="bookmark">
             Milano Frontend Meetup
           </a>
         </h2>
 
-        <div class="postsList__date">
-          Wed, 07 Oct 2015 07:58:38 GMT
+        <div>
+          <time class="postsList__date" datetime="2015-10-07">07 Oct 2015</time>
         </div>
-      </header>
-    </div><div class="postsList__item" data-title="BEM naming convention">
-      <header class="postsList__itemHeader">
+        
+          <div class="postsList__tag">
+            <a href="/tags/Community/" class="Tag">Community</a>
+          </div>
+      </div>
+    
+      <div class="postsList__item" data-title="BEM naming convention">
         <h2 class="postsList__title">
           <a class="postsList__link" href="/posts/2015-09-26-bem/" rel="bookmark">
             BEM naming convention
           </a>
         </h2>
 
-        <div class="postsList__date">
-          Sat, 26 Sep 2015 13:12:38 GMT
+        <div>
+          <time class="postsList__date" datetime="2015-09-26">26 Sep 2015</time>
         </div>
-      </header>
-    </div><div class="postsList__item" data-title="A WordPress htaccess file">
-      <header class="postsList__itemHeader">
+        
+          <div class="postsList__tag">
+            <a href="/tags/CSS/" class="Tag">CSS</a>
+          </div>
+      </div>
+    
+      <div class="postsList__item" data-title="A WordPress htaccess file">
         <h2 class="postsList__title">
           <a class="postsList__link" href="/posts/2015-01-28-a-wordpress-htaccess-file/" rel="bookmark">
             A WordPress htaccess file
           </a>
         </h2>
 
-        <div class="postsList__date">
-          Wed, 28 Jan 2015 12:13:07 GMT
+        <div>
+          <time class="postsList__date" datetime="2015-01-28">28 Jan 2015</time>
         </div>
-      </header>
-    </div><div class="postsList__item" data-title="The Sound of Type">
-      <header class="postsList__itemHeader">
+        
+          <div class="postsList__tag">
+            <a href="/tags/WordPress/" class="Tag">WordPress</a>
+          </div>
+      </div>
+    
+      <div class="postsList__item" data-title="The Sound of Type">
         <h2 class="postsList__title">
           <a class="postsList__link" href="/posts/2014-10-09-the-sound-of-type/" rel="bookmark">
             The Sound of Type
           </a>
         </h2>
 
-        <div class="postsList__date">
-          Wed, 08 Oct 2014 23:12:20 GMT
+        <div>
+          <time class="postsList__date" datetime="2014-10-08">08 Oct 2014</time>
         </div>
-      </header>
-    </div><div class="postsList__item" data-title="Thank you Canonical">
-      <header class="postsList__itemHeader">
+        
+          <div class="postsList__tag">
+            <a href="/tags/Typography/" class="Tag">Typography</a>
+          </div>
+          <div class="postsList__tag">
+            <a href="/tags/UI/" class="Tag">UI</a>
+          </div>
+      </div>
+    
+      <div class="postsList__item" data-title="Thank you Canonical">
         <h2 class="postsList__title">
           <a class="postsList__link" href="/posts/2014-04-19-thank-you-canonical/" rel="bookmark">
             Thank you Canonical
           </a>
         </h2>
 
-        <div class="postsList__date">
-          Fri, 18 Apr 2014 23:12:10 GMT
+        <div>
+          <time class="postsList__date" datetime="2014-04-18">18 Apr 2014</time>
         </div>
-      </header>
-    </div><div class="postsList__item" data-title="The web is all about accessibility">
-      <header class="postsList__itemHeader">
+        
+          <div class="postsList__tag">
+            <a href="/tags/Linux/" class="Tag">Linux</a>
+          </div>
+      </div>
+    
+      <div class="postsList__item" data-title="The web is all about accessibility">
         <h2 class="postsList__title">
           <a class="postsList__link" href="/posts/2014-04-17-the-web-is-all-about-accessibility/" rel="bookmark">
             The web is all about accessibility
           </a>
         </h2>
 
-        <div class="postsList__date">
-          Thu, 17 Apr 2014 09:35:21 GMT
+        <div>
+          <time class="postsList__date" datetime="2014-04-17">17 Apr 2014</time>
         </div>
-      </header>
-    </div><div class="postsList__item" data-title="Camtasia alternative for Linux">
-      <header class="postsList__itemHeader">
+        
+          <div class="postsList__tag">
+            <a href="/tags/Accessibility/" class="Tag">Accessibility</a>
+          </div>
+          <div class="postsList__tag">
+            <a href="/tags/UX/" class="Tag">UX</a>
+          </div>
+      </div>
+    
+      <div class="postsList__item" data-title="Camtasia alternative for Linux">
         <h2 class="postsList__title">
           <a class="postsList__link" href="/posts/2014-04-02-camtasia-alternative-for-linux/" rel="bookmark">
             Camtasia alternative for Linux
           </a>
         </h2>
 
-        <div class="postsList__date">
-          Wed, 02 Apr 2014 18:19:35 GMT
+        <div>
+          <time class="postsList__date" datetime="2014-04-02">02 Apr 2014</time>
         </div>
-      </header>
-    </div><div class="postsList__item" data-title="Get related posts by custom taxonomy">
-      <header class="postsList__itemHeader">
+        
+          <div class="postsList__tag">
+            <a href="/tags/Camtasia/" class="Tag">Camtasia</a>
+          </div>
+          <div class="postsList__tag">
+            <a href="/tags/Screencast/" class="Tag">Screencast</a>
+          </div>
+          <div class="postsList__tag">
+            <a href="/tags/Linux/" class="Tag">Linux</a>
+          </div>
+      </div>
+    
+      <div class="postsList__item" data-title="Get related posts by custom taxonomy">
         <h2 class="postsList__title">
           <a class="postsList__link" href="/posts/2014-01-28-get-related-posts-by-custom-taxonomy/" rel="bookmark">
             Get related posts by custom taxonomy
           </a>
         </h2>
 
-        <div class="postsList__date">
-          Tue, 28 Jan 2014 23:56:21 GMT
+        <div>
+          <time class="postsList__date" datetime="2014-01-28">28 Jan 2014</time>
         </div>
-      </header>
-    </div><div class="postsList__item" data-title="Is the deadly slideshow dead yet?">
-      <header class="postsList__itemHeader">
+        
+          <div class="postsList__tag">
+            <a href="/tags/WordPress/" class="Tag">WordPress</a>
+          </div>
+      </div>
+    
+      <div class="postsList__item" data-title="Is the deadly slideshow dead yet?">
         <h2 class="postsList__title">
           <a class="postsList__link" href="/posts/2014-01-20-is-the-deadly-slideshow-dead-yet/" rel="bookmark">
             Is the deadly slideshow dead yet?
           </a>
         </h2>
 
-        <div class="postsList__date">
-          Mon, 20 Jan 2014 15:03:18 GMT
+        <div>
+          <time class="postsList__date" datetime="2014-01-20">20 Jan 2014</time>
         </div>
-      </header>
-    </div><div class="postsList__item" data-title="A declaration of love for Linux">
-      <header class="postsList__itemHeader">
+        
+          <div class="postsList__tag">
+            <a href="/tags/UX/" class="Tag">UX</a>
+          </div>
+      </div>
+    
+      <div class="postsList__item" data-title="A declaration of love for Linux">
         <h2 class="postsList__title">
           <a class="postsList__link" href="/posts/2013-06-11-a-declaration-of-love-for-linux/" rel="bookmark">
             A declaration of love for Linux
           </a>
         </h2>
 
-        <div class="postsList__date">
-          Tue, 11 Jun 2013 21:20:30 GMT
+        <div>
+          <time class="postsList__date" datetime="2013-06-11">11 Jun 2013</time>
         </div>
-      </header>
-    </div><div class="postsList__item" data-title="Enable WordPress pretty permalinks">
-      <header class="postsList__itemHeader">
+        
+          <div class="postsList__tag">
+            <a href="/tags/Linux/" class="Tag">Linux</a>
+          </div>
+      </div>
+    
+      <div class="postsList__item" data-title="Enable WordPress pretty permalinks">
         <h2 class="postsList__title">
           <a class="postsList__link" href="/posts/2013-04-19-enable-wordpress-pretty-permalinks-on-a-vps/" rel="bookmark">
             Enable WordPress pretty permalinks
           </a>
         </h2>
 
-        <div class="postsList__date">
-          Fri, 19 Apr 2013 00:14:10 GMT
+        <div>
+          <time class="postsList__date" datetime="2013-04-19">19 Apr 2013</time>
         </div>
-      </header>
-    </div><div class="postsList__item" data-title="Enable pretty permalinks on localhost">
-      <header class="postsList__itemHeader">
+        
+          <div class="postsList__tag">
+            <a href="/tags/WordPress/" class="Tag">WordPress</a>
+          </div>
+      </div>
+    
+      <div class="postsList__item" data-title="Enable pretty permalinks on localhost">
         <h2 class="postsList__title">
           <a class="postsList__link" href="/posts/2013-02-18-enable-pretty-permalinks-on-localhost/" rel="bookmark">
             Enable pretty permalinks on localhost
           </a>
         </h2>
 
-        <div class="postsList__date">
-          Mon, 18 Feb 2013 16:54:43 GMT
+        <div>
+          <time class="postsList__date" datetime="2013-02-18">18 Feb 2013</time>
         </div>
-      </header>
-    </div><div class="postsList__item" data-title="A collection of useful git commands">
-      <header class="postsList__itemHeader">
+        
+          <div class="postsList__tag">
+            <a href="/tags/WordPress/" class="Tag">WordPress</a>
+          </div>
+      </div>
+    
+      <div class="postsList__item" data-title="A collection of useful git commands">
         <h2 class="postsList__title">
           <a class="postsList__link" href="/posts/2012-10-18-a-collection-of-useful-git-commands/" rel="bookmark">
             A collection of useful git commands
           </a>
         </h2>
 
-        <div class="postsList__date">
-          Thu, 18 Oct 2012 23:38:32 GMT
+        <div>
+          <time class="postsList__date" datetime="2012-10-18">18 Oct 2012</time>
         </div>
-      </header>
-    </div><div class="postsList__item" data-title="An introduction to GIT">
-      <header class="postsList__itemHeader">
+        
+          <div class="postsList__tag">
+            <a href="/tags/Git/" class="Tag">Git</a>
+          </div>
+      </div>
+    
+      <div class="postsList__item" data-title="An introduction to GIT">
         <h2 class="postsList__title">
           <a class="postsList__link" href="/posts/2012-10-04-an-introduction-to-git/" rel="bookmark">
             An introduction to GIT
           </a>
         </h2>
 
-        <div class="postsList__date">
-          Thu, 04 Oct 2012 21:18:32 GMT
+        <div>
+          <time class="postsList__date" datetime="2012-10-04">04 Oct 2012</time>
         </div>
-      </header>
-    </div></div>
+        
+          <div class="postsList__tag">
+            <a href="/tags/Git/" class="Tag">Git</a>
+          </div>
+      </div>
+    
+  </div>
 </div>
 
 <script>
@@ -605,6 +804,10 @@
   })
 })();
 </script>
+
+
+        </main>
+
         <footer class="footer">
           <div class="footer__container">
             <p class="footer__text">Find me on:<br>
@@ -616,28 +819,24 @@
         </footer>
       </div>
     </div>
-  </body>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"
-      integrity="sha512-tHQeqtcNWlZtEh8As/4MmZ5qpy0wj04svWFK7MIzLmUVIzaHXS8eod9OmHxyBL1UET5Rchvw7Ih4ZDv5JojZww=="
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      hljs.initHighlightingOnLoad();
-    </script>
 
-    <!-- Default Statcounter code for My Personal Website https://alexmuraro.me -->
-    <script type="text/javascript">
-    var sc_project=12470952; 
-    var sc_invisible=1; 
-    var sc_security="52b110a1"; 
-    var sc_https=1; 
-    </script>
-    <script type="text/javascript"
-    src="https://www.statcounter.com/counter/counter.js" async></script>
-    <noscript><div class="statcounter"><a title="Web Analytics Made Easy -
-    StatCounter" href="https://statcounter.com/" target="_blank"><img
-    class="statcounter" src="https://c.statcounter.com/12470952/0/52b110a1/1/"
-    alt="Web Analytics Made Easy - StatCounter"></a></div></noscript>
-    <!-- End of Statcounter Code -->
+    <!-- Current page: /posts/ -->
+  </body>
+
+  
+
+  <!-- Default Statcounter code for My Personal Website https://alexmuraro.me -->
+  <script type="text/javascript">
+  var sc_project=12470952; 
+  var sc_invisible=1; 
+  var sc_security="52b110a1"; 
+  var sc_https=1; 
+  </script>
+  <script type="text/javascript"
+  src="https://www.statcounter.com/counter/counter.js" async></script>
+  <noscript><div class="statcounter"><a title="Web Analytics Made Easy -
+  StatCounter" href="https://statcounter.com/" target="_blank"><img
+  class="statcounter" src="https://c.statcounter.com/12470952/0/52b110a1/1/"
+  alt="Web Analytics Made Easy - StatCounter"></a></div></noscript>
+  <!-- End of Statcounter Code -->
 </html>

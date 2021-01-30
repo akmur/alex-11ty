@@ -1,10 +1,9 @@
 ---
-layout: single.njk
+layout: layouts/post.njk
 title: A JavaScript Learning Roadmap
 author: akmur
 type: post
 tags:
-  - Articles
   - JavaScript
 ---
 

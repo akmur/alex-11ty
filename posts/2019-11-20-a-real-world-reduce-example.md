@@ -1,5 +1,5 @@
 ---
-layout: single.njk
+layout: layouts/post.njk
 title: A real world reduce() example
 author: akmur
 type: post
@@ -8,7 +8,6 @@ featured_image: https://images.unsplash.com/photo-1491904768633-2b7e3e7fede5?ixl
 url: https://alexmuraro.me/posts/2019-11-20-a-real-world-reduce-example/
 excerpt: "A simple use case for Array.reduce()."
 tags:
-  - Articles
   - JavaScript
 ---
 

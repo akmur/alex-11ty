@@ -1,5 +1,5 @@
 ---
-layout: single.njk
+layout: layouts/post.njk
 title: An introduction to Redux
 author: akmur
 type: post
@@ -8,7 +8,6 @@ featured_image: https://images.unsplash.com/photo-1486728297118-82a07bc48a28?ixl
 url: https://alexmuraro.me/posts/2019-02-21-an-introduction-to-redux/
 excerpt: "Redux is a small popular library used to keep track of the state of an interface without going crazy. It is mainly used together with React, a popular library used to create snappy user interfaces on the web. Getting started with redux might take a while, because you need to get accustomed to the way it does things. In this post i want to cut straight to the meat of the issue, without unnecessary technical explanations. I will show you how to get started with Redux in a React project."
 tags:
-  - Tutorial
   - Redux
   - JavaScript
   - Articles

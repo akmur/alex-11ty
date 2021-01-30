@@ -1,15 +1,17 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My SCSS file structure</title>
     <link
       href="https://fonts.googleapis.com/css?family=Merriweather:700|Muli:300,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/assets/css/index.css" />
+    <meta name="description" content="Personal site with thoughts, technical posts, bio, resume.">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Alex Muraro - Frontend engineer">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Alex Muraro - Frontend engineer">
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -27,7 +29,6 @@
       sizes="16x16"
       href="/assets/favicons/favicon-16x16.png"
     />
-    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
     <link
       rel="mask-icon"
       href="/assets/favicons/safari-pinned-tab.svg"
@@ -39,80 +40,66 @@
       name="msapplication-config"
       content="/assets/favicons/browserconfig.xml"
     />
-    <meta name="theme-color" content="#ffffff" />
-    <meta property="og:title" content="My SCSS file structure" />
-    <meta name="twitter:title" content="My SCSS file structure" />
-    <meta property="og:description" content="" />
-    <meta property="og:image" content="" />
-    <meta name="twitter:image" content="" />
-    <meta property="og:url" content="" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:creator" content="akmur" />
-    <meta name="twitter:site" content="akmur" />
-    <script
-      async
-      defer
-      data-domain="alexmuraro.me"
-      src="https://plausible.io/js/plausible.js"
-    ></script>
   </head>
   <body class="ui-dark">
     <div class="wrapper">
       <div class="layout">
- <div class="header">
-  <div class="header__logo">
-    <a class="logo" href="/"
-      ><svg
-        class="logo__triangle logo__triangle--left"
-        style="isolation: isolate;"
-        viewbox="217 167 106 96"
-      >
-        <path
-          d="M220 260l50-90 50 90H220z"
-          vector-effect="non-scaling-stroke"
-        ></path>
-      </svg>
-      <svg
-        class="logo__triangle logo__triangle--center"
-        style="isolation: isolate;"
-        viewbox="217 167 106 96"
-      >
-        <path
-          d="M220 260l50-90 50 90H220z"
-          vector-effect="non-scaling-stroke"
-        ></path>
-      </svg>
-      <svg
-        class="logo__triangle logo__triangle--right"
-        style="isolation: isolate;"
-        viewbox="217 167 106 96"
-      >
-        <path
-          d="M220 260l50-90 50 90H220z"
-          vector-effect="non-scaling-stroke"
-        ></path>
-      </svg>
-    </a>
-  </div>
-  <div class="header__nav">
-    <div id="nav">
-      <div class="nav__menu">
-        <ul class="menu">
-          <li class="menu__item">
-            <a class="menu__link" href="/">Home</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="/posts/">Posts</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="/about/">About</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
+        <header class="header">
+          <div class="header__logo">
+            <a class="logo" href="/"
+              ><svg
+                class="logo__triangle logo__triangle--left"
+                style="isolation: isolate;"
+                viewbox="217 167 106 96"
+              >
+                <path
+                  d="M220 260l50-90 50 90H220z"
+                  vector-effect="non-scaling-stroke"
+                ></path>
+              </svg>
+              <svg
+                class="logo__triangle logo__triangle--center"
+                style="isolation: isolate;"
+                viewbox="217 167 106 96"
+              >
+                <path
+                  d="M220 260l50-90 50 90H220z"
+                  vector-effect="non-scaling-stroke"
+                ></path>
+              </svg>
+              <svg
+                class="logo__triangle logo__triangle--right"
+                style="isolation: isolate;"
+                viewbox="217 167 106 96"
+              >
+                <path
+                  d="M220 260l50-90 50 90H220z"
+                  vector-effect="non-scaling-stroke"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div class="header__nav">
+            <div id="nav">
+              <div class="nav__menu">
+                <ul class="menu">
+                  <li class="menu__item">
+                    <a class="menu__link" href="/">Home</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="/posts/">Posts</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="/about/">About</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </header>
 
+        <main class="tmpl-post">
+          
 <div id="main" class="main">
   <article class="post">
     <header class="postHeader">
@@ -121,14 +108,27 @@
         My SCSS file structure
       </h1>
        
+      
       <div class="postContent__date">Posted on Fri, 14 Dec 2018 00:14:58 GMT</div>
+      
+      
+      
+        <div class="postContent__tags">
+          
+            <div class="postContent__tag">
+              <a href="/tags/CSS/" class="Tag">CSS</a>
+            </div>
+            <div class="postContent__tag">
+              <a href="/tags/Scss/" class="Tag">Scss</a>
+            </div>
+        </div>
       
       <!-- .entry-meta -->
     </header>
     
     <p>After having created folder structures for my SCSS files many times for many different projects over the years, I decided to create a Github repository so that it's easier for me to get started and improve; hopefully it can be useful to somebody else trying to wrap his/her head around it as well.</p>
 <p>First of all, <a href="https://github.com/akmur/scss-structure" title="Scss Structure Github Repo">here is the repository</a> that you can clone to get started, and here below is an image that shows how the folder structure looks like.</p>
-<img src="/assets/images/3pm3of9.png" />
+<img src="/img/3pm3of9.png" />
 <p>The main ideas behind the organization of these files come from a couple of resources with a few tweaks, and 99% of the credit goes to them of course.</p>
 <ul>
 <li><a href="https://sass-guidelin.es/#the-7-1-pattern">SASS Guidelines: 7-in-1 pattern</a></li>
@@ -136,30 +136,36 @@
 </ul>
 <p>I am basically merging the two approaches, in order to have something that makes a lot of sense yet is easier to understand than the resources above. During the years I always found that the first approach was great but could have done with a bit more modularity, while the second one is a bit too technical to wrap one's head around.</p>
 <p>So these are my folders:</p>
-<h3>01-Abstracts</h3>
+<h3 id="01-abstracts">01-Abstracts <a class="direct-link" href="#01-abstracts">#</a></h3>
 <p>Here you can find mixins, extends, placeholders and variables and all that code that doesn't actually outputs CSS.</p>
-<h3>02-Base</h3>
+<h3 id="02-base">02-Base <a class="direct-link" href="#02-base">#</a></h3>
 <p>In this folder you can put generic reset styles like normalize.css, starters like Bootstrap or Bulma, typographic starters, stuff like fontawesome, and so on.</p>
-<h3>03-Elements</h3>
+<h3 id="03-elements">03-Elements <a class="direct-link" href="#03-elements">#</a></h3>
 <p>This folder contains styling for simple basic elements like buttons, links, titles, inputs. These are &quot;units&quot;. If more elements are merged, they go into the next folder.</p>
-<h3>04-Components</h3>
+<h3 id="04-components">04-Components <a class="direct-link" href="#04-components">#</a></h3>
 <p>UI components are composed of elements. This means these components made up of elements. An example of a component is a group of buttons, a form, a header. This is where majority of our work takes place.</p>
-<h3>05-Pages</h3>
+<h3 id="05-pages">05-Pages <a class="direct-link" href="#05-pages">#</a></h3>
 <p>This folder contains code specific to certain pages. For example, some custom styling for the layout of the customer account.</p>
-<h3>06-Utilities</h3>
+<h3 id="06-utilities">06-Utilities <a class="direct-link" href="#06-utilities">#</a></h3>
 <p>Utilities are very specific classes used to change appearance of some element. They should be prefixed with &quot;u&quot;. For example, .u-center could be used to center some text, u-uppercase to make it uppercase, u-floatLeft to float some image on the left, and so on.</p>
-<h3>07-Print</h3>
+<h3 id="07-print">07-Print <a class="direct-link" href="#07-print">#</a></h3>
 <p>This folder contains print specific CSS.</p>
-<h3>77-Vendors</h3>
+<h3 id="77-vendors">77-Vendors <a class="direct-link" href="#77-vendors">#</a></h3>
 <p>Here you can add third party code for plugins like slideshows, for example, while Bootstrap would go in the &quot;02-Base&quot; folder because it acts like a reset.</p>
-<h3>88-Legacy</h3>
+<h3 id="88-legacy">88-Legacy <a class="direct-link" href="#88-legacy">#</a></h3>
 <p>This folder contains code for older browsers.</p>
-<h3>99-Overrides</h3>
+<h3 id="99-overrides">99-Overrides <a class="direct-link" href="#99-overrides">#</a></h3>
 <p>Overrides for any of the folders above go here, however this is mainly for plugins. It should not be abused.</p>
 <p>So far this file organization has proved to be quite good, easy to understand yet complex enough to allow for enough flexibility. Let me know if you have ideas for improvements.</p>
 
   </article>
+
+  <ul class="PrevNextPosts"><li><< <a href="/posts/2018-12-16-a-user-guide-to-working-with-me/">A user guide to working with me</a></li><li><a href="/posts/2018-10-23-welcome-to-my-new-blog/">Welcome to my new blog</a> >></li>
+  </ul>
+
 </div>
+        </main>
+
         <footer class="footer">
           <div class="footer__container">
             <p class="footer__text">Find me on:<br>
@@ -171,28 +177,24 @@
         </footer>
       </div>
     </div>
-  </body>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"
-      integrity="sha512-tHQeqtcNWlZtEh8As/4MmZ5qpy0wj04svWFK7MIzLmUVIzaHXS8eod9OmHxyBL1UET5Rchvw7Ih4ZDv5JojZww=="
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      hljs.initHighlightingOnLoad();
-    </script>
 
-    <!-- Default Statcounter code for My Personal Website https://alexmuraro.me -->
-    <script type="text/javascript">
-    var sc_project=12470952; 
-    var sc_invisible=1; 
-    var sc_security="52b110a1"; 
-    var sc_https=1; 
-    </script>
-    <script type="text/javascript"
-    src="https://www.statcounter.com/counter/counter.js" async></script>
-    <noscript><div class="statcounter"><a title="Web Analytics Made Easy -
-    StatCounter" href="https://statcounter.com/" target="_blank"><img
-    class="statcounter" src="https://c.statcounter.com/12470952/0/52b110a1/1/"
-    alt="Web Analytics Made Easy - StatCounter"></a></div></noscript>
-    <!-- End of Statcounter Code -->
+    <!-- Current page: /posts/2018-12-14-my-scss-file-structure/ -->
+  </body>
+
+  
+
+  <!-- Default Statcounter code for My Personal Website https://alexmuraro.me -->
+  <script type="text/javascript">
+  var sc_project=12470952; 
+  var sc_invisible=1; 
+  var sc_security="52b110a1"; 
+  var sc_https=1; 
+  </script>
+  <script type="text/javascript"
+  src="https://www.statcounter.com/counter/counter.js" async></script>
+  <noscript><div class="statcounter"><a title="Web Analytics Made Easy -
+  StatCounter" href="https://statcounter.com/" target="_blank"><img
+  class="statcounter" src="https://c.statcounter.com/12470952/0/52b110a1/1/"
+  alt="Web Analytics Made Easy - StatCounter"></a></div></noscript>
+  <!-- End of Statcounter Code -->
 </html>

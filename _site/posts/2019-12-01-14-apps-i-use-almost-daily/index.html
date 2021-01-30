@@ -1,15 +1,17 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>14 apps I use (almost) daily</title>
     <link
       href="https://fonts.googleapis.com/css?family=Merriweather:700|Muli:300,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/assets/css/index.css" />
+    <meta name="description" content="Personal site with thoughts, technical posts, bio, resume.">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Alex Muraro - Frontend engineer">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Alex Muraro - Frontend engineer">
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -27,7 +29,6 @@
       sizes="16x16"
       href="/assets/favicons/favicon-16x16.png"
     />
-    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
     <link
       rel="mask-icon"
       href="/assets/favicons/safari-pinned-tab.svg"
@@ -39,80 +40,66 @@
       name="msapplication-config"
       content="/assets/favicons/browserconfig.xml"
     />
-    <meta name="theme-color" content="#ffffff" />
-    <meta property="og:title" content="14 apps I use (almost) daily" />
-    <meta name="twitter:title" content="14 apps I use (almost) daily" />
-    <meta property="og:description" content="In this post we are going to look into how to use get started with the upcoming React Router version 6, currently in beta. Surely there are many more capabilities than those shown here, but this will get any app started, and might be enough for most of them." />
-    <meta property="og:image" content="/assets/images/apps.jpg" />
-    <meta name="twitter:image" content="/assets/images/apps.jpg" />
-    <meta property="og:url" content="https://alexmuraro.me/posts/2020-07-23-basic-usage-of-the-new-react-router-v6-beta/" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:creator" content="akmur" />
-    <meta name="twitter:site" content="akmur" />
-    <script
-      async
-      defer
-      data-domain="alexmuraro.me"
-      src="https://plausible.io/js/plausible.js"
-    ></script>
   </head>
   <body class="ui-dark">
     <div class="wrapper">
       <div class="layout">
- <div class="header">
-  <div class="header__logo">
-    <a class="logo" href="/"
-      ><svg
-        class="logo__triangle logo__triangle--left"
-        style="isolation: isolate;"
-        viewbox="217 167 106 96"
-      >
-        <path
-          d="M220 260l50-90 50 90H220z"
-          vector-effect="non-scaling-stroke"
-        ></path>
-      </svg>
-      <svg
-        class="logo__triangle logo__triangle--center"
-        style="isolation: isolate;"
-        viewbox="217 167 106 96"
-      >
-        <path
-          d="M220 260l50-90 50 90H220z"
-          vector-effect="non-scaling-stroke"
-        ></path>
-      </svg>
-      <svg
-        class="logo__triangle logo__triangle--right"
-        style="isolation: isolate;"
-        viewbox="217 167 106 96"
-      >
-        <path
-          d="M220 260l50-90 50 90H220z"
-          vector-effect="non-scaling-stroke"
-        ></path>
-      </svg>
-    </a>
-  </div>
-  <div class="header__nav">
-    <div id="nav">
-      <div class="nav__menu">
-        <ul class="menu">
-          <li class="menu__item">
-            <a class="menu__link" href="/">Home</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="/posts/">Posts</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="/about/">About</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
+        <header class="header">
+          <div class="header__logo">
+            <a class="logo" href="/"
+              ><svg
+                class="logo__triangle logo__triangle--left"
+                style="isolation: isolate;"
+                viewbox="217 167 106 96"
+              >
+                <path
+                  d="M220 260l50-90 50 90H220z"
+                  vector-effect="non-scaling-stroke"
+                ></path>
+              </svg>
+              <svg
+                class="logo__triangle logo__triangle--center"
+                style="isolation: isolate;"
+                viewbox="217 167 106 96"
+              >
+                <path
+                  d="M220 260l50-90 50 90H220z"
+                  vector-effect="non-scaling-stroke"
+                ></path>
+              </svg>
+              <svg
+                class="logo__triangle logo__triangle--right"
+                style="isolation: isolate;"
+                viewbox="217 167 106 96"
+              >
+                <path
+                  d="M220 260l50-90 50 90H220z"
+                  vector-effect="non-scaling-stroke"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div class="header__nav">
+            <div id="nav">
+              <div class="nav__menu">
+                <ul class="menu">
+                  <li class="menu__item">
+                    <a class="menu__link" href="/">Home</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="/posts/">Posts</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="/about/">About</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </header>
 
+        <main class="tmpl-post">
+          
 <div id="main" class="main">
   <article class="post">
     <header class="postHeader">
@@ -121,14 +108,24 @@
         14 apps I use (almost) daily
       </h1>
        
+      
       <div class="postContent__date">Posted on Sat, 30 Nov 2019 23:57:38 GMT</div>
+      
+      
+      
+        <div class="postContent__tags">
+          
+            <div class="postContent__tag">
+              <a href="/tags/Tools/" class="Tag">Tools</a>
+            </div>
+        </div>
       
       <!-- .entry-meta -->
     </header>
     
     <div class="postContent__image">
       <div class="postContent__thumbnail">
-        <img src="/assets/images/apps.jpg" />
+        <img src="/img/apps.jpg" />
       </div>
     </div>
     
@@ -136,77 +133,77 @@
 <p>Most of the apps over here are for Mac because that's what I'm rolling with at the moment, although there are some exceptions.</p>
 <p>I decided to leave out mainstream apps (like Slack, or Visual Studio Code) because everybody knows them. In a future post I might write something more technical about VS Code extensions and other coding tools.</p>
 <p>So, here we go, 14 apps I use everyday, randomly ordered.</p>
-<h3>Alfred</h3>
-<p><a href="https://www.alfredapp.com">Alfred</a> is an app that is hard to explain. It's like Spotlight, because it helps you find stuff or do some basic maths, but it's much more that. It lets you make recipes and use pre-made ones. For example, I use the lorem ipsum recipe to generate phrases or words or the Evernote one to search notes, or the Dash one to search for documentation.
-Honestly, I use like 5% of what it's capable of, but it's really cool.
+<h3 id="alfred">Alfred <a class="direct-link" href="#alfred">#</a></h3>
+<p><a href="https://www.alfredapp.com">Alfred</a> is an app that is hard to explain. It's like Spotlight, because it helps you find stuff or do some basic maths, but it's much more that. It lets you make recipes and use pre-made ones. For example, I use the lorem ipsum recipe to generate phrases or words or the Evernote one to search notes, or the Dash one to search for documentation.<br>
+Honestly, I use like 5% of what it's capable of, but it's really cool.<br>
 The thing I use the most is the multiple clipboard though. Many apps provide multiple clipboard, but Alfred's one integrates perfectly in my flow and is super fast.</p>
 <figure class="wp-block-image">
 <img class="wp-image-1423" src="/assets/images/alfred.png" alt="" />
 </figure>
-<h3>Magnet</h3>
+<h3 id="magnet">Magnet <a class="direct-link" href="#magnet">#</a></h3>
 <p><a href="https://magnet.crowdcafe.com">Magnet</a> is a little utility I cannot live without. It allows you to easily snap windows to the right, left, centre or wherever you like, just by using a key combination.</p>
 <p style="padding-left: 40px;">
   <img class="alignnone size-full wp-image-1499" src="/assets/images/magnet.jpg" />
 </p>
-<h3>Sip</h3>
+<h3 id="sip">Sip <a class="direct-link" href="#sip">#</a></h3>
 <p><a href="https://sipapp.io">Sip</a> is neat color picker. Yeah, nothing else, but perfect. Also, I love that it tells you cool color names. I especially love that.</p>
 <figure class="wp-block-image">
   <img class="wp-image-1421" src="/assets/images/sip.png" />
 </figure>
-<h3>iStat</h3>
+<h3 id="istat">iStat <a class="direct-link" href="#istat">#</a></h3>
 <p><a href="https://bjango.com/mac/istatmenus/">iStat Menus</a> is a really nice application you can use to always know the status of your computer. How hot is it? How fast is it downloading? What's the CPU load? Also, what's the weather like tomorrow? Things like that.<figure class="wp-block-image"></p>
 <figure class="wp-block-image">
   <img class="wp-image-1422" src="/assets/images/istat.png" alt="iStat" />
 </figure>
-<h3>Dozer</h3>
+<h3 id="dozer">Dozer <a class="direct-link" href="#dozer">#</a></h3>
 <p><a href="https://dozermac.com">Dozer</a> is a small free utility that lets you hide icons in your menu. Useful.<figure class="wp-block-image"></p>
 <figure class="wp-block-image">
   <img class="wp-image-1424" src="/assets/images/dozer.gif" alt="Dozer" />
 </figure>
-<h3>Bandwidth+</h3>
+<h3 id="bandwidth%2B">Bandwidth+ <a class="direct-link" href="#bandwidth%2B">#</a></h3>
 <p>It can happen that I'm out with my computer and a tethered 4g connection. In that case, I want to know how much I have downloaded at any given time. <a href="https://apps.apple.com/us/app/bandwidth/id490461369?mt=12">Bandwidth+</a> to the rescue. It will reset if you change network, and resume counting once you join it again. Simple and perfect.</p>
 <figure class="wp-block-image">
   <img class="wp-image-1425" src="/assets/images/bwp.png" />
 </figure>
-<h3>CleanMyMac</h3>
-<p>Yes, I know a Mac is not Windows, but still, <a href="https://cleanmymac-x.macpaw.com">CleanMyMac</a> makes it so easy and satisfying to uninstall, cleanup, delete unwanted translation files, clean caches, detect big files you forgot in some obscure folder.
+<h3 id="cleanmymac">CleanMyMac <a class="direct-link" href="#cleanmymac">#</a></h3>
+<p>Yes, I know a Mac is not Windows, but still, <a href="https://cleanmymac-x.macpaw.com">CleanMyMac</a> makes it so easy and satisfying to uninstall, cleanup, delete unwanted translation files, clean caches, detect big files you forgot in some obscure folder.<br>
 Not really a necessity, but it's got a nice interface and does what it's supposed to do.</p>
 <figure class="wp-block-image">
   <img class="wp-image-1427" src="/assets/images/clean.png" />
 </figure>
-<h3>Notion</h3>
-<p>Right now Notion is my main note taking app. It used to be Evernote, and after that Boostnote, but now I mostly use this one, and Evernote only to save documents.
+<h3 id="notion">Notion <a class="direct-link" href="#notion">#</a></h3>
+<p>Right now Notion is my main note taking app. It used to be Evernote, and after that Boostnote, but now I mostly use this one, and Evernote only to save documents.<br>
 Notion is perfect for developers; it has markdown support, you can save code snippets with your chosen syntax, you can tag and categorise and search notes, it really does a lot, and it'snice to look at.</p>
-<h3>Dash</h3>
-<p>This is an app that lets you download documentation for offline viewing: JavaScript, React, WordPress, Ruby, jQuery, Python... whatever you need, <a href="https://kapeli.com/dash">Dash</a> probably has it, and if it doesn't you can add custom Github repos. Plus, it lets you download an offline copy of Stack Overflow questions and answers related to whatever you're interested in.
+<h3 id="dash">Dash <a class="direct-link" href="#dash">#</a></h3>
+<p>This is an app that lets you download documentation for offline viewing: JavaScript, React, WordPress, Ruby, jQuery, Python... whatever you need, <a href="https://kapeli.com/dash">Dash</a> probably has it, and if it doesn't you can add custom Github repos. Plus, it lets you download an offline copy of Stack Overflow questions and answers related to whatever you're interested in.<br>
 It also has some extra features like snippets, which I use a lot, especially to type things like this in a chat: (╯°□°）╯︵ ┻━┻</p>
 <figure class="wp-block-image">
 <img class="wp-image-1430" src="/assets/images/dash.png" />
 </figure>
-<h3>Better</h3>
+<h3 id="better">Better <a class="direct-link" href="#better">#</a></h3>
 <p><a href="https://better.fyi">Better</a> is my adblocker on Safari. It works really well to the point that you forget its existence. I wish it existed for Chrome and Firefox too.</p>
 <figure class="wp-block-image">
 <img class="wp-image-1431" src="/assets/images/better.png" />
 </figure>
-<h3>Karabiner-Elements</h3>
+<h3 id="karabiner-elements">Karabiner-Elements <a class="direct-link" href="#karabiner-elements">#</a></h3>
 <p>I have a Touch Bar MacBook Pro. It means I don't have an ESC key, and no function keys either. I use <a href="https://pqrs.org/osx/karabiner/">Karabiner-Elements</a> to remap the ESC key to Caps Lock, and F5 to the right Alt key (I use F5 to sort items when I code). Pretty useful.</p>
 <figure class="wp-block-image">
 <img class="wp-image-1432" src="/assets/images/kar.png" />
 </figure>
-<h3>RunJs</h3>
-<p>RunJS is a little software that just does what it says... it runs JavaScript.
+<h3 id="runjs">RunJs <a class="direct-link" href="#runjs">#</a></h3>
+<p>RunJS is a little software that just does what it says... it runs JavaScript.<br>
 Very useful to try out little algorithms, snippets, or npm packages.</p>
 <figure class="wp-block-image">
 <img class="alignnone size-full wp-image-1454" src="/assets/images/runjs.jpg" />
 </figure>
-<h2>UPDATE 06 December 2019</h2>
-<h3>SideNotes</h3>
+<h2 id="update-06-december-2019">UPDATE 06 December 2019 <a class="direct-link" href="#update-06-december-2019">#</a></h2>
+<h3 id="sidenotes">SideNotes <a class="direct-link" href="#sidenotes">#</a></h3>
 <p>I found out a couple of days ago about <a href="https://www.apptorium.com/sidenotes">SideNotes</a>. It's really useful to have quick access to snippets or whatever notes you find yourself reaching for often. Also support basic code snippets and Markdown.</p>
 <figure class="wp-block-image">
 <img class="alignnone size-full wp-image-1509" src="/assets/images/sidenotes.png" />
 </figure>
-<h2>UPDATE 08 August 2020</h2>
-<h3>Bumpr</h3>
+<h2 id="update-08-august-2020">UPDATE 08 August 2020 <a class="direct-link" href="#update-08-august-2020">#</a></h2>
+<h3 id="bumpr">Bumpr <a class="direct-link" href="#bumpr">#</a></h3>
 <p>Bumpr is a little utility that just does one thing: when you click on a link, it shown a menu so you can choose with which browser you want to open that link. Simple, but saves me a lot of time, since I often have a number of browsers open.</p>
 <figure class="wp-block-image">
 <img class="alignnone size-full wp-image-1509" src="/assets/images/bumpr.jpg" />
@@ -225,7 +222,13 @@ Very useful to try out little algorithms, snippets, or npm packages.</p>
 <p><span>Photo by <a href="https://unsplash.com/@kalenemsley?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Kalen Emsley</a> on <a href="https://unsplash.com/s/photos/mountains?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></p>
 
   </article>
+
+  <ul class="PrevNextPosts"><li><< <a href="/posts/2019-12-22-a-prettier-eslint-stylelint-configuration/">A Prettier / ESlint / stylelint configuration</a></li><li><a href="/posts/2019-11-21-the-difference-between-pixels-ems-and-rems/">The difference between pixels, ems and rems</a> >></li>
+  </ul>
+
 </div>
+        </main>
+
         <footer class="footer">
           <div class="footer__container">
             <p class="footer__text">Find me on:<br>
@@ -237,28 +240,24 @@ Very useful to try out little algorithms, snippets, or npm packages.</p>
         </footer>
       </div>
     </div>
-  </body>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"
-      integrity="sha512-tHQeqtcNWlZtEh8As/4MmZ5qpy0wj04svWFK7MIzLmUVIzaHXS8eod9OmHxyBL1UET5Rchvw7Ih4ZDv5JojZww=="
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      hljs.initHighlightingOnLoad();
-    </script>
 
-    <!-- Default Statcounter code for My Personal Website https://alexmuraro.me -->
-    <script type="text/javascript">
-    var sc_project=12470952; 
-    var sc_invisible=1; 
-    var sc_security="52b110a1"; 
-    var sc_https=1; 
-    </script>
-    <script type="text/javascript"
-    src="https://www.statcounter.com/counter/counter.js" async></script>
-    <noscript><div class="statcounter"><a title="Web Analytics Made Easy -
-    StatCounter" href="https://statcounter.com/" target="_blank"><img
-    class="statcounter" src="https://c.statcounter.com/12470952/0/52b110a1/1/"
-    alt="Web Analytics Made Easy - StatCounter"></a></div></noscript>
-    <!-- End of Statcounter Code -->
+    <!-- Current page: /posts/2019-12-01-14-apps-i-use-almost-daily/ -->
+  </body>
+
+  
+
+  <!-- Default Statcounter code for My Personal Website https://alexmuraro.me -->
+  <script type="text/javascript">
+  var sc_project=12470952; 
+  var sc_invisible=1; 
+  var sc_security="52b110a1"; 
+  var sc_https=1; 
+  </script>
+  <script type="text/javascript"
+  src="https://www.statcounter.com/counter/counter.js" async></script>
+  <noscript><div class="statcounter"><a title="Web Analytics Made Easy -
+  StatCounter" href="https://statcounter.com/" target="_blank"><img
+  class="statcounter" src="https://c.statcounter.com/12470952/0/52b110a1/1/"
+  alt="Web Analytics Made Easy - StatCounter"></a></div></noscript>
+  <!-- End of Statcounter Code -->
 </html>

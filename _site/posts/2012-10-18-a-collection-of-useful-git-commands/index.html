@@ -1,15 +1,17 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A collection of useful git commands</title>
     <link
       href="https://fonts.googleapis.com/css?family=Merriweather:700|Muli:300,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/assets/css/index.css" />
+    <meta name="description" content="Personal site with thoughts, technical posts, bio, resume.">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Alex Muraro - Frontend engineer">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Alex Muraro - Frontend engineer">
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -27,7 +29,6 @@
       sizes="16x16"
       href="/assets/favicons/favicon-16x16.png"
     />
-    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
     <link
       rel="mask-icon"
       href="/assets/favicons/safari-pinned-tab.svg"
@@ -39,80 +40,66 @@
       name="msapplication-config"
       content="/assets/favicons/browserconfig.xml"
     />
-    <meta name="theme-color" content="#ffffff" />
-    <meta property="og:title" content="A collection of useful git commands" />
-    <meta name="twitter:title" content="A collection of useful git commands" />
-    <meta property="og:description" content="In my previous article I have introduced the basic concepts around the awesome Git. Check it out if you are not sure what we are talking about." />
-    <meta property="og:image" content="" />
-    <meta name="twitter:image" content="" />
-    <meta property="og:url" content="https://alexmuraro.me/posts/2012-10-18-a-collection-of-useful-git-commands/" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:creator" content="akmur" />
-    <meta name="twitter:site" content="akmur" />
-    <script
-      async
-      defer
-      data-domain="alexmuraro.me"
-      src="https://plausible.io/js/plausible.js"
-    ></script>
   </head>
   <body class="ui-dark">
     <div class="wrapper">
       <div class="layout">
- <div class="header">
-  <div class="header__logo">
-    <a class="logo" href="/"
-      ><svg
-        class="logo__triangle logo__triangle--left"
-        style="isolation: isolate;"
-        viewbox="217 167 106 96"
-      >
-        <path
-          d="M220 260l50-90 50 90H220z"
-          vector-effect="non-scaling-stroke"
-        ></path>
-      </svg>
-      <svg
-        class="logo__triangle logo__triangle--center"
-        style="isolation: isolate;"
-        viewbox="217 167 106 96"
-      >
-        <path
-          d="M220 260l50-90 50 90H220z"
-          vector-effect="non-scaling-stroke"
-        ></path>
-      </svg>
-      <svg
-        class="logo__triangle logo__triangle--right"
-        style="isolation: isolate;"
-        viewbox="217 167 106 96"
-      >
-        <path
-          d="M220 260l50-90 50 90H220z"
-          vector-effect="non-scaling-stroke"
-        ></path>
-      </svg>
-    </a>
-  </div>
-  <div class="header__nav">
-    <div id="nav">
-      <div class="nav__menu">
-        <ul class="menu">
-          <li class="menu__item">
-            <a class="menu__link" href="/">Home</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="/posts/">Posts</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="/about/">About</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
+        <header class="header">
+          <div class="header__logo">
+            <a class="logo" href="/"
+              ><svg
+                class="logo__triangle logo__triangle--left"
+                style="isolation: isolate;"
+                viewbox="217 167 106 96"
+              >
+                <path
+                  d="M220 260l50-90 50 90H220z"
+                  vector-effect="non-scaling-stroke"
+                ></path>
+              </svg>
+              <svg
+                class="logo__triangle logo__triangle--center"
+                style="isolation: isolate;"
+                viewbox="217 167 106 96"
+              >
+                <path
+                  d="M220 260l50-90 50 90H220z"
+                  vector-effect="non-scaling-stroke"
+                ></path>
+              </svg>
+              <svg
+                class="logo__triangle logo__triangle--right"
+                style="isolation: isolate;"
+                viewbox="217 167 106 96"
+              >
+                <path
+                  d="M220 260l50-90 50 90H220z"
+                  vector-effect="non-scaling-stroke"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div class="header__nav">
+            <div id="nav">
+              <div class="nav__menu">
+                <ul class="menu">
+                  <li class="menu__item">
+                    <a class="menu__link" href="/">Home</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="/posts/">Posts</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="/about/">About</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </header>
 
+        <main class="tmpl-post">
+          
 <div id="main" class="main">
   <article class="post">
     <header class="postHeader">
@@ -121,50 +108,66 @@
         A collection of useful git commands
       </h1>
        
+      
       <div class="postContent__date">Posted on Thu, 18 Oct 2012 23:38:32 GMT</div>
+      
+      
+      
+        <div class="postContent__tags">
+          
+            <div class="postContent__tag">
+              <a href="/tags/Git/" class="Tag">Git</a>
+            </div>
+        </div>
       
       <!-- .entry-meta -->
     </header>
     
     <p>In my previous article I have introduced the basic concepts around the awesome Git. <a href="http://localhost/alex/posts/an-introduction-to-git/" title="An introduction to GIT">Check it out</a> if you are not sure what we are talking about.</p>
 <p>If you do, but you are not a Git ninja (yet), you might find the following commands useful in your everyday work. They are not super advanced but they might be useful.</p>
-<p><strong>git status</strong>
+<p><strong>git status</strong><br>
 Useful to assess the current status of your branch. Where am I? What am I doing? Stuff like that.</p>
-<p><strong>git pull</strong>
+<p><strong>git pull</strong><br>
 to get latest code from repo</p>
-<p><strong>git pull origin branchname</strong>
+<p><strong>git pull origin branchname</strong><br>
 to get latest code for a single branch which resides on the &quot;origin&quot; tree</p>
-<p><strong>git fetch</strong>
+<p><strong>git fetch</strong><br>
 imagine a friend of yours branched off to a new branch, called &quot;myawesomebranch&quot;. How do you retrieve his code? Simply enough, run git fecth to retrieve a list of all remote branches. Then with the next command, you'll be able to &quot;download&quot; that branch to your computer.</p>
-<p><strong>git fetch origin branchname:branchname</strong>
+<p><strong>git fetch origin branchname:branchname</strong><br>
 to fetch a new branch (for example, git fetch origin myawsomebranch:myawesomebranch)</p>
-<p><strong>git checkout -b myfeature master</strong>
+<p><strong>git checkout -b myfeature master</strong><br>
 If you want to start working in a brand new branch, this is the command for you. In this case you are creating a branch called &quot;myfeature&quot;, and you're branching off the &quot;master&quot; branch.</p>
-<p><strong>git checkout development</strong>
+<p><strong>git checkout development</strong><br>
 To switch between branches, this is the command to run. In this case you would switch to the branch &quot;development&quot;</p>
-<p><strong>git merge –no-ff myfeature</strong>
+<p><strong>git merge –no-ff myfeature</strong><br>
 If you want to merge the work you've done in your own branch with an existing branch, this is the command for the job (just be careful of possible conflicts). In this case you would merge the branch &quot;myfeature&quot; with the branch you're currently in.</p>
-<p><strong>git branch -d myfeature</strong>
+<p><strong>git branch -d myfeature</strong><br>
 Delete a branch with this command</p>
-<p><strong>git push origin :new_feature_name</strong>
+<p><strong>git push origin :new_feature_name</strong><br>
 delete a branch on origin (on the &quot;server&quot;)</p>
-<p><strong>git checkout 56e05fced214c44a37759efa2dfc25a65d8ae98d</strong>
+<p><strong>git checkout 56e05fced214c44a37759efa2dfc25a65d8ae98d</strong><br>
 to revert to an earlier specified commit, use the above (each commit has a code like the one above which i made up). You can see such codes by looking at the repository online or by using a visual tool like gitk (on ubuntu/Linux)</p>
-<p><strong>git reset 56e05fcede05fcede05fced</strong>
+<p><strong>git reset 56e05fcede05fcede05fced</strong><br>
 reset your work to the desired commit</p>
-<p><strong>git revert HEAD</strong>
+<p><strong>git revert HEAD</strong><br>
 revert to the last commit</p>
-<p><strong>git revert HEAD^</strong>
+<p><strong>git revert HEAD^</strong><br>
 revert to the next-to-last commit</p>
-<p><strong>git reset</strong>
+<p><strong>git reset</strong><br>
 to reset in case you wrongly added files to commit, example: git reset db/schema.rb would remove this file from the files to be committed</p>
-<p><strong>git rm $(git ls-files –deleted)</strong>
+<p><strong>git rm $(git ls-files –deleted)</strong><br>
 When you delete files, they stay in your GIT history unless you remove them from there too. This is the right command.</p>
-<p>And i think this is a pretty good list of git commands, don't you think?
+<p>And i think this is a pretty good list of git commands, don't you think?<br>
 Happy gitting!</p>
 
   </article>
+
+  <ul class="PrevNextPosts"><li><< <a href="/posts/2013-02-18-enable-pretty-permalinks-on-localhost/">Enable pretty permalinks on localhost</a></li><li><a href="/posts/2012-10-04-an-introduction-to-git/">An introduction to GIT</a> >></li>
+  </ul>
+
 </div>
+        </main>
+
         <footer class="footer">
           <div class="footer__container">
             <p class="footer__text">Find me on:<br>
@@ -176,28 +179,24 @@ Happy gitting!</p>
         </footer>
       </div>
     </div>
-  </body>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"
-      integrity="sha512-tHQeqtcNWlZtEh8As/4MmZ5qpy0wj04svWFK7MIzLmUVIzaHXS8eod9OmHxyBL1UET5Rchvw7Ih4ZDv5JojZww=="
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      hljs.initHighlightingOnLoad();
-    </script>
 
-    <!-- Default Statcounter code for My Personal Website https://alexmuraro.me -->
-    <script type="text/javascript">
-    var sc_project=12470952; 
-    var sc_invisible=1; 
-    var sc_security="52b110a1"; 
-    var sc_https=1; 
-    </script>
-    <script type="text/javascript"
-    src="https://www.statcounter.com/counter/counter.js" async></script>
-    <noscript><div class="statcounter"><a title="Web Analytics Made Easy -
-    StatCounter" href="https://statcounter.com/" target="_blank"><img
-    class="statcounter" src="https://c.statcounter.com/12470952/0/52b110a1/1/"
-    alt="Web Analytics Made Easy - StatCounter"></a></div></noscript>
-    <!-- End of Statcounter Code -->
+    <!-- Current page: /posts/2012-10-18-a-collection-of-useful-git-commands/ -->
+  </body>
+
+  
+
+  <!-- Default Statcounter code for My Personal Website https://alexmuraro.me -->
+  <script type="text/javascript">
+  var sc_project=12470952; 
+  var sc_invisible=1; 
+  var sc_security="52b110a1"; 
+  var sc_https=1; 
+  </script>
+  <script type="text/javascript"
+  src="https://www.statcounter.com/counter/counter.js" async></script>
+  <noscript><div class="statcounter"><a title="Web Analytics Made Easy -
+  StatCounter" href="https://statcounter.com/" target="_blank"><img
+  class="statcounter" src="https://c.statcounter.com/12470952/0/52b110a1/1/"
+  alt="Web Analytics Made Easy - StatCounter"></a></div></noscript>
+  <!-- End of Statcounter Code -->
 </html>

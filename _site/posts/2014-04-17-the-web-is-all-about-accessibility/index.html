@@ -1,15 +1,17 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The web is all about accessibility</title>
     <link
       href="https://fonts.googleapis.com/css?family=Merriweather:700|Muli:300,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/assets/css/index.css" />
+    <meta name="description" content="Personal site with thoughts, technical posts, bio, resume.">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Alex Muraro - Frontend engineer">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Alex Muraro - Frontend engineer">
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -27,7 +29,6 @@
       sizes="16x16"
       href="/assets/favicons/favicon-16x16.png"
     />
-    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
     <link
       rel="mask-icon"
       href="/assets/favicons/safari-pinned-tab.svg"
@@ -39,80 +40,66 @@
       name="msapplication-config"
       content="/assets/favicons/browserconfig.xml"
     />
-    <meta name="theme-color" content="#ffffff" />
-    <meta property="og:title" content="The web is all about accessibility" />
-    <meta name="twitter:title" content="The web is all about accessibility" />
-    <meta property="og:description" content="When will people wake up to the fact that accessibility is an important matter? People generally consider accessibility to be somewhat secondary, and it is often either forgotten, or just a quick afterthought. And I include myself." />
-    <meta property="og:image" content="/assets/images/bogdan-karlenko-36b7JBzhfF4-unsplash-scaled-e1595501218479.jpg" />
-    <meta name="twitter:image" content="/assets/images/bogdan-karlenko-36b7JBzhfF4-unsplash-scaled-e1595501218479.jpg" />
-    <meta property="og:url" content="https://alexmuraro.me/posts/2014-04-17-the-web-is-all-about-accessibility/" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:creator" content="akmur" />
-    <meta name="twitter:site" content="akmur" />
-    <script
-      async
-      defer
-      data-domain="alexmuraro.me"
-      src="https://plausible.io/js/plausible.js"
-    ></script>
   </head>
   <body class="ui-dark">
     <div class="wrapper">
       <div class="layout">
- <div class="header">
-  <div class="header__logo">
-    <a class="logo" href="/"
-      ><svg
-        class="logo__triangle logo__triangle--left"
-        style="isolation: isolate;"
-        viewbox="217 167 106 96"
-      >
-        <path
-          d="M220 260l50-90 50 90H220z"
-          vector-effect="non-scaling-stroke"
-        ></path>
-      </svg>
-      <svg
-        class="logo__triangle logo__triangle--center"
-        style="isolation: isolate;"
-        viewbox="217 167 106 96"
-      >
-        <path
-          d="M220 260l50-90 50 90H220z"
-          vector-effect="non-scaling-stroke"
-        ></path>
-      </svg>
-      <svg
-        class="logo__triangle logo__triangle--right"
-        style="isolation: isolate;"
-        viewbox="217 167 106 96"
-      >
-        <path
-          d="M220 260l50-90 50 90H220z"
-          vector-effect="non-scaling-stroke"
-        ></path>
-      </svg>
-    </a>
-  </div>
-  <div class="header__nav">
-    <div id="nav">
-      <div class="nav__menu">
-        <ul class="menu">
-          <li class="menu__item">
-            <a class="menu__link" href="/">Home</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="/posts/">Posts</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="/about/">About</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
+        <header class="header">
+          <div class="header__logo">
+            <a class="logo" href="/"
+              ><svg
+                class="logo__triangle logo__triangle--left"
+                style="isolation: isolate;"
+                viewbox="217 167 106 96"
+              >
+                <path
+                  d="M220 260l50-90 50 90H220z"
+                  vector-effect="non-scaling-stroke"
+                ></path>
+              </svg>
+              <svg
+                class="logo__triangle logo__triangle--center"
+                style="isolation: isolate;"
+                viewbox="217 167 106 96"
+              >
+                <path
+                  d="M220 260l50-90 50 90H220z"
+                  vector-effect="non-scaling-stroke"
+                ></path>
+              </svg>
+              <svg
+                class="logo__triangle logo__triangle--right"
+                style="isolation: isolate;"
+                viewbox="217 167 106 96"
+              >
+                <path
+                  d="M220 260l50-90 50 90H220z"
+                  vector-effect="non-scaling-stroke"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div class="header__nav">
+            <div id="nav">
+              <div class="nav__menu">
+                <ul class="menu">
+                  <li class="menu__item">
+                    <a class="menu__link" href="/">Home</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="/posts/">Posts</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="/about/">About</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </header>
 
+        <main class="tmpl-post">
+          
 <div id="main" class="main">
   <article class="post">
     <header class="postHeader">
@@ -121,30 +108,49 @@
         The web is all about accessibility
       </h1>
        
+      
       <div class="postContent__date">Posted on Thu, 17 Apr 2014 09:35:21 GMT</div>
+      
+      
+      
+        <div class="postContent__tags">
+          
+            <div class="postContent__tag">
+              <a href="/tags/Accessibility/" class="Tag">Accessibility</a>
+            </div>
+            <div class="postContent__tag">
+              <a href="/tags/UX/" class="Tag">UX</a>
+            </div>
+        </div>
       
       <!-- .entry-meta -->
     </header>
     
     <div class="postContent__image">
       <div class="postContent__thumbnail">
-        <img src="/assets/images/bogdan-karlenko-36b7JBzhfF4-unsplash-scaled-e1595501218479.jpg" />
+        <img src="/img/bogdan-karlenko-36b7JBzhfF4-unsplash-scaled-e1595501218479.jpg" />
       </div>
     </div>
     
-    <p>When will people wake up to the fact that <strong>accessibility</strong> is an important matter?
+    <p>When will people wake up to the fact that <strong>accessibility</strong> is an important matter?<br>
 People generally consider accessibility to be somewhat <strong>secondary</strong>, and it is often either forgotten, or just a quick afterthought. And I include myself.</p>
 <p>We need to improve and work everyday toward accessibility for one, very simple, egoistic, reason: that person with accessibility problems is none other than ourselves. Yes, our future self.</p>
 <p>What will we do when we'll be cut off from the internet just because of a medical condition, either chronic or temporary? Well, it will be too late to think about accessibility then. So better start working now, right? What I want to do from now on will be to <strong>talk</strong> accessibility, and <strong>code</strong> accessibility into my work (also, i will recode this website).</p>
 <p>To get us started, I think one of the main improvements for our websites, is making sure that we're using <strong>proper contrast</strong> for our text. It often happens that, while a text might look good from an aesthetic point of view, it is not that readable because it lacks contrast. To improve on this, one of the best tools we can use is the [Chrome Accessibility Developer Tools][1], which can be used quite easily by any coder who's used to Chrome Inspect Tool or Firefox Firebug. With this tool, you can have any webpage audited to get some warnings about what to improve, or check individual elements. <a href="https://twitter.com/jennlukas" target="_blank">Jenn Lukas</a> has written a simple and concise article about the usage of this extension, you can check it out on <a title="A List Apart Easy Color Contrast" href="http://alistapart.com/blog/post/easy-color-contrast-testing" target="_blank">A List Apart</a>.</p>
 <p>Another nice tool that I've been using for this purpose, is the <a href="https://chrome.google.com/webstore/detail/color-contrast-analyzer/dagdlcijhfbmgkjokkjicnnfimlebcll?hl=en" target="_blank">Color Contrast Analyzer Options</a> Chrome Extension which helps you to visually analyze a page contrast. Nice tool.</p>
 <p>The next step, would be read this <a title="Wordpress accessibility codex article" href="https://codex.wordpress.org/Accessibility" target="_blank">WordPress accessibility codex article</a> and then spend some time with the <a href="http://www.uiaccess.com/accessucd/index.html" target="_blank">Just Ask</a> book, also available in html format, or with any similar resource. At any rate, we should keep in mind that even the smallest step in the direction of accessibility, still is a step toward improvement, isn't it? <a title="Link to Gertrude Stein" href="http://en.wikipedia.org/wiki/Rose_is_a_rose_is_a_rose_is_a_rose" target="_blank">An inch is an inch is an inch</a>. that's what it is :).</p>
-<p>I believe that a site should rather be easily readable and accessible than nice to look at. After all, we're here to fulfill a mission, which is: spread information. That's what the web is about. <strong>The web is all about accessibility</strong>.
-So, let's start from this small step making sure our sites are properly contrasted, fonts are properly sized and overall <a title="Readability principles" href="http://www.smashingmagazine.com/2009/03/18/10-principles-for-readable-web-typography/" target="_blank">readability</a> is top notch.
+<p>I believe that a site should rather be easily readable and accessible than nice to look at. After all, we're here to fulfill a mission, which is: spread information. That's what the web is about. <strong>The web is all about accessibility</strong>.<br>
+So, let's start from this small step making sure our sites are properly contrasted, fonts are properly sized and overall <a title="Readability principles" href="http://www.smashingmagazine.com/2009/03/18/10-principles-for-readable-web-typography/" target="_blank">readability</a> is top notch.<br>
 We can then move on and improve on this, by properly catering for screen readers and other necessities. I know we can make it!</p>
 
   </article>
+
+  <ul class="PrevNextPosts"><li><< <a href="/posts/2014-04-19-thank-you-canonical/">Thank you Canonical</a></li><li><a href="/posts/2014-04-02-camtasia-alternative-for-linux/">Camtasia alternative for Linux</a> >></li>
+  </ul>
+
 </div>
+        </main>
+
         <footer class="footer">
           <div class="footer__container">
             <p class="footer__text">Find me on:<br>
@@ -156,28 +162,24 @@ We can then move on and improve on this, by properly catering for screen reader
         </footer>
       </div>
     </div>
-  </body>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"
-      integrity="sha512-tHQeqtcNWlZtEh8As/4MmZ5qpy0wj04svWFK7MIzLmUVIzaHXS8eod9OmHxyBL1UET5Rchvw7Ih4ZDv5JojZww=="
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      hljs.initHighlightingOnLoad();
-    </script>
 
-    <!-- Default Statcounter code for My Personal Website https://alexmuraro.me -->
-    <script type="text/javascript">
-    var sc_project=12470952; 
-    var sc_invisible=1; 
-    var sc_security="52b110a1"; 
-    var sc_https=1; 
-    </script>
-    <script type="text/javascript"
-    src="https://www.statcounter.com/counter/counter.js" async></script>
-    <noscript><div class="statcounter"><a title="Web Analytics Made Easy -
-    StatCounter" href="https://statcounter.com/" target="_blank"><img
-    class="statcounter" src="https://c.statcounter.com/12470952/0/52b110a1/1/"
-    alt="Web Analytics Made Easy - StatCounter"></a></div></noscript>
-    <!-- End of Statcounter Code -->
+    <!-- Current page: /posts/2014-04-17-the-web-is-all-about-accessibility/ -->
+  </body>
+
+  
+
+  <!-- Default Statcounter code for My Personal Website https://alexmuraro.me -->
+  <script type="text/javascript">
+  var sc_project=12470952; 
+  var sc_invisible=1; 
+  var sc_security="52b110a1"; 
+  var sc_https=1; 
+  </script>
+  <script type="text/javascript"
+  src="https://www.statcounter.com/counter/counter.js" async></script>
+  <noscript><div class="statcounter"><a title="Web Analytics Made Easy -
+  StatCounter" href="https://statcounter.com/" target="_blank"><img
+  class="statcounter" src="https://c.statcounter.com/12470952/0/52b110a1/1/"
+  alt="Web Analytics Made Easy - StatCounter"></a></div></noscript>
+  <!-- End of Statcounter Code -->
 </html>

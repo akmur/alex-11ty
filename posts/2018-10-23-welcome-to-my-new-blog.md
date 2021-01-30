@@ -1,14 +1,14 @@
 ---
-layout: single.njk
+layout: layouts/post.njk
 title: Welcome to my new blog
 author: akmur
 type: post
 date: 2018-10-23T00:12:24+00:00
-featured_image: /assets/images/pxem.jpg
+featured_image: /img/pxem.jpg
 url: https://alexmuraro.me/posts/2018-10-23-welcome-to-my-new-blog/
 excerpt: "Today I have launched my new blog. It is not simply a new theme; it also has got an entirely new technical architecture to go with it."
 tags:
-  - Articles
+  - Ideas
 ---
 
 Today I have launched my new blog. It is not simply a new theme; it also has got an entirely new technical architecture to go with it.
@@ -17,19 +17,19 @@ But first, I want to take the chance to go through all the designs I did for thi
 
 [2012 Theme (using a different domain)][1]
 
-<img src="/assets/images/acmpxm5.jpg" />
+<img src="/img/acmpxm5.jpg" />
 
 [2014 Theme][3]
 
-<img src="/assets/images/gud0m6b.jpg" />
+<img src="/img/gud0m6b.jpg" />
 
 [2015 Theme][5]
 
-<img src="/assets/images/pjxin1o.png" />
+<img src="/img/pjxin1o.png" />
 
 [2017 Theme][7]
 
-<img src="/assets/images/srr08yn.png" />
+<img src="/img/srr08yn.png" />
 
 Talking about the technological side, the site has been powered by WordPress for years, until early 2018 when I switched it to a static site, still generated from WordPress.
 

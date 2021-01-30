@@ -1,15 +1,17 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to my new blog</title>
     <link
       href="https://fonts.googleapis.com/css?family=Merriweather:700|Muli:300,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/assets/css/index.css" />
+    <meta name="description" content="Personal site with thoughts, technical posts, bio, resume.">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Alex Muraro - Frontend engineer">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Alex Muraro - Frontend engineer">
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -27,7 +29,6 @@
       sizes="16x16"
       href="/assets/favicons/favicon-16x16.png"
     />
-    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
     <link
       rel="mask-icon"
       href="/assets/favicons/safari-pinned-tab.svg"
@@ -39,80 +40,66 @@
       name="msapplication-config"
       content="/assets/favicons/browserconfig.xml"
     />
-    <meta name="theme-color" content="#ffffff" />
-    <meta property="og:title" content="Welcome to my new blog" />
-    <meta name="twitter:title" content="Welcome to my new blog" />
-    <meta property="og:description" content="Today I have launched my new blog. It is not simply a new theme; it also has got an entirely new technical architecture to go with it." />
-    <meta property="og:image" content="/assets/images/pxem.jpg" />
-    <meta name="twitter:image" content="/assets/images/pxem.jpg" />
-    <meta property="og:url" content="https://alexmuraro.me/posts/2018-10-23-welcome-to-my-new-blog/" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:creator" content="akmur" />
-    <meta name="twitter:site" content="akmur" />
-    <script
-      async
-      defer
-      data-domain="alexmuraro.me"
-      src="https://plausible.io/js/plausible.js"
-    ></script>
   </head>
   <body class="ui-dark">
     <div class="wrapper">
       <div class="layout">
- <div class="header">
-  <div class="header__logo">
-    <a class="logo" href="/"
-      ><svg
-        class="logo__triangle logo__triangle--left"
-        style="isolation: isolate;"
-        viewbox="217 167 106 96"
-      >
-        <path
-          d="M220 260l50-90 50 90H220z"
-          vector-effect="non-scaling-stroke"
-        ></path>
-      </svg>
-      <svg
-        class="logo__triangle logo__triangle--center"
-        style="isolation: isolate;"
-        viewbox="217 167 106 96"
-      >
-        <path
-          d="M220 260l50-90 50 90H220z"
-          vector-effect="non-scaling-stroke"
-        ></path>
-      </svg>
-      <svg
-        class="logo__triangle logo__triangle--right"
-        style="isolation: isolate;"
-        viewbox="217 167 106 96"
-      >
-        <path
-          d="M220 260l50-90 50 90H220z"
-          vector-effect="non-scaling-stroke"
-        ></path>
-      </svg>
-    </a>
-  </div>
-  <div class="header__nav">
-    <div id="nav">
-      <div class="nav__menu">
-        <ul class="menu">
-          <li class="menu__item">
-            <a class="menu__link" href="/">Home</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="/posts/">Posts</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="/about/">About</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
+        <header class="header">
+          <div class="header__logo">
+            <a class="logo" href="/"
+              ><svg
+                class="logo__triangle logo__triangle--left"
+                style="isolation: isolate;"
+                viewbox="217 167 106 96"
+              >
+                <path
+                  d="M220 260l50-90 50 90H220z"
+                  vector-effect="non-scaling-stroke"
+                ></path>
+              </svg>
+              <svg
+                class="logo__triangle logo__triangle--center"
+                style="isolation: isolate;"
+                viewbox="217 167 106 96"
+              >
+                <path
+                  d="M220 260l50-90 50 90H220z"
+                  vector-effect="non-scaling-stroke"
+                ></path>
+              </svg>
+              <svg
+                class="logo__triangle logo__triangle--right"
+                style="isolation: isolate;"
+                viewbox="217 167 106 96"
+              >
+                <path
+                  d="M220 260l50-90 50 90H220z"
+                  vector-effect="non-scaling-stroke"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div class="header__nav">
+            <div id="nav">
+              <div class="nav__menu">
+                <ul class="menu">
+                  <li class="menu__item">
+                    <a class="menu__link" href="/">Home</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="/posts/">Posts</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="/about/">About</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </header>
 
+        <main class="tmpl-post">
+          
 <div id="main" class="main">
   <article class="post">
     <header class="postHeader">
@@ -121,27 +108,37 @@
         Welcome to my new blog
       </h1>
        
+      
       <div class="postContent__date">Posted on Tue, 23 Oct 2018 00:12:24 GMT</div>
+      
+      
+      
+        <div class="postContent__tags">
+          
+            <div class="postContent__tag">
+              <a href="/tags/Ideas/" class="Tag">Ideas</a>
+            </div>
+        </div>
       
       <!-- .entry-meta -->
     </header>
     
     <div class="postContent__image">
       <div class="postContent__thumbnail">
-        <img src="/assets/images/pxem.jpg" />
+        <img src="/img/pxem.jpg" />
       </div>
     </div>
     
     <p>Today I have launched my new blog. It is not simply a new theme; it also has got an entirely new technical architecture to go with it.</p>
 <p>But first, I want to take the chance to go through all the designs I did for this site over the years, with a little help from the Wayback Machine. Unfortunately some iterations have been lost, but it is still fun to look at:</p>
 <p><a href="https://web.archive.org/web/20120114220703/http://inteoria.net/">2012 Theme (using a different domain)</a></p>
-<img src="/assets/images/acmpxm5.jpg" />
+<img src="/img/acmpxm5.jpg" />
 <p><a href="https://web.archive.org/web/20140802152258/http://vccw.test/">2014 Theme</a></p>
-<img src="/assets/images/gud0m6b.jpg" />
+<img src="/img/gud0m6b.jpg" />
 <p><a href="https://web.archive.org/web/20150511110509/http://vccw.test:80/">2015 Theme</a></p>
-<img src="/assets/images/pjxin1o.png" />
+<img src="/img/pjxin1o.png" />
 <p><a href="https://web.archive.org/web/20170928062210/https://vccw.test/">2017 Theme</a></p>
-<img src="/assets/images/srr08yn.png" />
+<img src="/img/srr08yn.png" />
 <p>Talking about the technological side, the site has been powered by WordPress for years, until early 2018 when I switched it to a static site, still generated from WordPress.</p>
 <p>So, this morning I am deploying the version of the site you can see now. It is a purely frontend website, with its content pulled from <a href="https://www.contentful.com/" title="Contentful">Contentful</a>. I have decided not to use any frontend framework after having played around with React, Preact, React router, and Next.js. It was fun to implement my site with different tools, and I learnt a lot during the process, but in the end I decided all that stuff was overkill, and went with vanilla JavaScript. The only JavaScript library I use is <a href="https://github.com/krasimir/navigo">Navigo.js</a> for routing.</p>
 <p>I feel really happy with the result, I like the new design and the site is super fast. Plus, I can create new posts just by creating new markdown files. Google can even index JavaScript rendered pages, so what's not to love? 🙂</p>
@@ -149,7 +146,13 @@
 <p>UPDATE 2020: I've switched to Eleventy :)</p>
 
   </article>
+
+  <ul class="PrevNextPosts"><li><< <a href="/posts/2018-12-14-my-scss-file-structure/">My SCSS file structure</a></li><li><a href="/posts/2018-08-08-search-with-google-instead/">Search with Google instead</a> >></li>
+  </ul>
+
 </div>
+        </main>
+
         <footer class="footer">
           <div class="footer__container">
             <p class="footer__text">Find me on:<br>
@@ -161,28 +164,24 @@
         </footer>
       </div>
     </div>
-  </body>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"
-      integrity="sha512-tHQeqtcNWlZtEh8As/4MmZ5qpy0wj04svWFK7MIzLmUVIzaHXS8eod9OmHxyBL1UET5Rchvw7Ih4ZDv5JojZww=="
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      hljs.initHighlightingOnLoad();
-    </script>
 
-    <!-- Default Statcounter code for My Personal Website https://alexmuraro.me -->
-    <script type="text/javascript">
-    var sc_project=12470952; 
-    var sc_invisible=1; 
-    var sc_security="52b110a1"; 
-    var sc_https=1; 
-    </script>
-    <script type="text/javascript"
-    src="https://www.statcounter.com/counter/counter.js" async></script>
-    <noscript><div class="statcounter"><a title="Web Analytics Made Easy -
-    StatCounter" href="https://statcounter.com/" target="_blank"><img
-    class="statcounter" src="https://c.statcounter.com/12470952/0/52b110a1/1/"
-    alt="Web Analytics Made Easy - StatCounter"></a></div></noscript>
-    <!-- End of Statcounter Code -->
+    <!-- Current page: /posts/2018-10-23-welcome-to-my-new-blog/ -->
+  </body>
+
+  
+
+  <!-- Default Statcounter code for My Personal Website https://alexmuraro.me -->
+  <script type="text/javascript">
+  var sc_project=12470952; 
+  var sc_invisible=1; 
+  var sc_security="52b110a1"; 
+  var sc_https=1; 
+  </script>
+  <script type="text/javascript"
+  src="https://www.statcounter.com/counter/counter.js" async></script>
+  <noscript><div class="statcounter"><a title="Web Analytics Made Easy -
+  StatCounter" href="https://statcounter.com/" target="_blank"><img
+  class="statcounter" src="https://c.statcounter.com/12470952/0/52b110a1/1/"
+  alt="Web Analytics Made Easy - StatCounter"></a></div></noscript>
+  <!-- End of Statcounter Code -->
 </html>

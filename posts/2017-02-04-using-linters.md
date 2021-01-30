@@ -1,14 +1,11 @@
 ---
-layout: single.njk
+layout: layouts/post.njk
 title: Using Linters
 author: akmur
 type: post
 date: 2017-02-04T12:30:36+00:00
 tags:
-  - Articles
-  - JavaScript
-  - SCSS
-  - CSS
+  - Tools
 ---
 
 ### What is a linter?

@@ -1,0 +1,20 @@
+{
+  "title": "Alex Muraro - Frontend engineer",
+  "url": "https://alexmuraro.me/",
+  "description": "Personal site with thoughts, technical posts, bio, resume.",
+  "feed": {
+    "subtitle": "Personal site with thoughts, technical posts, bio, resume.",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "https://alexmuraro.me"
+  },
+  "jsonfeed": {
+    "path": "/feed/feed.json",
+    "url": "https://alexmuraro.me/feed/feed.json"
+  },
+  "author": {
+    "name": "Alessandro Muraro",
+    "email": "akmuraro@gmail.com",
+    "url": "https://alexmuraro.me/about/"
+  }
+}

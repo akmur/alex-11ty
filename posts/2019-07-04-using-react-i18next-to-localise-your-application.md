@@ -1,5 +1,5 @@
 ---
-layout: single.njk
+layout: layouts/post.njk
 title: Using react-i18next to localise your application
 author: akmur
 type: post
@@ -8,7 +8,6 @@ featured_image: https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixl
 url: https://alexmuraro.me/posts/2019-07-04-using-react-i18next-to-localise-your-application/
 excerpt: "In this post I would like to go through the configuration I use to provide localisation features to a React application. This might not be the best way, but it surely is the way that works for me, so I hope it can be useful to other people looking to add this same feature."
 tags:
-  - Tutorial
   - React
   - i18n
   - JavaScript

@@ -1,11 +1,11 @@
 ---
-layout: single.njk
+layout: layouts/post.njk
 title: Milano Frontend Meetup
 author: akmur
 type: post
 date: 2015-10-07T07:58:38+00:00
 tags:
-  - Articles
+  - Community
 ---
 
 A few days ago, I was browsing [meetup.com][1] looking for front-end web-development meetups in my area (Milan, Italy) and to my surprise, I found none. There were a few quite specialized ones like [M&M Mean Milan][2], [MeteorJS Milano][3] or [MongoDB Milan][4], but I couldn't fine a more generic one where people could talk about front-end in general.

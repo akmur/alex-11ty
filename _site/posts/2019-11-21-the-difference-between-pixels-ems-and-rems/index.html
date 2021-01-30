@@ -1,15 +1,17 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The difference between pixels, ems and rems</title>
     <link
       href="https://fonts.googleapis.com/css?family=Merriweather:700|Muli:300,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/assets/css/index.css" />
+    <meta name="description" content="Personal site with thoughts, technical posts, bio, resume.">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Alex Muraro - Frontend engineer">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Alex Muraro - Frontend engineer">
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -27,7 +29,6 @@
       sizes="16x16"
       href="/assets/favicons/favicon-16x16.png"
     />
-    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
     <link
       rel="mask-icon"
       href="/assets/favicons/safari-pinned-tab.svg"
@@ -39,80 +40,66 @@
       name="msapplication-config"
       content="/assets/favicons/browserconfig.xml"
     />
-    <meta name="theme-color" content="#ffffff" />
-    <meta property="og:title" content="The difference between pixels, ems and rems" />
-    <meta name="twitter:title" content="The difference between pixels, ems and rems" />
-    <meta property="og:description" content="I think there is often a little bit of misunderstanding when frontend developers and designers talk to each other about dimensions on the web. Designers generally design in pixels, obviously. Frontend developers then usually develop in ems and rems. This post wants to bridge a knowledge gap that I feel might exist." />
-    <meta property="og:image" content="/assets/images/pxem.jpg" />
-    <meta name="twitter:image" content="/assets/images/pxem.jpg" />
-    <meta property="og:url" content="https://alexmuraro.me/posts/2019-11-21-the-difference-between-pixels-ems-and-rems/" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:creator" content="akmur" />
-    <meta name="twitter:site" content="akmur" />
-    <script
-      async
-      defer
-      data-domain="alexmuraro.me"
-      src="https://plausible.io/js/plausible.js"
-    ></script>
   </head>
   <body class="ui-dark">
     <div class="wrapper">
       <div class="layout">
- <div class="header">
-  <div class="header__logo">
-    <a class="logo" href="/"
-      ><svg
-        class="logo__triangle logo__triangle--left"
-        style="isolation: isolate;"
-        viewbox="217 167 106 96"
-      >
-        <path
-          d="M220 260l50-90 50 90H220z"
-          vector-effect="non-scaling-stroke"
-        ></path>
-      </svg>
-      <svg
-        class="logo__triangle logo__triangle--center"
-        style="isolation: isolate;"
-        viewbox="217 167 106 96"
-      >
-        <path
-          d="M220 260l50-90 50 90H220z"
-          vector-effect="non-scaling-stroke"
-        ></path>
-      </svg>
-      <svg
-        class="logo__triangle logo__triangle--right"
-        style="isolation: isolate;"
-        viewbox="217 167 106 96"
-      >
-        <path
-          d="M220 260l50-90 50 90H220z"
-          vector-effect="non-scaling-stroke"
-        ></path>
-      </svg>
-    </a>
-  </div>
-  <div class="header__nav">
-    <div id="nav">
-      <div class="nav__menu">
-        <ul class="menu">
-          <li class="menu__item">
-            <a class="menu__link" href="/">Home</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="/posts/">Posts</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="/about/">About</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
+        <header class="header">
+          <div class="header__logo">
+            <a class="logo" href="/"
+              ><svg
+                class="logo__triangle logo__triangle--left"
+                style="isolation: isolate;"
+                viewbox="217 167 106 96"
+              >
+                <path
+                  d="M220 260l50-90 50 90H220z"
+                  vector-effect="non-scaling-stroke"
+                ></path>
+              </svg>
+              <svg
+                class="logo__triangle logo__triangle--center"
+                style="isolation: isolate;"
+                viewbox="217 167 106 96"
+              >
+                <path
+                  d="M220 260l50-90 50 90H220z"
+                  vector-effect="non-scaling-stroke"
+                ></path>
+              </svg>
+              <svg
+                class="logo__triangle logo__triangle--right"
+                style="isolation: isolate;"
+                viewbox="217 167 106 96"
+              >
+                <path
+                  d="M220 260l50-90 50 90H220z"
+                  vector-effect="non-scaling-stroke"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div class="header__nav">
+            <div id="nav">
+              <div class="nav__menu">
+                <ul class="menu">
+                  <li class="menu__item">
+                    <a class="menu__link" href="/">Home</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="/posts/">Posts</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="/about/">About</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </header>
 
+        <main class="tmpl-post">
+          
 <div id="main" class="main">
   <article class="post">
     <header class="postHeader">
@@ -121,46 +108,56 @@
         The difference between pixels, ems and rems
       </h1>
        
+      
       <div class="postContent__date">Posted on Thu, 21 Nov 2019 13:49:31 GMT</div>
+      
+      
+      
+        <div class="postContent__tags">
+          
+            <div class="postContent__tag">
+              <a href="/tags/CSS/" class="Tag">CSS</a>
+            </div>
+        </div>
       
       <!-- .entry-meta -->
     </header>
     
     <div class="postContent__image">
       <div class="postContent__thumbnail">
-        <img src="/assets/images/pxem.jpg" />
+        <img src="/img/pxem.jpg" />
       </div>
     </div>
     
-    <h2>The issue</h2>
-<p>I think there is often a little bit of misunderstanding when frontend developers and designers talk to each other about dimensions on the web.
-Designers generally design in <em>pixels</em>, obviously. Frontend developers then usually develop in <em>ems</em> and <em>rems</em>.
+    <h2 id="the-issue">The issue <a class="direct-link" href="#the-issue">#</a></h2>
+<p>I think there is often a little bit of misunderstanding when frontend developers and designers talk to each other about dimensions on the web.<br>
+Designers generally design in <em>pixels</em>, obviously. Frontend developers then usually develop in <em>ems</em> and <em>rems</em>.<br>
 This post wants to bridge a knowledge gap that I feel might exist.</p>
 <p><em>(I know other units also exists, but I think the ones covered in this article are the most important for a good designer-developer communication)</em></p>
-<h2>A  simple technical explanation</h2>
-<h3>Pixel</h3>
+<h2 id="a-simple-technical-explanation">A  simple technical explanation <a class="direct-link" href="#a-simple-technical-explanation">#</a></h2>
+<h3 id="pixel">Pixel <a class="direct-link" href="#pixel">#</a></h3>
 <p>A <strong>pixel</strong> is the tiny dot that makes images on the monitor.</p>
-<p><strong>Example:</strong>
-If you specify that an element has to be 20px wide, it will be 20px wide.
+<p><strong>Example:</strong><br>
+If you specify that an element has to be 20px wide, it will be 20px wide.<br>
 It <strong>will not be</strong> affected by what is around it or by its own font-size. If a user will change his/her accessibility settings, <strong>a pixel remains unaffected</strong>.</p>
 <iframe height="265" style="width: 100%;" scrolling="no" title="Example px" src="https://codepen.io/akmur/embed/BaabGQJ?height=265&theme-id=dark&default-tab=css,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/akmur/pen/BaabGQJ'>Example px</a> by Alessandro Muraro
   (<a href='https://codepen.io/akmur'>@akmur</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
-<h3>Rem</h3>
-<p>With <strong>rem units</strong>, one unit is relative to the font-size of the root html element.
+<h3 id="rem">Rem <a class="direct-link" href="#rem">#</a></h3>
+<p>With <strong>rem units</strong>, one unit is relative to the font-size of the root html element.<br>
 It <strong>will not be affected</strong> by what is around it nor by its own font-size. In this regard it's similar to a pixel value.  However, when a user will change his/her accessibility settings, <strong>rem units will be affected</strong>.</p>
-<p>**Example:
-** Let's say that the root html element has a font-size of 12px.
+<p>**Example:<br>
+** Let's say that the root html element has a font-size of 12px.<br>
 If we have a box with <em>width: 10rem</em>, it will be rendered on screen with a 120px width.</p>
 <iframe height="265" style="width: 100%;" scrolling="no" title="Example px" src="https://codepen.io/akmur/embed/jOOJQVv?height=265&theme-id=dark&default-tab=css,result" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href='https://codepen.io/akmur/pen/jOOJQVv'>Example rem</a> by Alessandro Muraro
   (<a href='https://codepen.io/akmur'>@akmur</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
-<h3>Em</h3>
-<p>With <strong>em units</strong>, the unit is related <strong>to the font size of the element</strong> itself.
+<h3 id="em">Em <a class="direct-link" href="#em">#</a></h3>
+<p>With <strong>em units</strong>, the unit is related <strong>to the font size of the element</strong> itself.<br>
 <strong>Em units will be affected</strong> by accessibility settings.</p>
-<p>**Example:
+<p>**Example:<br>
 ** If we have a box with <em>font-size: 16px</em>, and the width is <em>10em,</em> it will be rendered on screen with a <em>160px width</em>. If we apply a 2em padding, this padding will be 16 * 2 = 32px.</p>
 <p>This is very useful because we <strong>don't need to explicitly define spacing</strong> of an element in pixels.</p>
 <p>We can simply say that the padding equals 1em, and it will mean that the padding equals the font size, whatever it is. So basically we are specifying <em>ratios</em> relative to the font size, instead of absolute values.</p>
@@ -168,7 +165,7 @@ If we have a box with <em>width: 10rem</em>, it will be rendered on screen with 
   See the Pen <a href='https://codepen.io/akmur/pen/oNNVQZL'>Example em</a> by Alessandro Muraro
   (<a href='https://codepen.io/akmur'>@akmur</a>) on <a href='https://codepen.io'>CodePen</a>.
 </iframe>
-<h2>When to use Pixels, Rems and Ems</h2>
+<h2 id="when-to-use-pixels%2C-rems-and-ems">When to use Pixels, Rems and Ems <a class="direct-link" href="#when-to-use-pixels%2C-rems-and-ems">#</a></h2>
 <p>My general rule of thumb as a developer is:</p>
 <ul>
 <li>Use <strong>pixels</strong> for elements that need to be rendered always at the same size. I probably only use this for borders.</li>
@@ -178,18 +175,18 @@ If we have a box with <em>width: 10rem</em>, it will be rendered on screen with 
 <p>In my experience, <em>Ems</em> should be avoided for setting font sizes, because they easily becomes complex to manage when we have many nested components. <em>Rems</em> for font-sizes are much easier to reason with.</p>
 <p><em>Ems</em> are perfect for setting spacing and sizes because this unit grows with the element's font-size.</p>
 <p>In general, in frontend we should almost never use pixels to avoid all sorts of issues.</p>
-<h2>The advantage of this approach</h2>
+<h2 id="the-advantage-of-this-approach">The advantage of this approach <a class="direct-link" href="#the-advantage-of-this-approach">#</a></h2>
 <p>By using the approach above, we can:</p>
 <ul>
-<li>Create a layout that harmonically grows/shrinks when a user changes the accessibility settings of his browser.
+<li>Create a layout that harmonically grows/shrinks when a user changes the accessibility settings of his browser.<br>
 Elements created with the pixel unit will not grow/shrink.</li>
-<li>Forget about setting exact numbers for padding and margins on each element. Instead of setting a padding to <em>16px</em>, we could set it to <em>1em</em>, knowing that it will grow/shrink automatically depending on the font-size of the element.
+<li>Forget about setting exact numbers for padding and margins on each element. Instead of setting a padding to <em>16px</em>, we could set it to <em>1em</em>, knowing that it will grow/shrink automatically depending on the font-size of the element.<br>
 Example: If we drop the element inside a box with a font-size of <em>32px</em>, the padding will be <em>32px</em>. If we drop the element in a box with font-size of <em>50px</em>, the padding will be <em>50px</em>.</li>
 <li>We can easily manage fonts, because rems are easy to reason about once we know the base font size of a website. I generally set the base font to 10px so that <em>1.6rem</em> is <em>16px</em>, and <em>4rem</em> is <em>40px</em>. Easy.</li>
 </ul>
-<h2>The web is not a printer</h2>
+<h2 id="the-web-is-not-a-printer">The web is not a printer <a class="direct-link" href="#the-web-is-not-a-printer">#</a></h2>
 <p>In my opinion designers (and stakeholders) need to take into consideration the fact that items should be allowed to grow or shrink as the font sizes change. They need to understand that elements can be subject to custom accessibility settings and accept the fact that, as someone said before me, &quot;the web is not a printer&quot;.  Their designs in Sketch are guidelines, not the single source of truth; the source of truth is still the CSS written by the developer, like it or not.</p>
-<h2>What should designers do</h2>
+<h2 id="what-should-designers-do">What should designers do <a class="direct-link" href="#what-should-designers-do">#</a></h2>
 <p>Designers should design nice and balanced UIs without worrying too much about exact pixel sizes and pixel spacings; they should just communicate to frontend developers what are the <strong>ratios</strong> they have used for their elements, and these will be replicated using <em>rem</em> for font sizes and <em>em</em> for paddings and margins.</p>
 <p><strong>Example:</strong> when they design a button, they could tell the frontend developer that the padding should be 1 unit, and the margin on the left is equal to 0.5 units (where a unit is equal to the font size).</p>
 <p>I believe that if this concept is understood, communication between developers and designers would be much simpler.</p>
@@ -207,7 +204,13 @@ Example: If we drop the element inside a box with a font-size of <em>32px</em>, 
 <p><span>Photo by <a href="https://unsplash.com/@danielleone?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Daniel Leone</a> on <a href="https://unsplash.com/s/photos/mountains?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></p>
 
   </article>
+
+  <ul class="PrevNextPosts"><li><< <a href="/posts/2019-12-01-14-apps-i-use-almost-daily/">14 apps I use (almost) daily</a></li><li><a href="/posts/2019-11-20-a-real-world-reduce-example/">A real world reduce() example</a> >></li>
+  </ul>
+
 </div>
+        </main>
+
         <footer class="footer">
           <div class="footer__container">
             <p class="footer__text">Find me on:<br>
@@ -219,28 +222,24 @@ Example: If we drop the element inside a box with a font-size of <em>32px</em>, 
         </footer>
       </div>
     </div>
-  </body>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"
-      integrity="sha512-tHQeqtcNWlZtEh8As/4MmZ5qpy0wj04svWFK7MIzLmUVIzaHXS8eod9OmHxyBL1UET5Rchvw7Ih4ZDv5JojZww=="
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      hljs.initHighlightingOnLoad();
-    </script>
 
-    <!-- Default Statcounter code for My Personal Website https://alexmuraro.me -->
-    <script type="text/javascript">
-    var sc_project=12470952; 
-    var sc_invisible=1; 
-    var sc_security="52b110a1"; 
-    var sc_https=1; 
-    </script>
-    <script type="text/javascript"
-    src="https://www.statcounter.com/counter/counter.js" async></script>
-    <noscript><div class="statcounter"><a title="Web Analytics Made Easy -
-    StatCounter" href="https://statcounter.com/" target="_blank"><img
-    class="statcounter" src="https://c.statcounter.com/12470952/0/52b110a1/1/"
-    alt="Web Analytics Made Easy - StatCounter"></a></div></noscript>
-    <!-- End of Statcounter Code -->
+    <!-- Current page: /posts/2019-11-21-the-difference-between-pixels-ems-and-rems/ -->
+  </body>
+
+  
+
+  <!-- Default Statcounter code for My Personal Website https://alexmuraro.me -->
+  <script type="text/javascript">
+  var sc_project=12470952; 
+  var sc_invisible=1; 
+  var sc_security="52b110a1"; 
+  var sc_https=1; 
+  </script>
+  <script type="text/javascript"
+  src="https://www.statcounter.com/counter/counter.js" async></script>
+  <noscript><div class="statcounter"><a title="Web Analytics Made Easy -
+  StatCounter" href="https://statcounter.com/" target="_blank"><img
+  class="statcounter" src="https://c.statcounter.com/12470952/0/52b110a1/1/"
+  alt="Web Analytics Made Easy - StatCounter"></a></div></noscript>
+  <!-- End of Statcounter Code -->
 </html>

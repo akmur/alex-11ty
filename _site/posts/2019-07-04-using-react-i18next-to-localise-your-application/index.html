@@ -1,15 +1,17 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Using react-i18next to localise your application</title>
     <link
       href="https://fonts.googleapis.com/css?family=Merriweather:700|Muli:300,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/assets/css/index.css" />
+    <meta name="description" content="Personal site with thoughts, technical posts, bio, resume.">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Alex Muraro - Frontend engineer">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="Alex Muraro - Frontend engineer">
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -27,7 +29,6 @@
       sizes="16x16"
       href="/assets/favicons/favicon-16x16.png"
     />
-    <link rel="manifest" href="/assets/favicons/site.webmanifest" />
     <link
       rel="mask-icon"
       href="/assets/favicons/safari-pinned-tab.svg"
@@ -39,80 +40,66 @@
       name="msapplication-config"
       content="/assets/favicons/browserconfig.xml"
     />
-    <meta name="theme-color" content="#ffffff" />
-    <meta property="og:title" content="Using react-i18next to localise your application" />
-    <meta name="twitter:title" content="Using react-i18next to localise your application" />
-    <meta property="og:description" content="In this post I would like to go through the configuration I use to provide localisation features to a React application. This might not be the best way, but it surely is the way that works for me, so I hope it can be useful to other people looking to add this same feature." />
-    <meta property="og:image" content="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=70" />
-    <meta name="twitter:image" content="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=70" />
-    <meta property="og:url" content="https://alexmuraro.me/posts/2019-07-04-using-react-i18next-to-localise-your-application/" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:creator" content="akmur" />
-    <meta name="twitter:site" content="akmur" />
-    <script
-      async
-      defer
-      data-domain="alexmuraro.me"
-      src="https://plausible.io/js/plausible.js"
-    ></script>
   </head>
   <body class="ui-dark">
     <div class="wrapper">
       <div class="layout">
- <div class="header">
-  <div class="header__logo">
-    <a class="logo" href="/"
-      ><svg
-        class="logo__triangle logo__triangle--left"
-        style="isolation: isolate;"
-        viewbox="217 167 106 96"
-      >
-        <path
-          d="M220 260l50-90 50 90H220z"
-          vector-effect="non-scaling-stroke"
-        ></path>
-      </svg>
-      <svg
-        class="logo__triangle logo__triangle--center"
-        style="isolation: isolate;"
-        viewbox="217 167 106 96"
-      >
-        <path
-          d="M220 260l50-90 50 90H220z"
-          vector-effect="non-scaling-stroke"
-        ></path>
-      </svg>
-      <svg
-        class="logo__triangle logo__triangle--right"
-        style="isolation: isolate;"
-        viewbox="217 167 106 96"
-      >
-        <path
-          d="M220 260l50-90 50 90H220z"
-          vector-effect="non-scaling-stroke"
-        ></path>
-      </svg>
-    </a>
-  </div>
-  <div class="header__nav">
-    <div id="nav">
-      <div class="nav__menu">
-        <ul class="menu">
-          <li class="menu__item">
-            <a class="menu__link" href="/">Home</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="/posts/">Posts</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="/about/">About</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
+        <header class="header">
+          <div class="header__logo">
+            <a class="logo" href="/"
+              ><svg
+                class="logo__triangle logo__triangle--left"
+                style="isolation: isolate;"
+                viewbox="217 167 106 96"
+              >
+                <path
+                  d="M220 260l50-90 50 90H220z"
+                  vector-effect="non-scaling-stroke"
+                ></path>
+              </svg>
+              <svg
+                class="logo__triangle logo__triangle--center"
+                style="isolation: isolate;"
+                viewbox="217 167 106 96"
+              >
+                <path
+                  d="M220 260l50-90 50 90H220z"
+                  vector-effect="non-scaling-stroke"
+                ></path>
+              </svg>
+              <svg
+                class="logo__triangle logo__triangle--right"
+                style="isolation: isolate;"
+                viewbox="217 167 106 96"
+              >
+                <path
+                  d="M220 260l50-90 50 90H220z"
+                  vector-effect="non-scaling-stroke"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <div class="header__nav">
+            <div id="nav">
+              <div class="nav__menu">
+                <ul class="menu">
+                  <li class="menu__item">
+                    <a class="menu__link" href="/">Home</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="/posts/">Posts</a>
+                  </li>
+                  <li class="menu__item">
+                    <a class="menu__link" href="/about/">About</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </header>
 
+        <main class="tmpl-post">
+          
 <div id="main" class="main">
   <article class="post">
     <header class="postHeader">
@@ -121,7 +108,26 @@
         Using react-i18next to localise your application
       </h1>
        
+      
       <div class="postContent__date">Posted on Thu, 04 Jul 2019 08:15:44 GMT</div>
+      
+      
+      
+        <div class="postContent__tags">
+          
+            <div class="postContent__tag">
+              <a href="/tags/React/" class="Tag">React</a>
+            </div>
+            <div class="postContent__tag">
+              <a href="/tags/i18n/" class="Tag">i18n</a>
+            </div>
+            <div class="postContent__tag">
+              <a href="/tags/JavaScript/" class="Tag">JavaScript</a>
+            </div>
+            <div class="postContent__tag">
+              <a href="/tags/Articles/" class="Tag">Articles</a>
+            </div>
+        </div>
       
       <!-- .entry-meta -->
     </header>
@@ -133,13 +139,13 @@
     </div>
     
     <p>In this post I would like to go through the configuration I use to provide localisation features to a React application. This might not be the best way, but it surely is the way that works for me, so I hope it can be useful to other people looking to add this same feature.</p>
-<h3>Packages to install</h3>
+<h3 id="packages-to-install">Packages to install <a class="direct-link" href="#packages-to-install">#</a></h3>
 <p>These are the packages to be installed:</p>
-<p><code>i18next</code> and <code>react-i18next</code> are the actual internationalization packages.
+<p><code>i18next</code> and <code>react-i18next</code> are the actual internationalization packages.<br>
 <code>i18next-browser-languagedetector</code> is a package needed to set the default language to be the same as the current browser language.</p>
 <pre><code>npm install i18next react-i18next i18next-browser-languagedetector --save
 </code></pre>
-<h3>Creating translations</h3>
+<h3 id="creating-translations">Creating translations <a class="direct-link" href="#creating-translations">#</a></h3>
 <p>In order to load translations, we will create as many json files as you need (one for each language) in the <code>public</code> folder, inside the <code>locales</code> folder</p>
 <pre><code>./public
     - /locales
@@ -164,7 +170,7 @@
     }
 }
 </code></pre>
-<h3>Loading Translations in the App</h3>
+<h3 id="loading-translations-in-the-app">Loading Translations in the App <a class="direct-link" href="#loading-translations-in-the-app">#</a></h3>
 <p>This is the way I use these translation in <code>./src/index.js</code>:</p>
 <p>First I fetch the translations from the locales folder, and once that is done I load the App</p>
 <pre><code>import React from 'react'
@@ -194,9 +200,9 @@ i18n
     )
   })
 </code></pre>
-<h3>Using the translations in your app</h3>
+<h3 id="using-the-translations-in-your-app">Using the translations in your app <a class="direct-link" href="#using-the-translations-in-your-app">#</a></h3>
 <p>Using the translations in your App will then work like this:</p>
-<h4>Function components:</h4>
+<h4 id="function-components%3A">Function components: <a class="direct-link" href="#function-components%3A">#</a></h4>
 <pre><code>// your react packages here...
 
 import { useTranslation } from 'react-i18next'
@@ -212,7 +218,7 @@ const TeamMemberItem = props =&gt; {
   )
 }
 </code></pre>
-<h4>React components:</h4>
+<h4 id="react-components%3A">React components: <a class="direct-link" href="#react-components%3A">#</a></h4>
 <pre><code>// your react packages here...
 
 import { Translation } from 'react-i18next'
@@ -232,7 +238,7 @@ class MyComponent extends Component {
   }
 }
 </code></pre>
-<h3>Outside the render function of the component</h3>
+<h3 id="outside-the-render-function-of-the-component">Outside the render function of the component <a class="direct-link" href="#outside-the-render-function-of-the-component">#</a></h3>
 <pre><code>// your react packages here...
 
 import i18n from 'i18next'
@@ -247,7 +253,7 @@ class MyComponent extends Component {
   }
 }
 </code></pre>
-<h3>Switching language</h3>
+<h3 id="switching-language">Switching language <a class="direct-link" href="#switching-language">#</a></h3>
 <p>Finally, if you want to switch language, you can do the following in your component</p>
 <pre><code>// your react packages here...
 
@@ -291,7 +297,13 @@ const LanguageSwitch = () =&gt; {
 <p><span>Photo by <a href="https://unsplash.com/@samferrara?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Samuel Ferrara</a> on <a href="https://unsplash.com/s/photos/mountains?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></p>
 
   </article>
+
+  <ul class="PrevNextPosts"><li><< <a href="/posts/2019-11-20-a-real-world-reduce-example/">A real world reduce() example</a></li><li><a href="/posts/2019-03-14-top-10-packages-served-by-jsdelivr/">Top 10 packages served by jsdelivr</a> >></li>
+  </ul>
+
 </div>
+        </main>
+
         <footer class="footer">
           <div class="footer__container">
             <p class="footer__text">Find me on:<br>
@@ -303,28 +315,24 @@ const LanguageSwitch = () =&gt; {
         </footer>
       </div>
     </div>
-  </body>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"
-      integrity="sha512-tHQeqtcNWlZtEh8As/4MmZ5qpy0wj04svWFK7MIzLmUVIzaHXS8eod9OmHxyBL1UET5Rchvw7Ih4ZDv5JojZww=="
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      hljs.initHighlightingOnLoad();
-    </script>
 
-    <!-- Default Statcounter code for My Personal Website https://alexmuraro.me -->
-    <script type="text/javascript">
-    var sc_project=12470952; 
-    var sc_invisible=1; 
-    var sc_security="52b110a1"; 
-    var sc_https=1; 
-    </script>
-    <script type="text/javascript"
-    src="https://www.statcounter.com/counter/counter.js" async></script>
-    <noscript><div class="statcounter"><a title="Web Analytics Made Easy -
-    StatCounter" href="https://statcounter.com/" target="_blank"><img
-    class="statcounter" src="https://c.statcounter.com/12470952/0/52b110a1/1/"
-    alt="Web Analytics Made Easy - StatCounter"></a></div></noscript>
-    <!-- End of Statcounter Code -->
+    <!-- Current page: /posts/2019-07-04-using-react-i18next-to-localise-your-application/ -->
+  </body>
+
+  
+
+  <!-- Default Statcounter code for My Personal Website https://alexmuraro.me -->
+  <script type="text/javascript">
+  var sc_project=12470952; 
+  var sc_invisible=1; 
+  var sc_security="52b110a1"; 
+  var sc_https=1; 
+  </script>
+  <script type="text/javascript"
+  src="https://www.statcounter.com/counter/counter.js" async></script>
+  <noscript><div class="statcounter"><a title="Web Analytics Made Easy -
+  StatCounter" href="https://statcounter.com/" target="_blank"><img
+  class="statcounter" src="https://c.statcounter.com/12470952/0/52b110a1/1/"
+  alt="Web Analytics Made Easy - StatCounter"></a></div></noscript>
+  <!-- End of Statcounter Code -->
 </html>

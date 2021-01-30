@@ -1,5 +1,5 @@
 ---
-layout: single.njk
+layout: layouts/post.njk
 title: The Sound of Type
 author: akmur
 type: post
@@ -8,7 +8,6 @@ featured_image: https://images.unsplash.com/photo-1429892494097-cccc61109f58?ixl
 url: https://alexmuraro.me/posts/2014-10-09-the-sound-of-type/
 excerpt: "Over the last year I've grown increasingly tired of the previous theme of my site; not that it was THAT bad, it actually did the job, but I felt it didn't convey enough of what makes myself... well, myself. Wishing for something more light-hearted but still legible, and convinced these qualities were to come from a good choice of type, I started a quest for the perfect font, well before starting to code my new site."
 tags:
-  - Articles
   - Typography
   - UI
 ---

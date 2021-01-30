@@ -1,11 +1,11 @@
 ---
-layout: single.njk
+layout: layouts/post.njk
 title: I love creating websites
 author: akmur
 type: post
 date: 2019-03-01T08:01:56+00:00
 tags:
-  - Articles
+  - Ideas
 ---
 
 Random thought: I really love creating websites 🤩 because they give me the chance to simultaneously create something that did not exist before, solve puzzles, learn new things constantly, try out new technologies, use the internet all day, listen to music while working, improve the lives of users (even if in a tiny way), get to meet lots of smart and interesting people. The feeling is really empowering.

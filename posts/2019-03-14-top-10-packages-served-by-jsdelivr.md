@@ -1,5 +1,5 @@
 ---
-layout: single.njk
+layout: layouts/post.njk
 title: Top 10 packages served by jsdelivr
 author: akmur
 type: post
@@ -8,7 +8,7 @@ featured_image: https://images.unsplash.com/photo-1462480803487-a2edfd796460?ixl
 url: https://alexmuraro.me/posts/2019-03-14-top-10-packages-served-by-jsdelivr/
 excerpt: "Today 14th of March 2019 I was surprised reading the chart of the top 10 npm packages served by jsdeliver, as it contains some entries I never heard of, and some others I would't expect to top the chart..."
 tags:
-  - Articles
+  - Tools
 ---
 
 Today 14th of March 2019 I was surprised reading the chart of the top 10 npm packages served by [jsdelivr.com][1], as it contains some entries I never heard of, and some others I would't expect to top the chart.
