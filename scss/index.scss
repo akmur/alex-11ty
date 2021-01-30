@@ -70,8 +70,8 @@ code.hljs {
 .footer {
   font-size: 1.4rem;
   text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
 }
 
 .footer__text {
@@ -554,4 +554,9 @@ input.search-input:focus {
 
 .postContent__tag {
   margin-right: 0.5rem;
+  display: inline-block;
+}
+
+.Tags__seeAll {
+  margin-top: 2rem;
 }

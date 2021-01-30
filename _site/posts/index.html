@@ -101,9 +101,11 @@
         <main class="tmpl-home">
           
 <div class="main">
-  <div class="input-wrapper">
-    <input type="text" class="search-input" id="search-input" placeholder="Type to filter..." />
-  </div>
+  
+    <div class="input-wrapper">
+      <input type="text" class="search-input" id="search-input" placeholder="Type to filter..." />
+    </div>
+  
   <div class="postsList" id="posts-list">
     
       <div class="postsList__item" data-title="Cypress tip: how to stub an alert">
@@ -823,7 +825,14 @@
     <!-- Current page: /posts/ -->
   </body>
 
-  
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.3/highlight.min.js"
+    integrity="sha512-tHQeqtcNWlZtEh8As/4MmZ5qpy0wj04svWFK7MIzLmUVIzaHXS8eod9OmHxyBL1UET5Rchvw7Ih4ZDv5JojZww=="
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
 
   <!-- Default Statcounter code for My Personal Website https://alexmuraro.me -->
   <script type="text/javascript">

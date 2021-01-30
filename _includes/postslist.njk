@@ -1,7 +1,9 @@
 <div class="main">
-  <div class="input-wrapper">
-    <input type="text" class="search-input" id="search-input" placeholder="Type to filter..." />
-  </div>
+  {% if postslist.length > 3 %}
+    <div class="input-wrapper">
+      <input type="text" class="search-input" id="search-input" placeholder="Type to filter..." />
+    </div>
+  {% endif %}
   <div class="postsList" id="posts-list">
     {% for post in postslist | reverse %}
       <div class="postsList__item" data-title="{{ post.data.title }}">
