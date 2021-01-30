@@ -500,6 +500,13 @@ input.search-input {
   font-size: 3rem;
   padding: 0.5em 1em;
   color: var(--grey);
+  max-width: 40rem;
+}
+
+@media screen and (max-width: 500px) {
+  input.search-input {
+    max-width: 25rem;
+  }
 }
 
 input.search-input:focus {
