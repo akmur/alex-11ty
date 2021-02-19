@@ -1,7 +1,7 @@
 {
   "name": "eleventy-base-blog",
   "version": "5.0.2",
-  "description": "A starter repository for a blog web site using the Eleventy static site generator.",
+  "description": "The repository for my eleventy blog, based on eleventy-base-blog by Zach Leatherman.",
   "scripts": {
     "build": "eleventy",
     "watch": "eleventy --watch",
@@ -14,9 +14,9 @@
     "url": "git://github.com/11ty/eleventy-base-blog.git"
   },
   "author": {
-    "name": "Zach Leatherman",
-    "email": "zachleatherman@gmail.com",
-    "url": "https://zachleat.com/"
+    "name": "Alessandro Muraro",
+    "email": "akmuraro@gmail.com",
+    "url": "https://alexmuraro.me/"
   },
   "license": "MIT",
   "bugs": {

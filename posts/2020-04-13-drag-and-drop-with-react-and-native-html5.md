@@ -14,9 +14,14 @@ tags:
 
 In this post I would like to show how you can implement a simple drag and drop features using the native HTML5 drag and drop events and React (but clearly you could use anything you like). I have seen a number of feature-packed libraries that surely accomplish everything you can dream of but this is how I you can get it done in the simplest way.
 
-### The code
+### Codesandbox
 
-**Warning**: I did not implement reordering of the cards, too much work 🙂 but I suppose something can be hacked together by using the APIs shown here, by getting the initial order and the order of the card you are dropping onto.
+<iframe src="https://codesandbox.io/embed/basic-react-html5-drag-n-drop-fgy0c?fontsize=14&hidenavigation=1&theme=dark"
+  style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+  title="Basic React HTML5 Drag n Drop"
+  allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+  sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 
 ### How does it work
 
@@ -39,5 +44,7 @@ const handleDrop = e => {
   context.changeCardStatus(id, props.status)
 }
 ```
+
+**Warning**: I did not implement reordering of the cards, too much work 🙂 but I suppose something can be hacked together by using the APIs shown here, by getting the initial order and the order of the card you are dropping onto.
 
 You can find the state of the app and the changeCardStatus function in **context.js.**

@@ -17,7 +17,15 @@ Simple enough, but took me some Googling to find how to do it, so I'm adding it 
 
 ## How to do it
 
-This is my snippet of code, used in a unit test in this case:
+This is my snippet of code, used in a unit test in this case
+
+Given a component like:
+
+```
+<Component data-test-id="element" onClick={() => {alert('Hello')}} />
+```
+
+We can test the onClick like this:
 
 ```
 it('the "handleOnClick" prop works correctly', () => {

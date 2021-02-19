@@ -133,8 +133,13 @@
     </div>
     
     <p>In this post I would like to show how you can implement a simple drag and drop features using the native HTML5 drag and drop events and React (but clearly you could use anything you like). I have seen a number of feature-packed libraries that surely accomplish everything you can dream of but this is how I you can get it done in the simplest way.</p>
-<h3 id="the-code">The code <a class="direct-link" href="#the-code">#</a></h3>
-<p><strong>Warning</strong>: I did not implement reordering of the cards, too much work 🙂 but I suppose something can be hacked together by using the APIs shown here, by getting the initial order and the order of the card you are dropping onto.</p>
+<h3 id="codesandbox">Codesandbox <a class="direct-link" href="#codesandbox">#</a></h3>
+<iframe src="https://codesandbox.io/embed/basic-react-html5-drag-n-drop-fgy0c?fontsize=14&hidenavigation=1&theme=dark"
+  style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+  title="Basic React HTML5 Drag n Drop"
+  allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+  sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+></iframe>
 <h3 id="how-does-it-work">How does it work <a class="direct-link" href="#how-does-it-work">#</a></h3>
 <p>In order to accomplish the drag and drop, we make use of a number of native events implemented in <em>Card.js</em> and <em>Dropzone.js</em>. In <strong>Card.js</strong> you should pay attention to the following <strong>handleDragStart</strong> function, which is triggered when you start dragging. It will save some data using the native HTML5 method <em>dataTransfer.setData</em>.</p>
 <pre><code>const handleDragStart = e =&gt; {
@@ -150,6 +155,7 @@
   context.changeCardStatus(id, props.status)
 }
 </code></pre>
+<p><strong>Warning</strong>: I did not implement reordering of the cards, too much work 🙂 but I suppose something can be hacked together by using the APIs shown here, by getting the initial order and the order of the card you are dropping onto.</p>
 <p>You can find the state of the app and the changeCardStatus function in <strong>context.js.</strong></p>
 
   </article>
