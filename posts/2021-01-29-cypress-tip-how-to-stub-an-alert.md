@@ -22,7 +22,7 @@ This is my snippet of code, used in a unit test in this case
 Given a component like:
 
 ```
-<Component data-test-id="element" onClick={() => {alert('Hello')}} />
+<Component data-test-id="element" handleOnClick={() => {alert('Hello')}} />
 ```
 
 We can test the onClick like this:

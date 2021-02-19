@@ -140,7 +140,7 @@ Simple enough, but took me some Googling to find how to do it, so I'm adding it 
 <h2 id="how-to-do-it">How to do it <a class="direct-link" href="#how-to-do-it">#</a></h2>
 <p>This is my snippet of code, used in a unit test in this case</p>
 <p>Given a component like:</p>
-<pre><code>&lt;Component data-test-id=&quot;element&quot; onClick={() =&gt; {alert('Hello')}} /&gt;
+<pre><code>&lt;Component data-test-id=&quot;element&quot; handleOnClick={() =&gt; {alert('Hello')}} /&gt;
 </code></pre>
 <p>We can test the onClick like this:</p>
 <pre><code>it('the &quot;handleOnClick&quot; prop works correctly', () =&gt; {
