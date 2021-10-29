@@ -17,14 +17,15 @@ Since November 2020 I am working with [Cleafy](https://cleafy.com/) where I take
 
 # What I do
 
-I am currently working daily with React and Redux at Innoloft. I am experienced in dealing with complex and/or legacy codebases, which I enjoy refactoring and getting back into shape. I specialize in coding modular, component-based websites. I am passionate about clean, maintainable, readable code and I fight the good fight against software entropy.
+I am currently working daily with React at [Cleafy](https://cleafy.com/) in Milan. I am experienced in dealing with complex and/or legacy codebases, which I enjoy refactoring and getting back into shape. I specialize in coding modular, component-based websites. I am passionate about clean, maintainable, readable code and I fight the good fight against software entropy.
 
 # Skills
 
 - HTML / CSS / SCSS / JavaScript
 - React / Redux
 - Test Driven Development with Cypress
-- Gulp / NPM scripts / webpack
+- Docker
+- NPM scripts / webpack
 - Linters
 - Scrum / Agile methodologies
 - Git
@@ -48,13 +49,3 @@ I am currently working daily with React and Redux at Innoloft. I am experienced 
 # Get in touch
 
 You can follow me and message me on [Twitter](https://twitter.com/akmur), [Linkedin](https://www.linkedin.com/in/alessandromuraro/) or [Github](https://github.com/akmur).
-
-# My resume
-
-Want to know more?
-Here you can download my curriculum vitae in PDF format, or go to Linkedin to learn even more about me, and connect if you feel like it.
-
-<div class="actions">
-  <a class="actions__cta button" href="https://www.dropbox.com/s/0j0z64d7f3fe4rg/Resume%20Alessandro%20Muraro.pdf?dl=0" rel="noopener noreferrer" target="_blank">Download CV</a>
-  <a class="actions__cta link" href="https://www.linkedin.com/in/alessandromuraro/" rel="noopener noreferrer" target="_blank">Go to Linkedin</a>
-</div>

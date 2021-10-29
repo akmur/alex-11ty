@@ -31,6 +31,6 @@
     "luxon": "^1.25.0",
     "markdown-it": "^8.4.2",
     "markdown-it-anchor": "^5.2.5",
-    "node-sass": "^5.0.0"
+    "node-sass": "^6.0.1"
   }
 }
