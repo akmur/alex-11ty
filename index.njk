@@ -14,6 +14,31 @@ eleventyNavigation:
       <h1 class="hero__title">I'm a frontend developer,<br>
       I do <span id="text">web 👋</h1>
     </div>
+
+
+    
+    {% set postslist = collections.posts | head(-3) %}
+    <div class="postsList" id="posts-list">
+      <h3>Latest posts</h3>
+      
+      {% for post in postslist | reverse %}
+        <div class="postsList__item" data-title="{{ post.data.title }}">
+          <h2 class="postsList__title">
+            <a class="postsList__link" href="{{ post.url }}" rel="bookmark">
+              {{ post.data.title }}
+            </a>
+          </h2>
+
+          <div>
+            <time class="postsList__date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+          </div>
+        </div>
+      {% endfor %}
+
+      <div class="postsList__button">
+        <a class="button" href="/posts">See all posts</a>
+      </div>
+    </div>
   </div>
 </div>
 <script>

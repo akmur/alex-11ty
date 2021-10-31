@@ -29,6 +29,7 @@ code.hljs {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 20vh 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -350,18 +351,29 @@ a.postsList__link {
 }
 
 .pageHome {
-  position: fixed;
+  text-align: center;
   width: 100%;
-  left: 0;
-  top: 40%;
+
+  .postsList {
+    background: #262626;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-sizing: border-box;
+  }
+
+  .postsList__title {
+    font-size: 2.2rem;
+  }
+
+  .postsList__button {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+  }
 }
 
 .content {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-pack: center;
   justify-content: center;
-  -webkit-box-align: start;
   align-items: flex-start;
 }
 

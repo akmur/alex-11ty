@@ -629,7 +629,8 @@ code.hljs {
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  padding: 20vh 0; }
 
 @media screen and (max-width: 768px) {
   .hero {
@@ -879,17 +880,22 @@ a.postsList__link {
   margin-top: 0; }
 
 .pageHome {
-  position: fixed;
-  width: 100%;
-  left: 0;
-  top: 40%; }
+  text-align: center;
+  width: 100%; }
+  .pageHome .postsList {
+    background: #262626;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-sizing: border-box; }
+  .pageHome .postsList__title {
+    font-size: 2.2rem; }
+  .pageHome .postsList__button {
+    margin-top: 4rem;
+    margin-bottom: 3rem; }
 
 .content {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-pack: center;
   justify-content: center;
-  -webkit-box-align: start;
   align-items: flex-start; }
 
 .postContent {
