@@ -13,4 +13,4 @@ Just wanted to post some music I've been listening on heavy rotation especially 
 
 They're a swedish electronic duo called [Gidge](https://twitter.com/gidgeofficial?lang=en), and I think they're awesome.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9MS1PH3k7PU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="400" src="https://www.youtube.com/embed/9MS1PH3k7PU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

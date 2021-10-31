@@ -1043,3 +1043,7 @@ input.search-input:focus {
 
 .Tags__seeAll {
   margin-top: 2rem; }
+
+iframe {
+  margin-top: 1rem;
+  width: 100%; }
