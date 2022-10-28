@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: "A basic React Portal example."
+title: "A basic React Portal example"
 type: post
 date: 2022-10-28 22:00:07
 url: https://alexmuraro.me/posts/2022-10-28-a-basic-react-portal-example
