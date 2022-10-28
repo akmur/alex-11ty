@@ -607,9 +607,6 @@ pre > code.highlight {
   outline: 0.4em solid #f92672;
   outline-offset: 0.4em; }
 
-* {
-  transition: all 250ms ease; }
-
 .actions {
   align-items: center;
   display: -webkit-box;
