@@ -114,8 +114,6 @@ code.hljs {
 .logo {
   border: 0 !important;
   position: relative;
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
   width: 6rem;
   height: 3.7rem;
   display: block;
@@ -145,10 +143,8 @@ code.hljs {
   position: absolute;
   stroke: #4a4a4a;
   top: 0;
-  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
+  transition: transform 0.25s ease;
   stroke-width: 2px;
 }
 
