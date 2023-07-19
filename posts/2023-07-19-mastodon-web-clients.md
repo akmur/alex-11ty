@@ -75,7 +75,7 @@ One minor issue I noticed is that when font size is increased to "extra large" t
 
 It doesn’t revolutionize Mastodon, but it gives it a fresh clean look and keeps all Mastodon features like editing posts. It’s been growing on me lately, so I find myself using it more and more especially on desktop, since it has exceptional font size handling and many well-being settings.
 
-On mobile on the other hand, I don't use it simply because it doesn't have a direct link to my local instance in the navbar, so I need to click on the dots and select the local timeline.
+On mobile on the other hand, I don't use it just because it doesn't have a direct link to my local instance in the navbar, so I need to click on the dots and select the local timeline, for some reason the extra click turns me off.
 
 <img title="Elk Mobile" alt="Elk Mobile" src="/img/elk-mobile.jpeg" style="width: 300px; max-width: 100%; margin: 0 auto;">
 
